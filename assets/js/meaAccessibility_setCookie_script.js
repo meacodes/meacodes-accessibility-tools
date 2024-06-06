@@ -1,0 +1,1 @@
+function mea__setCookie(e,o,t){let n="";if(t){const e=new Date;e.setTime(e.getTime()+24*t*60*60*1e3),n="; expires="+e.toUTCString()}document.cookie=e+"="+encodeURIComponent(o||"")+n+"; path=/"}function eraseCookie(e){document.cookie=e+"=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;"}
