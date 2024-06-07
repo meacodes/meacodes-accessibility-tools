@@ -1183,6 +1183,8 @@ body.meaAccessibility_aHighlight .btn:visited,
 body.meaAccessibility_aHighlight .btn:hover {
     background-color: #858585 !important;
     color: #fff !important;
+    border-radius: 3px !important;
+    margin: 0.5px !important;
 }
 
 body.meaAccessibility_grayscaleImg img,

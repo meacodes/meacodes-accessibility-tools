@@ -4,7 +4,7 @@ Donate link: https://meacodes.com/donate/
 Tags: accessibility, a11y, Section 508, wcag, toolbar
 Requires at least: 4.0
 Tested up to: 6.5
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -99,3 +99,9 @@ We truly appreciate any contribution you can make.
 
 = 1.0.2 =
 * Security bug fixed
+
+= 1.0.3 =
+* Redirect (help and Donation) pages to website.
+* Add (Support and Changelog) links.
+* Update some (links) in admin panel.
+* Improve (add margin and border-radius to Highlighted links) tools box UI.

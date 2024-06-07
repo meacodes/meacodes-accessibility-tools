@@ -12,7 +12,7 @@ Text Domain: meacodes-accessibility-tools
 Domain Path: /languages
 */
 defined('ABSPATH') || exit;
-define('meaAccessibility_PLUGIN_VERSION', '1.0.2');
+define('meaAccessibility_PLUGIN_VERSION', '1.0.3');
 register_activation_hook( __FILE__, 'meaAccessibility_activation_function' );
 // Set default options
 function meaAccessibility_activation_function() {
@@ -88,22 +88,6 @@ add_submenu_page(
   'manage_options',
   'meaAccessibility_settings_page',
 );
-add_submenu_page(
-    'meaAccessibility_settings_page',
-    __('Help', 'meacodes-accessibility-tools'),
-    __('Help', 'meacodes-accessibility-tools'),
-    'manage_options',
-    'mea-settings-help',
-    'meaAccessibility_help_page_callback'
-);
-add_submenu_page(
-    'meaAccessibility_settings_page',
-    __('Donation', 'meacodes-accessibility-tools'),
-    __('Donation', 'meacodes-accessibility-tools'),
-    'manage_options',
-    'mea-settings-donation',
-    'meaAccessibility_donation_page_callback'
-);
 }
 require_once(plugin_dir_path(__FILE__) . 'assets/Themes/Default_blue/theme.php');
 require_once plugin_dir_path(__FILE__) . 'assets/admin/admin-theme.php';
@@ -117,14 +101,6 @@ add_action('admin_enqueue_scripts', 'meaAccessibility_enqueue_admin_assets');
 // Callback function to render plugin settings page
 function meaAccessibility_settings_page_callback() {
   ?><?php meaAccessibility_admin_thm(); ?><?php
-}
-// Help page callback
-function meaAccessibility_help_page_callback() {
-  ?><?php meaAccessibility_help_page(); ?><?php
-}
-// Donation page callback
-function meaAccessibility_donation_page_callback() {
-  ?><?php meaAccessibility_donation_page(); ?><?php
 }
 function meaAccessibility_reset_settings_callback() {
   update_option('meaAccessibility_selected_position', 'meaAccessibility_widgetBottomLeft');

@@ -189,46 +189,6 @@
     padding-right: 15px !important;
 }
 
-.meaAccessibility_help-page {
-    max-width: 800px;
-}
-
-.mea-help-section {
-    margin-bottom: 30px;
-}
-
-.meaAccessibility_help-page h2 {
-    color: #333;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 10px;
-    margin-top: 30px;
-}
-
-.meaAccessibility_help-page h3 {
-    color: #555;
-    margin-top: 20px;
-}
-
-.meaAccessibility_help-page p {
-    color: #777;
-}
-
-.meaAccessibility_help-page ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.meaAccessibility_help-page li {
-    margin-bottom: 10px;
-}
-
-.meaAccessibility_help-page ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .meaAccessibility_feature {
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
@@ -236,45 +196,6 @@
 
 .meaAccessibility_feature:last-child {
     border-bottom: none;
-}
-
-.meaAccessibility_donation-page {
-    margin: 20px;
-    font-family: 'Arial', sans-serif;
-}
-
-.meaAccessibility_donation-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.meaAccessibility_donation-option {
-    width: 250px;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.meaAccessibility_donation-option h2 {
-    color: #333;
-}
-
-.meaAccessibility_donation-option p {
-    color: #777;
-}
-
-.meaAccessibility_donation-option img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-}
-
-.meaAccessibility_donation-option .meaAccessibility_description {
-    margin-top: -18px;
 }
 
 .meaAccessibility_toggle-switch {
@@ -330,4 +251,29 @@ input:checked+.meaAccessibility_slider:before {
 
 .meaAccessibility_slider:hover:before {
     background-color: #f0f0f0;
+}
+
+.meaAccessibility_admin_ex_links {
+    background: #3ABDDD;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px 0 5px;
+    border-radius: 10px 10px 0 0;
+    margin-left: 5px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: border-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.meaAccessibility_admin_ex_links:hover {
+    background-color: #fff;
+    color: #495057;
+    border-bottom: 2px solid #3abddd;
+}
+
+.meaAccessibility_admin_first_ex_links {
+    margin-right: 5px;
 }
