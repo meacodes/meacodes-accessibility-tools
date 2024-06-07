@@ -87,3 +87,9 @@ We truly appreciate any contribution you can make.
 
 = 1.0.2 =
 * Security bug fixed
+
+= 1.0.3 =
+* Redirect (help and Donation) pages to website.
+* Add (Support and Changelog) links.
+* Update some (links) in admin panel.
+* Improve (add margin and border-radius to Highlighted links) tools box UI.
