@@ -1,0 +1,423 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Meacodes Accessibility Tools\n"
+"POT-Creation-Date: 2024-06-07 06:53-0700\n"
+"PO-Revision-Date: 2024-06-07 06:53-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: meacodes-accessibility-tools.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: assets/Themes/Default_blue/theme.php:3
+#: assets/Themes/Default_blue/theme.php:13 assets/admin/admin-theme.php:67
+msgid "Accessibility"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:9
+msgid "Drag and move the accessibility box"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:11
+msgid "Open/Close Accessibility Options"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:16
+msgid "Click to read GDPR Notice"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:23
+msgid "Font Size"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:28
+msgid "‌Normal"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:40
+msgid "Line Height"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:43
+#: assets/Themes/Default_blue/theme.php:56
+msgid "Normal"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:53
+msgid "Letter Spacing"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:68
+msgid "Dyslexia Mask"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:76
+msgid "Grayscale Page"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:84
+msgid "Contrast"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:92
+msgid "Negative"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:100
+msgid "Underlined Links"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:108
+msgid "Highlight Links"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:116
+msgid "Grayscale Images"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:124
+msgid "Black and white"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:130
+msgid "Developed by "
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:132
+msgid "Reset"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:133
+msgid "Close"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:138
+msgid "GDPR Notice:"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:139
+msgid ""
+"This plugin uses cookies to enhance your experience and provide personalized "
+"accessibility settings. These cookies are stored in your browser and allow "
+"us to remember your preferences for font size, color schemes, and other "
+"accessibility features. By using this plugin, you consent to the use of "
+"cookies for these purposes. You can delete or block cookies in your browser "
+"settings at any time. Please note that doing so may affect your experience "
+"on the site."
+msgstr ""
+
+#: assets/admin/admin-theme.php:31
+msgid "jQuery is not loaded!"
+msgstr ""
+
+#: assets/admin/admin-theme.php:37
+msgid "General"
+msgstr ""
+
+#: assets/admin/admin-theme.php:38 assets/admin/admin-theme.php:122
+msgid "Features"
+msgstr ""
+
+#: assets/admin/admin-theme.php:39
+msgid "Style"
+msgstr ""
+
+#: assets/admin/admin-theme.php:40
+msgid "Documentation"
+msgstr ""
+
+#: assets/admin/admin-theme.php:41
+msgid "Support"
+msgstr ""
+
+#: assets/admin/admin-theme.php:42
+msgid "Donation"
+msgstr ""
+
+#: assets/admin/admin-theme.php:43
+msgid "changelog"
+msgstr ""
+
+#: assets/admin/admin-theme.php:49
+msgid "General Settings"
+msgstr ""
+
+#: assets/admin/admin-theme.php:56
+msgid "Enable or Disable Meacodes Accessibility Tools:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:65
+msgid "Plugin Name:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:69
+msgid ""
+"This means that the plugin name is a default and automatic translation of "
+"the word Accessibility."
+msgstr ""
+
+#: assets/admin/admin-theme.php:72
+msgid ""
+"This name will be displayed opposite the plugin icon in the header section "
+"when the accessibility plugin is opened by the user on your website."
+msgstr ""
+
+#: assets/admin/admin-theme.php:74
+msgid ""
+"If you do not want any text to be displayed in that section, Clear default "
+"name and save changes."
+msgstr ""
+
+#: assets/admin/admin-theme.php:75
+msgid ""
+"If your site is multilingual (using Polylang), keep in mind that if you "
+"change this name, the name you choose will be displayed without translation "
+"and fixed in all languages unless you rebuild the plugins language file with "
+"Polylang and enter the translation of the chosen name. Also, if you want the "
+"chosen name to revert to the default name and be displayed translated in any "
+"language, reset settings once."
+msgstr ""
+
+#: assets/admin/admin-theme.php:81
+msgid "Enable or Disable GDPR Notice:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:90
+msgid "Developed by label:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:93
+msgid "Enable \"Developed by\" label"
+msgstr ""
+
+#: assets/admin/admin-theme.php:94
+msgid ""
+"Please turn the Developed by label on to support us and help the project "
+"move forward. "
+msgstr ""
+
+#: assets/admin/admin-theme.php:95
+msgid "You can also buy us a coffee on the"
+msgstr ""
+
+#: assets/admin/admin-theme.php:95
+msgid "Donation page."
+msgstr ""
+
+#: assets/admin/admin-theme.php:96
+msgid "Thanks for your supports. "
+msgstr ""
+
+#: assets/admin/admin-theme.php:123
+msgid ""
+"The Accessibility plugin provides a set of tools and features to create an "
+"easier and more inclusive user experience for users with various needs. You "
+"can enable or disable each of these features individually."
+msgstr ""
+
+#: assets/admin/admin-theme.php:124
+msgid ""
+"To find out which plugin features are used to solve which accessibility "
+"issues for your site, you can refer to the "
+msgstr ""
+
+#: assets/admin/admin-theme.php:124 assets/admin/admin-theme.php:232
+msgid "Documentation."
+msgstr ""
+
+#: assets/admin/admin-theme.php:128
+msgid "Font Size Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:137
+msgid "Line Height Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:146
+msgid "Letter Spacing Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:155
+msgid "Dyslexia Mask Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:164
+msgid "Grayscale Page Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:173
+msgid "Contrast Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:182
+msgid "Negative Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:191
+msgid "Underlined Links Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:200
+msgid "Highlight Links Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:209
+msgid "Grayscale Images Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:218
+msgid "Black and white Feature:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:231
+msgid "Style Settings"
+msgstr ""
+
+#: assets/admin/admin-theme.php:232
+msgid ""
+"Customize the plugins appearance to match your taste and needs using the "
+"style settings. For more information on each appearance variable, refer to "
+"the"
+msgstr ""
+
+#: assets/admin/admin-theme.php:236
+msgid "Positionable by User:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:244
+msgid ""
+"Enabling this option allows users to freely move the accessibility plugin "
+"around the page on desktop devices. Please note that this feature is not "
+"available on mobile devices."
+msgstr ""
+
+#: assets/admin/admin-theme.php:248
+msgid "Plugin Position:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:253
+msgid "Bottom Left Corner"
+msgstr ""
+
+#: assets/admin/admin-theme.php:254
+msgid "Bottom Right Corner"
+msgstr ""
+
+#: assets/admin/admin-theme.php:255
+msgid "Top Left Corner"
+msgstr ""
+
+#: assets/admin/admin-theme.php:256
+msgid "Top Right Corner"
+msgstr ""
+
+#: assets/admin/admin-theme.php:272
+msgid "Background Color: "
+msgstr ""
+
+#: assets/admin/admin-theme.php:275
+msgid "Background color of plugin and logo border."
+msgstr ""
+
+#: assets/admin/admin-theme.php:279
+msgid "Labels Color: "
+msgstr ""
+
+#: assets/admin/admin-theme.php:282
+msgid "Color of the labels or name of each feature and Plugin name to."
+msgstr ""
+
+#: assets/admin/admin-theme.php:286
+msgid "Divider Line Color: "
+msgstr ""
+
+#: assets/admin/admin-theme.php:289
+msgid "Color of plugin header & features section divider."
+msgstr ""
+
+#: assets/admin/admin-theme.php:293
+msgid "Plugin Logo Color: "
+msgstr ""
+
+#: assets/admin/admin-theme.php:296
+msgid "Color Scheme for Plugin Logo."
+msgstr ""
+
+#: assets/admin/admin-theme.php:300
+msgid "Accent Color: "
+msgstr ""
+
+#: assets/admin/admin-theme.php:304
+msgid "Color scheme for:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:306
+msgid "Active features and their toggle buttons on hover."
+msgstr ""
+
+#: assets/admin/admin-theme.php:307
+msgid "Dyslexia reading mask bars"
+msgstr ""
+
+#: assets/admin/admin-theme.php:313
+msgid "‌Buttons Color (Reset/Close):"
+msgstr ""
+
+#: assets/admin/admin-theme.php:317
+msgid "Buttons Hover Color (Reset/Close): "
+msgstr ""
+
+#: assets/admin/admin-theme.php:325
+msgid "Reset settings"
+msgstr ""
+
+#: assets/admin/admin-theme.php:345
+msgid "Accessibility Tools Version: "
+msgstr ""
+
+#: assets/admin/admin-theme.php:347
+msgid "Developed by"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: meacodes-accessibility-tools.php:76
+msgid "Meacodes Accessibility Tools"
+msgstr ""
+
+#: meacodes-accessibility-tools.php:77
+msgid "Mea Accessibility"
+msgstr ""
+
+#: meacodes-accessibility-tools.php:86 meacodes-accessibility-tools.php:87
+msgid "Settings"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.meacodes.com/accessibility"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This is an accessibility tools for people with disabilities to use the web "
+"easily."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Meacodes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.meacodes.com"
+msgstr ""

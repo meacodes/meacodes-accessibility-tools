@@ -1,0 +1,725 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Meacodes Accessibility Plugin\n"
+"POT-Creation-Date: 2024-06-07 06:53-0700\n"
+"PO-Revision-Date: 2024-06-07 17:39+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: meacodes-accessibility-plugin.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: assets/Themes/Default_blue/theme.php:3
+#: assets/Themes/Default_blue/theme.php:13 assets/admin/admin-theme.php:67
+msgid "Accessibility"
+msgstr "Acessibilidade"
+
+#: assets/Themes/Default_blue/theme.php:9
+msgid "Drag and move the accessibility box"
+msgstr "Arraste e mova a caixa de acessibilidade"
+
+#: assets/Themes/Default_blue/theme.php:11
+msgid "Open/Close Accessibility Options"
+msgstr "Abrir/Fechar Opções de Acessibilidade"
+
+#: assets/Themes/Default_blue/theme.php:16
+msgid "Click to read GDPR Notice"
+msgstr "Clique para ler o Aviso GDPR"
+
+#: assets/Themes/Default_blue/theme.php:23
+msgid "Font Size"
+msgstr "Tamanho da fonte"
+
+#: assets/Themes/Default_blue/theme.php:28
+msgid "‌Normal"
+msgstr "‌Normal"
+
+#: assets/Themes/Default_blue/theme.php:40
+msgid "Line Height"
+msgstr "Altura da linha"
+
+#: assets/Themes/Default_blue/theme.php:43
+#: assets/Themes/Default_blue/theme.php:56
+msgid "Normal"
+msgstr "Normal"
+
+#: assets/Themes/Default_blue/theme.php:53
+msgid "Letter Spacing"
+msgstr "Espaçamento entre letras"
+
+#: assets/Themes/Default_blue/theme.php:68
+msgid "Dyslexia Mask"
+msgstr "Sobreposição dislexia"
+
+#: assets/Themes/Default_blue/theme.php:76
+msgid "Grayscale Page"
+msgstr "Página em tons de cinza"
+
+#: assets/Themes/Default_blue/theme.php:84
+msgid "Contrast"
+msgstr "Contraste"
+
+#: assets/Themes/Default_blue/theme.php:92
+msgid "Negative"
+msgstr "Negativo"
+
+#: assets/Themes/Default_blue/theme.php:100
+msgid "Underlined Links"
+msgstr "Links sublinhados"
+
+#: assets/Themes/Default_blue/theme.php:108
+msgid "Highlight Links"
+msgstr "Destacar links"
+
+#: assets/Themes/Default_blue/theme.php:116
+msgid "Grayscale Images"
+msgstr "Imagens em tons de cinza"
+
+#: assets/Themes/Default_blue/theme.php:124
+msgid "Black and white"
+msgstr "Preto e branco"
+
+#: assets/Themes/Default_blue/theme.php:130
+msgid "Developed by "
+msgstr "Desenvolvido por "
+
+#: assets/Themes/Default_blue/theme.php:132
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: assets/Themes/Default_blue/theme.php:133
+msgid "Close"
+msgstr "Fechar"
+
+#: assets/Themes/Default_blue/theme.php:138
+msgid "GDPR Notice:"
+msgstr "Aviso GDPR:"
+
+#: assets/Themes/Default_blue/theme.php:139
+msgid ""
+"This plugin uses cookies to enhance your experience and provide personalized "
+"accessibility settings. These cookies are stored in your browser and allow "
+"us to remember your preferences for font size, color schemes, and other "
+"accessibility features. By using this plugin, you consent to the use of "
+"cookies for these purposes. You can delete or block cookies in your browser "
+"settings at any time. Please note that doing so may affect your experience "
+"on the site."
+msgstr ""
+"Este plugin usa cookies para melhorar sua experiência e fornecer Opções de "
+"acessibilidade personalizadas. Esses cookies são armazenados em seu "
+"navegador e nos permitem lembrar suas preferências de tamanho de fonte, "
+"esquema de cores e outros recursos de acessibilidade. Ao usar este plugin, "
+"você consente com o uso de cookies para esses fins. Você pode excluir ou "
+"bloquear cookies nas Opções do seu navegador a qualquer momento. Observe que "
+"isso pode afetar sua experiência no site."
+
+#: assets/admin/admin-theme.php:31
+msgid "jQuery is not loaded!"
+msgstr ""
+
+#: assets/admin/admin-theme.php:37
+msgid "General"
+msgstr "Gerais"
+
+#: assets/admin/admin-theme.php:38 assets/admin/admin-theme.php:122
+msgid "Features"
+msgstr "Recursos"
+
+#: assets/admin/admin-theme.php:39
+msgid "Style"
+msgstr "Estilo"
+
+#: assets/admin/admin-theme.php:40
+msgid "Documentation"
+msgstr "Documentação"
+
+#: assets/admin/admin-theme.php:41
+msgid "Support"
+msgstr "Suporte"
+
+#: assets/admin/admin-theme.php:42
+msgid "Donation"
+msgstr "Doação"
+
+#: assets/admin/admin-theme.php:43
+msgid "changelog"
+msgstr "registro de mudanças"
+
+#: assets/admin/admin-theme.php:49
+msgid "General Settings"
+msgstr "Opções Gerais"
+
+#: assets/admin/admin-theme.php:56
+msgid "Enable or Disable Meacodes Accessibility Tools:"
+msgstr "Ativar ou Desativar as Ferramentas de Acessibilidade Meacodes:"
+
+#: assets/admin/admin-theme.php:65
+msgid "Plugin Name:"
+msgstr "Nome do Plugin:"
+
+#: assets/admin/admin-theme.php:69
+msgid ""
+"This means that the plugin name is a default and automatic translation of "
+"the word Accessibility."
+msgstr ""
+"Isso significa que o nome do plugin é uma tradução padrão e automática da "
+"palavra Acessibilidade."
+
+#: assets/admin/admin-theme.php:72
+msgid ""
+"This name will be displayed opposite the plugin icon in the header section "
+"when the accessibility plugin is opened by the user on your website."
+msgstr ""
+"Este nome será exibido ao lado do ícone do plugin na seção de cabeçalho "
+"quando o plugin de acessibilidade for aberto pelo usuário em seu site."
+
+#: assets/admin/admin-theme.php:74
+msgid ""
+"If you do not want any text to be displayed in that section, Clear default "
+"name and save changes."
+msgstr ""
+"Se não quiser texto nesta seção, apague o nome padrão e salve as alterações."
+
+#: assets/admin/admin-theme.php:75
+msgid ""
+"If your site is multilingual (using Polylang), keep in mind that if you "
+"change this name, the name you choose will be displayed without translation "
+"and fixed in all languages unless you rebuild the plugins language file with "
+"Polylang and enter the translation of the chosen name. Also, if you want the "
+"chosen name to revert to the default name and be displayed translated in any "
+"language, reset settings once."
+msgstr ""
+"Se o seu site for multilíngue (usando o Polylang), lembre-se que ao alterar "
+"este nome, a alteração aparecerá sem tradução e fixa em todos os idiomas, a "
+"menos que você reconstrua o arquivo de idiomas do plugin com o Polylang e "
+"insira a tradução do nome escolhido. Além disso, se desejar que o nome "
+"escolhido volte ao padrão e seja exibido traduzido em qualquer idioma, basta "
+"redefinir as Opções."
+
+#: assets/admin/admin-theme.php:81
+msgid "Enable or Disable GDPR Notice:"
+msgstr "Ativar ou Desativar Aviso de GDPR:"
+
+#: assets/admin/admin-theme.php:90
+msgid "Developed by label:"
+msgstr "Desenvolvido por:"
+
+#: assets/admin/admin-theme.php:93
+msgid "Enable \"Developed by\" label"
+msgstr "Exibir \"Desenvolvido por\""
+
+#: assets/admin/admin-theme.php:94
+msgid ""
+"Please turn the Developed by label on to support us and help the project "
+"move forward. "
+msgstr ""
+"Por favor, ative o rótulo \"Desenvolvido por\" para nos apoiar e ajudar o "
+"projeto a seguir em frente. "
+
+#: assets/admin/admin-theme.php:95
+msgid "You can also buy us a coffee on the"
+msgstr "Você também pode contribuir com a doação do valor de um cafezinho na"
+
+#: assets/admin/admin-theme.php:95
+msgid "Donation page."
+msgstr "Página de Doações."
+
+#: assets/admin/admin-theme.php:96
+msgid "Thanks for your supports. "
+msgstr "Obrigado pelo seu apoio. "
+
+#: assets/admin/admin-theme.php:123
+msgid ""
+"The Accessibility plugin provides a set of tools and features to create an "
+"easier and more inclusive user experience for users with various needs. You "
+"can enable or disable each of these features individually."
+msgstr ""
+"O plugin de Acessibilidade oferece um conjunto de ferramentas e recursos "
+"para criar uma experiência de usuário mais fácil e inclusiva para pessoas "
+"com diversas necessidades. Você pode ativar ou desativar cada um desses "
+"recursos individualmente."
+
+#: assets/admin/admin-theme.php:124
+msgid ""
+"To find out which plugin features are used to solve which accessibility "
+"issues for your site, you can refer to the "
+msgstr ""
+"Para descobrir quais recursos do plugin ajudam a resolver problemas "
+"específicos de acessibilidade do seu site, você pode consultar a "
+
+#: assets/admin/admin-theme.php:124 assets/admin/admin-theme.php:232
+msgid "Documentation."
+msgstr "Documentação."
+
+#: assets/admin/admin-theme.php:128
+msgid "Font Size Feature:"
+msgstr "Recurso de tamanho de fonte:"
+
+#: assets/admin/admin-theme.php:137
+msgid "Line Height Feature:"
+msgstr "Recurso de altura de linha:"
+
+#: assets/admin/admin-theme.php:146
+msgid "Letter Spacing Feature:"
+msgstr "Recurso de espaçamento entre letras:"
+
+#: assets/admin/admin-theme.php:155
+msgid "Dyslexia Mask Feature:"
+msgstr "Recurso de sobreposição para dislexia:"
+
+#: assets/admin/admin-theme.php:164
+msgid "Grayscale Page Feature:"
+msgstr "Recurso de página em tons de cinza:"
+
+#: assets/admin/admin-theme.php:173
+msgid "Contrast Feature:"
+msgstr "Recurso de Contraste:"
+
+#: assets/admin/admin-theme.php:182
+msgid "Negative Feature:"
+msgstr "Recurso de Negativo:"
+
+#: assets/admin/admin-theme.php:191
+msgid "Underlined Links Feature:"
+msgstr "Recurso de links sublinhados:"
+
+#: assets/admin/admin-theme.php:200
+msgid "Highlight Links Feature:"
+msgstr "Recurso de Destacar Links:"
+
+#: assets/admin/admin-theme.php:209
+msgid "Grayscale Images Feature:"
+msgstr "Recurso de imagens em tons de cinza:"
+
+#: assets/admin/admin-theme.php:218
+msgid "Black and white Feature:"
+msgstr "Recurso de Preto e branco:"
+
+#: assets/admin/admin-theme.php:231
+msgid "Style Settings"
+msgstr "Opções de estilo"
+
+#: assets/admin/admin-theme.php:232
+msgid ""
+"Customize the plugins appearance to match your taste and needs using the "
+"style settings. For more information on each appearance variable, refer to "
+"the"
+msgstr ""
+"Personalize a aparência dos plugins para combinar com seu gosto e "
+"necessidades usando as Opções de estilo. Para obter mais informações sobre "
+"cada variável de aparência, consulte o"
+
+#: assets/admin/admin-theme.php:236
+msgid "Positionable by User:"
+msgstr "Posicionável pelo usuário:"
+
+#: assets/admin/admin-theme.php:244
+msgid ""
+"Enabling this option allows users to freely move the accessibility plugin "
+"around the page on desktop devices. Please note that this feature is not "
+"available on mobile devices."
+msgstr ""
+"Ativar esta opção permite que os usuários movam livremente o plugin de "
+"acessibilidade pela página em dispositivos desktop. Observe que este recurso "
+"não está disponível em dispositivos móveis."
+
+#: assets/admin/admin-theme.php:248
+msgid "Plugin Position:"
+msgstr "Posição do Plugin:"
+
+#: assets/admin/admin-theme.php:253
+msgid "Bottom Left Corner"
+msgstr "Canto inferior esquerdo"
+
+#: assets/admin/admin-theme.php:254
+msgid "Bottom Right Corner"
+msgstr "Canto inferior direito"
+
+#: assets/admin/admin-theme.php:255
+msgid "Top Left Corner"
+msgstr "Canto superior esquerdo"
+
+#: assets/admin/admin-theme.php:256
+msgid "Top Right Corner"
+msgstr "Canto superior direito"
+
+#: assets/admin/admin-theme.php:272
+msgid "Background Color: "
+msgstr "Cor de fundo: "
+
+#: assets/admin/admin-theme.php:275
+msgid "Background color of plugin and logo border."
+msgstr "Cor de fundo do plugin e borda da logo."
+
+#: assets/admin/admin-theme.php:279
+msgid "Labels Color: "
+msgstr "Cor das etiquetas: "
+
+#: assets/admin/admin-theme.php:282
+msgid "Color of the labels or name of each feature and Plugin name to."
+msgstr "Cor dos rótulos ou nomes de cada recurso e para o nome do plugin."
+
+#: assets/admin/admin-theme.php:286
+msgid "Divider Line Color: "
+msgstr "Cor da linha divisória: "
+
+#: assets/admin/admin-theme.php:289
+msgid "Color of plugin header & features section divider."
+msgstr "Cor do cabeçalho do plugin e divisor da seção de recursos."
+
+#: assets/admin/admin-theme.php:293
+msgid "Plugin Logo Color: "
+msgstr "Cor do logo do plugin: "
+
+#: assets/admin/admin-theme.php:296
+msgid "Color Scheme for Plugin Logo."
+msgstr "Esquema de cores para logotipo do plugin."
+
+#: assets/admin/admin-theme.php:300
+msgid "Accent Color: "
+msgstr "Cor de destaque: "
+
+#: assets/admin/admin-theme.php:304
+msgid "Color scheme for:"
+msgstr "Paleta de cores para:"
+
+#: assets/admin/admin-theme.php:306
+msgid "Active features and their toggle buttons on hover."
+msgstr "Recursos ativos e seus botões de ativação ao passar o mouse."
+
+#: assets/admin/admin-theme.php:307
+msgid "Dyslexia reading mask bars"
+msgstr "Máscara de leitura para dislexia com realces"
+
+#: assets/admin/admin-theme.php:313
+msgid "‌Buttons Color (Reset/Close):"
+msgstr "Cor dos botões (Reiniciar/Fechar):"
+
+#: assets/admin/admin-theme.php:317
+msgid "Buttons Hover Color (Reset/Close): "
+msgstr "Cor de Realce para Botões (Limpar/Fechar): "
+
+#: assets/admin/admin-theme.php:325
+msgid "Reset settings"
+msgstr "Restaurar Opções"
+
+#: assets/admin/admin-theme.php:345
+msgid "Accessibility Tools Version: "
+msgstr "Ferramentas de Acessibilidade Versão: "
+
+#: assets/admin/admin-theme.php:347
+msgid "Developed by"
+msgstr "Desenvolvido por"
+
+#. Plugin Name of the plugin/theme
+#: meacodes-accessibility-tools.php:76
+msgid "Meacodes Accessibility Tools"
+msgstr "Plugin de Acessibilidade Meacodes"
+
+#: meacodes-accessibility-tools.php:77
+msgid "Mea Accessibility"
+msgstr "Acessibilidade Mea"
+
+#: meacodes-accessibility-tools.php:86 meacodes-accessibility-tools.php:87
+msgid "Settings"
+msgstr "Opções"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.meacodes.com/accessibility"
+msgstr "https://www.meacodes.com/accessibility"
+
+#. Description of the plugin/theme
+msgid ""
+"This is an accessibility tools for people with disabilities to use the web "
+"easily."
+msgstr ""
+"Este é um plugin de acessibilidade para pessoas com deficiência usarem a web "
+"facilmente."
+
+#. Author of the plugin/theme
+msgid "Meacodes"
+msgstr "Meacodes"
+
+#. Author URI of the plugin/theme
+msgid "https://www.meacodes.com"
+msgstr "https://www.meacodes.com"
+
+#~ msgid "help section."
+#~ msgstr "seção de ajuda."
+
+#~ msgid "Meacodes Accessibility Tools Help"
+#~ msgstr "Ajuda para as Ferramentas de Acessibilidade Meacodes"
+
+#~ msgid "Introduction"
+#~ msgstr "Introdução"
+
+#~ msgid ""
+#~ "Welcome to the Meacodes Accessibility Tools! Elevate the accessibility of "
+#~ "your WordPress site effortlessly with a range of features designed for an "
+#~ "inclusive online experience."
+#~ msgstr ""
+#~ "Bem-vindo às Ferramentas de Acessibilidade Meacodes! Eleve a "
+#~ "acessibilidade do seu site WordPress sem esforço com uma variedade de "
+#~ "recursos projetados para uma experiência online inclusiva."
+
+#~ msgid ""
+#~ "Discover the powerful accessibility features that come with this plugin:"
+#~ msgstr ""
+#~ "Descubra os poderosos recursos de acessibilidade que vêm com este plugin:"
+
+#~ msgid "Font Customization"
+#~ msgstr "Personalização de fonte"
+
+#~ msgid "Modify the size of text for improved readability."
+#~ msgstr "Aumentar/Diminuir o tamanho do texto para melhor legibilidade."
+
+#~ msgid "Set the spacing between lines for enhanced legibility."
+#~ msgstr "Aumentar o espaçamento entre linhas para melhorar a legibilidade."
+
+#~ msgid "Customize letter spacing for optimal text clarity."
+#~ msgstr "Ajustar espaçamento entre letras para melhor clareza do texto."
+
+#~ msgid "Dyslexia-Friendly Options"
+#~ msgstr "Opções amigáveis para dislexia"
+
+#~ msgid "Apply a mask to minimize visual distractions."
+#~ msgstr "Ativar sobreposição para minimizar distrações visuais."
+
+#~ msgid "Visual Adjustments"
+#~ msgstr "Ajustes visuais"
+
+#~ msgid "Convert the page to grayscale for a simplified look."
+#~ msgstr ""
+#~ "Converter a página para tons de cinza para uma visualização simplificada."
+
+#~ msgid "Increase the contrast for better visibility."
+#~ msgstr "Aumentar o contraste para melhor visualização."
+
+#~ msgid "Invert colors for a unique viewing experience."
+#~ msgstr "Inverter cores para uma experiência de visualização única."
+
+#~ msgid "Link Styling"
+#~ msgstr "Estilo de link"
+
+#~ msgid "Add underlines to links for clarity."
+#~ msgstr "Adicionar sublinhamento aos links para melhorar a clareza."
+
+#~ msgid "Emphasize links to draw attention."
+#~ msgstr "Use links chamativos para atrair a atenção."
+
+#~ msgid "Image Presentation"
+#~ msgstr "Apresentação de imagem"
+
+#~ msgid "Convert images to grayscale."
+#~ msgstr "Converter imagens para tons de cinza."
+
+#~ msgid "Black and White Page"
+#~ msgstr "Página em preto e branco"
+
+#~ msgid "Transform the entire page to black and white."
+#~ msgstr "Converter toda a página para tons de cinza."
+
+#~ msgid "Enhance the reading experience for users with dyslexia:"
+#~ msgstr "Aprimorar a experiência de leitura para usuários com dislexia:"
+
+#~ msgid "How to Use"
+#~ msgstr "Como usar"
+
+#~ msgid ""
+#~ "Unlock the full potential of the Accessibility Plugin in just a few "
+#~ "simple steps:"
+#~ msgstr ""
+#~ "Libere todo o potencial do Plugin de Acessibilidade em apenas alguns "
+#~ "passos fáceis:"
+
+#~ msgid "Navigate to the "
+#~ msgstr "Acesse o menu "
+
+#~ msgid "menu in your WordPress dashboard."
+#~ msgstr "no seu painel do WordPress."
+
+#~ msgid "Click on"
+#~ msgstr "Clique em"
+
+#~ msgid "to access the settings page."
+#~ msgstr "para acessar a página de Opções."
+
+#~ msgid ""
+#~ "Explore each feature and customize settings according to your preferences."
+#~ msgstr ""
+#~ "Explore cada recurso e personalize as Opções de acordo com suas "
+#~ "preferências."
+
+#~ msgid "And click on "
+#~ msgstr "E clique em "
+
+#~ msgid "Save Changes."
+#~ msgstr "Guardar alterações."
+
+#~ msgid "Need Further Assistance?"
+#~ msgstr "Precisa de mais ajuda?"
+
+#~ msgid ""
+#~ "A blue question mark icon ( ? ) is placed next to the settings sections "
+#~ "that need further clarification. By hovering your mouse over it, more "
+#~ "detailed instructions will be displayed to help you understand the "
+#~ "settings better."
+#~ msgstr ""
+#~ "Um ponto de interrogação azul ( ?) é colocado ao lado das seções de "
+#~ "Opções que precisam de mais esclarecimentos. Ao passar o mouse sobre ele, "
+#~ "serão exibidas instruções mais detalhadas para ajudá-lo a entender melhor "
+#~ "as Opções."
+
+#~ msgid "Translation Notice"
+#~ msgstr "Aviso de Tradução"
+
+#~ msgid ""
+#~ "We strive to provide accurate translations for our plugin in multiple "
+#~ "languages. However, due to the automated nature of the translation "
+#~ "process, there may be instances of inaccuracies or errors in certain "
+#~ "translations."
+#~ msgstr ""
+#~ "Buscamos fornecer traduções precisas para o nosso plugin em vários "
+#~ "idiomas. No entanto, devido à natureza automatizada do processo de "
+#~ "tradução, pode haver imprecisões ou erros em algumas traduções."
+
+#~ msgid ""
+#~ "Your feedback and contributions play a crucial role in improving "
+#~ "translation quality and ensuring a better user experience for everyone. "
+#~ "If you encounter any incorrect translations or have suggestions for "
+#~ "improvement, we encourage you to get involved:"
+#~ msgstr ""
+#~ "Seu feedback e contribuições desempenham um papel crucial na melhoria da "
+#~ "qualidade da tradução e na garantia de uma melhor experiência do usuário "
+#~ "para todos. Se você encontrar alguma tradução incorreta ou tiver "
+#~ "sugestões de melhoria, encorajamo-o a se envolver:"
+
+#~ msgid "Report any translation issues or inaccuracies you encounter."
+#~ msgstr ""
+#~ "Reporte qualquer problema de tradução ou imprecisão que você encontrar."
+
+#~ msgid ""
+#~ "Contribute your own translations or corrections to help enhance the "
+#~ "overall quality."
+#~ msgstr ""
+#~ "Contribua com suas próprias traduções ou correções para ajudar a melhorar "
+#~ "a qualidade geral."
+
+#~ msgid ""
+#~ "Your participation not only benefits you but also the entire community of "
+#~ "users who speak the same language."
+#~ msgstr ""
+#~ "A sua participação beneficia não só a si, mas também a toda a comunidade "
+#~ "de usuários que falam o mesmo idioma."
+
+#~ msgid ""
+#~ "Thank you for helping us improve! You can send your .po files to us by "
+#~ "use this email:"
+#~ msgstr ""
+#~ "Obrigado por nos ajudar a melhorar! Você pode nos enviar seus arquivos ."
+#~ "po para este e-mail:"
+
+#~ msgid ""
+#~ "With your support, we can make the online world more inclusive for "
+#~ "everyone."
+#~ msgstr ""
+#~ "Com o seu apoio, podemos tornar o mundo online mais inclusivo para todos."
+
+#~ msgid ""
+#~ "The Accessibility Plugin aims to create an easier and more inclusive "
+#~ "online experience for everyone, especially users with disabilities. This "
+#~ "plugin is available for free to everyone so that no one is deprived of "
+#~ "its benefits."
+#~ msgstr ""
+#~ "O Plugin de Acessibilidade tem como objetivo criar uma experiência online "
+#~ "mais fácil e inclusiva para todos, especialmente usuários com "
+#~ "deficiências. Este plugin está disponível gratuitamente para todos, para "
+#~ "que ninguém fique privado de seus benefícios."
+
+#~ msgid "By donating, you can help us:"
+#~ msgstr "Com a sua doação, você pode nos ajudar:"
+
+#~ msgid "Improve and develop the plugin: "
+#~ msgstr "Aprimorar e desenvolver o plugin: "
+
+#~ msgid ""
+#~ "With your donations, we can add new features to the plugin and improve "
+#~ "its performance"
+#~ msgstr ""
+#~ "Com a sua doação, podemos adicionar novos recursos ao plugin e melhorar o "
+#~ "seu desempenho"
+
+#~ msgid "Support and troubleshooting: "
+#~ msgstr "Suporte e resolução de problemas: "
+
+#~ msgid ""
+#~ "With your support, we can continuously help users solve their problems "
+#~ "and fix any bugs in the plugin"
+#~ msgstr ""
+#~ "Com o seu apoio, podemos ajudar continuamente os usuários a resolver seus "
+#~ "problemas e corrigir quaisquer bugs no plugin"
+
+#~ msgid "Awareness and education: "
+#~ msgstr "Conscientização e educação: "
+
+#~ msgid ""
+#~ "With your donations, we can raise awareness about web accessibility and "
+#~ "provide the necessary training"
+#~ msgstr ""
+#~ "Com suas doações, podemos conscientizar sobre acessibilidade web e "
+#~ "fornecer os treinamentos necessários"
+
+#~ msgid "Any amount, no matter how small, can help us along the way."
+#~ msgstr ""
+#~ "Qualquer quantia, por menor que seja, pode nos ajudar a seguir em frente."
+
+#~ msgid "donate us via Trust Wallet"
+#~ msgstr "doe para nós pela Trust Wallet"
+
+#~ msgid "Your supports in Bitcoin is highly appreciated "
+#~ msgstr "Seu apoio em Bitcoin é muito apreciado "
+
+#~ msgid "Contribute using USDT for a seamless donation process "
+#~ msgstr "Contribua usando USDT para um processo de doação simplificado "
+
+#~ msgid ""
+#~ "Your generosity in USDC is valuable to us. Thank you for supporting web "
+#~ "accessibility! "
+#~ msgstr ""
+#~ "Sua generosidade em USDC é valiosa para nós. Obrigado por apoiar a "
+#~ "acessibilidade web! "
+
+#~ msgid "donate us with Stripe"
+#~ msgstr "doe para nós com o Stripe"
+
+#~ msgid ""
+#~ "Support us securely through Stripe. Every contribution makes a positive "
+#~ "impact! "
+#~ msgstr ""
+#~ "Apoie-nos com segurança pelo Stripe. Toda contribuição faz a diferença! "
+
+#~ msgid "Help"
+#~ msgstr "Ajuda"
+
+#~ msgid ""
+#~ "If you encounter any issues or have questions, our support team is here "
+#~ "to help. Reach out at:"
+#~ msgstr ""
+#~ "Se você enfrentar algum problema ou tiver dúvidas, nossa equipe de "
+#~ "suporte está aqui para ajudar. Entre em contato através de:"
+
+#~ msgid "Customer support service via live chat on meacodes website."
+#~ msgstr ""
+#~ "Serviço de atendimento ao cliente via chat ao vivo no site da meacodes."
