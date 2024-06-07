@@ -3,7 +3,7 @@
 Plugin Name: Meacodes Accessibility Tools
 Plugin URI: https://www.meacodes.com/accessibility
 Description:This is an accessibility tools for people with disabilities to use the web easily.
-Version: 1.0.2
+Version: 1.0.3
 Author: Meacodes
 Author URI: https://www.meacodes.com
 License: GPLv2 or later
