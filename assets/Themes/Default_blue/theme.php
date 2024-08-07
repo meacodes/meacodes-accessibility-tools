@@ -135,7 +135,7 @@
             <div class="meaAccessibility_modal" style="font-size: 1rem !important; line-height: 1.2 !important; letter-spacing: normal !important;">           
               <div class="meaAccessibility_modal-content" style="font-size: 1rem !important; line-height: 1.2 !important; letter-spacing: normal !important; margin-top:15px !important;">
                 <span class="meaAccessibility_close" style="font-size: 1rem !important; line-height: 1.2 !important; letter-spacing: normal !important;">&times;</span>
-                <h6 style="font-size: 1rem !important; line-height: 0.1 !important; letter-spacing: normal !important; font-weight: bold;"><?php esc_html_e('GDPR Notice:', 'meacodes-accessibility-tools'); ?></h6>
+                <h6 style="font-size: 1rem !important; line-height: 2 !important; letter-spacing: normal !important; font-weight: bold;"><?php esc_html_e('GDPR Notice:', 'meacodes-accessibility-tools'); ?></h6>
                 <p style="font-size: 1rem !important; line-height: 1.2 !important; letter-spacing: normal !important;"><?php esc_html_e('This plugin uses cookies to enhance your experience and provide personalized accessibility settings. These cookies are stored in your browser and allow us to remember your preferences for font size, color schemes, and other accessibility features. By using this plugin, you consent to the use of cookies for these purposes. You can delete or block cookies in your browser settings at any time. Please note that doing so may affect your experience on the site.', 'meacodes-accessibility-tools'); ?></p>
               </div>
             </div>
