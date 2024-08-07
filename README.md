@@ -93,3 +93,6 @@ We truly appreciate any contribution you can make.
 * Add (Support and Changelog) links.
 * Update some (links) in admin panel.
 * Improve (add margin and border-radius to Highlighted links) tools box UI.
+
+= 1.0.4 =
+* JavaScript Code Refactor (Refactored and improved the JavaScript code for better modularization, event handling, and cookie management.)
