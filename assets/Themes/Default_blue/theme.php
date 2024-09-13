@@ -7,7 +7,7 @@
     <div id="meacodes_accessibility_module">
       <div id="Dragit_meac" class="meaAccessibility_widget meaAccessibility_mainbg-admin  meaAccessibility_iconSizeS meaAccessibility_widgetBottomLeft meaAccessibility_widgetBottomRightSM meaCodesAccessibilityModule" style="display:none">
         <div id="meaAccessibility_widgetHeader_line" class="meaAccessibility_widgetHeader meaAccessibility_enable_border <?php echo get_option('meaAccessibility_enable_movable_plugin') ? 'meaAccessibility_dragable-box' : ''; ?>" style="font-size: 18px !important; line-height: 1.2 !important; letter-spacing: normal !important;" <?php echo get_option('meaAccessibility_enable_movable_plugin') ? 'title="' . esc_attr__('Drag and move the accessibility box', 'meacodes-accessibility-tools') . '"' : ''; ?>>
-          <div id="meaAccessibility_tooltip" class="tooltip">
+          <div id="meaAccessibility_tooltip">
           <button type="button" class="meaAccessibility_propertiesToggle" aria-expanded="false" aria-controls="meaAccessibility_properties" title="<?php echo esc_attr__('Open/Close Accessibility Options', 'meacodes-accessibility-tools'); ?>"></button>
           </div>          
           <legend class="meaAccessibility_accessibility-text" style="font-size: 18px !important; margin-top: 10px !important; line-height: 1.2 !important; letter-spacing: normal !important;"> <?php if ($meaAccessibility_accessibilityButtonText === 'Accessibility') { esc_html_e('Accessibility', 'meacodes-accessibility-tools'); } else { echo esc_html($meaAccessibility_accessibilityButtonText); } ?></legend>
