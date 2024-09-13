@@ -96,3 +96,8 @@ We truly appreciate any contribution you can make.
 
 = 1.0.4 =
 * JavaScript Code Refactor (Refactored and improved the JavaScript code for better modularization, event handling, and cookie management.)
+
+= 1.0.5 =
+* Fixed UI conflicts with Elementor when using the plugin on pages designed with the Elementor page builder.
+* Ensured better compatibility for frontend styling and layout to avoid overlapping or breaking elements.
+* Minor improvements to CSS handling to maintain consistency across different themes.
