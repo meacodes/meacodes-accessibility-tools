@@ -271,3 +271,8 @@ html.meaAccessibility_negativ .meaAccessibility_widget .meaAccessibility_propert
 .meaAccessibility_properties::-webkit-scrollbar-thumb {
     background-color: silver;
 }
+
+.meaAccessibility_rbSlider label::before,
+.meaAccessibility_rbSlider label::after {
+    content: none !important;
+}
