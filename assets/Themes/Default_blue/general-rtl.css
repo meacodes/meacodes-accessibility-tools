@@ -325,6 +325,7 @@
 .meaAccessibility_widget.meaAccessibility_widgetOpen .meaAccessibility_properties {
     -webkit-transform: scale(1);
     transform: scale(1);
+    overflow: hidden;
 }
 
 .meaAccessibility_widget .meaAccessibility_propertiesToggle:focus-visible,
@@ -697,6 +698,7 @@
     border: solid 2px #cacaca !important;
     border-radius: 50%;
     background-color: #fff;
+    opacity: 1 !important;
 }
 
 body.meaAccessibility_blackAndWhite *:not(.ripple-container, .meaAccessibility_label, .meaAccessibility_switchBox, .mea_fieldButton, .top-adhd-box, .bottom-adhd-box) {
