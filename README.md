@@ -101,3 +101,6 @@ We truly appreciate any contribution you can make.
 * Fixed UI conflicts with Elementor when using the plugin on pages designed with the Elementor page builder.
 * Ensured better compatibility for frontend styling and layout to avoid overlapping or breaking elements.
 * Minor improvements to CSS handling to maintain consistency across different themes.
+
+= 1.0.6 =
+* Added conditional checks to prevent JavaScript errors on pages where `gdprNoticeLink` and other related elements are missing.
