@@ -10,16 +10,32 @@ jQuery(document).ready(function(e) {
                     });
                 }
                 o.on("keydown", function(e) {
-                        27 === e.keyCode && o.hasClass("meaAccessibility_widgetOpen") && (o.removeClass("meaAccessibility_widgetOpen"), "custom" === n && o.addClass("meaAccessibility_widgetHidden"));
+                        27 === e.keyCode && o.hasClass("meaAccessibility_widgetOpen") && (o.removeClass("meaAccessibility_widgetOpen"), o.css("display", "none"), "custom" === n && o.addClass("meaAccessibility_widgetHidden"));
                     }),
                     e(".meaAccessibility_propertiesToggle", o).click(function() {
                         o.toggleClass("meaAccessibility_widgetOpen"), "custom" === n && (o.hasClass("meaAccessibility_widgetOpen") ? o.removeClass("meaAccessibility_widgetHidden") : o.addClass("meaAccessibility_widgetHidden"));
                     }),
                     e(".meaAccessibility_closeWidget", o).click(function() {
-                        o.removeClass("meaAccessibility_widgetOpen"), "custom" === n && o.addClass("meaAccessibility_widgetHidden");
+                        o.removeClass("meaAccessibility_widgetOpen");
+                        o.css("display", "none");
+                        "custom" === n && o.addClass("meaAccessibility_widgetHidden");
                     }),
                     e(".openmeaAcccessibilityWidget").click(function() {
                         return o.toggleClass("meaAccessibility_widgetOpen"), "custom" === n && (o.hasClass("meaAccessibility_widgetOpen") ? o.removeClass("meaAccessibility_widgetHidden") : o.addClass("meaAccessibility_widgetHidden")), !1;
+                    });
+                    
+                    // Handle external button click
+                    e("#meaAccessibility_externalToggle").click(function() {
+                        if (o.hasClass("meaAccessibility_widgetOpen")) {
+                            o.removeClass("meaAccessibility_widgetOpen");
+                            o.css("display", "none");
+                            "custom" === n && o.addClass("meaAccessibility_widgetHidden");
+                        } else {
+                            o.css("display", "block");
+                            o.addClass("meaAccessibility_widgetOpen");
+                            "custom" === n && o.removeClass("meaAccessibility_widgetHidden");
+                        }
+                        return false;
                     });
                 var d = localStorage.getItem("meaAcM__fontSize");
 
@@ -237,7 +253,7 @@ jQuery(document).ready(function(e) {
             window.innerHeight;
             var a = meaParams.selectedPosition;
             e(".meaCodesAccessibilityModule").removeClass("meaAccessibility_widgetBottomLeft meaAccessibility_widgetBottomRight meaAccessibility_widgetTopLeft meaAccessibility_widgetTopRight").addClass(a),
-                e(".meaCodesAccessibilityModule").show(),
+                e(".meaCodesAccessibilityModule").hide(), // Start hidden
                 "function" == typeof e.fn.meaCodesAccessibilityModule &&
                 e(".openmeaAcccessibilityWidget").on("click", function() {
                     e(".meaCodesAccessibilityModule").meaCodesAccessibilityModule("cookie", "0", "477", "4103"), e(".meaCodesAccessibilityModule").addClass("meaAccessibility_widgetOpen");
@@ -262,32 +278,32 @@ jQuery(document).ready(function(e) {
         const gdprNoticeModal = document.getElementById("gdprNoticeModal");
         const closeModalButton = document.querySelector(".meaAccessibility_close");
         const modalContent = document.querySelector(".meaAccessibility_modal-content");
-
+    
         if (gdprNoticeLink && gdprNoticeModal && closeModalButton && modalContent) {
             // Open modal and add 'active' class to gdprNoticeLink
             gdprNoticeLink.addEventListener("click", function() {
                 gdprNoticeModal.style.display = "block";
                 gdprNoticeLink.classList.add("active");
             });
-
+    
             // Close modal and remove 'active' class from gdprNoticeLink
             closeModalButton.addEventListener("click", function() {
                 gdprNoticeModal.style.display = "none";
                 gdprNoticeLink.classList.remove("active");
             });
-
+    
             // Close modal if clicking outside modal content
             gdprNoticeModal.addEventListener("click", function() {
                 gdprNoticeModal.style.display = "none";
                 gdprNoticeLink.classList.remove("active");
             });
-
+    
             // Prevent click events inside modal content from closing modal
             modalContent.addEventListener("click", function(e) {
                 e.stopPropagation();
             });
         }
-    }),
+    }),    
     jQuery(document).ready(function(e) {
         e(document).on("mousemove", function(a) {
             var t = a.clientY;

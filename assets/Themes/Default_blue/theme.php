@@ -1,19 +1,33 @@
 <?php 
   function meaAccessibility_main_thm() {
     $meaAccessibility_accessibilityButtonText = sanitize_text_field(get_option('meaAccessibility_header_text', __('Accessibility', 'meacodes-accessibility-tools')));
-    $meaAccessibility_GDPR = esc_url(plugins_url('/Default_blue/img/GDPR_ready.png', dirname(__FILE__)));
+    $meaAccessibility_labels_color = get_option('meaAccessibility_labels_color', '#373737');
     ?>
     <?php if (get_option('meaAccessibility_status_plugin', true)) : ?>
     <div id="meacodes_accessibility_module">
-      <div id="Dragit_meac" class="meaAccessibility_widget meaAccessibility_mainbg-admin  meaAccessibility_iconSizeS meaAccessibility_widgetBottomLeft meaAccessibility_widgetBottomRightSM meaCodesAccessibilityModule" style="display:none">
+      <!-- New External Button -->
+      <?php 
+      $button_size = get_option('meaAccessibility_button_size', 50);
+      $button_border_radius = get_option('meaAccessibility_button_border_radius', 30);
+      $button_margin = get_option('meaAccessibility_button_margin', 20);
+      $button_icon_size = get_option('meaAccessibility_button_icon_size', 35);
+      $selected_position = get_option('meaAccessibility_selected_position', 'meaAccessibility_widgetBottomLeft');
+      $plugin_logo_color = get_option('meaAccessibility_plugin_logo_color', '#3ABDDD');
+      ?>
+      <button type="button" id="meaAccessibility_externalToggle" class="meaAccessibility_externalToggle <?php echo esc_attr($selected_position); ?>" aria-expanded="false" aria-controls="meaAccessibility_properties" title="<?php echo esc_attr__('Open/Close Accessibility Options', 'meacodes-accessibility-tools'); ?>" style="width: <?php echo esc_attr($button_size); ?>px; height: <?php echo esc_attr($button_size); ?>px; border-radius: <?php echo esc_attr($button_border_radius); ?>%; margin: <?php echo esc_attr($button_margin); ?>px; background-color: <?php echo esc_attr($plugin_logo_color); ?>;">
+        <img src="<?php echo esc_url(plugins_url('/Default_blue/img/accessibility_icon.svg', dirname(__FILE__))); ?>" alt="<?php esc_attr_e('Accessibility', 'meacodes-accessibility-tools'); ?>" class="meaAccessibility_icon" style="width: <?php echo esc_attr($button_icon_size); ?>px; height: <?php echo esc_attr($button_icon_size); ?>px;">
+      </button>
+      
+      <div id="Dragit_meac" class="meaAccessibility_widget meaAccessibility_mainbg-admin  meaAccessibility_iconSizeS meaAccessibility_widgetBottomLeft meaAccessibility_widgetBottomRightSM meaCodesAccessibilityModule" style="display:none !important;">
         <div id="meaAccessibility_widgetHeader_line" class="meaAccessibility_widgetHeader meaAccessibility_enable_border <?php echo get_option('meaAccessibility_enable_movable_plugin') ? 'meaAccessibility_dragable-box' : ''; ?>" style="font-size: 18px !important; line-height: 1.2 !important; letter-spacing: normal !important;" <?php echo get_option('meaAccessibility_enable_movable_plugin') ? 'title="' . esc_attr__('Drag and move the accessibility box', 'meacodes-accessibility-tools') . '"' : ''; ?>>
-          <div id="meaAccessibility_tooltip">
-          <button type="button" class="meaAccessibility_propertiesToggle" aria-expanded="false" aria-controls="meaAccessibility_properties" title="<?php echo esc_attr__('Open/Close Accessibility Options', 'meacodes-accessibility-tools'); ?>"></button>
-          </div>          
           <legend class="meaAccessibility_accessibility-text" style="font-size: 18px !important; margin-top: 10px !important; line-height: 1.2 !important; letter-spacing: normal !important;"> <?php if ($meaAccessibility_accessibilityButtonText === 'Accessibility') { esc_html_e('Accessibility', 'meacodes-accessibility-tools'); } else { echo esc_html($meaAccessibility_accessibilityButtonText); } ?></legend>
           <?php if (get_option('meaAccessibility_privacy_notice_Fe', true)) : ?>
           <div class="meaAccessibility_GDPR_link" style="font-size: 18px !important; line-height: 0 !important; letter-spacing: normal !important;">
-          <a href="#" id="gdprNoticeLink" class="meaAccessibility_GDPR_btn" title="<?php esc_html_e('Click to read GDPR Notice', 'meacodes-accessibility-tools'); ?>"><img src="<?php echo esc_attr($meaAccessibility_GDPR); ?>" alt=""></a>
+          <a href="#" id="gdprNoticeLink" class="meaAccessibility_GDPR_btn" title="<?php esc_html_e('Click to read GDPR Notice', 'meacodes-accessibility-tools'); ?>">
+            <svg class="meaAccessibility_gdpr_icon" style="fill: <?php echo esc_attr($meaAccessibility_labels_color); ?>;" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+            </svg>
+          </a>
           </div>
           <?php endif; ?>
         </div>
@@ -135,7 +149,7 @@
             <div class="meaAccessibility_modal" style="font-size: 1rem !important; line-height: 1.2 !important; letter-spacing: normal !important;">           
               <div class="meaAccessibility_modal-content" style="font-size: 1rem !important; line-height: 1.2 !important; letter-spacing: normal !important; margin-top:15px !important;">
                 <span class="meaAccessibility_close" style="font-size: 1rem !important; line-height: 1.2 !important; letter-spacing: normal !important;">&times;</span>
-                <h6 style="font-size: 1rem !important; line-height: 2 !important; letter-spacing: normal !important; font-weight: bold;"><?php esc_html_e('GDPR Notice:', 'meacodes-accessibility-tools'); ?></h6>
+                <h6 style="font-size: 1rem !important; line-height: 1 !important; margin: 0 !important; letter-spacing: normal !important; font-weight: bold;"><?php esc_html_e('GDPR Notice:', 'meacodes-accessibility-tools'); ?></h6>
                 <p style="font-size: 1rem !important; line-height: 1.2 !important; letter-spacing: normal !important;"><?php esc_html_e('This plugin uses cookies to enhance your experience and provide personalized accessibility settings. These cookies are stored in your browser and allow us to remember your preferences for font size, color schemes, and other accessibility features. By using this plugin, you consent to the use of cookies for these purposes. You can delete or block cookies in your browser settings at any time. Please note that doing so may affect your experience on the site.', 'meacodes-accessibility-tools'); ?></p>
               </div>
             </div>
@@ -147,7 +161,7 @@
             jQuery('html').addClass('');
             jQuery('.meaCodesAccessibilityModule').prependTo('body');
             jQuery(document).ready(function () {
-                jQuery('.meaCodesAccessibilityModule').show();
+                jQuery('.meaCodesAccessibilityModule').hide(); // Start hidden
                 jQuery('.meaCodesAccessibilityModule').meaCodesAccessibilityModule('cookie', '0', '477', '4103');
             });
           }else {

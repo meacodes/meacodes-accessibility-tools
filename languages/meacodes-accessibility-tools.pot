@@ -1,113 +1,113 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Meacodes Accessibility Tools\n"
-"POT-Creation-Date: 2024-06-07 06:53-0700\n"
+"POT-Creation-Date: 2025-10-14 12:04+0330\n"
 "PO-Revision-Date: 2024-06-07 06:53-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: meacodes-accessibility-tools.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: assets/Themes/Default_blue/theme.php:3
-#: assets/Themes/Default_blue/theme.php:13 assets/admin/admin-theme.php:67
+#: assets/Themes/Default_blue/theme.php:18
+#: assets/Themes/Default_blue/theme.php:23 assets/admin/admin-theme.php:93
 msgid "Accessibility"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:9
-msgid "Drag and move the accessibility box"
-msgstr ""
-
-#: assets/Themes/Default_blue/theme.php:11
+#: assets/Themes/Default_blue/theme.php:17
 msgid "Open/Close Accessibility Options"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:16
+#: assets/Themes/Default_blue/theme.php:22
+msgid "Drag and move the accessibility box"
+msgstr ""
+
+#: assets/Themes/Default_blue/theme.php:26
 msgid "Click to read GDPR Notice"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:23
+#: assets/Themes/Default_blue/theme.php:37
 msgid "Font Size"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:28
+#: assets/Themes/Default_blue/theme.php:42
 msgid "‌Normal"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:40
+#: assets/Themes/Default_blue/theme.php:54
 msgid "Line Height"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:43
-#: assets/Themes/Default_blue/theme.php:56
+#: assets/Themes/Default_blue/theme.php:57
+#: assets/Themes/Default_blue/theme.php:70
 msgid "Normal"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:53
+#: assets/Themes/Default_blue/theme.php:67
 msgid "Letter Spacing"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:68
+#: assets/Themes/Default_blue/theme.php:82
 msgid "Dyslexia Mask"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:76
+#: assets/Themes/Default_blue/theme.php:90
 msgid "Grayscale Page"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:84
+#: assets/Themes/Default_blue/theme.php:98
 msgid "Contrast"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:92
+#: assets/Themes/Default_blue/theme.php:106
 msgid "Negative"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:100
+#: assets/Themes/Default_blue/theme.php:114
 msgid "Underlined Links"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:108
+#: assets/Themes/Default_blue/theme.php:122
 msgid "Highlight Links"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:116
+#: assets/Themes/Default_blue/theme.php:130
 msgid "Grayscale Images"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:124
+#: assets/Themes/Default_blue/theme.php:138
 msgid "Black and white"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:130
+#: assets/Themes/Default_blue/theme.php:144
 msgid "Developed by "
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:132
+#: assets/Themes/Default_blue/theme.php:146
 msgid "Reset"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:133
+#: assets/Themes/Default_blue/theme.php:147
 msgid "Close"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:138
+#: assets/Themes/Default_blue/theme.php:152
 msgid "GDPR Notice:"
 msgstr ""
 
-#: assets/Themes/Default_blue/theme.php:139
+#: assets/Themes/Default_blue/theme.php:153
 msgid ""
 "This plugin uses cookies to enhance your experience and provide personalized "
 "accessibility settings. These cookies are stored in your browser and allow "
@@ -118,69 +118,65 @@ msgid ""
 "on the site."
 msgstr ""
 
-#: assets/admin/admin-theme.php:31
+#: assets/admin/admin-theme.php:47
 msgid "jQuery is not loaded!"
 msgstr ""
 
-#: assets/admin/admin-theme.php:37
+#: assets/admin/admin-theme.php:53
 msgid "General"
 msgstr ""
 
-#: assets/admin/admin-theme.php:38 assets/admin/admin-theme.php:122
+#: assets/admin/admin-theme.php:54 assets/admin/admin-theme.php:148
 msgid "Features"
 msgstr ""
 
-#: assets/admin/admin-theme.php:39
+#: assets/admin/admin-theme.php:55
 msgid "Style"
 msgstr ""
 
-#: assets/admin/admin-theme.php:40
-msgid "Documentation"
+#: assets/admin/admin-theme.php:63
+msgid "Airdrop Campaign Active!"
 msgstr ""
 
-#: assets/admin/admin-theme.php:41
-msgid "Support"
+#: assets/admin/admin-theme.php:64
+msgid "Join our exclusive airdrop and earn rewards. Limited time offer!"
 msgstr ""
 
-#: assets/admin/admin-theme.php:42
-msgid "Donation"
+#: assets/admin/admin-theme.php:67
+msgid "Join Now"
 msgstr ""
 
-#: assets/admin/admin-theme.php:43
-msgid "changelog"
-msgstr ""
-
-#: assets/admin/admin-theme.php:49
+#: assets/admin/admin-theme.php:75
 msgid "General Settings"
 msgstr ""
 
-#: assets/admin/admin-theme.php:56
+#: assets/admin/admin-theme.php:82
 msgid "Enable or Disable Meacodes Accessibility Tools:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:65
+#: assets/admin/admin-theme.php:91
 msgid "Plugin Name:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:69
+#: assets/admin/admin-theme.php:95
 msgid ""
 "This means that the plugin name is a default and automatic translation of "
 "the word Accessibility."
 msgstr ""
 
-#: assets/admin/admin-theme.php:72
+#: assets/admin/admin-theme.php:98
 msgid ""
 "This name will be displayed opposite the plugin icon in the header section "
 "when the accessibility plugin is opened by the user on your website."
 msgstr ""
 
-#: assets/admin/admin-theme.php:74
+#: assets/admin/admin-theme.php:100
 msgid ""
 "If you do not want any text to be displayed in that section, Clear default "
 "name and save changes."
 msgstr ""
 
-#: assets/admin/admin-theme.php:75
+#: assets/admin/admin-theme.php:101
 msgid ""
 "If your site is multilingual (using Polylang), keep in mind that if you "
 "change this name, the name you choose will be displayed without translation "
@@ -190,217 +186,333 @@ msgid ""
 "language, reset settings once."
 msgstr ""
 
-#: assets/admin/admin-theme.php:81
+#: assets/admin/admin-theme.php:107
 msgid "Enable or Disable GDPR Notice:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:90
+#: assets/admin/admin-theme.php:116
 msgid "Developed by label:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:93
+#: assets/admin/admin-theme.php:119
 msgid "Enable \"Developed by\" label"
 msgstr ""
 
-#: assets/admin/admin-theme.php:94
+#: assets/admin/admin-theme.php:120
 msgid ""
 "Please turn the Developed by label on to support us and help the project "
 "move forward. "
 msgstr ""
 
-#: assets/admin/admin-theme.php:95
+#: assets/admin/admin-theme.php:121
 msgid "You can also buy us a coffee on the"
 msgstr ""
 
-#: assets/admin/admin-theme.php:95
+#: assets/admin/admin-theme.php:121
 msgid "Donation page."
 msgstr ""
 
-#: assets/admin/admin-theme.php:96
+#: assets/admin/admin-theme.php:122
 msgid "Thanks for your supports. "
 msgstr ""
 
-#: assets/admin/admin-theme.php:123
+#: assets/admin/admin-theme.php:149
 msgid ""
 "The Accessibility plugin provides a set of tools and features to create an "
 "easier and more inclusive user experience for users with various needs. You "
 "can enable or disable each of these features individually."
 msgstr ""
 
-#: assets/admin/admin-theme.php:124
-msgid ""
-"To find out which plugin features are used to solve which accessibility "
-"issues for your site, you can refer to the "
-msgstr ""
-
-#: assets/admin/admin-theme.php:124 assets/admin/admin-theme.php:232
-msgid "Documentation."
-msgstr ""
-
-#: assets/admin/admin-theme.php:128
+#: assets/admin/admin-theme.php:153
 msgid "Font Size Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:137
+#: assets/admin/admin-theme.php:162
 msgid "Line Height Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:146
+#: assets/admin/admin-theme.php:171
 msgid "Letter Spacing Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:155
+#: assets/admin/admin-theme.php:180
 msgid "Dyslexia Mask Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:164
+#: assets/admin/admin-theme.php:189
 msgid "Grayscale Page Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:173
+#: assets/admin/admin-theme.php:198
 msgid "Contrast Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:182
+#: assets/admin/admin-theme.php:207
 msgid "Negative Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:191
+#: assets/admin/admin-theme.php:216
 msgid "Underlined Links Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:200
+#: assets/admin/admin-theme.php:225
 msgid "Highlight Links Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:209
+#: assets/admin/admin-theme.php:234
 msgid "Grayscale Images Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:218
+#: assets/admin/admin-theme.php:243
 msgid "Black and white Feature:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:231
+#: assets/admin/admin-theme.php:256
 msgid "Style Settings"
 msgstr ""
 
-#: assets/admin/admin-theme.php:232
+#: assets/admin/admin-theme.php:257
 msgid ""
 "Customize the plugins appearance to match your taste and needs using the "
-"style settings. For more information on each appearance variable, refer to "
-"the"
+"style settings."
 msgstr ""
 
-#: assets/admin/admin-theme.php:236
+#: assets/admin/admin-theme.php:261
+msgid "Plugin Button Size:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:268
+msgid "Plugin Button Border Radius:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:275
+msgid "Plugin Button Margin:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:282
+msgid "Plugin Button Icon Size:"
+msgstr ""
+
+#: assets/admin/admin-theme.php:289
 msgid "Positionable by User:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:244
+#: assets/admin/admin-theme.php:297
 msgid ""
 "Enabling this option allows users to freely move the accessibility plugin "
 "around the page on desktop devices. Please note that this feature is not "
 "available on mobile devices."
 msgstr ""
 
-#: assets/admin/admin-theme.php:248
+#: assets/admin/admin-theme.php:301
 msgid "Plugin Position:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:253
+#: assets/admin/admin-theme.php:306
 msgid "Bottom Left Corner"
 msgstr ""
 
-#: assets/admin/admin-theme.php:254
+#: assets/admin/admin-theme.php:307
 msgid "Bottom Right Corner"
 msgstr ""
 
-#: assets/admin/admin-theme.php:255
+#: assets/admin/admin-theme.php:308
 msgid "Top Left Corner"
 msgstr ""
 
-#: assets/admin/admin-theme.php:256
+#: assets/admin/admin-theme.php:309
 msgid "Top Right Corner"
 msgstr ""
 
-#: assets/admin/admin-theme.php:272
+#: assets/admin/admin-theme.php:325
 msgid "Background Color: "
 msgstr ""
 
-#: assets/admin/admin-theme.php:275
+#: assets/admin/admin-theme.php:328
 msgid "Background color of plugin and logo border."
 msgstr ""
 
-#: assets/admin/admin-theme.php:279
+#: assets/admin/admin-theme.php:332
 msgid "Labels Color: "
 msgstr ""
 
-#: assets/admin/admin-theme.php:282
+#: assets/admin/admin-theme.php:335
 msgid "Color of the labels or name of each feature and Plugin name to."
 msgstr ""
 
-#: assets/admin/admin-theme.php:286
+#: assets/admin/admin-theme.php:339
 msgid "Divider Line Color: "
 msgstr ""
 
-#: assets/admin/admin-theme.php:289
+#: assets/admin/admin-theme.php:342
 msgid "Color of plugin header & features section divider."
 msgstr ""
 
-#: assets/admin/admin-theme.php:293
-msgid "Plugin Logo Color: "
+#: assets/admin/admin-theme.php:346
+msgid "Plugin button Color: "
 msgstr ""
 
-#: assets/admin/admin-theme.php:296
+#: assets/admin/admin-theme.php:349
 msgid "Color Scheme for Plugin Logo."
 msgstr ""
 
-#: assets/admin/admin-theme.php:300
+#: assets/admin/admin-theme.php:353
 msgid "Accent Color: "
 msgstr ""
 
-#: assets/admin/admin-theme.php:304
+#: assets/admin/admin-theme.php:357
 msgid "Color scheme for:"
 msgstr ""
 
-#: assets/admin/admin-theme.php:306
+#: assets/admin/admin-theme.php:359
 msgid "Active features and their toggle buttons on hover."
 msgstr ""
 
-#: assets/admin/admin-theme.php:307
+#: assets/admin/admin-theme.php:360
 msgid "Dyslexia reading mask bars"
 msgstr ""
 
-#: assets/admin/admin-theme.php:313
+#: assets/admin/admin-theme.php:366
 msgid "‌Buttons Color (Reset/Close):"
 msgstr ""
 
-#: assets/admin/admin-theme.php:317
+#: assets/admin/admin-theme.php:370
 msgid "Buttons Hover Color (Reset/Close): "
 msgstr ""
 
-#: assets/admin/admin-theme.php:325
+#: assets/admin/admin-theme.php:378
 msgid "Reset settings"
 msgstr ""
 
-#: assets/admin/admin-theme.php:345
+#. Author of the plugin/theme
+#: assets/admin/admin-theme.php:407
+msgid "Meacodes Development Solutions"
+msgstr ""
+
+#: assets/admin/admin-theme.php:409
 msgid "Accessibility Tools Version: "
 msgstr ""
 
-#: assets/admin/admin-theme.php:347
-msgid "Developed by"
+#: includes/class-admin-banner.php:123
+msgid "Close banner"
+msgstr ""
+
+#: includes/class-admin-banner.php:128
+msgid "🎉 Congratulations!"
+msgstr ""
+
+#. translators: %s: Plugin name
+#: includes/class-admin-banner.php:133
+#, php-format
+msgid ""
+"Because you're using the %s plugin, you've earned an exclusive badge for a 3-"
+"month Pro Version 2 subscription — launching soon!"
+msgstr ""
+
+#: includes/class-admin-banner.php:139
+msgid "The upcoming version introduces advanced features like:"
+msgstr ""
+
+#: includes/class-admin-banner.php:143
+msgid "Modern Mobile First Responsive Design"
+msgstr ""
+
+#: includes/class-admin-banner.php:144
+msgid "Smart Site Search Engine"
+msgstr ""
+
+#: includes/class-admin-banner.php:147
+msgid "Professional Keyboard Navigation"
+msgstr ""
+
+#: includes/class-admin-banner.php:148
+msgid "Page Structure Overview"
+msgstr ""
+
+#: includes/class-admin-banner.php:151
+msgid "Smart Screen Reader Integration"
+msgstr ""
+
+#: includes/class-admin-banner.php:152
+msgid "Auto Translate – Seamless Multilingual Experience"
+msgstr ""
+
+#: includes/class-admin-banner.php:155
+msgid "Flexible Fonts — Google & Custom Options"
+msgstr ""
+
+#: includes/class-admin-banner.php:156
+msgid "Endless Customization"
+msgstr ""
+
+#: includes/class-admin-banner.php:159
+msgid "Fully Customizable Appearance & Theme Control"
+msgstr ""
+
+#: includes/class-admin-banner.php:160
+msgid "Effortless Dark & Light Mode Customization"
+msgstr ""
+
+#: includes/class-admin-banner.php:163
+msgid "Personalized Accessibility Profiles for Every User"
+msgstr ""
+
+#: includes/class-admin-banner.php:164
+msgid "Advanced Analytics & Accessibility Insights"
+msgstr ""
+
+#: includes/class-admin-banner.php:167
+msgid "Comprehensive WCAG 2.1 Issue Detection & Solutions"
+msgstr ""
+
+#: includes/class-admin-banner.php:168
+msgid "Complete Accessibility Issue Summary for Your Website"
+msgstr ""
+
+#: includes/class-admin-banner.php:171
+msgid "WordPress Performance & Security Score"
+msgstr ""
+
+#: includes/class-admin-banner.php:172
+msgid "Real-Time Website Performance Analysis"
+msgstr ""
+
+#: includes/class-admin-banner.php:177
+msgid ""
+"💎 Register your website now in our Airdrop Campaign to claim your exclusive "
+"rewards and upcoming discounts!"
+msgstr ""
+
+#: includes/class-admin-banner.php:182
+msgid "👉 Join Campaign at Meacodes.com"
+msgstr ""
+
+#: includes/class-admin-banner.php:188
+msgid "Meacodes Pro Badge"
+msgstr ""
+
+#: includes/class-admin-banner.php:202
+msgid "Security check failed"
+msgstr ""
+
+#: includes/class-admin-banner.php:207
+msgid "Insufficient permissions"
+msgstr ""
+
+#: includes/class-admin-banner.php:214
+msgid "Banner dismissed successfully"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-#: meacodes-accessibility-tools.php:76
+#: meacodes-accessibility-tools.php:81
 msgid "Meacodes Accessibility Tools"
 msgstr ""
 
-#: meacodes-accessibility-tools.php:77
+#: meacodes-accessibility-tools.php:82
 msgid "Mea Accessibility"
 msgstr ""
 
-#: meacodes-accessibility-tools.php:86 meacodes-accessibility-tools.php:87
+#: meacodes-accessibility-tools.php:91 meacodes-accessibility-tools.php:92
 msgid "Settings"
 msgstr ""
 
@@ -414,10 +526,17 @@ msgid ""
 "easily."
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "Meacodes"
-msgstr ""
-
 #. Author URI of the plugin/theme
 msgid "https://www.meacodes.com"
 msgstr ""
+#: assets/admin/admin-theme.php:72
+msgid "Attention"
+msgstr ""
+
+#: assets/admin/admin-theme.php:73
+msgid "We updated the plugin button logic to enable more customization. If after updating it does not work on your site, this is likely a cache issue. Please clear your server and browser cache, then refresh the page."
+msgstr ""
+#: includes/class-admin-banner.php:177
+msgid "💎 Register your website now in our Airdrop Campaign to claim your exclusive rewards and upcoming discounts!"
+msgstr ""
+

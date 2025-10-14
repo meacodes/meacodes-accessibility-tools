@@ -127,7 +127,7 @@ msgstr ""
 
 #: assets/admin/admin-theme.php:31
 msgid "jQuery is not loaded!"
-msgstr ""
+msgstr "jQuery não está carregado!"
 
 #: assets/admin/admin-theme.php:37
 msgid "General"
@@ -723,3 +723,114 @@ msgstr "https://www.meacodes.com"
 #~ msgid "Customer support service via live chat on meacodes website."
 #~ msgstr ""
 #~ "Serviço de atendimento ao cliente via chat ao vivo no site da meacodes."
+
+msgid "Advanced Analytics & Accessibility Insights"
+msgstr "Análises Avançadas e Insights de Acessibilidade"
+
+msgid "Airdrop Campaign Active!"
+msgstr "Campanha Airdrop Ativa!"
+
+msgid "Auto Translate – Seamless Multilingual Experience"
+msgstr "Tradução Automática – Experiência Multilíngue Perfeita"
+
+msgid "Banner dismissed successfully"
+msgstr "Banner rejeitado com sucesso"
+
+msgid "Close banner"
+msgstr "Fechar banner"
+
+msgid "Complete Accessibility Issue Summary for Your Website"
+msgstr "Resumo Completo de Problemas de Acessibilidade para o Seu Site"
+
+msgid "Comprehensive WCAG 2.1 Issue Detection & Solutions"
+msgstr "Deteção e Soluções Abrangentes de Problemas WCAG 2.1"
+
+msgid "Effortless Dark & Light Mode Customization"
+msgstr "Personalização de Modo Escuro e Claro Sem Esforço"
+
+msgid "Endless Customization"
+msgstr "Personalização Infinita"
+
+msgid "Flexible Fonts — Google & Custom Options"
+msgstr "Fontes Flexíveis — Opções Google e Personalizadas"
+
+msgid "Fully Customizable Appearance & Theme Control"
+msgstr "Aparência Totalmente Personalizável e Controlo de Tema"
+
+msgid "Insufficient permissions"
+msgstr "Permissões insuficientes"
+
+msgid "Join Now"
+msgstr "Juntar-se Agora"
+
+msgid "Join our exclusive airdrop and earn rewards. Limited time offer!"
+msgstr "Junte-se ao nosso airdrop exclusivo e ganhe recompensas. Oferta por tempo limitado!"
+
+msgid "Meacodes Development Solutions"
+msgstr "Soluções de Desenvolvimento Meacodes"
+
+msgid "Meacodes Pro Badge"
+msgstr "Insígnia Meacodes Pro"
+
+msgid "Modern Mobile First Responsive Design"
+msgstr "Design Responsivo Moderno Mobile First"
+
+msgid "Page Structure Overview"
+msgstr "Visão Geral da Estrutura da Página"
+
+msgid "Personalized Accessibility Profiles for Every User"
+msgstr "Perfis de Acessibilidade Personalizados para Cada Utilizador"
+
+msgid "Plugin Button Border Radius:"
+msgstr "Raio da Borda do Botão do Plugin:"
+
+msgid "Plugin Button Icon Size:"
+msgstr "Tamanho do Ícone do Botão do Plugin:"
+
+msgid "Plugin Button Margin:"
+msgstr "Margem do Botão do Plugin:"
+
+msgid "Plugin Button Size:"
+msgstr "Tamanho do Botão do Plugin:"
+
+msgid "Plugin button Color: "
+msgstr "Cor do Botão do Plugin: "
+
+msgid "Professional Keyboard Navigation"
+msgstr "Navegação por Teclado Profissional"
+
+msgid "Real-Time Website Performance Analysis"
+msgstr "Análise de Performance do Site em Tempo Real"
+
+msgid "Security check failed"
+msgstr "Verificação de segurança falhou"
+
+msgid "Smart Screen Reader Integration"
+msgstr "Integração Inteligente de Leitor de Ecrã"
+
+msgid "Smart Site Search Engine"
+msgstr "Motor de Pesquisa Inteligente do Site"
+
+msgid "The upcoming version introduces advanced features like:"
+msgstr "A próxima versão introduz funcionalidades avançadas como:"
+
+msgid "WordPress Performance & Security Score"
+msgstr "Pontuação de Performance e Segurança WordPress"
+
+msgid "🎉 Congratulations!"
+msgstr "🎉 Parabéns!"
+
+msgid "👉 Join Campaign at Meacodes.com"
+msgstr "👉 Juntar-se à Campanha em Meacodes.com"
+
+msgid "Attention"
+msgstr "Atenção"
+
+msgid "We updated the plugin button logic to enable more customization. If after updating it does not work on your site, this is likely a cache issue. Please clear your server and browser cache, then refresh the page."
+msgstr "Atualizámos a lógica do botão do plugin para permitir mais personalização. Se após a atualização não funcionar no seu site, isto é provavelmente um problema de cache. Por favor, limpe o cache do servidor e do navegador, depois atualize a página."
+
+msgid "💎 Register your website now in our Airdrop Campaign to claim your exclusive rewards and upcoming discounts!"
+msgstr "💎 Registe o seu site agora na nossa Campanha Airdrop para reclamar as suas recompensas exclusivas e descontos próximos!"
+
+msgid "Because you're using the %s plugin, you've earned an exclusive badge for a 3-month Pro Version 2 subscription — launching soon!"
+msgstr "Porque está a usar o plugin Ferramentas de Acessibilidade Meacodes, ganhou uma insígnia exclusiva para uma subscrição Pro Version 2 de 3 meses — em breve!"

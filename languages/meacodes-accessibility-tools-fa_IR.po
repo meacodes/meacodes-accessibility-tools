@@ -124,7 +124,7 @@ msgstr ""
 
 #: assets/admin/admin-theme.php:31
 msgid "jQuery is not loaded!"
-msgstr ""
+msgstr "jQuery بارگذاری نشده است!"
 
 #: assets/admin/admin-theme.php:37
 msgid "General"
@@ -432,7 +432,7 @@ msgstr "https://www.meacodes.com/accessibility"
 
 #. Description of the plugin/theme
 msgid "This is an accessibility tools for people with disabilities to use the web easily."
-msgstr ""
+msgstr "این ابزارهای دسترسی‌پذیری برای افراد دارای معلولیت برای استفاده آسان از وب است."
 "افزونه دسترس پذیری برای افرادی که به واسطه مشکلات بینایی و شناختی برای استفاده از دنیای "
 "وب دچار چالش های مختلفی هستند."
 
@@ -691,3 +691,114 @@ msgstr "https://www.meacodes.com"
 
 #~ msgid "Powered by"
 #~ msgstr "قدرت گرفته از"
+
+msgid "Advanced Analytics & Accessibility Insights"
+msgstr "تحلیل‌های پیشرفته و بینش‌های دسترسی‌پذیری"
+
+msgid "Airdrop Campaign Active!"
+msgstr "کمپین ایردراپ فعال است!"
+
+msgid "Auto Translate – Seamless Multilingual Experience"
+msgstr "ترجمه خودکار – تجربه چندزبانه بی‌درز"
+
+msgid "Banner dismissed successfully"
+msgstr "بنر با موفقیت رد شد"
+
+msgid "Close banner"
+msgstr "بستن بنر"
+
+msgid "Complete Accessibility Issue Summary for Your Website"
+msgstr "خلاصه کامل مسائل دسترسی‌پذیری برای وب‌سایت شما"
+
+msgid "Comprehensive WCAG 2.1 Issue Detection & Solutions"
+msgstr "تشخیص و راه‌حل‌های جامع مسائل WCAG 2.1"
+
+msgid "Effortless Dark & Light Mode Customization"
+msgstr "سفارشی‌سازی آسان حالت تاریک و روشن"
+
+msgid "Endless Customization"
+msgstr "سفارشی‌سازی بی‌پایان"
+
+msgid "Flexible Fonts — Google & Custom Options"
+msgstr "فونت‌های انعطاف‌پذیر — گزینه‌های Google و سفارشی"
+
+msgid "Fully Customizable Appearance & Theme Control"
+msgstr "ظاهر کاملاً قابل سفارشی‌سازی و کنترل تم"
+
+msgid "Insufficient permissions"
+msgstr "مجوزهای ناکافی"
+
+msgid "Join Now"
+msgstr "الان بپیوندید"
+
+msgid "Join our exclusive airdrop and earn rewards. Limited time offer!"
+msgstr "به ایردراپ انحصاری ما بپیوندید و پاداش کسب کنید. پیشنهاد محدود زمانی!"
+
+msgid "Meacodes Development Solutions"
+msgstr "راه‌حل‌های توسعه Meacodes"
+
+msgid "Meacodes Pro Badge"
+msgstr "نشان Meacodes Pro"
+
+msgid "Modern Mobile First Responsive Design"
+msgstr "طراحی ریسپانسیو مدرن Mobile First"
+
+msgid "Page Structure Overview"
+msgstr "نمای کلی ساختار صفحه"
+
+msgid "Personalized Accessibility Profiles for Every User"
+msgstr "پروفایل‌های دسترسی‌پذیری شخصی‌سازی شده برای هر کاربر"
+
+msgid "Plugin Button Border Radius:"
+msgstr "شعاع حاشیه دکمه افزونه:"
+
+msgid "Plugin Button Icon Size:"
+msgstr "اندازه آیکون دکمه افزونه:"
+
+msgid "Plugin Button Margin:"
+msgstr "حاشیه دکمه افزونه:"
+
+msgid "Plugin Button Size:"
+msgstr "اندازه دکمه افزونه:"
+
+msgid "Plugin button Color: "
+msgstr "رنگ دکمه افزونه: "
+
+msgid "Professional Keyboard Navigation"
+msgstr "ناوبری حرفه‌ای صفحه‌کلید"
+
+msgid "Real-Time Website Performance Analysis"
+msgstr "تحلیل عملکرد وب‌سایت در زمان واقعی"
+
+msgid "Security check failed"
+msgstr "بررسی امنیت ناموفق بود"
+
+msgid "Smart Screen Reader Integration"
+msgstr "یکپارچه‌سازی هوشمند صفحه‌خوان"
+
+msgid "Smart Site Search Engine"
+msgstr "موتور جستجوی هوشمند سایت"
+
+msgid "The upcoming version introduces advanced features like:"
+msgstr "نسخه آینده ویژگی‌های پیشرفته‌ای مانند:"
+
+msgid "WordPress Performance & Security Score"
+msgstr "امتیاز عملکرد و امنیت WordPress"
+
+msgid "🎉 Congratulations!"
+msgstr "🎉 تبریک!"
+
+msgid "👉 Join Campaign at Meacodes.com"
+msgstr "👉 به کمپین در Meacodes.com بپیوندید"
+
+msgid "Attention"
+msgstr "توجه"
+
+msgid "We updated the plugin button logic to enable more customization. If after updating it does not work on your site, this is likely a cache issue. Please clear your server and browser cache, then refresh the page."
+msgstr "منطق دکمه افزونه را برای امکان سفارشی‌سازی بیشتر به‌روزرسانی کردیم. اگر پس از به‌روزرسانی در سایت شما کار نمی‌کند، این احتمالاً مشکل کش است. لطفاً کش سرور و مرورگر خود را پاک کنید، سپس صفحه را تازه کنید."
+
+msgid "💎 Register your website now in our Airdrop Campaign to claim your exclusive rewards and upcoming discounts!"
+msgstr "💎 وب‌سایت خود را الان در کمپین ایردراپ ما ثبت کنید تا پاداش‌های انحصاری و تخفیف‌های آینده خود را دریافت کنید!"
+
+msgid "Because you're using the %s plugin, you've earned an exclusive badge for a 3-month Pro Version 2 subscription — launching soon!"
+msgstr "چون شما از افزونه ابزارهای دسترسی‌پذیری Meacodes استفاده می‌کنید، یک نشان انحصاری برای اشتراک Pro Version 2 سه ماهه کسب کرده‌اید — به زودی راه‌اندازی می‌شود!"

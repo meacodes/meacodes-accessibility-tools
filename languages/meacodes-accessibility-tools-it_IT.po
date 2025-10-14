@@ -128,7 +128,7 @@ msgstr ""
 
 #: assets/admin/admin-theme.php:31
 msgid "jQuery is not loaded!"
-msgstr ""
+msgstr "jQuery non è caricato!"
 
 #: assets/admin/admin-theme.php:37
 msgid "General"
@@ -373,7 +373,7 @@ msgstr "Colore etichette: "
 
 #: assets/admin/admin-theme.php:282
 msgid "Color of the labels or name of each feature and Plugin name to."
-msgstr ""
+msgstr "Colore delle etichette o nome di ogni funzionalità e nome del Plugin."
 "Colore delle etichette o nomi di ciascuna funzionalità e nome del plugin."
 
 #: assets/admin/admin-theme.php:286
@@ -382,7 +382,7 @@ msgstr "Colore Linea Divisoria: "
 
 #: assets/admin/admin-theme.php:289
 msgid "Color of plugin header & features section divider."
-msgstr ""
+msgstr "Colore del divisore della sezione header e funzionalità del plugin."
 "Colore dell'intestazione del plugin e del separatore della sezione "
 "funzionalità."
 
@@ -404,7 +404,7 @@ msgstr "Combinazione di colori per:"
 
 #: assets/admin/admin-theme.php:306
 msgid "Active features and their toggle buttons on hover."
-msgstr ""
+msgstr "Funzionalità attive e i loro pulsanti di commutazione al passaggio del mouse."
 "Funzioni attive e relativi pulsanti di attivazione/disattivazione al "
 "passaggio del mouse."
 
@@ -742,3 +742,114 @@ msgstr "https://www.meacodes.com"
 
 #~ msgid "Movable Plugin:"
 #~ msgstr "Plugin Posizionabile:"
+
+msgid "Advanced Analytics & Accessibility Insights"
+msgstr "Analisi Avanzate e Approfondimenti Accessibilità"
+
+msgid "Airdrop Campaign Active!"
+msgstr "Campagna Airdrop Attiva!"
+
+msgid "Auto Translate – Seamless Multilingual Experience"
+msgstr "Traduzione Automatica – Esperienza Multilingue Perfetta"
+
+msgid "Banner dismissed successfully"
+msgstr "Banner respinto con successo"
+
+msgid "Close banner"
+msgstr "Chiudi banner"
+
+msgid "Complete Accessibility Issue Summary for Your Website"
+msgstr "Riepilogo Completo Problemi Accessibilità per il Tuo Sito Web"
+
+msgid "Comprehensive WCAG 2.1 Issue Detection & Solutions"
+msgstr "Rilevamento e Soluzioni Complete Problemi WCAG 2.1"
+
+msgid "Effortless Dark & Light Mode Customization"
+msgstr "Personalizzazione Modalità Scura e Chiara Senza Sforzo"
+
+msgid "Endless Customization"
+msgstr "Personalizzazione Infinita"
+
+msgid "Flexible Fonts — Google & Custom Options"
+msgstr "Font Flessibili — Opzioni Google e Personalizzate"
+
+msgid "Fully Customizable Appearance & Theme Control"
+msgstr "Aspetto Completamente Personalizzabile e Controllo Tema"
+
+msgid "Insufficient permissions"
+msgstr "Permessi insufficienti"
+
+msgid "Join Now"
+msgstr "Unisciti Ora"
+
+msgid "Join our exclusive airdrop and earn rewards. Limited time offer!"
+msgstr "Unisciti al nostro airdrop esclusivo e guadagna ricompense. Offerta a tempo limitato!"
+
+msgid "Meacodes Development Solutions"
+msgstr "Soluzioni di Sviluppo Meacodes"
+
+msgid "Meacodes Pro Badge"
+msgstr "Badge Meacodes Pro"
+
+msgid "Modern Mobile First Responsive Design"
+msgstr "Design Responsive Moderno Mobile First"
+
+msgid "Page Structure Overview"
+msgstr "Panoramica Struttura Pagina"
+
+msgid "Personalized Accessibility Profiles for Every User"
+msgstr "Profili di Accessibilità Personalizzati per Ogni Utente"
+
+msgid "Plugin Button Border Radius:"
+msgstr "Raggio Bordo Pulsante Plugin:"
+
+msgid "Plugin Button Icon Size:"
+msgstr "Dimensione Icona Pulsante Plugin:"
+
+msgid "Plugin Button Margin:"
+msgstr "Margine Pulsante Plugin:"
+
+msgid "Plugin Button Size:"
+msgstr "Dimensione Pulsante Plugin:"
+
+msgid "Plugin button Color: "
+msgstr "Colore Pulsante Plugin: "
+
+msgid "Professional Keyboard Navigation"
+msgstr "Navigazione Tastiera Professionale"
+
+msgid "Real-Time Website Performance Analysis"
+msgstr "Analisi Performance Sito Web in Tempo Reale"
+
+msgid "Security check failed"
+msgstr "Controllo sicurezza fallito"
+
+msgid "Smart Screen Reader Integration"
+msgstr "Integrazione Intelligente Screen Reader"
+
+msgid "Smart Site Search Engine"
+msgstr "Motore di Ricerca Intelligente del Sito"
+
+msgid "The upcoming version introduces advanced features like:"
+msgstr "La prossima versione introduce funzionalità avanzate come:"
+
+msgid "WordPress Performance & Security Score"
+msgstr "Punteggio Performance e Sicurezza WordPress"
+
+msgid "🎉 Congratulations!"
+msgstr "🎉 Congratulazioni!"
+
+msgid "👉 Join Campaign at Meacodes.com"
+msgstr "👉 Unisciti alla Campagna su Meacodes.com"
+
+msgid "Attention"
+msgstr "Attenzione"
+
+msgid "We updated the plugin button logic to enable more customization. If after updating it does not work on your site, this is likely a cache issue. Please clear your server and browser cache, then refresh the page."
+msgstr "Abbiamo aggiornato la logica del pulsante del plugin per abilitare più personalizzazioni. Se dopo l'aggiornamento non funziona sul tuo sito, questo è probabilmente un problema di cache. Per favore, cancella la cache del server e del browser, poi aggiorna la pagina."
+
+msgid "💎 Register your website now in our Airdrop Campaign to claim your exclusive rewards and upcoming discounts!"
+msgstr "💎 Registra il tuo sito web ora nella nostra Campagna Airdrop per rivendicare le tue ricompense esclusive e sconti in arrivo!"
+
+msgid "Because you're using the %s plugin, you've earned an exclusive badge for a 3-month Pro Version 2 subscription — launching soon!"
+msgstr "Perché stai usando il plugin Strumenti di Accessibilità Meacodes, hai guadagnato un badge esclusivo per un abbonamento Pro Version 2 di 3 mesi — in arrivo presto!"

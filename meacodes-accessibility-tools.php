@@ -3,8 +3,8 @@
 Plugin Name: Meacodes Accessibility Tools
 Plugin URI: https://www.meacodes.com/accessibility
 Description:This is an accessibility tools for people with disabilities to use the web easily.
-Version: 1.0.6
-Author: Meacodes
+Version: 1.1.3
+Author: Meacodes Development Solutions
 Author URI: https://www.meacodes.com
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,12 @@ Text Domain: meacodes-accessibility-tools
 Domain Path: /languages
 */
 defined('ABSPATH') || exit;
-define('meaAccessibility_PLUGIN_VERSION', '1.0.6');
+define('meaAccessibility_PLUGIN_VERSION', '1.1.3');
+
+// Cache busting function for asset versioning
+function meaAccessibility_get_asset_version() {
+    return meaAccessibility_PLUGIN_VERSION;
+}
 register_activation_hook( __FILE__, 'meaAccessibility_activation_function' );
 // Set default options
 function meaAccessibility_activation_function() {
@@ -33,8 +38,8 @@ function meaAccessibility_activation_function() {
 // Enqueue necessary scripts and styles for the plugin
 function meaAccessibility_enqueue_plugin_assets() {
   wp_enqueue_script('jquery');
-  wp_enqueue_script('meaAccessibility_set-cookie-script', plugin_dir_url(__FILE__) . 'assets/js/meaAccessibility_setCookie_script.js', array(), '1.0', true);
-  wp_enqueue_script('meaAccessibilityModule', plugin_dir_url(__FILE__) . 'assets/js/meaAccessibilityModule.js', array('jquery'), '1.0', true);
+  wp_enqueue_script('meaAccessibility_set-cookie-script', plugin_dir_url(__FILE__) . 'assets/js/meaAccessibility_setCookie_script.js', array(), meaAccessibility_get_asset_version(), true);
+  wp_enqueue_script('meaAccessibilityModule', plugin_dir_url(__FILE__) . 'assets/js/meaAccessibilityModule.js', array('jquery'), meaAccessibility_get_asset_version(), true);
   $meaAccessibility_selected_position = sanitize_text_field(get_option('meaAccessibility_selected_position', 'meaAccessibility_widgetBottomLeft'));
   $ajax_nonce = wp_create_nonce('meaAccessibility_ajax_nonce');
   wp_localize_script('meaAccessibilityModule', 'meaParams', array(
@@ -56,15 +61,15 @@ function meaAccessibility_enqueue_plugin_assets() {
   $meaAccessibility_buttons_hover_color_Obj = esc_attr(get_option('meaAccessibility_buttons_hover_color', '#207f97'));
   global $meaAccessibility_buttons_color_Obj;
   $meaAccessibility_buttons_color_Obj = esc_attr(get_option('meaAccessibility_buttons_color', '#3ABDDD'));
-  wp_enqueue_style('themeCss', plugin_dir_url(__FILE__) . 'assets/Themes/Default_blue/theme.css', array(), meaAccessibility_PLUGIN_VERSION);
-  wp_enqueue_style('generalCss', plugin_dir_url(__FILE__) . 'assets/Themes/Default_blue/general.css', array(), meaAccessibility_PLUGIN_VERSION);
+  wp_enqueue_style('themeCss', plugin_dir_url(__FILE__) . 'assets/Themes/Default_blue/theme.css', array(), meaAccessibility_get_asset_version());
+  wp_enqueue_style('generalCss', plugin_dir_url(__FILE__) . 'assets/Themes/Default_blue/general.css', array(), meaAccessibility_get_asset_version());
   if (is_rtl()) {
-    wp_enqueue_style('general-rtl', plugin_dir_url(__FILE__) . 'assets/Themes/Default_blue/general-rtl.css', array(), meaAccessibility_PLUGIN_VERSION);
-    wp_enqueue_style('theme-rtl', plugin_dir_url(__FILE__) . 'assets/Themes/Default_blue/theme-rtl.css', array(), meaAccessibility_PLUGIN_VERSION);
+    wp_enqueue_style('general-rtl', plugin_dir_url(__FILE__) . 'assets/Themes/Default_blue/general-rtl.css', array(), meaAccessibility_get_asset_version());
+    wp_enqueue_style('theme-rtl', plugin_dir_url(__FILE__) . 'assets/Themes/Default_blue/theme-rtl.css', array(), meaAccessibility_get_asset_version());
   }
   $meaAccessibility_enable_movable_plugin = get_option('meaAccessibility_enable_movable_plugin', true);
     if ($meaAccessibility_enable_movable_plugin) {
-        wp_enqueue_script('dragElementScript', plugin_dir_url(__FILE__) . 'assets/js/drag_meaAc_plugin.js', array(), '1.0', true);
+        wp_enqueue_script('dragElementScript', plugin_dir_url(__FILE__) . 'assets/js/drag_meaAc_plugin.js', array(), meaAccessibility_get_asset_version(), true);
     }
 }
 add_action('plugins_loaded', 'meaAccessibility_load_textdomain');
@@ -91,13 +96,17 @@ add_submenu_page(
 }
 require_once(plugin_dir_path(__FILE__) . 'assets/Themes/Default_blue/theme.php');
 require_once plugin_dir_path(__FILE__) . 'assets/admin/admin-theme.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-admin-banner.php';
 function meaAccessibility_enqueue_admin_assets() {
-  wp_enqueue_style('mea-admin-styles', plugin_dir_url(__FILE__) . 'assets/admin/css/meacodes_acc_admin.css', array(), meaAccessibility_PLUGIN_VERSION);
+  wp_enqueue_style('mea-admin-styles', plugin_dir_url(__FILE__) . 'assets/admin/css/meacodes_acc_admin.css', array(), meaAccessibility_get_asset_version());
   if (is_rtl()) {
-    wp_enqueue_style('mea-admin-rtl-styles', plugin_dir_url(__FILE__) . 'assets/admin/css/meacodes_acc_admin-rtl.css', array(), meaAccessibility_PLUGIN_VERSION);
+    wp_enqueue_style('mea-admin-rtl-styles', plugin_dir_url(__FILE__) . 'assets/admin/css/meacodes_acc_admin-rtl.css', array(), meaAccessibility_get_asset_version());
   }
 }
 add_action('admin_enqueue_scripts', 'meaAccessibility_enqueue_admin_assets');
+
+// Initialize the admin banner
+new Meacodes_Admin_Banner();
 // Callback function to render plugin settings page
 function meaAccessibility_settings_page_callback() {
   ?><?php meaAccessibility_admin_thm(); ?><?php
@@ -111,6 +120,10 @@ function meaAccessibility_reset_settings_callback() {
   update_option('meaAccessibility_accent_color', '#3abddd');
   update_option('meaAccessibility_buttons_hover_color', '#207f97');
   update_option('meaAccessibility_buttons_color', '#3ABDDD');
+  update_option('meaAccessibility_button_size', 50);
+  update_option('meaAccessibility_button_border_radius', 30);
+  update_option('meaAccessibility_button_margin', 20);
+  update_option('meaAccessibility_button_icon_size', 35);
   update_option('meaAccessibility_header_text', 'Accessibility');
   update_option('meaAccessibility_font_size_Fe', 'true');
   update_option('meaAccessibility_font_size_Fe', '1');
@@ -144,7 +157,7 @@ function meaAccessibility_reset_settings_callback() {
 }
 function meaAccessibility_admin_init() {
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_header_text', 'sanitize_text_field');
-  register_setting('meaAccessibility_settings_group', 'meaAccessibility_selected_position');
+  register_setting('meaAccessibility_settings_group', 'meaAccessibility_selected_position', 'sanitize_text_field');
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_background_color', 'sanitize_hex_color');
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_labels_color', 'sanitize_hex_color');
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_divider_line_color', 'sanitize_hex_color');
@@ -152,7 +165,11 @@ function meaAccessibility_admin_init() {
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_accent_color', 'sanitize_hex_color');
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_buttons_hover_color', 'sanitize_hex_color');
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_buttons_color', 'sanitize_hex_color');
-  register_setting('meaAccessibility_settings_group', 'meaAccessibility_copyright_text', 'sanitize_boolean');
+  register_setting('meaAccessibility_settings_group', 'meaAccessibility_copyright_text', 'sanitize_text_field');
+  register_setting('meaAccessibility_settings_group', 'meaAccessibility_button_size', 'absint');
+  register_setting('meaAccessibility_settings_group', 'meaAccessibility_button_border_radius', 'absint');
+  register_setting('meaAccessibility_settings_group', 'meaAccessibility_button_margin', 'absint');
+  register_setting('meaAccessibility_settings_group', 'meaAccessibility_button_icon_size', 'absint');
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_font_size_Fe', 'sanitize_boolean');
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_line_height_Fe', 'sanitize_boolean');
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_letter_spacing_Fe', 'sanitize_boolean');

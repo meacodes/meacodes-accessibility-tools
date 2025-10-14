@@ -1,0 +1,320 @@
+/**
+ * Meacodes Admin Banner Styles
+ *
+ * @package Meacodes_Accessibility_Tools
+ * @since 1.0.6
+ */
+
+/* Banner Container */
+.meacodes-banner {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px 20px 20px 0;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    animation: meacodes-banner-glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes meacodes-banner-glow {
+    0% {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 4px 30px rgba(58, 189, 221, 0.2), 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Banner Content Layout */
+.meacodes-banner-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 40px;
+}
+
+/* Close Button */
+.meacodes-banner-close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.meacodes-banner-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.meacodes-banner-close:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* Banner Message */
+.meacodes-banner-message {
+    flex: 1;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.meacodes-banner-message h3 {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meacodes-banner-message p {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.meacodes-banner-message p:last-child {
+    margin-bottom: 0;
+}
+
+/* Features Grid */
+.meacodes-features-grid {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.meacodes-feature-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.meacodes-feature-item {
+    flex: 1;
+    position: relative;
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.meacodes-feature-item:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #3ABDDD;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Banner Button */
+.meacodes-banner-button {
+    display: inline-block;
+    background: #ffffff;
+    color: #3ABDDD;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.meacodes-banner-button:hover {
+    background: #f8f9fa;
+    color: #207f97;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+.meacodes-banner-button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* Banner Image */
+.meacodes-banner-image {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meacodes-banner-image img {
+    width: 420px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.meacodes-banner-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .meacodes-banner-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .meacodes-banner-message {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .meacodes-banner-image {
+        order: -1;
+    }
+    
+    .meacodes-banner-image img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .meacodes-banner {
+        padding: 15px;
+    }
+    
+    .meacodes-banner-content {
+        gap: 10px;
+    }
+    
+    .meacodes-banner-message {
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+    
+    .meacodes-banner-message h3 {
+        font-size: 20px;
+    }
+    
+    .meacodes-banner-message p {
+        font-size: 14px;
+    }
+    
+    .meacodes-feature-item {
+        font-size: 12px;
+    }
+    
+    .meacodes-feature-row {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+    
+    .meacodes-banner-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .meacodes-banner-image img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .meacodes-banner-message {
+        padding-left: 30px;
+        padding-right: 5px;
+    }
+    
+    .meacodes-banner-message h3 {
+        font-size: 18px;
+    }
+    
+    .meacodes-banner-message p {
+        font-size: 13px;
+    }
+    
+    .meacodes-feature-item {
+        font-size: 11px;
+        padding-left: 18px;
+    }
+    
+    .meacodes-feature-item:before {
+        font-size: 12px;
+    }
+}
+
+/* Animation for banner appearance */
+@keyframes meacodes-banner-slide-down {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.meacodes-banner {
+    animation: meacodes-banner-slide-down 0.5s ease-out;
+}
+
+/* Hide banner when dismissed */
+.meacodes-banner.dismissed {
+    display: none;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .meacodes-banner {
+        background: #000000;
+        border: 2px solid #ffffff;
+    }
+    
+    .meacodes-banner-close {
+        background: #ffffff;
+        color: #000000;
+    }
+    
+    .meacodes-banner-button {
+        background: #ffffff;
+        color: #000000;
+        border: 2px solid #000000;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .meacodes-banner {
+        animation: none;
+    }
+    
+    .meacodes-banner-close,
+    .meacodes-banner-button,
+    .meacodes-banner-image img {
+        transition: none;
+    }
+}

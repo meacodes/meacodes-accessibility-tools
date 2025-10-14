@@ -2,6 +2,91 @@
     display: none !important;
 }
 
+/* External Button Styles */
+.meaAccessibility_externalToggle {
+    position: fixed;
+    z-index: 99999;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.meaAccessibility_externalToggle:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.meaAccessibility_externalToggle:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.meaAccessibility_icon {
+    display: block;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+    object-fit: contain;
+}
+
+/* GDPR Icon Styles */
+.meaAccessibility_gdpr_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    fill: currentColor;
+}
+
+.meaAccessibility_GDPR_btn {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.meaAccessibility_GDPR_btn:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.meaAccessibility_GDPR_btn:hover .meaAccessibility_gdpr_icon {
+    transform: scale(1.1);
+}
+
+/* Ensure GDPR icon color inheritance */
+.meaAccessibility_GDPR_btn .meaAccessibility_gdpr_icon {
+    fill: currentColor !important;
+}
+
+/* Position Classes for External Button */
+.meaAccessibility_externalToggle.meaAccessibility_widgetBottomLeft {
+    bottom: 0;
+    left: 0;
+}
+
+.meaAccessibility_externalToggle.meaAccessibility_widgetBottomRight {
+    bottom: 0;
+    right: 0;
+}
+
+.meaAccessibility_externalToggle.meaAccessibility_widgetTopLeft {
+    top: 0;
+    left: 0;
+}
+
+.meaAccessibility_externalToggle.meaAccessibility_widgetTopRight {
+    top: 0;
+    right: 0;
+}
+
 .meaAccessibility_widget {
     direction: ltr;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -16,6 +101,11 @@
     visibility: visible;
     -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), margin 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), margin 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: none !important;
+}
+
+.meaAccessibility_widget.meaAccessibility_widgetOpen {
+    display: block !important;
 }
 
 .meaAccessibility_mainbg-admin {

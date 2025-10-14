@@ -1,10 +1,10 @@
 === Meacodes Accessibility Tools ===
-Contributors: Meacodes
-Donate link: https://meacodes.com/donate/
+Contributors: meacodes
+Donate link: https://nowpayments.io/donation/meacodes
 Tags: accessibility, a11y, Section 508, wcag, toolbar
 Requires at least: 4.0
-Tested up to: 6.6
-Stable tag: 1.0.6
+Tested up to: 6.8
+Stable tag: 1.1.3
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -54,6 +54,10 @@ You can see demo here: [Meacodes](https://meacodes.com).
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 
 == Frequently Asked Questions ==
+
+= After updating the plugin to version 1.1.*, the plugin button no longer opens the toolbox. What's wrong? =
+
+We updated the button logic in version 1.1.* for better customization. To fix this, simply clear your server and browser cache. It should work after that.
 
 = How can I get support for the plugin? =
 
@@ -116,3 +120,39 @@ We truly appreciate any contribution you can make.
 
 = 1.0.6 =
 * Added conditional checks to prevent JavaScript errors on pages where `gdprNoticeLink` and other related elements are missing.
+
+= 1.0.7 =
+* Added promotional banner system with 24-hour dismissal functionality
+* Modernized admin dashboard with beautiful green theme and glassmorphism design special for airdrop campaign
+* Added airdrop campaign banner to promote Version 2 launch
+* Removed external links (Documentation, Support, Donation, Changelog) from admin header
+* Updated footer with company branding and clickable company link
+* Improved responsive design and accessibility throughout admin interface
+* Enhanced security with proper input sanitization and output escaping
+* Fixed WordPress Coding Standards compliance issues
+
+= 1.0.8 =
+* Fix admin css in RTL
+
+= 1.1.0 =
+* Added external accessibility toggle button with customizable size, border radius, and margin
+* Added SVG accessibility icon with size synchronization to button dimensions
+* Enhanced widget display logic
+* Added new admin controls for button customization
+* Replaced GDPR image with CSS shield icon (🛡️) for better performance
+* Fixed RTL (Right-to-Left) language support issues
+
+= 1.1.1 = 
+* Contributors issue fixed.
+
+= 1.1.2 =
+* fix a UI bug.
+* Improved cache busting mechanism for better asset loading
+* Fixed JavaScript and CSS versioning to prevent browser cache issues
+* Added development mode cache busting with timestamp for testing
+* Updated all asset enqueuing to use proper version numbers
+* Enhanced user experience by eliminating need for manual cache clearing
+
+= 1.1.3 =
+* fix /language folder missing and update some local translation po/mo files
+* add notification aboute clearing browser cache Requires

@@ -5,13 +5,29 @@ function meaAccessibility_admin_thm() {
     return;
   }
   if (isset($_POST['meaAccessibility_settings_nonce']) && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['meaAccessibility_settings_nonce'])), 'meaAccessibility_settings_nonce')) {
-    update_option('meaAccessibility_selected_position', sanitize_text_field($_POST['meaAccessibility_selected_position']));
-    update_option('meaAccessibility_background_color', sanitize_hex_color($_POST['meaAccessibility_background_color']));
-    update_option('meaAccessibility_divider_line_color', sanitize_hex_color($_POST['meaAccessibility_divider_line_color']));
-    update_option('meaAccessibility_plugin_logo_color', sanitize_hex_color($_POST['meaAccessibility_plugin_logo_color']));
-    update_option('meaAccessibility_accent_color', sanitize_hex_color($_POST['meaAccessibility_accent_color']));
-    update_option('meaAccessibility_buttons_hover_color', sanitize_hex_color($_POST['meaAccessibility_buttons_hover_color']));
-    update_option('meaAccessibility_buttons_color', sanitize_hex_color($_POST['meaAccessibility_buttons_color']));
+    $selected_position = isset($_POST['meaAccessibility_selected_position']) ? sanitize_text_field(wp_unslash($_POST['meaAccessibility_selected_position'])) : '';
+    $background_color = isset($_POST['meaAccessibility_background_color']) ? sanitize_hex_color(wp_unslash($_POST['meaAccessibility_background_color'])) : '';
+    $divider_line_color = isset($_POST['meaAccessibility_divider_line_color']) ? sanitize_hex_color(wp_unslash($_POST['meaAccessibility_divider_line_color'])) : '';
+    $plugin_logo_color = isset($_POST['meaAccessibility_plugin_logo_color']) ? sanitize_hex_color(wp_unslash($_POST['meaAccessibility_plugin_logo_color'])) : '';
+    $accent_color = isset($_POST['meaAccessibility_accent_color']) ? sanitize_hex_color(wp_unslash($_POST['meaAccessibility_accent_color'])) : '';
+    $buttons_hover_color = isset($_POST['meaAccessibility_buttons_hover_color']) ? sanitize_hex_color(wp_unslash($_POST['meaAccessibility_buttons_hover_color'])) : '';
+    $buttons_color = isset($_POST['meaAccessibility_buttons_color']) ? sanitize_hex_color(wp_unslash($_POST['meaAccessibility_buttons_color'])) : '';
+    $button_size = isset($_POST['meaAccessibility_button_size']) ? absint(wp_unslash($_POST['meaAccessibility_button_size'])) : 50;
+    $button_border_radius = isset($_POST['meaAccessibility_button_border_radius']) ? absint(wp_unslash($_POST['meaAccessibility_button_border_radius'])) : 30;
+    $button_margin = isset($_POST['meaAccessibility_button_margin']) ? absint(wp_unslash($_POST['meaAccessibility_button_margin'])) : 20;
+    $button_icon_size = isset($_POST['meaAccessibility_button_icon_size']) ? absint(wp_unslash($_POST['meaAccessibility_button_icon_size'])) : 35;
+    
+    update_option('meaAccessibility_selected_position', $selected_position);
+    update_option('meaAccessibility_background_color', $background_color);
+    update_option('meaAccessibility_divider_line_color', $divider_line_color);
+    update_option('meaAccessibility_plugin_logo_color', $plugin_logo_color);
+    update_option('meaAccessibility_accent_color', $accent_color);
+    update_option('meaAccessibility_buttons_hover_color', $buttons_hover_color);
+    update_option('meaAccessibility_buttons_color', $buttons_color);
+    update_option('meaAccessibility_button_size', $button_size);
+    update_option('meaAccessibility_button_border_radius', $button_border_radius);
+    update_option('meaAccessibility_button_margin', $button_margin);
+    update_option('meaAccessibility_button_icon_size', $button_icon_size);
     wp_safe_redirect(admin_url('admin.php?page=mea-settings-help'));
     exit;
   }
@@ -37,11 +53,32 @@ function meaAccessibility_admin_thm() {
       <a href="#" class="meaAccessibility_nav-tab meaAccessibility_nav-tab-active"><?php esc_html_e('General', 'meacodes-accessibility-tools'); ?></a>
       <a href="#" class="meaAccessibility_nav-tab"><?php esc_html_e('Features', 'meacodes-accessibility-tools'); ?></a>
       <a href="#" class="meaAccessibility_nav-tab"><?php esc_html_e('Style', 'meacodes-accessibility-tools'); ?></a>
-      <a href="<?php echo esc_url('https://www.meacodes.com/docs-category/mea-accessibility-tools-wpdocs/'); ?>" class="meaAccessibility_admin_ex_links meaAccessibility_admin_first_ex_links" target="_blank" rel="noopener noreferrer"><?php esc_html_e('Documentation', 'meacodes-accessibility-tools'); ?></a>
-      <a href="<?php echo esc_url('https://www.meacodes.com/support/'); ?>" class="meaAccessibility_admin_ex_links" target="_blank" rel="noopener noreferrer"><?php esc_html_e('Support', 'meacodes-accessibility-tools'); ?></a>
-      <a href="<?php echo esc_url('https://www.meacodes.com/donate/'); ?>" class="meaAccessibility_admin_ex_links" target="_blank" rel="noopener noreferrer"><?php esc_html_e('Donation', 'meacodes-accessibility-tools'); ?></a>
-      <a href="<?php echo esc_url('https://www.meacodes.com/changelog/'); ?>" class="meaAccessibility_admin_ex_links" target="_blank" rel="noopener noreferrer"><?php esc_html_e('changelog', 'meacodes-accessibility-tools'); ?></a>
     </h1>
+    
+    <!-- Airdrop Campaign Banner -->
+    <div class="meaAccessibility_airdrop_banner">
+      <div class="meaAccessibility_airdrop_content">
+        <span class="meaAccessibility_airdrop_icon">🎉</span>
+        <span class="meaAccessibility_airdrop_text">
+          <strong><?php esc_html_e('Airdrop Campaign Active!', 'meacodes-accessibility-tools'); ?></strong>
+          <?php esc_html_e('Join our exclusive airdrop and earn rewards. Limited time offer!', 'meacodes-accessibility-tools'); ?>
+        </span>
+        <a href="https://meacodes.com" target="_blank" rel="noopener noreferrer" class="meaAccessibility_airdrop_button">
+          <?php esc_html_e('Join Now', 'meacodes-accessibility-tools'); ?>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Attention Banner (Cache notice) -->
+    <div class="meaAccessibility_attention_banner" role="status" aria-live="polite">
+      <div class="meaAccessibility_attention_content">
+        <span class="meaAccessibility_attention_icon">⚠️</span>
+        <span class="meaAccessibility_attention_text">
+          <strong><?php esc_html_e('Attention', 'meacodes-accessibility-tools'); ?></strong>
+          <?php esc_html_e('We updated the plugin button logic to enable more customization. If after updating it does not work on your site, this is likely a cache issue. Please clear your server and browser cache, then refresh the page.', 'meacodes-accessibility-tools'); ?>
+        </span>
+      </div>
+    </div>
     <div class="meaAccessibility_tab-content">
       <!-- Tab 1 - General -->
       <form method="post" action="options.php">
@@ -92,7 +129,7 @@ function meaAccessibility_admin_thm() {
                       <input type="checkbox" id="meaAccessibility_copyright_text" name="meaAccessibility_copyright_text" value="1" <?php checked(get_option('meaAccessibility_copyright_text', false)); ?>>
                       <label for="meaAccessibility_copyright_text"><?php esc_html_e('Enable "Developed by" label', 'meacodes-accessibility-tools'); ?></label>
                       <p class="meaAccessibility_description"><?php esc_html_e('Please turn the Developed by label on to support us and help the project move forward. ', 'meacodes-accessibility-tools'); ?></p>
-                      <p class="meaAccessibility_description"><?php esc_html_e('You can also buy us a coffee on the', 'meacodes-accessibility-tools'); ?> <a href="<?php echo esc_url('https://www.meacodes.com/donate/'); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e('Donation page.', 'meacodes-accessibility-tools'); ?></a>
+                      <p class="meaAccessibility_description"><?php esc_html_e('You can also buy us a coffee on the', 'meacodes-accessibility-tools'); ?> <a href="<?php echo esc_url('https://nowpayments.io/donation/meacodes'); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e('Donation page.', 'meacodes-accessibility-tools'); ?></a>
                       <?php esc_html_e('Thanks for your supports. ', 'meacodes-accessibility-tools'); ?> &#x1F496; </p>
                     </td>
                   </tr>
@@ -121,7 +158,6 @@ function meaAccessibility_admin_thm() {
         <div class="meaAccessibility_tab-pane">
           <h1><?php esc_html_e('Features', 'meacodes-accessibility-tools'); ?></h1>
           <p><?php esc_html_e('The Accessibility plugin provides a set of tools and features to create an easier and more inclusive user experience for users with various needs. You can enable or disable each of these features individually.', 'meacodes-accessibility-tools'); ?>
-          <p><?php esc_html_e('To find out which plugin features are used to solve which accessibility issues for your site, you can refer to the ', 'meacodes-accessibility-tools'); ?> <a href="<?php echo esc_url('https://www.meacodes.com/docs/settings/#features-tab'); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e('Documentation.', 'meacodes-accessibility-tools'); ?></a></p>
           <div class="meaAccessibility_table-column">
             <table class="form-table">
               <tr valign="top">
@@ -229,9 +265,37 @@ function meaAccessibility_admin_thm() {
         <!-- Tab 3 - Style -->
         <div class="meaAccessibility_tab-pane">
           <h1><?php esc_html_e('Style Settings', 'meacodes-accessibility-tools'); ?></h1>
-          <p><?php  esc_html_e('Customize the plugins appearance to match your taste and needs using the style settings. For more information on each appearance variable, refer to the', 'meacodes-accessibility-tools'); ?> <a href="<?php echo esc_url('https://www.meacodes.com/docs/settings/#style-tab'); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e('Documentation.', 'meacodes-accessibility-tools'); ?></a></p>
+          <p><?php  esc_html_e('Customize the plugins appearance to match your taste and needs using the style settings.', 'meacodes-accessibility-tools'); ?></p>
           <div class="meaAccessibility_table-column">
             <table class="form-table meaAccessibility_style-tooltips-fa">
+            <tr valign="top">
+              <th scope="row"><?php esc_html_e('Plugin Button Size:', 'meacodes-accessibility-tools'); ?></th>
+              <td>
+                <input type="range" id="meaAccessibility_button_size" name="meaAccessibility_button_size" min="24" max="68" value="<?php echo esc_attr(get_option('meaAccessibility_button_size', 50)); ?>" class="meaAccessibility_range_slider">
+                <span class="meaAccessibility_range_value"><?php echo esc_html(get_option('meaAccessibility_button_size', 50)); ?>px</span>
+              </td>
+            </tr>
+            <tr valign="top">
+              <th scope="row"><?php esc_html_e('Plugin Button Border Radius:', 'meacodes-accessibility-tools'); ?></th>
+              <td>
+                <input type="range" id="meaAccessibility_button_border_radius" name="meaAccessibility_button_border_radius" min="0" max="50" value="<?php echo esc_attr(get_option('meaAccessibility_button_border_radius', 30)); ?>" class="meaAccessibility_range_slider">
+                <span class="meaAccessibility_range_value"><?php echo esc_html(get_option('meaAccessibility_button_border_radius', 30)); ?>%</span>
+              </td>
+            </tr>
+            <tr valign="top">
+              <th scope="row"><?php esc_html_e('Plugin Button Margin:', 'meacodes-accessibility-tools'); ?></th>
+              <td>
+                <input type="number" id="meaAccessibility_button_margin" name="meaAccessibility_button_margin" min="0" max="50" value="<?php echo esc_attr(get_option('meaAccessibility_button_margin', 20)); ?>" class="meaAccessibility_number_input">
+                <span class="meaAccessibility_input_suffix">px</span>
+              </td>
+            </tr>
+            <tr valign="top">
+              <th scope="row"><?php esc_html_e('Plugin Button Icon Size:', 'meacodes-accessibility-tools'); ?></th>
+              <td>
+                <input type="range" id="meaAccessibility_button_icon_size" name="meaAccessibility_button_icon_size" min="16" max="58" value="<?php echo esc_attr(get_option('meaAccessibility_button_icon_size', 35)); ?>" class="meaAccessibility_range_slider">
+                <span class="meaAccessibility_range_value"><?php echo esc_html(get_option('meaAccessibility_button_icon_size', 35)); ?>px</span>
+              </td>
+            </tr>
             <tr valign="top">
               <th scope="row"><?php esc_html_e('Positionable by User:', 'meacodes-accessibility-tools'); ?></th>
               <td>
@@ -290,7 +354,7 @@ function meaAccessibility_admin_thm() {
                 </th>
               </tr>
               <tr valign="top">
-                <th scope="row"><?php esc_html_e('Plugin Logo Color: ', 'meacodes-accessibility-tools'); ?></th>
+                <th scope="row"><?php esc_html_e('Plugin button Color: ', 'meacodes-accessibility-tools'); ?></th>
                 <td><input type="color" id="meaAccessibility_plugin_logo_color" name="meaAccessibility_plugin_logo_color" value="<?php echo esc_attr($meaAccessibility_plugin_logo_color_Obj); ?>"></td>
                   <th class="meaAccessibility_tooltip-trigger">
                     <div class="meaAccessibility_tooltip"><?php esc_html_e('Color Scheme for Plugin Logo.', 'meacodes-accessibility-tools'); ?></div>
@@ -340,12 +404,19 @@ function meaAccessibility_admin_thm() {
           });
         });
       });
+      
+      // Range slider value updates
+      jQuery('.meaAccessibility_range_slider').on('input', function() {
+        var value = jQuery(this).val();
+        var suffix = jQuery(this).attr('name') === 'meaAccessibility_button_border_radius' ? '%' : 'px';
+        jQuery(this).siblings('.meaAccessibility_range_value').text(value + suffix);
+      });
     </script>
   </div>
-  <div class="meaAccessibility_plugin_version"><p><?php esc_html_e('Accessibility Tools Version: ', 'meacodes-accessibility-tools'); ?><?php echo esc_html(meaAccessibility_PLUGIN_VERSION); ?></p></div>
   <div class="meaAccessibility_admin-copyright">
-    <p><?php esc_html_e('Developed by', 'meacodes-accessibility-tools'); ?></p>
     <a href="https://www.meacodes.com" target="_blank"><img src="<?php echo esc_attr($meaAccessibility_admin_copyright); ?>"></a>
+    <p><a href="https://www.meacodes.com" target="_blank" rel="noopener noreferrer"><?php esc_html_e('Meacodes Development Solutions', 'meacodes-accessibility-tools'); ?></a></p>
   </div>
+  <div class="meaAccessibility_plugin_version"><p><?php esc_html_e('Accessibility Tools Version: ', 'meacodes-accessibility-tools'); ?><?php echo esc_html(meaAccessibility_PLUGIN_VERSION); ?></p></div>
 <?php
 }

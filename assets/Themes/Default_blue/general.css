@@ -283,7 +283,7 @@
 
 .meaAccessibility_widget.meaAccessibility_widgetOpen {
     min-height: 59px;
-    max-height: 702px;
+    max-height: max-content;
     display: inline-table;
     width: 320px !important;
     z-index: 99999999999 !important;
@@ -1456,7 +1456,6 @@ html.meaAccessibility_negativ.meaAccessibility_grayscale body>* {
 }
 
 .meaAccessibility_GDPR_link {
-    height: 40px !important;
     max-width: 40px !important;
     max-height: 40px !important;
     display: block;
