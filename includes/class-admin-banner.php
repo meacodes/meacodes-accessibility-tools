@@ -53,8 +53,8 @@ class Meacodes_Admin_Banner {
      * @param string $hook Current admin page hook
      */
     public function enqueue_assets($hook) {
-        // Only load on admin pages
-        if (!is_admin()) {
+        // Only load on our plugin's admin page
+        if ($hook !== 'toplevel_page_meaAccessibility_settings_page') {
             return;
         }
 
@@ -103,6 +103,12 @@ class Meacodes_Admin_Banner {
      * Display the banner if conditions are met
      */
     public function maybe_display_banner() {
+        // Only show on our plugin's admin page
+        $current_screen = get_current_screen();
+        if (!$current_screen || $current_screen->id !== 'toplevel_page_meaAccessibility_settings_page') {
+            return;
+        }
+
         if (!$this->should_display_banner()) {
             return;
         }
@@ -130,58 +136,29 @@ class Meacodes_Admin_Banner {
                         <?php 
                         printf(
                             /* translators: %s: Plugin name */
-                            esc_html__('Because you\'re using the %s plugin, you\'ve earned an exclusive badge for a 3-month Pro Version 2 subscription — launching soon!', 'meacodes-accessibility-tools'),
-                            '<strong>Meacodes Accessibility Tools</strong>'
+                            esc_html__('You\'ve been recognized as an %s of Meacodes Accessibility Tools.', 'meacodes-accessibility-tools'),
+                            '<strong>Early Supporter</strong>'
                         );
                         ?>
                     </p>
                     
-                    <p><strong><?php esc_html_e('The upcoming version introduces advanced features like:', 'meacodes-accessibility-tools'); ?></strong></p>
-                    
-                    <div class="meacodes-features-grid">
-                        <div class="meacodes-feature-row">
-                            <span class="meacodes-feature-item"><?php esc_html_e('Modern Mobile First Responsive Design', 'meacodes-accessibility-tools'); ?></span>
-                            <span class="meacodes-feature-item"><?php esc_html_e('Smart Site Search Engine', 'meacodes-accessibility-tools'); ?></span>
-                        </div>
-                        <div class="meacodes-feature-row">
-                            <span class="meacodes-feature-item"><?php esc_html_e('Professional Keyboard Navigation', 'meacodes-accessibility-tools'); ?></span>
-                            <span class="meacodes-feature-item"><?php esc_html_e('Page Structure Overview', 'meacodes-accessibility-tools'); ?></span>
-                        </div>
-                        <div class="meacodes-feature-row">
-                            <span class="meacodes-feature-item"><?php esc_html_e('Smart Screen Reader Integration', 'meacodes-accessibility-tools'); ?></span>
-                            <span class="meacodes-feature-item"><?php esc_html_e('Auto Translate – Seamless Multilingual Experience', 'meacodes-accessibility-tools'); ?></span>
-                        </div>
-                        <div class="meacodes-feature-row">
-                            <span class="meacodes-feature-item"><?php esc_html_e('Flexible Fonts — Google & Custom Options', 'meacodes-accessibility-tools'); ?></span>
-                            <span class="meacodes-feature-item"><?php esc_html_e('Endless Customization', 'meacodes-accessibility-tools'); ?></span>
-                        </div>
-                        <div class="meacodes-feature-row">
-                            <span class="meacodes-feature-item"><?php esc_html_e('Fully Customizable Appearance & Theme Control', 'meacodes-accessibility-tools'); ?></span>
-                            <span class="meacodes-feature-item"><?php esc_html_e('Effortless Dark & Light Mode Customization', 'meacodes-accessibility-tools'); ?></span>
-                        </div>
-                        <div class="meacodes-feature-row">
-                            <span class="meacodes-feature-item"><?php esc_html_e('Personalized Accessibility Profiles for Every User', 'meacodes-accessibility-tools'); ?></span>
-                            <span class="meacodes-feature-item"><?php esc_html_e('Advanced Analytics & Accessibility Insights', 'meacodes-accessibility-tools'); ?></span>
-                        </div>
-                        <div class="meacodes-feature-row">
-                            <span class="meacodes-feature-item"><?php esc_html_e('Comprehensive WCAG 2.1 Issue Detection & Solutions', 'meacodes-accessibility-tools'); ?></span>
-                            <span class="meacodes-feature-item"><?php esc_html_e('Complete Accessibility Issue Summary for Your Website', 'meacodes-accessibility-tools'); ?></span>
-                        </div>
-                        <div class="meacodes-feature-row">
-                            <span class="meacodes-feature-item"><?php esc_html_e('WordPress Performance & Security Score', 'meacodes-accessibility-tools'); ?></span>
-                            <span class="meacodes-feature-item"><?php esc_html_e('Real-Time Website Performance Analysis', 'meacodes-accessibility-tools'); ?></span>
-                        </div>
-                    </div>
-                    
                     <p>
-                        <strong><?php esc_html_e('💎 Register your website now in our Airdrop Campaign to claim your exclusive rewards and upcoming discounts!', 'meacodes-accessibility-tools'); ?></strong>
+                        <?php 
+                        printf(
+                            /* translators: %s: Pro Version 2, %s: Early Supporter Badge */
+                            esc_html__('As part of the upcoming %s rollout, early supporters will receive an exclusive %s and extended Pro access privileges.', 'meacodes-accessibility-tools'),
+                            '<strong>Pro Version 2</strong>',
+                            '<strong>Early Supporter Badge</strong>'
+                        );
+                        ?>
                     </p>
                     
                     <p>
-                        <a href="<?php echo esc_url($campaign_url); ?>" class="meacodes-banner-button" target="_blank" rel="noopener noreferrer">
-                            <?php esc_html_e('👉 Join Campaign at Meacodes.com', 'meacodes-accessibility-tools'); ?>
-                        </a>
+                        <?php esc_html_e('To learn how the badge system works and how sites are verified,', 'meacodes-accessibility-tools'); ?><br>
+                        <a href="https://meacodes.com" target="_blank" rel="noopener noreferrer"><?php esc_html_e('👉 visit meacodes.com', 'meacodes-accessibility-tools'); ?></a>
                     </p>
+                    
+                    <p><small><?php esc_html_e('This notice will hide for 24 hours once dismissed.', 'meacodes-accessibility-tools'); ?></small></p>
                 </div>
                 
                 <div class="meacodes-banner-image">

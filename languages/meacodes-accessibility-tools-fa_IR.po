@@ -695,8 +695,6 @@ msgstr "https://www.meacodes.com"
 msgid "Advanced Analytics & Accessibility Insights"
 msgstr "تحلیل‌های پیشرفته و بینش‌های دسترسی‌پذیری"
 
-msgid "Airdrop Campaign Active!"
-msgstr "کمپین ایردراپ فعال است!"
 
 msgid "Auto Translate – Seamless Multilingual Experience"
 msgstr "ترجمه خودکار – تجربه چندزبانه بی‌درز"
@@ -728,11 +726,7 @@ msgstr "ظاهر کاملاً قابل سفارشی‌سازی و کنترل ت�
 msgid "Insufficient permissions"
 msgstr "مجوزهای ناکافی"
 
-msgid "Join Now"
-msgstr "الان بپیوندید"
 
-msgid "Join our exclusive airdrop and earn rewards. Limited time offer!"
-msgstr "به ایردراپ انحصاری ما بپیوندید و پاداش کسب کنید. پیشنهاد محدود زمانی!"
 
 msgid "Meacodes Development Solutions"
 msgstr "راه‌حل‌های توسعه Meacodes"
@@ -802,3 +796,42 @@ msgstr "💎 وب‌سایت خود را الان در کمپین ایردراپ
 
 msgid "Because you're using the %s plugin, you've earned an exclusive badge for a 3-month Pro Version 2 subscription — launching soon!"
 msgstr "چون شما از افزونه ابزارهای دسترسی‌پذیری Meacodes استفاده می‌کنید، یک نشان انحصاری برای اشتراک Pro Version 2 سه ماهه کسب کرده‌اید — به زودی راه‌اندازی می‌شود!"
+
+msgid "You've been recognized as an Early Supporter of Meacodes Accessibility Tools — a special thank-you to everyone helping us build a more accessible web 🌍"
+msgstr "شما به عنوان حامی اولیه ابزارهای دسترسی‌پذیری Meacodes شناخته شده‌اید — تشکر ویژه از همه کسانی که به ما در ساخت وب دسترسی‌پذیرتر کمک می‌کنند 🌍"
+
+msgid "With the upcoming Pro Version 2, you'll unlock early-access privileges such as:"
+msgstr "با نسخه Pro Version 2 آینده، امتیازات دسترسی زودهنگام مانند موارد زیر را باز خواهید کرد:"
+
+msgid "Modern mobile-first responsive design"
+msgstr "طراحی واکنش‌گرای مدرن موبایل-اول"
+
+msgid "Smart accessibility enhancements"
+msgstr "بهبودهای هوشمند دسترسی‌پذیری"
+
+msgid "WCAG 2.1 issue detection & analytics"
+msgstr "تشخیص مسائل WCAG 2.1 و تجزیه و تحلیل"
+
+msgid "Deep customization options"
+msgstr "گزینه‌های سفارشی‌سازی عمیق"
+
+msgid "Your Early Supporter Badge will be verified automatically during the Pro 2 rollout. Stay tuned and learn more about the upcoming release at"
+msgstr "نشان حامی اولیه شما به طور خودکار در طول راه‌اندازی Pro 2 تأیید خواهد شد. منتظر بمانید و بیشتر در مورد انتشار آینده در"
+
+msgid "👉 meacodes.com"
+msgstr "👉 meacodes.com"
+
+msgid "This notice will hide for 24 hours once dismissed."
+msgstr "این اعلان پس از رد شدن به مدت 24 ساعت پنهان خواهد شد."
+
+msgid "You've been recognized as an %s of Meacodes Accessibility Tools."
+msgstr "شما به عنوان %s ابزارهای دسترسی‌پذیری Meacodes شناخته شده‌اید."
+
+msgid "As part of the upcoming %s rollout, early supporters will receive an exclusive %s and extended Pro access privileges."
+msgstr "به عنوان بخشی از راه‌اندازی آینده %s، حامیان اولیه %s انحصاری و امتیازات دسترسی Pro گسترده دریافت خواهند کرد."
+
+msgid "To learn how the badge system works and how sites are verified,"
+msgstr "برای یادگیری نحوه عملکرد سیستم نشان و نحوه تأیید سایت‌ها،"
+
+msgid "👉 visit meacodes.com/early-supporter"
+msgstr "👉 از meacodes.com/early-supporter بازدید کنید"

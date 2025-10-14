@@ -727,8 +727,6 @@ msgstr "https://www.meacodes.com"
 msgid "Advanced Analytics & Accessibility Insights"
 msgstr "Análises Avançadas e Insights de Acessibilidade"
 
-msgid "Airdrop Campaign Active!"
-msgstr "Campanha Airdrop Ativa!"
 
 msgid "Auto Translate – Seamless Multilingual Experience"
 msgstr "Tradução Automática – Experiência Multilíngue Perfeita"
@@ -760,11 +758,7 @@ msgstr "Aparência Totalmente Personalizável e Controlo de Tema"
 msgid "Insufficient permissions"
 msgstr "Permissões insuficientes"
 
-msgid "Join Now"
-msgstr "Juntar-se Agora"
 
-msgid "Join our exclusive airdrop and earn rewards. Limited time offer!"
-msgstr "Junte-se ao nosso airdrop exclusivo e ganhe recompensas. Oferta por tempo limitado!"
 
 msgid "Meacodes Development Solutions"
 msgstr "Soluções de Desenvolvimento Meacodes"
@@ -834,3 +828,42 @@ msgstr "💎 Registe o seu site agora na nossa Campanha Airdrop para reclamar as
 
 msgid "Because you're using the %s plugin, you've earned an exclusive badge for a 3-month Pro Version 2 subscription — launching soon!"
 msgstr "Porque está a usar o plugin Ferramentas de Acessibilidade Meacodes, ganhou uma insígnia exclusiva para uma subscrição Pro Version 2 de 3 meses — em breve!"
+
+msgid "You've been recognized as an Early Supporter of Meacodes Accessibility Tools — a special thank-you to everyone helping us build a more accessible web 🌍"
+msgstr "Foi reconhecido como Early Supporter das Ferramentas de Acessibilidade Meacodes — um agradecimento especial a todos os que nos ajudam a construir uma web mais acessível 🌍"
+
+msgid "With the upcoming Pro Version 2, you'll unlock early-access privileges such as:"
+msgstr "Com a próxima Pro Version 2, desbloqueará privilégios de acesso antecipado como:"
+
+msgid "Modern mobile-first responsive design"
+msgstr "Design responsivo moderno mobile-first"
+
+msgid "Smart accessibility enhancements"
+msgstr "Melhorias inteligentes de acessibilidade"
+
+msgid "WCAG 2.1 issue detection & analytics"
+msgstr "Detecção de problemas WCAG 2.1 e análises"
+
+msgid "Deep customization options"
+msgstr "Opções de personalização profundas"
+
+msgid "Your Early Supporter Badge will be verified automatically during the Pro 2 rollout. Stay tuned and learn more about the upcoming release at"
+msgstr "O seu Badge Early Supporter será verificado automaticamente durante o lançamento do Pro 2. Fique atento e saiba mais sobre o próximo lançamento em"
+
+msgid "👉 meacodes.com"
+msgstr "👉 meacodes.com"
+
+msgid "This notice will hide for 24 hours once dismissed."
+msgstr "Este aviso será ocultado por 24 horas uma vez dispensado."
+
+msgid "You've been recognized as an %s of Meacodes Accessibility Tools."
+msgstr "Foi reconhecido como %s das Ferramentas de Acessibilidade Meacodes."
+
+msgid "As part of the upcoming %s rollout, early supporters will receive an exclusive %s and extended Pro access privileges."
+msgstr "Como parte do próximo lançamento de %s, os early supporters receberão um %s exclusivo e privilégios de acesso Pro estendidos."
+
+msgid "To learn how the badge system works and how sites are verified,"
+msgstr "Para aprender como o sistema de badges funciona e como os sites são verificados,"
+
+msgid "👉 visit meacodes.com/early-supporter"
+msgstr "👉 visite meacodes.com/early-supporter"

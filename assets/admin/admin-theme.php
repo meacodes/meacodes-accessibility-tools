@@ -55,20 +55,6 @@ function meaAccessibility_admin_thm() {
       <a href="#" class="meaAccessibility_nav-tab"><?php esc_html_e('Style', 'meacodes-accessibility-tools'); ?></a>
     </h1>
     
-    <!-- Airdrop Campaign Banner -->
-    <div class="meaAccessibility_airdrop_banner">
-      <div class="meaAccessibility_airdrop_content">
-        <span class="meaAccessibility_airdrop_icon">🎉</span>
-        <span class="meaAccessibility_airdrop_text">
-          <strong><?php esc_html_e('Airdrop Campaign Active!', 'meacodes-accessibility-tools'); ?></strong>
-          <?php esc_html_e('Join our exclusive airdrop and earn rewards. Limited time offer!', 'meacodes-accessibility-tools'); ?>
-        </span>
-        <a href="https://meacodes.com" target="_blank" rel="noopener noreferrer" class="meaAccessibility_airdrop_button">
-          <?php esc_html_e('Join Now', 'meacodes-accessibility-tools'); ?>
-        </a>
-      </div>
-    </div>
-    
     <!-- Attention Banner (Cache notice) -->
     <div class="meaAccessibility_attention_banner" role="status" aria-live="polite">
       <div class="meaAccessibility_attention_content">

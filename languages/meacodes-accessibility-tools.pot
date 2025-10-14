@@ -135,16 +135,10 @@ msgid "Style"
 msgstr ""
 
 #: assets/admin/admin-theme.php:63
-msgid "Airdrop Campaign Active!"
-msgstr ""
 
 #: assets/admin/admin-theme.php:64
-msgid "Join our exclusive airdrop and earn rewards. Limited time offer!"
-msgstr ""
 
 #: assets/admin/admin-theme.php:67
-msgid "Join Now"
-msgstr ""
 
 #: assets/admin/admin-theme.php:75
 msgid "General Settings"
@@ -540,3 +534,42 @@ msgstr ""
 msgid "💎 Register your website now in our Airdrop Campaign to claim your exclusive rewards and upcoming discounts!"
 msgstr ""
 
+
+msgid "You've been recognized as an Early Supporter of Meacodes Accessibility Tools — a special thank-you to everyone helping us build a more accessible web 🌍"
+msgstr ""
+
+msgid "With the upcoming Pro Version 2, you'll unlock early-access privileges such as:"
+msgstr ""
+
+msgid "Modern mobile-first responsive design"
+msgstr ""
+
+msgid "Smart accessibility enhancements"
+msgstr ""
+
+msgid "WCAG 2.1 issue detection & analytics"
+msgstr ""
+
+msgid "Deep customization options"
+msgstr ""
+
+msgid "Your Early Supporter Badge will be verified automatically during the Pro 2 rollout. Stay tuned and learn more about the upcoming release at"
+msgstr ""
+
+msgid "👉 meacodes.com"
+msgstr ""
+
+msgid "This notice will hide for 24 hours once dismissed."
+msgstr ""
+
+msgid "You've been recognized as an %s of Meacodes Accessibility Tools."
+msgstr ""
+
+msgid "As part of the upcoming %s rollout, early supporters will receive an exclusive %s and extended Pro access privileges."
+msgstr ""
+
+msgid "To learn how the badge system works and how sites are verified,"
+msgstr ""
+
+msgid "👉 visit meacodes.com/early-supporter"
+msgstr ""

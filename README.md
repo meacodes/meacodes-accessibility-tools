@@ -4,7 +4,7 @@ Donate link: https://nowpayments.io/donation/meacodes
 Tags: accessibility, a11y, Section 508, wcag, toolbar
 Requires at least: 4.0
 Tested up to: 6.8
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -140,3 +140,6 @@ We truly appreciate any contribution you can make.
 = 1.1.3 =
 * fix /language folder missing and update some local translation po/mo files
 * add notification aboute clearing browser cache Requires
+
+= 1.1.4 =
+* fix banner overloading on all over admin dashboard issue
