@@ -1,901 +1,793 @@
+# Copyright (C) 2025 Meacodes Development Solutions
+# This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Meacodes Accessibility Plugin\n"
-"POT-Creation-Date: 2024-06-07 06:53-0700\n"
-"PO-Revision-Date: 2025-10-14 12:25+0330\n"
+"Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
+"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
+"PO-Revision-Date: 2025-10-18 22:46+0330\n"
 "Last-Translator: \n"
-"Language-Team: \n"
+"Language-Team: meacodes <info@meacodes.com>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && "
-"n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"X-Generator: Poedit 3.7\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: meacodes-accessibility-plugin.php\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Generator: Poedit 3.8\n"
+"X-Domain: meacodes-accessibility-tools\n"
 
-#: assets/Themes/Default_blue/theme.php:3 assets/Themes/Default_blue/theme.php:13
-#: assets/admin/admin-theme.php:67
-msgid "Accessibility"
-msgstr "إمكانية الوصول"
+#. Plugin Name of the plugin
+#: meacodes-accessibility-tools.php meacodes-accessibility-tools.php:81
+msgid "Meacodes Accessibility Tools"
+msgstr "أدوات إمكانية الوصول Meacodes"
 
-#: assets/Themes/Default_blue/theme.php:9
-msgid "Drag and move the accessibility box"
-msgstr "اسحب وأعد تحريك مربع إمكانية الوصول"
+#. Plugin URI of the plugin
+#: meacodes-accessibility-tools.php
+msgid "https://www.meacodes.com/accessibility"
+msgstr "https://www.meacodes.com/accessibility"
 
-#: assets/Themes/Default_blue/theme.php:11
-msgid "Open/Close Accessibility Options"
-msgstr "فتح/إغلاق خيارات إمكانية الوصول"
-
-#: assets/Themes/Default_blue/theme.php:16
-msgid "Click to read GDPR Notice"
-msgstr "اضغط لقراءة إشعار الخصوصية"
-
-#: assets/Themes/Default_blue/theme.php:23
-msgid "Font Size"
-msgstr "حجم الخط"
-
-#: assets/Themes/Default_blue/theme.php:28
-msgid "‌Normal"
-msgstr "عادي"
-
-#: assets/Themes/Default_blue/theme.php:40
-msgid "Line Height"
-msgstr "ارتفاع السطر"
-
-#: assets/Themes/Default_blue/theme.php:43 assets/Themes/Default_blue/theme.php:56
-msgid "Normal"
-msgstr "عادي"
-
-#: assets/Themes/Default_blue/theme.php:53
-msgid "Letter Spacing"
-msgstr "تباعد الأحرف"
-
-#: assets/Themes/Default_blue/theme.php:68
-msgid "Dyslexia Mask"
-msgstr "تنقية عسر القراءة"
-
-#: assets/Themes/Default_blue/theme.php:76
-msgid "Grayscale Page"
-msgstr "صفحة تدرج الرمادي"
-
-#: assets/Themes/Default_blue/theme.php:84
-msgid "Contrast"
-msgstr "التباين"
-
-#: assets/Themes/Default_blue/theme.php:92
-msgid "Negative"
-msgstr "سلبي"
-
-#: assets/Themes/Default_blue/theme.php:100
-msgid "Underlined Links"
-msgstr "ارتباطات التشعبية المسطرة"
-
-#: assets/Themes/Default_blue/theme.php:108
-msgid "Highlight Links"
-msgstr "تظليل الروابط"
-
-#: assets/Themes/Default_blue/theme.php:116
-msgid "Grayscale Images"
-msgstr "صور تدرج الرمادي"
-
-#: assets/Themes/Default_blue/theme.php:124
-msgid "Black and white"
-msgstr "أبيض وأسود"
-
-#: assets/Themes/Default_blue/theme.php:130
-msgid "Developed by "
-msgstr "تم تطويره بواسطة "
-
-#: assets/Themes/Default_blue/theme.php:132
-msgid "Reset"
-msgstr "إعادة ضبط"
-
-#: assets/Themes/Default_blue/theme.php:133
-msgid "Close"
-msgstr "أخفِ"
-
-#: assets/Themes/Default_blue/theme.php:138
-msgid "GDPR Notice:"
-msgstr "إشعار لائحة حماية البيانات العامة:"
-
-#: assets/Themes/Default_blue/theme.php:139
+#. Description of the plugin
+#: meacodes-accessibility-tools.php
 msgid ""
-"This plugin uses cookies to enhance your experience and provide personalized "
-"accessibility settings. These cookies are stored in your browser and allow us "
-"to remember your preferences for font size, color schemes, and other "
-"accessibility features. By using this plugin, you consent to the use of cookies "
-"for these purposes. You can delete or block cookies in your browser settings at "
-"any time. Please note that doing so may affect your experience on the site."
-msgstr ""
-"يستخدم هذا البرنامج النصي ملفات تعريف الارتباط لتحسين تجربتك وتوفير إعدادات "
-"إمكانية وصول شخصية. يتم تخزين ملفات تعريف الارتباط هذه في المستعرض الخاص بك "
-"وتسمح لنا بتذكر تفضيلاتك لحجم الخط وأنماط الألوان وميزات إمكانية الوصول الأخرى. "
-"باستخدام هذا البرنامج النصي ، فإنك توافق على استخدام ملفات تعريف الارتباط لهذه "
-"الأغراض. يمكنك حذف أو منع ملفات تعريف الارتباط في إعدادات المستعرض الخاص بك في "
-"أي وقت. يرجى ملاحظة أن القيام بذلك قد يؤثر على تجربتك في الموقع."
+"This is an accessibility tools for people with disabilities to use the web "
+"easily."
+msgstr "هذه أدوات إمكانية الوصول للأشخاص ذوي الإعاقة لاستخدام الويب بسهولة."
 
-#: assets/admin/admin-theme.php:31
+#. Author of the plugin
+#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
+msgid "Meacodes Development Solutions"
+msgstr "Meacodes Development Solutions"
+
+#. Author URI of the plugin
+#: meacodes-accessibility-tools.php
+msgid "https://www.meacodes.com"
+msgstr "https://www.meacodes.com"
+
+#: assets/admin/admin-theme.php:91
 msgid "jQuery is not loaded!"
-msgstr "jQuery is not loaded!"
+msgstr "jQuery غير محمل!"
 
-#: assets/admin/admin-theme.php:37
+#: assets/admin/admin-theme.php:97
 msgid "General"
 msgstr "عام"
 
-#: assets/admin/admin-theme.php:38 assets/admin/admin-theme.php:122
+#: assets/admin/admin-theme.php:98 assets/admin/admin-theme.php:365
 msgid "Features"
-msgstr "مميزات"
+msgstr "الميزات"
 
-#: assets/admin/admin-theme.php:39
+#: assets/admin/admin-theme.php:99
 msgid "Style"
-msgstr "المظهر"
+msgstr "النمط"
 
-#: assets/admin/admin-theme.php:40
-msgid "Documentation"
-msgstr "مستندات"
+#: assets/admin/admin-theme.php:100
+msgid "Scan"
+msgstr "مسح"
 
-#: assets/admin/admin-theme.php:41
-msgid "Support"
-msgstr "مُساعَدةٌ"
+#: assets/admin/admin-theme.php:108
+msgid "Attention"
+msgstr "انتباه"
 
-#: assets/admin/admin-theme.php:42
-msgid "Donation"
-msgstr "تبرع"
+#: assets/admin/admin-theme.php:109
+msgid ""
+"We updated the plugin button logic to enable more customization. If after "
+"updating it does not work on your site, this is likely a cache issue. Please "
+"clear your server and browser cache, then refresh the page."
+msgstr ""
+"قمنا بتحديث منطق زر الإضافة لتمكين المزيد من التخصيص. إذا بعد التحديث لا "
+"يعمل على موقعك، فهذه مشكلة تخزين مؤقت على الأرجح. يرجى مسح تخزين الخادم "
+"والمتصفح المؤقت، ثم تحديث الصفحة."
 
-#: assets/admin/admin-theme.php:43
-msgid "changelog"
-msgstr "سجل التغييرات"
+#: assets/admin/admin-theme.php:111
+msgid "Close notice"
+msgstr "إغلاق الإشعار"
 
-#: assets/admin/admin-theme.php:49
+#: assets/admin/admin-theme.php:120
 msgid "General Settings"
-msgstr "إعدادات العام"
+msgstr "الإعدادات العامة"
 
-#: assets/admin/admin-theme.php:56
+#: assets/admin/admin-theme.php:127
 msgid "Enable or Disable Meacodes Accessibility Tools:"
-msgstr "تفعيل أو تعطيل أدوات مساعدة الوصول من مئاکدز:"
+msgstr "تفعيل أو إلغاء تفعيل أدوات إمكانية الوصول Meacodes:"
 
-#: assets/admin/admin-theme.php:65
+#: assets/admin/admin-theme.php:136
 msgid "Plugin Name:"
-msgstr "اسم المكون الإضافي:"
+msgstr "اسم الإضافة:"
 
-#: assets/admin/admin-theme.php:69
-msgid ""
-"This means that the plugin name is a default and automatic translation of the "
-"word Accessibility."
-msgstr "هذا يعني أن اسم الإضافة هو ترجمة آلية افتراضية لكلمة \"إمكانية الوصول\"."
+#: assets/admin/admin-theme.php:138 assets/Themes/Default_blue/theme.php:3
+#: assets/Themes/Default_blue/theme.php:18
+#: assets/Themes/Default_blue/theme.php:23
+msgid "Accessibility"
+msgstr "إمكانية الوصول"
 
-#: assets/admin/admin-theme.php:72
+#: assets/admin/admin-theme.php:140
 msgid ""
-"This name will be displayed opposite the plugin icon in the header section when "
-"the accessibility plugin is opened by the user on your website."
+"This means that the plugin name is a default and automatic translation of "
+"the word Accessibility."
 msgstr ""
-"سيظهر هذا الاسم مقابل أيقونة الإضافة في قسم الرأس (الهيدر) عند قيام المستخدم "
-"بفتح إضافة إمكانية الوصول على موقع الويب الخاص بك."
+"هذا يعني أن اسم الإضافة هو ترجمة افتراضية وتلقائية لكلمة إمكانية الوصول."
 
-#: assets/admin/admin-theme.php:74
+#: assets/admin/admin-theme.php:143
 msgid ""
-"If you do not want any text to be displayed in that section, Clear default name "
-"and save changes."
+"This name will be displayed opposite the plugin icon in the header section "
+"when the accessibility plugin is opened by the user on your website."
 msgstr ""
-"إذا لم ترغب في ظهور أي نص في هذا القسم، فأخفِ الاسم الافتراضي واحفظ التغييرات."
+"سيتم عرض هذا الاسم مقابل أيقونة الإضافة في قسم الرأس عندما يفتح المستخدم "
+"إضافة إمكانية الوصول على موقعك."
 
-#: assets/admin/admin-theme.php:75
+#: assets/admin/admin-theme.php:145
 msgid ""
-"If your site is multilingual (using Polylang), keep in mind that if you change "
-"this name, the name you choose will be displayed without translation and fixed "
-"in all languages unless you rebuild the plugins language file with Polylang and "
-"enter the translation of the chosen name. Also, if you want the chosen name to "
-"revert to the default name and be displayed translated in any language, reset "
-"settings once."
+"If you do not want any text to be displayed in that section, Clear default "
+"name and save changes."
 msgstr ""
-"إذا كان موقعك متعدد اللغات (باستخدام Polylang)، فضع في اعتبارك أنه إذا قمت "
-"بتغيير هذا الاسم، فسيظهر الاسم الذي تختاره بدون ترجمة وسيظل ثابتًا بجميع اللغات "
-"إلا إذا قمت بإعادة بناء ملف لغة الإضافات باستخدام Polylang وأدخلت ترجمة الاسم "
-"الذي اخترته. أيضًا، إذا كنت ترغب في عودة الاسم إلى الاسم الافتراضي وترجمته في أي "
-"لغة، فما عليك سوى إعادة ضبط الإعدادات مرة واحدة."
+"إذا كنت لا تريد عرض أي نص في هذا القسم، امسح الاسم الافتراضي واحفظ التغييرات."
 
-#: assets/admin/admin-theme.php:81
+#: assets/admin/admin-theme.php:146
+msgid ""
+"If your site is multilingual (using Polylang), keep in mind that if you "
+"change this name, the name you choose will be displayed without translation "
+"and fixed in all languages unless you rebuild the plugins language file with "
+"Polylang and enter the translation of the chosen name. Also, if you want the "
+"chosen name to revert to the default name and be displayed translated in any "
+"language, reset settings once."
+msgstr ""
+"إذا كان موقعك متعدد اللغات (باستخدام Polylang)، ضع في اعتبارك أنه إذا غيرت "
+"هذا الاسم، سيتم عرض الاسم الذي تختاره بدون ترجمة وثابت في جميع اللغات ما لم "
+"تقم بإعادة بناء ملف لغة الإضافات مع Polylang وإدخال ترجمة الاسم المختار. "
+"أيضًا، إذا كنت تريد أن يعود الاسم المختار إلى الاسم الافتراضي ويتم عرضه "
+"مترجمًا في أي لغة، أعد تعيين الإعدادات مرة واحدة."
+
+#: assets/admin/admin-theme.php:152
 msgid "Enable or Disable GDPR Notice:"
-msgstr "تفعيل / تعطيل إشعار الخصوصية:"
+msgstr "تفعيل أو إلغاء تفعيل إشعار GDPR:"
 
-#: assets/admin/admin-theme.php:90
+#: assets/admin/admin-theme.php:161
 msgid "Developed by label:"
-msgstr "تم تطويره بواسطة العلامة:"
+msgstr "تطوير بواسطة التسمية:"
 
-#: assets/admin/admin-theme.php:93
+#: assets/admin/admin-theme.php:164
 msgid "Enable \"Developed by\" label"
-msgstr "تفعيل تم تطويره \"بواسطة\" العلامة"
+msgstr "تفعيل تسمية \"تطوير بواسطة\""
 
-#: assets/admin/admin-theme.php:94
+#: assets/admin/admin-theme.php:165
 msgid ""
-"Please turn the Developed by label on to support us and help the project move "
-"forward. "
+"Please turn the Developed by label on to support us and help the project "
+"move forward. "
 msgstr ""
-"من فضلك، قم بتشغيل تسمية \"تم التطوير بواسطة\" لدعمنا ومساعدة المشروع على المضي "
-"قدمًا. "
+"يرجى تفعيل تسمية \"تطوير بواسطة\" لدعمنا ومساعدة المشروع على المضي قدمًا. "
 
-#: assets/admin/admin-theme.php:95
+#: assets/admin/admin-theme.php:166
 msgid "You can also buy us a coffee on the"
-msgstr "يمكنك أيضًا دعمنا بشراء كوب من القهوة من خلال"
+msgstr "يمكنك أيضًا شراء قهوة لنا في"
 
-#: assets/admin/admin-theme.php:95
+#: assets/admin/admin-theme.php:166
 msgid "Donation page."
-msgstr "صفحة التبرعات."
+msgstr "صفحة التبرع."
 
-#: assets/admin/admin-theme.php:96
+#: assets/admin/admin-theme.php:167
 msgid "Thanks for your supports. "
-msgstr "نشكركم على دعمكم. "
+msgstr "شكرًا لدعمكم. "
 
-#: assets/admin/admin-theme.php:123
+#: assets/admin/admin-theme.php:229
+msgid "scanning please wait..."
+msgstr "جاري الفحص، يرجى الانتظار..."
+
+#: assets/admin/admin-theme.php:264
+msgid "Just now"
+msgstr "الآن"
+
+#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
+msgid "Pages with Issues"
+msgstr "الصفحات التي تحتوي على مشاكل"
+
+#: assets/admin/admin-theme.php:304
+msgid "Issues Found:"
+msgstr "المشاكل الموجودة:"
+
+#: assets/admin/admin-theme.php:321 assets/admin/admin-theme.php:635
+msgid "Scan Results"
+msgstr "نتائج المسح"
+
+#: assets/admin/admin-theme.php:322 includes/class-quickscan-admin.php:159
+msgid "Completed"
+msgstr "مكتمل"
+
+#: assets/admin/admin-theme.php:326 assets/admin/admin-theme.php:640
+#: includes/class-quickscan-admin.php:164
+msgid "Last Scan"
+msgstr "آخر مسح"
+
+#: assets/admin/admin-theme.php:330 assets/admin/admin-theme.php:646
+#: includes/class-quickscan-admin.php:176
+msgid "Pages Scanned"
+msgstr "الصفحات الممسوحة"
+
+#: assets/admin/admin-theme.php:331 includes/class-quickscan-admin.php:177
+msgid "pages"
+msgstr "صفحات"
+
+#: assets/admin/admin-theme.php:335 assets/admin/admin-theme.php:652
+#: includes/class-quickscan-admin.php:183
+msgid "Accessibility Issues Found"
+msgstr "تم العثور على مشاكل إمكانية الوصول"
+
+#: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
+#: includes/class-quickscan-admin.php:274
+msgid "Scan failed. Please try again."
+msgstr "فشل المسح. يرجى المحاولة مرة أخرى."
+
+#: assets/admin/admin-theme.php:366
 msgid ""
 "The Accessibility plugin provides a set of tools and features to create an "
-"easier and more inclusive user experience for users with various needs. You can "
-"enable or disable each of these features individually."
+"easier and more inclusive user experience for users with various needs. You "
+"can enable or disable each of these features individually."
 msgstr ""
-"يوفر إضِافة إمكانية الوصول مجموعة من الأدوات والميزات لإنشاء تجربة مستخدم أسهل "
-"وأكثر شمولًا للمستخدمين ذوي الاحتياجات المختلفة. يُمكنك تفعيل أو إلغاء تفعيل كل "
-"من هذه الميزات بشكل فردي."
+"توفر إضافة إمكانية الوصول مجموعة من الأدوات والميزات لإنشاء تجربة مستخدم "
+"أسهل وأكثر شمولية للمستخدمين ذوي الاحتياجات المختلفة. يمكنك تفعيل أو إلغاء "
+"تفعيل كل من هذه الميزات بشكل فردي."
 
-#: assets/admin/admin-theme.php:124
-msgid ""
-"To find out which plugin features are used to solve which accessibility issues "
-"for your site, you can refer to the "
-msgstr ""
-"لاستكشاف ميزات الإضافات التي تُستخدم لحل مشكلات إمكانية الوصول لموقعك، يمكنك "
-"الرجوع إلى "
-
-#: assets/admin/admin-theme.php:124 assets/admin/admin-theme.php:232
-msgid "Documentation."
-msgstr "مستندات."
-
-#: assets/admin/admin-theme.php:128
+#: assets/admin/admin-theme.php:370
 msgid "Font Size Feature:"
 msgstr "ميزة حجم الخط:"
 
-#: assets/admin/admin-theme.php:137
+#: assets/admin/admin-theme.php:379
 msgid "Line Height Feature:"
 msgstr "ميزة ارتفاع السطر:"
 
-#: assets/admin/admin-theme.php:146
+#: assets/admin/admin-theme.php:388
 msgid "Letter Spacing Feature:"
-msgstr "ميزة تباعد الأحرف:"
+msgstr "ميزة تباعد الحروف:"
 
-#: assets/admin/admin-theme.php:155
+#: assets/admin/admin-theme.php:397
 msgid "Dyslexia Mask Feature:"
-msgstr "ميزة تنقية عسر القراءة:"
+msgstr "ميزة قناع عسر القراءة:"
 
-#: assets/admin/admin-theme.php:164
+#: assets/admin/admin-theme.php:406
 msgid "Grayscale Page Feature:"
-msgstr "ميزة صفحة تدرج الرمادي:"
+msgstr "ميزة الصفحة باللون الرمادي:"
 
-#: assets/admin/admin-theme.php:173
+#: assets/admin/admin-theme.php:415
 msgid "Contrast Feature:"
 msgstr "ميزة التباين:"
 
-#: assets/admin/admin-theme.php:182
+#: assets/admin/admin-theme.php:424
 msgid "Negative Feature:"
-msgstr "ميزة سلبي:"
+msgstr "ميزة النيجاتيف:"
 
-#: assets/admin/admin-theme.php:191
+#: assets/admin/admin-theme.php:433
 msgid "Underlined Links Feature:"
-msgstr "ميزة ارتباطات التشعبية المسطرة:"
+msgstr "ميزة الروابط المخطوطة:"
 
-#: assets/admin/admin-theme.php:200
+#: assets/admin/admin-theme.php:442
 msgid "Highlight Links Feature:"
-msgstr "ميزة تظليل الروابط:"
+msgstr "ميزة تمييز الروابط:"
 
-#: assets/admin/admin-theme.php:209
+#: assets/admin/admin-theme.php:451
 msgid "Grayscale Images Feature:"
-msgstr "ميزة صور تدرج الرمادي:"
+msgstr "ميزة الصور باللون الرمادي:"
 
-#: assets/admin/admin-theme.php:218
+#: assets/admin/admin-theme.php:460
 msgid "Black and white Feature:"
-msgstr "ميزة أبيض وأسود:"
+msgstr "ميزة الأبيض والأسود:"
 
-#: assets/admin/admin-theme.php:231
+#: assets/admin/admin-theme.php:473
 msgid "Style Settings"
-msgstr "إعدادات المظهر"
+msgstr "إعدادات النمط"
 
-#: assets/admin/admin-theme.php:232
+#: assets/admin/admin-theme.php:474
 msgid ""
-"Customize the plugins appearance to match your taste and needs using the style "
-"settings. For more information on each appearance variable, refer to the"
-msgstr ""
-"قم بتخصيص مظهر الإضافات لتتناسب مع ذوقك واحتياجاتك باستخدام إعدادات الأنماط. "
-"للحصول على مزيد من المعلومات حول كل متغير من مظهر الإضافة, يمكنك الرجوع إلى"
+"Customize the plugins appearance to match your taste and needs using the "
+"style settings."
+msgstr "خصص مظهر الإضافة ليتناسب مع ذوقك واحتياجاتك باستخدام إعدادات النمط."
 
-#: assets/admin/admin-theme.php:236
+#: assets/admin/admin-theme.php:478
+msgid "Plugin Button Size:"
+msgstr "حجم زر الإضافة:"
+
+#: assets/admin/admin-theme.php:485
+msgid "Plugin Button Border Radius:"
+msgstr "نصف قطر حدود زر الإضافة:"
+
+#: assets/admin/admin-theme.php:492
+msgid "Plugin Button Margin:"
+msgstr "هامش زر الإضافة:"
+
+#: assets/admin/admin-theme.php:499
+msgid "Plugin Button Icon Size:"
+msgstr "حجم أيقونة زر الإضافة:"
+
+#: assets/admin/admin-theme.php:506
 msgid "Positionable by User:"
-msgstr "للمستخدم التحكم بموضعه:"
+msgstr "قابل للوضع بواسطة المستخدم:"
 
-#: assets/admin/admin-theme.php:244
+#: assets/admin/admin-theme.php:514
 msgid ""
 "Enabling this option allows users to freely move the accessibility plugin "
 "around the page on desktop devices. Please note that this feature is not "
 "available on mobile devices."
 msgstr ""
-"تتيح هذه الميزة للمستخدمين تحريك إِضافة إمكانية الوصول بحرية حول الصفحة على "
-"أجهزة الكمبيوتر المكتبية. يرجى ملاحظة أن هذه الميزة غير متوفرة على الأجهزة "
+"تفعيل هذا الخيار يسمح للمستخدمين بتحريك إضافة إمكانية الوصول بحرية حول "
+"الصفحة على أجهزة سطح المكتب. يرجى ملاحظة أن هذه الميزة غير متاحة على الأجهزة "
 "المحمولة."
 
-#: assets/admin/admin-theme.php:248
+#: assets/admin/admin-theme.php:518
 msgid "Plugin Position:"
 msgstr "موضع الإضافة:"
 
-#: assets/admin/admin-theme.php:253
+#: assets/admin/admin-theme.php:523
 msgid "Bottom Left Corner"
-msgstr "يسار أسفل"
+msgstr "الزاوية السفلية اليسرى"
 
-#: assets/admin/admin-theme.php:254
+#: assets/admin/admin-theme.php:524
 msgid "Bottom Right Corner"
-msgstr "اليمين أسفل"
+msgstr "الزاوية السفلية اليمنى"
 
-#: assets/admin/admin-theme.php:255
+#: assets/admin/admin-theme.php:525
 msgid "Top Left Corner"
-msgstr "اليسار أعلى"
+msgstr "الزاوية العلوية اليسرى"
 
-#: assets/admin/admin-theme.php:256
+#: assets/admin/admin-theme.php:526
 msgid "Top Right Corner"
-msgstr "يمين أعلى"
+msgstr "الزاوية العلوية اليمنى"
 
-#: assets/admin/admin-theme.php:272
+#: assets/admin/admin-theme.php:542
 msgid "Background Color: "
 msgstr "لون الخلفية: "
 
-#: assets/admin/admin-theme.php:275
+#: assets/admin/admin-theme.php:545
 msgid "Background color of plugin and logo border."
-msgstr "لون خلفية الإضافة وحد حدود الشعار."
+msgstr "لون خلفية الإضافة وحدود الشعار."
 
-#: assets/admin/admin-theme.php:279
+#: assets/admin/admin-theme.php:549
 msgid "Labels Color: "
-msgstr "لون الملصقات: "
+msgstr "لون التسميات: "
 
-#: assets/admin/admin-theme.php:282
+#: assets/admin/admin-theme.php:552
 msgid "Color of the labels or name of each feature and Plugin name to."
-msgstr "لون الملصقات واسم كل ميزة واسم الإضافة إلى."
+msgstr "لون التسميات أو اسم كل ميزة واسم الإضافة."
 
-#: assets/admin/admin-theme.php:286
+#: assets/admin/admin-theme.php:556
 msgid "Divider Line Color: "
 msgstr "لون خط الفاصل: "
 
-#: assets/admin/admin-theme.php:289
+#: assets/admin/admin-theme.php:559
 msgid "Color of plugin header & features section divider."
-msgstr "لون رأس ترويسة الإضافة وفاصل قسم الميزات."
+msgstr "لون رأس الإضافة وفاصل قسم الميزات."
 
-#: assets/admin/admin-theme.php:293
-msgid "Plugin Logo Color: "
-msgstr "لون شعار الإضافة: "
-
-#: assets/admin/admin-theme.php:296
-msgid "Color Scheme for Plugin Logo."
-msgstr "مخطط ألوان شعار الإضافة."
-
-#: assets/admin/admin-theme.php:300
-msgid "Accent Color: "
-msgstr "لون التظليل: "
-
-#: assets/admin/admin-theme.php:304
-msgid "Color scheme for:"
-msgstr "لوحة ألوان لـ:"
-
-#: assets/admin/admin-theme.php:306
-msgid "Active features and their toggle buttons on hover."
-msgstr "المميزات الفعالة وأزرار تشغيلها/إيقافها عند التمرير."
-
-#: assets/admin/admin-theme.php:307
-msgid "Dyslexia reading mask bars"
-msgstr "قضبان قراءة عسر القراءة"
-
-#: assets/admin/admin-theme.php:313
-msgid "‌Buttons Color (Reset/Close):"
-msgstr "‌لون الأزرار (إعادة ضبط/أخفِ):"
-
-#: assets/admin/admin-theme.php:317
-msgid "Buttons Hover Color (Reset/Close): "
-msgstr "لون تمرير الأزرار (إعادة ضبط/أخفِ): "
-
-#: assets/admin/admin-theme.php:325
-msgid "Reset settings"
-msgstr "استعادة الإعدادات الافتراضية"
-
-#: assets/admin/admin-theme.php:345
-msgid "Accessibility Tools Version: "
-msgstr "إصدار أدوات مساعدة الوصول: "
-
-#: assets/admin/admin-theme.php:347
-msgid "Developed by"
-msgstr "تم تطويره بواسطة"
-
-#. Plugin Name of the plugin/theme
-#: meacodes-accessibility-tools.php:76
-msgid "Meacodes Accessibility Tools"
-msgstr "أدوات إمكانية وصول مئاکدز"
-
-#: meacodes-accessibility-tools.php:77
-msgid "Mea Accessibility"
-msgstr "ميأ لإمكانية الوصول"
-
-#: meacodes-accessibility-tools.php:86 meacodes-accessibility-tools.php:87
-msgid "Settings"
-msgstr "الإعدادات"
-
-#. Plugin URI of the plugin/theme
-msgid "https://www.meacodes.com/accessibility"
-msgstr "https://www.meacodes.com/accessibility"
-
-#. Description of the plugin/theme
-msgid ""
-"This is an accessibility tools for people with disabilities to use the web "
-"easily."
-msgstr "هذا إضافة لإمكانية الوصول يساعد الأشخاص ذوي الإعاقة على استخدام الإنترنت."
-
-#. Author of the plugin/theme
-msgid "Meacodes"
-msgstr "Meacodes"
-
-#. Author URI of the plugin/theme
-msgid "https://www.meacodes.com"
-msgstr "https://www.meacodes.com"
-
-msgid "Advanced Analytics & Accessibility Insights"
-msgstr "التحليلات المتقدمة ورؤى إمكانية الوصول"
-
-
-msgid "Auto Translate – Seamless Multilingual Experience"
-msgstr "الترجمة التلقائية - تجربة سلسة متعددة اللغات"
-
-msgid "Banner dismissed successfully"
-msgstr "تم رفض اللافتة بنجاح"
-
-msgid "Close banner"
-msgstr "إغلاق اللافتة"
-
-msgid "Complete Accessibility Issue Summary for Your Website"
-msgstr "ملخص مشكلة إمكانية الوصول الكامل لموقعك الإلكتروني"
-
-msgid "Comprehensive WCAG 2.1 Issue Detection & Solutions"
-msgstr "الكشف الشامل عن مشكلات WCAG 2.1 وحلولها"
-
-msgid "Effortless Dark & Light Mode Customization"
-msgstr "تخصيص وضع الإضاءة والظلام دون عناء"
-
-msgid "Endless Customization"
-msgstr "تخصيص لا نهائي"
-
-msgid "Flexible Fonts — Google & Custom Options"
-msgstr "خطوط مرنة — خيارات Google والمخصصة"
-
-msgid "Fully Customizable Appearance & Theme Control"
-msgstr "مظهر قابل للتخصيص بالكامل وتحكم في المظهر"
-
-msgid "Insufficient permissions"
-msgstr "صلاحيات غير كافية"
-
-
-
-msgid "Meacodes Development Solutions"
-msgstr "حلول تطوير Meacodes"
-
-msgid "Meacodes Pro Badge"
-msgstr "شارة Meacodes Pro"
-
-msgid "Modern Mobile First Responsive Design"
-msgstr "تصميم متجاوب حديث للأجهزة المحمولة أولاً"
-
-msgid "Page Structure Overview"
-msgstr "نظرة عامة على هيكل الصفحة"
-
-msgid "Personalized Accessibility Profiles for Every User"
-msgstr "ملفات تعريف إمكانية الوصول الشخصية لكل مستخدم"
-
-msgid "Plugin Button Border Radius:"
-msgstr "نصف قطر حدود زر المكون الإضافي:"
-
-msgid "Plugin Button Icon Size:"
-msgstr "حجم أيقونة زر المكون الإضافي:"
-
-msgid "Plugin Button Margin:"
-msgstr "هامش زر المكون الإضافي:"
-
-msgid "Plugin Button Size:"
-msgstr "حجم زر المكون الإضافي:"
-
+#: assets/admin/admin-theme.php:563
 msgid "Plugin button Color: "
-msgstr "لون زر المكون الإضافي: "
+msgstr "لون زر الإضافة: "
 
-msgid "Professional Keyboard Navigation"
-msgstr "التنقل بلوحة المفاتيح المهنية"
+#: assets/admin/admin-theme.php:566
+msgid "Color Scheme for Plugin Logo."
+msgstr "مخطط الألوان لشعار الإضافة."
 
-msgid "Real-Time Website Performance Analysis"
-msgstr "تحليل أداء الموقع في الوقت الفعلي"
+#: assets/admin/admin-theme.php:570
+msgid "Accent Color: "
+msgstr "لون التمييز: "
 
-msgid "Security check failed"
-msgstr "فشل فحص الأمان"
+#: assets/admin/admin-theme.php:574
+msgid "Color scheme for:"
+msgstr "مخطط الألوان لـ:"
 
-msgid "Smart Screen Reader Integration"
-msgstr "تكامل ذكي مع قارئ الشاشة"
+#: assets/admin/admin-theme.php:576
+msgid "Active features and their toggle buttons on hover."
+msgstr "الميزات النشطة وأزرار التبديل الخاصة بها عند التمرير."
 
-msgid "Smart Site Search Engine"
-msgstr "محرك بحث ذكي للموقع"
+#: assets/admin/admin-theme.php:577
+msgid "Dyslexia reading mask bars"
+msgstr "أشرطة قناع قراءة عسر القراءة"
 
-msgid "The upcoming version introduces advanced features like:"
-msgstr "الإصدار القادم يقدم ميزات متقدمة مثل:"
+#: assets/admin/admin-theme.php:583
+msgid "‌Buttons Color (Reset/Close):"
+msgstr "لون الأزرار (إعادة تعيين/إغلاق):"
 
-msgid "WordPress Performance & Security Score"
-msgstr "درجة أداء وأمان WordPress"
+#: assets/admin/admin-theme.php:587
+msgid "Buttons Hover Color (Reset/Close): "
+msgstr "لون تمرير الأزرار (إعادة تعيين/إغلاق): "
 
+#: assets/admin/admin-theme.php:596 includes/class-quickscan-admin.php:56
+#: includes/class-quickscan-admin.php:57 includes/class-quickscan-admin.php:99
+#: includes/class-quickscan-admin.php:158
+msgid "Accessibility Quick Scan"
+msgstr "مسح سريع لإمكانية الوصول"
+
+#: assets/admin/admin-theme.php:597
+msgid "Scan your website for accessibility issues manually."
+msgstr "امسح موقعك بحثًا عن مشاكل إمكانية الوصول يدويًا."
+
+#: assets/admin/admin-theme.php:600
+msgid "Manual Accessibility Scan"
+msgstr "مسح إمكانية الوصول اليدوي"
+
+#: assets/admin/admin-theme.php:602
+msgid ""
+"Click the button below to scan your website for accessibility issues. This "
+"will check your pages for common accessibility problems."
+msgstr ""
+"انقر على الزر أدناه لمسح موقعك بحثًا عن مشاكل إمكانية الوصول. سيفحص هذا "
+"صفحاتك بحثًا عن مشاكل إمكانية الوصول الشائعة."
+
+#: assets/admin/admin-theme.php:607
+msgid "Maximum Pages to Scan:"
+msgstr "الحد الأقصى للصفحات للمسح:"
+
+#: assets/admin/admin-theme.php:611
+msgid "(1-35 pages)"
+msgstr "(1-35 صفحة)"
+
+#: assets/admin/admin-theme.php:616
+msgid "Run Accessibility Scan Now"
+msgstr "تشغيل مسح إمكانية الوصول الآن"
+
+#: assets/admin/admin-theme.php:624
+msgid "Last Scan Results"
+msgstr "نتائج آخر مسح"
+
+#: assets/admin/admin-theme.php:701
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+#: assets/admin/admin-theme.php:706
+msgid "Reset Settings"
+msgstr "إعادة تعيين الإعدادات"
+
+#: assets/admin/admin-theme.php:710
+msgid ""
+"Save Changes will save all settings across all tabs. Reset Settings will "
+"restore all options to their default values."
+msgstr ""
+"حفظ التغييرات سيحفظ جميع الإعدادات عبر جميع التبويبات. إعادة تعيين الإعدادات "
+"ستستعيد جميع الخيارات إلى قيمها الافتراضية."
+
+#: assets/admin/admin-theme.php:799
+msgid "Accessibility Tools Version: "
+msgstr "إصدار أدوات إمكانية الوصول: "
+
+#: assets/Themes/Default_blue/theme.php:17
+msgid "Open/Close Accessibility Options"
+msgstr "فتح/إغلاق خيارات إمكانية الوصول"
+
+#: assets/Themes/Default_blue/theme.php:22
+msgid "Drag and move the accessibility box"
+msgstr "اسحب وحرك صندوق إمكانية الوصول"
+
+#: assets/Themes/Default_blue/theme.php:26
+msgid "Click to read GDPR Notice"
+msgstr "انقر لقراءة إشعار GDPR"
+
+#: assets/Themes/Default_blue/theme.php:37
+msgid "Font Size"
+msgstr "حجم الخط"
+
+#: assets/Themes/Default_blue/theme.php:42
+msgid "‌Normal"
+msgstr "عادي"
+
+#: assets/Themes/Default_blue/theme.php:54
+msgid "Line Height"
+msgstr "ارتفاع السطر"
+
+#: assets/Themes/Default_blue/theme.php:57
+#: assets/Themes/Default_blue/theme.php:70
+msgid "Normal"
+msgstr "عادي"
+
+#: assets/Themes/Default_blue/theme.php:67
+msgid "Letter Spacing"
+msgstr "تباعد الحروف"
+
+#: assets/Themes/Default_blue/theme.php:82
+msgid "Dyslexia Mask"
+msgstr "قناع عسر القراءة"
+
+#: assets/Themes/Default_blue/theme.php:90
+msgid "Grayscale Page"
+msgstr "صفحة باللون الرمادي"
+
+#: assets/Themes/Default_blue/theme.php:98
+msgid "Contrast"
+msgstr "التباين"
+
+#: assets/Themes/Default_blue/theme.php:106
+msgid "Negative"
+msgstr "النيجاتيف"
+
+#: assets/Themes/Default_blue/theme.php:114
+msgid "Underlined Links"
+msgstr "الروابط المخطوطة"
+
+#: assets/Themes/Default_blue/theme.php:122
+msgid "Highlight Links"
+msgstr "تمييز الروابط"
+
+#: assets/Themes/Default_blue/theme.php:130
+msgid "Grayscale Images"
+msgstr "الصور باللون الرمادي"
+
+#: assets/Themes/Default_blue/theme.php:138
+msgid "Black and white"
+msgstr "أبيض وأسود"
+
+#: assets/Themes/Default_blue/theme.php:144
+msgid "Developed by "
+msgstr "تطوير بواسطة "
+
+#: assets/Themes/Default_blue/theme.php:146
+msgid "Reset"
+msgstr "إعادة تعيين"
+
+#: assets/Themes/Default_blue/theme.php:147
+msgid "Close"
+msgstr "إغلاق"
+
+#: assets/Themes/Default_blue/theme.php:152
+msgid "GDPR Notice:"
+msgstr "إشعار GDPR:"
+
+#: assets/Themes/Default_blue/theme.php:153
+msgid ""
+"This plugin uses cookies to enhance your experience and provide personalized "
+"accessibility settings. These cookies are stored in your browser and allow "
+"us to remember your preferences for font size, color schemes, and other "
+"accessibility features. By using this plugin, you consent to the use of "
+"cookies for these purposes. You can delete or block cookies in your browser "
+"settings at any time. Please note that doing so may affect your experience "
+"on the site."
+msgstr ""
+"تستخدم هذه الإضافة ملفات تعريف الارتباط لتحسين تجربتك وتوفير إعدادات إمكانية "
+"الوصول المخصصة. يتم تخزين ملفات تعريف الارتباط هذه في متصفحك وتسمح لنا بتذكر "
+"تفضيلاتك لحجم الخط ومخططات الألوان والميزات الأخرى لإمكانية الوصول. باستخدام "
+"هذه الإضافة، فإنك توافق على استخدام ملفات تعريف الارتباط لهذه الأغراض. يمكنك "
+"حذف أو حظر ملفات تعريف الارتباط في إعدادات متصفحك في أي وقت. يرجى ملاحظة أن "
+"القيام بذلك قد يؤثر على تجربتك في الموقع."
+
+#: includes/class-admin-banner.php:129
+msgid "Close banner"
+msgstr "إغلاق الشعار"
+
+#: includes/class-admin-banner.php:134
 msgid "🎉 Congratulations!"
 msgstr "🎉 تهانينا!"
 
-msgid "👉 Join Campaign at Meacodes.com"
-msgstr "👉 انضم إلى الحملة في Meacodes.com"
-
-#~ msgid "help section."
-#~ msgstr "قسم المساعدة."
-
-#~ msgid "Meacodes Accessibility Tools Help"
-#~ msgstr "مساعدات أدوات إمكانية وصول مئاکدز"
-
-#~ msgid "Introduction"
-#~ msgstr "مقدمة"
-
-#~ msgid ""
-#~ "Welcome to the Meacodes Accessibility Tools! Elevate the accessibility of "
-#~ "your WordPress site effortlessly with a range of features designed for an "
-#~ "inclusive online experience."
-#~ msgstr ""
-#~ "مرحبًا بكم في أدوات ميأكودز لإمكانية الوصول بووردبريس! عزِّز إمكانية وصول "
-#~ "موقعكم على ووردبريس بكل سهولة من خلال مجموعة من الميزات المصممة لتجربة شاملة "
-#~ "عبر الإنترنت."
-
-#~ msgid ""
-#~ "Discover the powerful accessibility features that come with this plugin:"
-#~ msgstr "استكشف ميزات إمكانية الوصول القوية التي تأتي مع هذا الإضافة:"
-
-#~ msgid "Font Customization"
-#~ msgstr "ضبط مظهر الخطوط"
-
-#~ msgid "Modify the size of text for improved readability."
-#~ msgstr "عدّل حجم النص لتحسين قابلية القراءة."
-
-#~ msgid "Set the spacing between lines for enhanced legibility."
-#~ msgstr "ضبط المسافة بين الأسطر لتحسين قابلية القراءة."
-
-#~ msgid "Customize letter spacing for optimal text clarity."
-#~ msgstr "ضبط تباعد الأحرف لتحسين وضوح النص."
-
-#~ msgid "Dyslexia-Friendly Options"
-#~ msgstr "خيارات صديقة لمرضى عسر القراءة"
-
-#~ msgid "Apply a mask to minimize visual distractions."
-#~ msgstr "استخدم قناع لتقليل التشتيت البصري."
-
-#~ msgid "Visual Adjustments"
-#~ msgstr "تعديلات مرئية"
-
-#~ msgid "Convert the page to grayscale for a simplified look."
-#~ msgstr "حوّل الصفحة إلى تدرجات الرمادي لمظهر مبسط."
-
-#~ msgid "Increase the contrast for better visibility."
-#~ msgstr "زِد التباين لتحسين الرؤية."
-
-#~ msgid "Invert colors for a unique viewing experience."
-#~ msgstr "عكس الألوان للحصول على تجربة عرض فريدة."
-
-#~ msgid "Link Styling"
-#~ msgstr "تنسيق الروابط"
-
-#~ msgid "Add underlines to links for clarity."
-#~ msgstr "إضفاء تحتيط على الروابط لتحسين الوضوح."
-
-#~ msgid "Emphasize links to draw attention."
-#~ msgstr "استخدم التنسيق لإبراز الروابط وجذب الانتباه."
-
-#~ msgid "Image Presentation"
-#~ msgstr "عرض صورة"
-
-#~ msgid "Convert images to grayscale."
-#~ msgstr "تحويل الصور إلى تدرجات الرمادي."
-
-#~ msgid "Black and White Page"
-#~ msgstr "صفحة بالأبيض والأسود"
-
-#~ msgid "Transform the entire page to black and white."
-#~ msgstr "حوّل الصفحة بأكملها إلى تدرجات الرمادي."
-
-#~ msgid "Enhance the reading experience for users with dyslexia:"
-#~ msgstr "تحسين تجربة القراءة للمستخدمين الذين يعانون من عسر القراءة:"
-
-#~ msgid "How to Use"
-#~ msgstr "كيفية الاستخدام"
-
-#~ msgid ""
-#~ "Unlock the full potential of the Accessibility Plugin in just a few simple "
-#~ "steps:"
-#~ msgstr "استفد من كامل إمكانيات ملحق إمكانية الوصول بخطوات بسيطة قليلة:"
-
-#~ msgid "Navigate to the "
-#~ msgstr "توجه إلى "
-
-#~ msgid "menu in your WordPress dashboard."
-#~ msgstr "في لوحة تحكم ووردبريس الخاصة بك."
-
-#~ msgid "Click on"
-#~ msgstr "انقر فوق"
-
-#~ msgid "to access the settings page."
-#~ msgstr "للوصول إلى صفحة الإعدادات."
-
-#~ msgid ""
-#~ "Explore each feature and customize settings according to your preferences."
-#~ msgstr "قم باستكشاف كل ميزة وقم بتخصيص الإعدادات وفقًا لتفضيلاتك."
-
-#~ msgid "And click on "
-#~ msgstr "واضغط على زر "
-
-#~ msgid "Save Changes."
-#~ msgstr "حفظ التغييرات."
-
-#~ msgid "Need Further Assistance?"
-#~ msgstr "هل لديك استفسارات أخرى؟"
-
-#~ msgid ""
-#~ "A blue question mark icon ( ? ) is placed next to the settings sections that "
-#~ "need further clarification. By hovering your mouse over it, more detailed "
-#~ "instructions will be displayed to help you understand the settings better."
-#~ msgstr ""
-#~ "علامة استفهام زرقاء (؟) توضع بجوار أقسام الإعدادات التي تحتاج إلى توضيح "
-#~ "أكثر. فعند تحريك مؤشر الماوس فوقها، ستظهر تعليمات أكثر تفصيلاً لمساعدتك على "
-#~ "فهم الإعدادات بشكل أفضل."
-
-#~ msgid "Translation Notice"
-#~ msgstr "ملاحظة حول الترجمة"
-
-#~ msgid ""
-#~ "We strive to provide accurate translations for our plugin in multiple "
-#~ "languages. However, due to the automated nature of the translation process, "
-#~ "there may be instances of inaccuracies or errors in certain translations."
-#~ msgstr ""
-#~ "نسعى جاهدين لتوفير ترجمات دقيقة لإضافتنا بعدة لغات. ومع ذلك، وبالنظر إلى "
-#~ "الطبيعة الآلية لعملية الترجمة، فقد تظهر بعض حالات عدم الدقة أو الأخطاء في "
-#~ "بعض الترجمات."
-
-#~ msgid ""
-#~ "Your feedback and contributions play a crucial role in improving translation "
-#~ "quality and ensuring a better user experience for everyone. If you encounter "
-#~ "any incorrect translations or have suggestions for improvement, we encourage "
-#~ "you to get involved:"
-#~ msgstr ""
-#~ "ملاحظاتكم ومساهماتكم تلعب دورًا جوهريًا في تحسين جودة الترجمة و ضمان تجربة "
-#~ "مستخدم أفضل للجميع إذا واجهتم أي ترجمات غير صحيحة أو لديكم اقتراحات لتحسين "
-#~ "نوصيكم بالمشاركة:"
-
-#~ msgid "Report any translation issues or inaccuracies you encounter."
-#~ msgstr "يرجى الإبلاغ عن أي مشاكل أو عدم دقة في الترجمة التي تصادفها."
-
-#~ msgid ""
-#~ "Contribute your own translations or corrections to help enhance the overall "
-#~ "quality."
-#~ msgstr "شارك بترجماتك أو تصحيحاتك للمساهمة في تحسين الجودة العامة."
-
-#~ msgid ""
-#~ "Your participation not only benefits you but also the entire community of "
-#~ "users who speak the same language."
-#~ msgstr ""
-#~ "مشاركتك لا تفيدك فقط، بل تفيد أيضًا مجتمع المستخدمين بأكمله الذين يتحدثون نفس "
-#~ "اللغة."
-
-#~ msgid ""
-#~ "Thank you for helping us improve! You can send your .po files to us by use "
-#~ "this email:"
-#~ msgstr ""
-#~ "نشكركم على مساعدتكم لنا على التحسين! يمكنك إرسال ملفات .po الخاصة بك إلينا "
-#~ "على هذا البريد الإلكتروني:"
-
-#~ msgid ""
-#~ "With your support, we can make the online world more inclusive for everyone."
-#~ msgstr "بفضل دعمكم، يمكننا جعل عالم الإنترنت أكثر شمولاً للجميع."
-
-#~ msgid ""
-#~ "The Accessibility Plugin aims to create an easier and more inclusive online "
-#~ "experience for everyone, especially users with disabilities. This plugin is "
-#~ "available for free to everyone so that no one is deprived of its benefits."
-#~ msgstr ""
-#~ "يَهدف ملحق إمكانية الوصول إلى إنشاء تجربة على الإنترنت أسهل وأكثر شمولًا "
-#~ "للجميع، وخاصةً المستخدمين من ذوي الإعاقة. تتوفر هذه الإضافة مجانًا للجميع حتى "
-#~ "لا يُحرم أحدٌ من مزاياها."
-
-#~ msgid "By donating, you can help us:"
-#~ msgstr "بالتبرع، يمكنك مساعدتنا في:"
-
-#~ msgid "Improve and develop the plugin: "
-#~ msgstr "طور وِحسِّن الإِضافة: "
-
-#~ msgid ""
-#~ "With your donations, we can add new features to the plugin and improve its "
-#~ "performance"
-#~ msgstr "بفضل تبرعاتكم، يُمكننا إضافة ميزات جديدة إلى الإِضافة وتحسين أدائها"
-
-#~ msgid "Support and troubleshooting: "
-#~ msgstr "الدعم واستكشاف الأخطاء وإصلاحها: "
-
-#~ msgid ""
-#~ "With your support, we can continuously help users solve their problems and "
-#~ "fix any bugs in the plugin"
-#~ msgstr ""
-#~ "بمساعدتكم، يمكننا دائمًا مساعدة المستخدمين في حل مشكلاتهم وإصلاح أي أخطاء "
-#~ "تقنية في الإضافة"
-
-#~ msgid "Awareness and education: "
-#~ msgstr "التوعية والتعليم: "
-
-#~ msgid ""
-#~ "With your donations, we can raise awareness about web accessibility and "
-#~ "provide the necessary training"
-#~ msgstr ""
-#~ "بفضل تبرعاتكم، يمكننا رفع مستوى الوعي بإمكانية وصول الويب وتوفير التدريب "
-#~ "اللازم"
-
-#~ msgid "Any amount, no matter how small, can help us along the way."
-#~ msgstr "أي مبلغ، مهما كان صغيراً، يمكن أن يساعدنا في مسيرتنا."
-
-#~ msgid "donate us via Trust Wallet"
-#~ msgstr "تبرع لنا باستخدام Trust Wallet"
-
-#~ msgid "Your supports in Bitcoin is highly appreciated "
-#~ msgstr "ندرِك تقديركم الكبير لدعمنا بالبتكوين "
-
-#~ msgid "Contribute using USDT for a seamless donation process "
-#~ msgstr "اساهم باستخدام USDT لعملية تبرع سلسة "
-
-#~ msgid ""
-#~ "Your generosity in USDC is valuable to us. Thank you for supporting web "
-#~ "accessibility! "
-#~ msgstr ""
-#~ "كرمكم بعملة USDC له قيمة كبيرة بالنسبة لنا. نشكركم على دعم إمكانية وصول "
-#~ "الويب! "
-
-#~ msgid "donate us with Stripe"
-#~ msgstr "تبرع لنا باستخدام Stripe"
-
-#~ msgid ""
-#~ "Support us securely through Stripe. Every contribution makes a positive "
-#~ "impact! "
-#~ msgstr "ادعمنا بأمان من خلال Stripe. كل مساهمة تحدث فرقًا إيجابيًا! "
-
-#~ msgid "Help"
-#~ msgstr "دعم"
-
-#~ msgid ""
-#~ "If you encounter any issues or have questions, our support team is here to "
-#~ "help. Reach out at:"
-#~ msgstr ""
-#~ "في حالِ مواجهتك لأي مشكلة أو استفسارك عن شيء، فإن فريق الدعم لدينا يسرُّ تقديم:"
-
-#~ msgid "Customer support service via live chat on meacodes website."
-#~ msgstr "خدمة دعم العملاء عبر دردشة حية على موقع ميأكودز."
-
-#~ msgid "Movable Plugin:"
-#~ msgstr "إضافة متحركة:"
-
-#~ msgid "Open/Close Plugin"
-#~ msgstr "فتح/إغلاق المكون الإضافي"
-
-#~ msgid "Powered by "
-#~ msgstr "بما يقدمه "
-
-#~ msgid "Powered by"
-#~ msgstr "بإشغاله بواسطة"
-
-#~ msgid "Enable Mea Accessibility Plugin"
-#~ msgstr "تفعيل الإضافي ميأ لإمكانية الوصول"
-
-#~ msgid "Enable GDPR Notice"
-#~ msgstr "تفعيل إشعار الخصوصية"
-
-#~ msgid "Enable Font Size Feature"
-#~ msgstr "تفعيل ميزة حجم الخط"
-
-#~ msgid "Enable Line Height Feature"
-#~ msgstr "تفعيل ميزة ارتفاع السطر"
-
-#~ msgid "Enable Letter Spacing Feature"
-#~ msgstr "تفعيل ميزة تباعد الأحرف"
-
-#~ msgid "Enable Dyslexia Mask Feature"
-#~ msgstr "تفعيل ميزة تنقية عسر القراءة"
-
-#~ msgid "Enable Grayscale Page Feature"
-#~ msgstr "تفعيل ميزة صفحة تدرج الرمادي"
-
-#~ msgid "Enable Contrast Feature"
-#~ msgstr "تفعيل ميزة التباين"
-
-#~ msgid "Enable Negative Feature"
-#~ msgstr "تفعيل ميزة سلبي"
-
-#~ msgid "Enable Underlined Links Feature"
-#~ msgstr "تفعيل ميزة ارتباطات التشعبية المسطرة"
-
-#~ msgid "Enable Highlight Links Feature"
-#~ msgstr "تفعيل ميزة تظليل الروابط"
-
-#~ msgid "Enable Grayscale Images Feature"
-#~ msgstr "تفعيل ميزة صور تدرج الرمادي"
-
-#~ msgid "Enable Black and white Feature"
-#~ msgstr "تفعيل ميزة أبيض وأسود"
-
-#~ msgid "Reset/Close buttons"
-#~ msgstr "أزرار إعادة ضبط/أخفِ"
-
-#~ msgid "www.meacodes.com"
-#~ msgstr "www.meacodes.com"
-
-#~ msgid "TRC20"
-#~ msgstr "TRC20"
-
-#~ msgid "Negativ"
-#~ msgstr "سلبي"
-
-#~ msgid "Copyright Text:"
-#~ msgstr "حقوق النشر النصية:"
-
-msgid "Attention"
-msgstr "تنبيه"
-
-msgid "We updated the plugin button logic to enable more customization. If after updating it does not work on your site, this is likely a cache issue. Please clear your server and browser cache, then refresh the page."
-msgstr "لقد قمنا بتحديث منطق زر المكون الإضافي لتمكين المزيد من التخصيص. إذا لم يعمل على موقعك بعد التحديث، فهذه مشكلة ذاكرة التخزين المؤقت. يرجى مسح ذاكرة التخزين المؤقت للخادم والمتصفح، ثم تحديث الصفحة."
-
-msgid "💎 Register your website now in our Airdrop Campaign to claim your exclusive rewards and upcoming discounts!"
-msgstr "💎 سجل موقعك الآن في حملة الإسقاط الجوي الخاصة بنا للحصول على مكافآتك الحصرية والخصومات القادمة!"
-
-msgid "Because you're using the %s plugin, you've earned an exclusive badge for a 3-month Pro Version 2 subscription — launching soon!"
-msgstr "لأنك تستخدم مكون أدوات إمكانية الوصول من Meacodes الإضافي، لقد حصلت على شارة حصرية لاشتراك Pro Version 2 لمدة 3 أشهر — قريبًا!"
-
-msgid "You've been recognized as an Early Supporter of Meacodes Accessibility Tools — a special thank-you to everyone helping us build a more accessible web 🌍"
-msgstr "لقد تم الاعتراف بك كداعم مبكر لأدوات إمكانية الوصول من Meacodes — شكر خاص لكل من يساعدنا في بناء ويب أكثر إمكانية للوصول 🌍"
-
-msgid "With the upcoming Pro Version 2, you'll unlock early-access privileges such as:"
-msgstr "مع الإصدار Pro Version 2 القادم، ستفتح امتيازات الوصول المبكر مثل:"
-
-msgid "Modern mobile-first responsive design"
-msgstr "تصميم متجاوب حديث يركز على الهاتف المحمول"
-
-msgid "Smart accessibility enhancements"
-msgstr "تحسينات ذكية لإمكانية الوصول"
-
-msgid "WCAG 2.1 issue detection & analytics"
-msgstr "كشف مشاكل WCAG 2.1 والتحليلات"
-
-msgid "Deep customization options"
-msgstr "خيارات تخصيص عميقة"
-
-msgid "Your Early Supporter Badge will be verified automatically during the Pro 2 rollout. Stay tuned and learn more about the upcoming release at"
-msgstr "ستتم مراجعة شارة الداعم المبكر تلقائياً أثناء إطلاق Pro 2. ابق متابعاً وتعلم المزيد عن الإصدار القادم في"
-
-msgid "👉 meacodes.com"
-msgstr "👉 meacodes.com"
-
+#. translators: %s: Plugin name
+#: includes/class-admin-banner.php:139
+#, php-format
+msgid "You've been recognized as an %s of Meacodes Accessibility Tools."
+msgstr "تم الاعتراف بك كـ %s من أدوات إمكانية الوصول Meacodes."
+
+#. translators: %1$s: Pro Version 2, %2$s: Early Supporter Badge
+#: includes/class-admin-banner.php:149
+#, php-format
+msgid ""
+"As part of the upcoming %1$s rollout, early supporters will receive an "
+"exclusive %2$s and extended Pro access privileges."
+msgstr ""
+"كجزء من الإطلاق القادم لـ %1$s، سيتلقى الداعمون الأوائل %2$s حصري وامتيازات "
+"وصول Pro موسعة."
+
+#: includes/class-admin-banner.php:157
+msgid "To learn how the badge system works and how sites are verified,"
+msgstr "لتعلم كيفية عمل نظام الشارات وكيفية التحقق من المواقع،"
+
+#: includes/class-admin-banner.php:158
+msgid "👉 visit meacodes.com"
+msgstr "👉 زر meacodes.com"
+
+#: includes/class-admin-banner.php:161
 msgid "This notice will hide for 24 hours once dismissed."
 msgstr "سيتم إخفاء هذا الإشعار لمدة 24 ساعة بمجرد رفضه."
 
-msgid "You've been recognized as an %s of Meacodes Accessibility Tools."
-msgstr "لقد تم الاعتراف بك كـ %s لأدوات إمكانية الوصول من Meacodes."
+#: includes/class-admin-banner.php:165
+msgid "Meacodes Pro Badge"
+msgstr "شارة Meacodes Pro"
 
-msgid "As part of the upcoming %s rollout, early supporters will receive an exclusive %s and extended Pro access privileges."
-msgstr "كجزء من إطلاق %s القادم، سيتلقى الداعمون الأوائل %s حصري وامتيازات وصول Pro ممتدة."
+#: includes/class-admin-banner.php:179
+msgid "Security check failed"
+msgstr "فشل فحص الأمان"
 
-msgid "To learn how the badge system works and how sites are verified,"
-msgstr "لمعرفة كيفية عمل نظام الشارات وكيفية التحقق من المواقع،"
+#: includes/class-admin-banner.php:184
+msgid "Insufficient permissions"
+msgstr "أذونات غير كافية"
 
-msgid "👉 visit meacodes.com/early-supporter"
-msgstr "👉 زر meacodes.com/early-supporter"
+#: includes/class-admin-banner.php:191
+msgid "Banner dismissed successfully"
+msgstr "تم رفض الشعار بنجاح"
+
+#: includes/class-quickscan-admin.php:130
+msgid "Unable to get scan status:"
+msgstr "غير قادر على الحصول على حالة المسح:"
+
+#: includes/class-quickscan-admin.php:133
+msgid "MeacodesQuickScan_Scheduler class not found"
+msgstr "فئة MeacodesQuickScan_Scheduler غير موجودة"
+
+#: includes/class-quickscan-admin.php:138
+#: includes/class-quickscan-admin.php:237
+msgid "Error:"
+msgstr "خطأ:"
+
+#: includes/class-quickscan-admin.php:138
+msgid "Unable to load accessibility scan data:"
+msgstr "غير قادر على تحميل بيانات مسح إمكانية الوصول:"
+
+#: includes/class-quickscan-admin.php:151
+msgid "Scan is currently running..."
+msgstr "المسح قيد التشغيل حاليًا..."
+
+#: includes/class-quickscan-admin.php:153
+msgid "Please wait while we scan your website for accessibility issues."
+msgstr "يرجى الانتظار بينما نمسح موقعك بحثًا عن مشاكل إمكانية الوصول."
+
+#: includes/class-quickscan-admin.php:189
+msgid "View Details"
+msgstr "عرض التفاصيل"
+
+#: includes/class-quickscan-admin.php:203
+msgid "No Scan Results Yet"
+msgstr "لا توجد نتائج مسح بعد"
+
+#: includes/class-quickscan-admin.php:205
+msgid "Run your first accessibility scan to see results here."
+msgstr "قم بتشغيل أول مسح لإمكانية الوصول لرؤية النتائج هنا."
+
+#: includes/class-quickscan-admin.php:211
+msgid "Error"
+msgstr "خطأ"
+
+#: includes/class-quickscan-admin.php:218
+msgid "Lightweight summary only."
+msgstr "ملخص خفيف فقط."
+
+#: includes/class-quickscan-admin.php:218
+msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
+msgstr "التقارير الكاملة صفحة بصفحة وأدلة الإصلاح ستكون متاحة في Pro v2."
+
+#: includes/class-quickscan-admin.php:222
+msgid "Read More / Join Airdrop"
+msgstr "اقرأ المزيد / انضم إلى الإسقاط الجوي"
+
+#: includes/class-quickscan-admin.php:237
+msgid "Unable to display accessibility scan widget."
+msgstr "غير قادر على عرض أداة مسح إمكانية الوصول."
+
+#: includes/class-quickscan-admin.php:249
+#: includes/class-quickscan-scheduler.php:69
+#: includes/class-quickscan-scheduler.php:127
+msgid "You do not have permission to run scans."
+msgstr "ليس لديك إذن لتشغيل الفحوصات."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Scan is running..."
+msgstr "الفحص قيد التشغيل..."
+
+#: includes/class-quickscan-admin.php:273
+msgid "Scan completed successfully!"
+msgstr "تم إكمال الفحص بنجاح!"
+
+#. translators: %d is the number of images without alt text
+#: includes/class-quickscan-checks.php:64
+#, php-format
+msgid "%d images without alt text"
+msgstr "%d صورة بدون نص بديل"
+
+#. translators: %d is the number of form elements without labels
+#: includes/class-quickscan-checks.php:71
+#, php-format
+msgid "%d form elements without labels"
+msgstr "%d عنصر نموذج بدون تسميات"
+
+#. translators: %d is the number of missing language declarations
+#: includes/class-quickscan-checks.php:78
+#, php-format
+msgid "%d missing language declaration"
+msgstr "%d إعلان لغة مفقود"
+
+#. translators: %d is the number of buttons without accessible names
+#: includes/class-quickscan-checks.php:85
+#, php-format
+msgid "%d buttons without accessible names"
+msgstr "%d زر بدون أسماء يمكن الوصول إليها"
+
+#. translators: %d is the number of tables without proper headers
+#: includes/class-quickscan-checks.php:92
+#, php-format
+msgid "%d tables without proper headers"
+msgstr "%d جدول بدون رؤوس مناسبة"
+
+#. translators: %d is the number of empty or unclear links
+#: includes/class-quickscan-checks.php:100
+#, php-format
+msgid "%d empty or unclear links"
+msgstr "%d رابط فارغ أو غير واضح"
+
+#. translators: %d is the number of heading structure issues
+#: includes/class-quickscan-checks.php:107
+#, php-format
+msgid "%d heading structure issues"
+msgstr "%d مشكلة في هيكل العناوين"
+
+#. translators: %d is the number of missing skip links
+#: includes/class-quickscan-checks.php:114
+#, php-format
+msgid "%d missing skip links"
+msgstr "%d رابط تخطي مفقود"
+
+#. translators: %d is the number of missing focus indicators
+#: includes/class-quickscan-checks.php:121
+#, php-format
+msgid "%d missing focus indicators"
+msgstr "%d مؤشر تركيز مفقود"
+
+#. translators: %d is the number of missing landmark roles
+#: includes/class-quickscan-checks.php:128
+#, php-format
+msgid "%d missing landmark roles"
+msgstr "%d دور معلم مفقود"
+
+#. translators: %d is the number of form validation issues
+#: includes/class-quickscan-checks.php:135
+#, php-format
+msgid "%d form validation issues"
+msgstr "%d مشكلة في التحقق من النموذج"
+
+#. translators: %d is the number of potential color contrast issues
+#: includes/class-quickscan-checks.php:143
+#, php-format
+msgid "%d potential color contrast issues"
+msgstr "%d مشكلة محتملة في تباين الألوان"
+
+#. translators: %d is the number of motion/animation issues
+#: includes/class-quickscan-checks.php:150
+#, php-format
+msgid "%d motion/animation issues"
+msgstr "%d مشكلة في الحركة/الرسوم المتحركة"
+
+#. translators: %d is the number of text spacing issues
+#: includes/class-quickscan-checks.php:157
+#, php-format
+msgid "%d text spacing issues"
+msgstr "%d مشكلة في تباعد النص"
+
+#: includes/class-quickscan-checks.php:551
+msgid "A-Level Issues"
+msgstr "مشاكل المستوى A"
+
+#: includes/class-quickscan-checks.php:552
+msgid "Basic accessibility: Images, forms, language, buttons, tables"
+msgstr "إمكانية الوصول الأساسية: الصور، النماذج، اللغة، الأزرار، الجداول"
+
+#: includes/class-quickscan-checks.php:555
+msgid "AA-Level Issues"
+msgstr "مشاكل المستوى AA"
+
+#: includes/class-quickscan-checks.php:556
+msgid "Enhanced accessibility: Links, headings, navigation, focus, landmarks"
+msgstr "إمكانية الوصول المحسنة: الروابط، العناوين، التنقل، التركيز، المعالم"
+
+#: includes/class-quickscan-checks.php:559
+msgid "AAA-Level Issues"
+msgstr "مشاكل المستوى AAA"
+
+#: includes/class-quickscan-checks.php:560
+msgid "Advanced accessibility: Contrast, motion, text spacing"
+msgstr "إمكانية الوصول المتقدمة: التباين، الحركة، تباعد النص"
+
+#: includes/class-quickscan-scheduler.php:65
+msgid "Invalid nonce."
+msgstr "Nonce غير صالح."
+
+#: includes/class-quickscan-scheduler.php:73
+#: includes/class-quickscan-scheduler.php:132
+msgid "A scan is already running. Please wait for it to complete."
+msgstr "فحص قيد التشغيل بالفعل. يرجى الانتظار حتى يكتمل."
+
+#: includes/class-quickscan-scheduler.php:156
+msgid "Scan failed to complete."
+msgstr "فشل الفحص في الإكمال."
+
+#: meacodes-accessibility-tools.php:82
+msgid "Mea Accessibility"
+msgstr "إمكانية الوصول Mea"
+
+#: meacodes-accessibility-tools.php:91 meacodes-accessibility-tools.php:92
+msgid "Settings"
+msgstr "الإعدادات"

@@ -5,10 +5,10 @@ msgstr ""
 "Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
 "POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
-"PO-Revision-Date: 2025-10-18 22:46+0330\n"
+"PO-Revision-Date: 2025-10-18 22:49+0330\n"
 "Last-Translator: \n"
 "Language-Team: meacodes <info@meacodes.com>\n"
-"Language: es\n"
+"Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,7 +18,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: meacodes-accessibility-tools.php meacodes-accessibility-tools.php:81
 msgid "Meacodes Accessibility Tools"
-msgstr "Herramientas de Accesibilidad Meacodes"
+msgstr "Meacodes 无障碍工具"
 
 #. Plugin URI of the plugin
 #: meacodes-accessibility-tools.php
@@ -30,14 +30,12 @@ msgstr "https://www.meacodes.com/accessibility"
 msgid ""
 "This is an accessibility tools for people with disabilities to use the web "
 "easily."
-msgstr ""
-"Estas son herramientas de accesibilidad para personas con discapacidades "
-"para usar la web fácilmente."
+msgstr "这是为残障人士轻松使用网络而设计的 无障碍工具。"
 
 #. Author of the plugin
 #: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
 msgid "Meacodes Development Solutions"
-msgstr "Meacodes Development Solutions"
+msgstr "https://www.meacodes.com/accessibility"
 
 #. Author URI of the plugin
 #: meacodes-accessibility-tools.php
@@ -46,27 +44,27 @@ msgstr "https://www.meacodes.com"
 
 #: assets/admin/admin-theme.php:91
 msgid "jQuery is not loaded!"
-msgstr "¡jQuery no está cargado!"
+msgstr "jQuery 未加载！"
 
 #: assets/admin/admin-theme.php:97
 msgid "General"
-msgstr "General"
+msgstr "常规"
 
 #: assets/admin/admin-theme.php:98 assets/admin/admin-theme.php:365
 msgid "Features"
-msgstr "Características"
+msgstr "功能"
 
 #: assets/admin/admin-theme.php:99
 msgid "Style"
-msgstr "Estilo"
+msgstr "样式"
 
 #: assets/admin/admin-theme.php:100
 msgid "Scan"
-msgstr "Escanear"
+msgstr "扫描"
 
 #: assets/admin/admin-theme.php:108
 msgid "Attention"
-msgstr "Atención"
+msgstr "注意"
 
 #: assets/admin/admin-theme.php:109
 msgid ""
@@ -74,57 +72,49 @@ msgid ""
 "updating it does not work on your site, this is likely a cache issue. Please "
 "clear your server and browser cache, then refresh the page."
 msgstr ""
-"Hemos actualizado la lógica del botón del plugin para permitir más "
-"personalización. Si después de actualizar no funciona en tu sitio, esto "
-"probablemente es un problema de caché. Por favor borra la caché de tu "
-"servidor y navegador, luego actualiza la página."
+"我们更新了插件按钮逻辑以启用更多自定义。如果更新后 在您的网站上不工作，这可能"
+"是缓存问题。请 清除您的服务器和浏览器缓存，然后刷新页面。"
 
 #: assets/admin/admin-theme.php:111
 msgid "Close notice"
-msgstr "Cerrar aviso"
+msgstr "关闭通知"
 
 #: assets/admin/admin-theme.php:120
 msgid "General Settings"
-msgstr "Configuración General"
+msgstr "常规设置"
 
 #: assets/admin/admin-theme.php:127
 msgid "Enable or Disable Meacodes Accessibility Tools:"
-msgstr "Activar o Desactivar Herramientas de Accesibilidad Meacodes:"
+msgstr "启用或禁用 Meacodes 无障碍工具："
 
 #: assets/admin/admin-theme.php:136
 msgid "Plugin Name:"
-msgstr "Nombre del Plugin:"
+msgstr "插件名称："
 
 #: assets/admin/admin-theme.php:138 assets/Themes/Default_blue/theme.php:3
 #: assets/Themes/Default_blue/theme.php:18
 #: assets/Themes/Default_blue/theme.php:23
 msgid "Accessibility"
-msgstr "Accesibilidad"
+msgstr "无障碍"
 
 #: assets/admin/admin-theme.php:140
 msgid ""
 "This means that the plugin name is a default and automatic translation of "
 "the word Accessibility."
-msgstr ""
-"Esto significa que el nombre del plugin es una traducción predeterminada y "
-"automática de la palabra Accesibilidad."
+msgstr "这意味着插件名称是单词“无障碍”的 默认和自动翻译。"
 
 #: assets/admin/admin-theme.php:143
 msgid ""
 "This name will be displayed opposite the plugin icon in the header section "
 "when the accessibility plugin is opened by the user on your website."
 msgstr ""
-"Este nombre se mostrará opuesto al icono del plugin en la sección del "
-"encabezado cuando el plugin de accesibilidad sea abierto por el usuario en "
-"tu sitio web."
+"当用户在您的网站上打开无障碍插件时，此名称将显示在 标题部分插件图标的对面。"
 
 #: assets/admin/admin-theme.php:145
 msgid ""
 "If you do not want any text to be displayed in that section, Clear default "
 "name and save changes."
-msgstr ""
-"Si no quieres que se muestre texto en esa sección, Borra el nombre "
-"predeterminado y guarda los cambios."
+msgstr "如果您不想在该部分显示任何文本，请清除默认 名称并保存更改。"
 
 #: assets/admin/admin-theme.php:146
 msgid ""
@@ -135,92 +125,89 @@ msgid ""
 "chosen name to revert to the default name and be displayed translated in any "
 "language, reset settings once."
 msgstr ""
-"Si tu sitio es multilingüe (usando Polylang), ten en cuenta que si cambias "
-"este nombre, el nombre que elijas se mostrará sin traducción y fijo en todos "
-"los idiomas a menos que reconstruyas el archivo de idioma del plugin con "
-"Polylang e ingreses la traducción del nombre elegido. También, si quieres "
-"que el nombre elegido vuelva al nombre predeterminado y se muestre traducido "
-"en cualquier idioma, restablece la configuración una vez."
+"如果您的网站是多语言的（使用 Polylang），请记住，如果您 更改此名称，您选择的"
+"名称将显示为未翻译 并在所有语言中固定，除非您使用 Polylang 重建插件语言文件并"
+"输入所选名称的翻译。另外，如果您希望 所选名称恢复为默认名称并在任何语言中显示"
+"为翻译，请重置设置一次。"
 
 #: assets/admin/admin-theme.php:152
 msgid "Enable or Disable GDPR Notice:"
-msgstr "Activar o Desactivar Aviso GDPR:"
+msgstr "启用或禁用 GDPR 通知："
 
 #: assets/admin/admin-theme.php:161
 msgid "Developed by label:"
-msgstr "Etiqueta Desarrollado por:"
+msgstr "开发标签："
 
 #: assets/admin/admin-theme.php:164
 msgid "Enable \"Developed by\" label"
-msgstr "Activar etiqueta \"Desarrollado por\""
+msgstr "启用“开发”标签"
 
 #: assets/admin/admin-theme.php:165
 msgid ""
 "Please turn the Developed by label on to support us and help the project "
 "move forward. "
-msgstr ""
-"Por favor activa la etiqueta Desarrollado por para apoyarnos y ayudar al "
-"proyecto a avanzar. "
+msgstr "请开启“开发”标签以支持我们并帮助项目 向前发展。 "
 
 #: assets/admin/admin-theme.php:166
 msgid "You can also buy us a coffee on the"
-msgstr "También puedes comprarnos un café en la"
+msgstr "您也可以在"
 
 #: assets/admin/admin-theme.php:166
 msgid "Donation page."
-msgstr "Página de donaciones."
+msgstr "捐赠页面为我们买咖啡。"
 
 #: assets/admin/admin-theme.php:167
 msgid "Thanks for your supports. "
-msgstr "Gracias por tu apoyo. "
+msgstr "感谢您的支持。 "
 
 #: assets/admin/admin-theme.php:229
 msgid "scanning please wait..."
-msgstr "escaneando, por favor espera…"
+msgstr "扫描中，请稍候……"
 
 #: assets/admin/admin-theme.php:264
 msgid "Just now"
-msgstr "Ahora mismo"
+msgstr "刚刚"
 
 #: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
 msgid "Pages with Issues"
-msgstr "Páginas con Problemas"
+msgstr "有问题的页面"
 
 #: assets/admin/admin-theme.php:304
+
 msgid "Issues Found:"
-msgstr "Problemas Encontrados:"
+msgstr "发现的问题:"
 
 #: assets/admin/admin-theme.php:321 assets/admin/admin-theme.php:635
 msgid "Scan Results"
-msgstr "Resultados del Escaneo"
+msgstr "扫描结果"
 
 #: assets/admin/admin-theme.php:322 includes/class-quickscan-admin.php:159
 msgid "Completed"
-msgstr "Completado"
+msgstr "已完成"
 
 #: assets/admin/admin-theme.php:326 assets/admin/admin-theme.php:640
 #: includes/class-quickscan-admin.php:164
 msgid "Last Scan"
-msgstr "Último Escaneo"
+msgstr "上次扫描"
 
 #: assets/admin/admin-theme.php:330 assets/admin/admin-theme.php:646
 #: includes/class-quickscan-admin.php:176
 msgid "Pages Scanned"
-msgstr "Páginas Escaneadas"
+msgstr "已扫描页面"
 
 #: assets/admin/admin-theme.php:331 includes/class-quickscan-admin.php:177
 msgid "pages"
-msgstr "páginas"
+msgstr "页"
 
 #: assets/admin/admin-theme.php:335 assets/admin/admin-theme.php:652
 #: includes/class-quickscan-admin.php:183
 msgid "Accessibility Issues Found"
-msgstr "Problemas de Accesibilidad Encontrados"
+msgstr "发现无障碍问题"
 
 #: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
 #: includes/class-quickscan-admin.php:274
 msgid "Scan failed. Please try again."
-msgstr "El escaneo falló. Por favor intenta de nuevo."
+msgstr "扫描失败。请重试。"
 
 #: assets/admin/admin-theme.php:366
 msgid ""
@@ -228,86 +215,82 @@ msgid ""
 "easier and more inclusive user experience for users with various needs. You "
 "can enable or disable each of these features individually."
 msgstr ""
-"El plugin de Accesibilidad proporciona un conjunto de herramientas y "
-"características para crear una experiencia de usuario más fácil e inclusiva "
-"para usuarios con diversas necesidades. Puedes activar o desactivar cada una "
-"de estas características individualmente."
+"无障碍插件提供了一套工具和功能，为有各种需求的用户创建 更简单、更包容的用户体"
+"验。您可以 单独启用或禁用这些功能中的每一个。"
 
 #: assets/admin/admin-theme.php:370
 msgid "Font Size Feature:"
-msgstr "Característica de Tamaño de Fuente:"
+msgstr "字体大小功能："
 
 #: assets/admin/admin-theme.php:379
 msgid "Line Height Feature:"
-msgstr "Característica de Altura de Línea:"
+msgstr "行高功能："
 
 #: assets/admin/admin-theme.php:388
 msgid "Letter Spacing Feature:"
-msgstr "Característica de Espaciado de Letras:"
+msgstr "字母间距功能："
 
 #: assets/admin/admin-theme.php:397
 msgid "Dyslexia Mask Feature:"
-msgstr "Característica de Máscara de Dislexia:"
+msgstr "阅读障碍遮罩功能："
 
 #: assets/admin/admin-theme.php:406
 msgid "Grayscale Page Feature:"
-msgstr "Característica de Página en Escala de Grises:"
+msgstr "灰度页面功能："
 
 #: assets/admin/admin-theme.php:415
 msgid "Contrast Feature:"
-msgstr "Característica de Contraste:"
+msgstr "对比度功能："
 
 #: assets/admin/admin-theme.php:424
 msgid "Negative Feature:"
-msgstr "Característica de Negativo:"
+msgstr "负片功能："
 
 #: assets/admin/admin-theme.php:433
 msgid "Underlined Links Feature:"
-msgstr "Característica de Enlaces Subrayados:"
+msgstr "下划线链接功能："
 
 #: assets/admin/admin-theme.php:442
 msgid "Highlight Links Feature:"
-msgstr "Característica de Resaltar Enlaces:"
+msgstr "高亮链接功能："
 
 #: assets/admin/admin-theme.php:451
 msgid "Grayscale Images Feature:"
-msgstr "Característica de Imágenes en Escala de Grises:"
+msgstr "灰度图像功能："
 
 #: assets/admin/admin-theme.php:460
 msgid "Black and white Feature:"
-msgstr "Característica de Blanco y Negro:"
+msgstr "黑白功能："
 
 #: assets/admin/admin-theme.php:473
 msgid "Style Settings"
-msgstr "Configuración de Estilo"
+msgstr "样式设置"
 
 #: assets/admin/admin-theme.php:474
 msgid ""
 "Customize the plugins appearance to match your taste and needs using the "
 "style settings."
-msgstr ""
-"Personaliza la apariencia del plugin para que coincida con tu gusto y "
-"necesidades usando la configuración de estilo."
+msgstr "使用样式设置自定义插件外观以匹配您的品味和需求。"
 
 #: assets/admin/admin-theme.php:478
 msgid "Plugin Button Size:"
-msgstr "Tamaño del Botón del Plugin:"
+msgstr "插件按钮大小："
 
 #: assets/admin/admin-theme.php:485
 msgid "Plugin Button Border Radius:"
-msgstr "Radio del Borde del Botón del Plugin:"
+msgstr "插件按钮边框半径："
 
 #: assets/admin/admin-theme.php:492
 msgid "Plugin Button Margin:"
-msgstr "Margen del Botón del Plugin:"
+msgstr "插件按钮边距："
 
 #: assets/admin/admin-theme.php:499
 msgid "Plugin Button Icon Size:"
-msgstr "Tamaño del Icono del Botón del Plugin:"
+msgstr "插件按钮图标大小："
 
 #: assets/admin/admin-theme.php:506
 msgid "Positionable by User:"
-msgstr "Posicionable por el Usuario:"
+msgstr "用户可定位："
 
 #: assets/admin/admin-theme.php:514
 msgid ""
@@ -315,229 +298,222 @@ msgid ""
 "around the page on desktop devices. Please note that this feature is not "
 "available on mobile devices."
 msgstr ""
-"Activar esta opción permite a los usuarios mover libremente el plugin de "
-"accesibilidad por la página en dispositivos de escritorio. Ten en cuenta que "
-"esta característica no está disponible en dispositivos móviles."
+"启用此选项允许用户在桌面设备上自由移动无障碍插件 在页面周围。请注意，此功能"
+"在 移动设备上不可用。"
 
 #: assets/admin/admin-theme.php:518
 msgid "Plugin Position:"
-msgstr "Posición del Plugin:"
+msgstr "插件位置："
 
 #: assets/admin/admin-theme.php:523
 msgid "Bottom Left Corner"
-msgstr "Esquina Inferior Izquierda"
+msgstr "左下角"
 
 #: assets/admin/admin-theme.php:524
 msgid "Bottom Right Corner"
-msgstr "Esquina Inferior Derecha"
+msgstr "右下角"
 
 #: assets/admin/admin-theme.php:525
 msgid "Top Left Corner"
-msgstr "Esquina Superior Izquierda"
+msgstr "左上角"
 
 #: assets/admin/admin-theme.php:526
 msgid "Top Right Corner"
-msgstr "Esquina Superior Derecha"
+msgstr "右上角"
 
 #: assets/admin/admin-theme.php:542
 msgid "Background Color: "
-msgstr "Color de Fondo: "
+msgstr "背景颜色： "
 
 #: assets/admin/admin-theme.php:545
 msgid "Background color of plugin and logo border."
-msgstr "Color de fondo del plugin y borde del logo."
+msgstr "插件和徽标边框的背景颜色。"
 
 #: assets/admin/admin-theme.php:549
 msgid "Labels Color: "
-msgstr "Color de Etiquetas: "
+msgstr "标签颜色： "
 
 #: assets/admin/admin-theme.php:552
 msgid "Color of the labels or name of each feature and Plugin name to."
-msgstr ""
-"Color de las etiquetas o nombre de cada característica y nombre del Plugin."
+msgstr "每个功能的标签或名称和插件名称的颜色。"
 
 #: assets/admin/admin-theme.php:556
 msgid "Divider Line Color: "
-msgstr "Color de Línea Divisoria: "
+msgstr "分隔线颜色： "
 
 #: assets/admin/admin-theme.php:559
 msgid "Color of plugin header & features section divider."
-msgstr ""
-"Color del encabezado del plugin y divisor de la sección de características."
+msgstr "插件标题和功能部分分隔符的颜色。"
 
 #: assets/admin/admin-theme.php:563
 msgid "Plugin button Color: "
-msgstr "Color del Botón del Plugin: "
+msgstr "插件按钮颜色： "
 
 #: assets/admin/admin-theme.php:566
 msgid "Color Scheme for Plugin Logo."
-msgstr "Esquema de Color para el Logo del Plugin."
+msgstr "插件徽标的配色方案。"
 
 #: assets/admin/admin-theme.php:570
 msgid "Accent Color: "
-msgstr "Color de Acento: "
+msgstr "强调色： "
 
 #: assets/admin/admin-theme.php:574
 msgid "Color scheme for:"
-msgstr "Esquema de color para:"
+msgstr "配色方案："
 
 #: assets/admin/admin-theme.php:576
 msgid "Active features and their toggle buttons on hover."
-msgstr ""
-"Características activas y sus botones de alternancia al pasar el cursor."
+msgstr "活动功能及其悬停时的切换按钮。"
 
 #: assets/admin/admin-theme.php:577
 msgid "Dyslexia reading mask bars"
-msgstr "Barras de máscara de lectura para dislexia"
+msgstr "阅读障碍阅读遮罩条"
 
 #: assets/admin/admin-theme.php:583
 msgid "‌Buttons Color (Reset/Close):"
-msgstr "Color de Botones (Restablecer/Cerrar):"
+msgstr "按钮颜色（重置/关闭）："
 
 #: assets/admin/admin-theme.php:587
 msgid "Buttons Hover Color (Reset/Close): "
-msgstr "Color de Botones al Pasar el Cursor (Restablecer/Cerrar): "
+msgstr "按钮悬停颜色（重置/关闭）： "
 
 #: assets/admin/admin-theme.php:596 includes/class-quickscan-admin.php:56
 #: includes/class-quickscan-admin.php:57 includes/class-quickscan-admin.php:99
 #: includes/class-quickscan-admin.php:158
 msgid "Accessibility Quick Scan"
-msgstr "Escaneo Rápido de Accesibilidad"
+msgstr "无障碍快速扫描"
 
 #: assets/admin/admin-theme.php:597
 msgid "Scan your website for accessibility issues manually."
-msgstr "Escanea tu sitio web para problemas de accesibilidad manualmente."
+msgstr "手动扫描您的网站以查找无障碍问题。"
 
 #: assets/admin/admin-theme.php:600
 msgid "Manual Accessibility Scan"
-msgstr "Escaneo Manual de Accesibilidad"
+msgstr "手动无障碍扫描"
 
 #: assets/admin/admin-theme.php:602
 msgid ""
 "Click the button below to scan your website for accessibility issues. This "
 "will check your pages for common accessibility problems."
 msgstr ""
-"Haz clic en el botón de abajo para escanear tu sitio web en busca de "
-"problemas de accesibilidad. Esto verificará tus páginas en busca de "
-"problemas comunes de accesibilidad."
+"点击下面的按钮扫描您的网站以查找无障碍问题。这将检查您的页面是否存在常见的无"
+"障碍问题。"
 
 #: assets/admin/admin-theme.php:607
 msgid "Maximum Pages to Scan:"
-msgstr "Páginas Máximas a Escanear:"
+msgstr "最大扫描页数："
 
 #: assets/admin/admin-theme.php:611
 msgid "(1-35 pages)"
-msgstr "(1-35 páginas)"
+msgstr "（1-35页）"
 
 #: assets/admin/admin-theme.php:616
 msgid "Run Accessibility Scan Now"
-msgstr "Ejecutar Escaneo de Accesibilidad Ahora"
+msgstr "立即运行无障碍扫描"
 
 #: assets/admin/admin-theme.php:624
 msgid "Last Scan Results"
-msgstr "Resultados del Último Escaneo"
+msgstr "上次扫描结果"
 
 #: assets/admin/admin-theme.php:701
 msgid "Save Changes"
-msgstr "Guardar Cambios"
+msgstr "保存更改"
 
 #: assets/admin/admin-theme.php:706
 msgid "Reset Settings"
-msgstr "Restablecer Configuración"
+msgstr "重置设置"
 
 #: assets/admin/admin-theme.php:710
 msgid ""
 "Save Changes will save all settings across all tabs. Reset Settings will "
 "restore all options to their default values."
 msgstr ""
-"Guardar Cambios guardará toda la configuración en todas las pestañas. "
-"Restablecer Configuración restaurará todas las opciones a sus valores "
-"predeterminados."
+"保存更改将保存所有标签页的所有设置。重置设置将 将所有选项恢复为默认值。"
 
 #: assets/admin/admin-theme.php:799
 msgid "Accessibility Tools Version: "
-msgstr "Versión de Herramientas de Accesibilidad: "
+msgstr "无障碍工具版本： "
 
 #: assets/Themes/Default_blue/theme.php:17
 msgid "Open/Close Accessibility Options"
-msgstr "Abrir/Cerrar Opciones de Accesibilidad"
+msgstr "打开/关闭无障碍选项"
 
 #: assets/Themes/Default_blue/theme.php:22
 msgid "Drag and move the accessibility box"
-msgstr "Arrastrar y mover la caja de accesibilidad"
+msgstr "拖拽并移动无障碍框"
 
 #: assets/Themes/Default_blue/theme.php:26
 msgid "Click to read GDPR Notice"
-msgstr "Haz clic para leer el Aviso GDPR"
+msgstr "点击阅读 GDPR 通知"
 
 #: assets/Themes/Default_blue/theme.php:37
 msgid "Font Size"
-msgstr "Tamaño de Fuente"
+msgstr "字体大小"
 
 #: assets/Themes/Default_blue/theme.php:42
 msgid "‌Normal"
-msgstr "Normal"
+msgstr "正常"
 
 #: assets/Themes/Default_blue/theme.php:54
 msgid "Line Height"
-msgstr "Altura de Línea"
+msgstr "行高"
 
 #: assets/Themes/Default_blue/theme.php:57
 #: assets/Themes/Default_blue/theme.php:70
 msgid "Normal"
-msgstr "Normal"
+msgstr "正常"
 
 #: assets/Themes/Default_blue/theme.php:67
 msgid "Letter Spacing"
-msgstr "Espaciado de Letras"
+msgstr "字母间距"
 
 #: assets/Themes/Default_blue/theme.php:82
 msgid "Dyslexia Mask"
-msgstr "Máscara de Dislexia"
+msgstr "阅读障碍遮罩"
 
 #: assets/Themes/Default_blue/theme.php:90
 msgid "Grayscale Page"
-msgstr "Página en Escala de Grises"
+msgstr "灰度页面"
 
 #: assets/Themes/Default_blue/theme.php:98
 msgid "Contrast"
-msgstr "Contraste"
+msgstr "对比度"
 
 #: assets/Themes/Default_blue/theme.php:106
 msgid "Negative"
-msgstr "Negativo"
+msgstr "负片"
 
 #: assets/Themes/Default_blue/theme.php:114
 msgid "Underlined Links"
-msgstr "Enlaces Subrayados"
+msgstr "下划线链接"
 
 #: assets/Themes/Default_blue/theme.php:122
 msgid "Highlight Links"
-msgstr "Resaltar Enlaces"
+msgstr "高亮链接"
 
 #: assets/Themes/Default_blue/theme.php:130
 msgid "Grayscale Images"
-msgstr "Imágenes en Escala de Grises"
+msgstr "灰度图像"
 
 #: assets/Themes/Default_blue/theme.php:138
 msgid "Black and white"
-msgstr "Blanco y negro"
+msgstr "黑白"
 
 #: assets/Themes/Default_blue/theme.php:144
 msgid "Developed by "
-msgstr "Desarrollado por "
+msgstr "开发： "
 
 #: assets/Themes/Default_blue/theme.php:146
 msgid "Reset"
-msgstr "Restablecer"
+msgstr "重置"
 
 #: assets/Themes/Default_blue/theme.php:147
 msgid "Close"
-msgstr "Cerrar"
+msgstr "关闭"
 
 #: assets/Themes/Default_blue/theme.php:152
 msgid "GDPR Notice:"
-msgstr "Aviso GDPR:"
+msgstr "GDPR 通知："
 
 #: assets/Themes/Default_blue/theme.php:153
 msgid ""
@@ -549,28 +525,24 @@ msgid ""
 "settings at any time. Please note that doing so may affect your experience "
 "on the site."
 msgstr ""
-"Este plugin utiliza cookies para mejorar tu experiencia y proporcionar "
-"configuraciones de accesibilidad personalizadas. Estas cookies se almacenan "
-"en tu navegador y nos permiten recordar tus preferencias para el tamaño de "
-"fuente, esquemas de color y otras características de accesibilidad. Al usar "
-"este plugin, consientes el uso de cookies para estos propósitos. Puedes "
-"eliminar o bloquear cookies en la configuración de tu navegador en cualquier "
-"momento. Ten en cuenta que hacerlo puede afectar tu experiencia en el sitio."
+"此插件使用 cookie 来增强您的体验并提供个性化 无障碍设置。这些 cookie 存储在您"
+"的浏览器中，允许 我们记住您对字体大小、配色方案和其他 无障碍功能的偏好。通过"
+"使用此插件，您同意使用 cookie 用于这些目的。您可以随时在浏览器 设置中删除或阻"
+"止 cookie。请注意，这样做可能会影响您在 网站上的体验。"
 
 #: includes/class-admin-banner.php:129
 msgid "Close banner"
-msgstr "Cerrar banner"
+msgstr "关闭横幅"
 
 #: includes/class-admin-banner.php:134
 msgid "🎉 Congratulations!"
-msgstr "🎉 ¡Felicidades!"
+msgstr "🎉 恭喜！"
 
 #. translators: %s: Plugin name
 #: includes/class-admin-banner.php:139
 #, php-format
 msgid "You've been recognized as an %s of Meacodes Accessibility Tools."
-msgstr ""
-"Has sido reconocido como un %s de Herramientas de Accesibilidad Meacodes."
+msgstr "您已被认可为Meacodes无障碍工具的%s。"
 
 #. translators: %1$s: Pro Version 2, %2$s: Early Supporter Badge
 #: includes/class-admin-banner.php:149
@@ -579,241 +551,232 @@ msgid ""
 "As part of the upcoming %1$s rollout, early supporters will receive an "
 "exclusive %2$s and extended Pro access privileges."
 msgstr ""
-"Como parte del próximo lanzamiento de %1$s, los primeros seguidores "
-"recibirán una %2$s exclusiva y privilegios de acceso Pro extendidos."
+"作为即将推出的%1$s的一部分，早期支持者将获得专属%2$s和扩展的Pro访问权限。"
 
 #: includes/class-admin-banner.php:157
 msgid "To learn how the badge system works and how sites are verified,"
-msgstr ""
-"Para aprender cómo funciona el sistema de insignias y cómo se verifican los "
-"sitios,"
+msgstr "要了解徽章系统如何工作以及网站如何验证，"
 
 #: includes/class-admin-banner.php:158
 msgid "👉 visit meacodes.com"
-msgstr "👉 visita meacodes.com"
+msgstr "👉 访问 meacodes.com"
 
 #: includes/class-admin-banner.php:161
 msgid "This notice will hide for 24 hours once dismissed."
-msgstr "Este aviso se ocultará por 24 horas una vez descartado."
+msgstr "此通知一旦被关闭将隐藏24小时。"
 
 #: includes/class-admin-banner.php:165
 msgid "Meacodes Pro Badge"
-msgstr "Insignia Meacodes Pro"
+msgstr "Meacodes Pro 徽章"
 
 #: includes/class-admin-banner.php:179
 msgid "Security check failed"
-msgstr "Verificación de seguridad falló"
+msgstr "安全检查失败"
 
 #: includes/class-admin-banner.php:184
 msgid "Insufficient permissions"
-msgstr "Permisos insuficientes"
+msgstr "权限不足"
 
 #: includes/class-admin-banner.php:191
 msgid "Banner dismissed successfully"
-msgstr "Banner descartado exitosamente"
+msgstr "横幅已成功关闭"
 
 #: includes/class-quickscan-admin.php:130
 msgid "Unable to get scan status:"
-msgstr "No se pudo obtener el estado del escaneo:"
+msgstr "无法获取扫描状态："
 
 #: includes/class-quickscan-admin.php:133
 msgid "MeacodesQuickScan_Scheduler class not found"
-msgstr "Clase MeacodesQuickScan_Scheduler no encontrada"
+msgstr "未找到 MeacodesQuickScan_Scheduler 类"
 
 #: includes/class-quickscan-admin.php:138
 #: includes/class-quickscan-admin.php:237
 msgid "Error:"
-msgstr "Error:"
+msgstr "错误："
 
 #: includes/class-quickscan-admin.php:138
 msgid "Unable to load accessibility scan data:"
-msgstr "No se pudieron cargar los datos del escaneo de accesibilidad:"
+msgstr "无法加载无障碍扫描数据："
 
 #: includes/class-quickscan-admin.php:151
 msgid "Scan is currently running..."
-msgstr "El escaneo se está ejecutando actualmente..."
+msgstr "扫描正在运行中..."
 
 #: includes/class-quickscan-admin.php:153
 msgid "Please wait while we scan your website for accessibility issues."
-msgstr ""
-"Por favor espera mientras escaneamos tu sitio web en busca de problemas de "
-"accesibilidad."
+msgstr "请等待我们扫描您的网站以查找无障碍问题。"
 
 #: includes/class-quickscan-admin.php:189
 msgid "View Details"
-msgstr "Ver Detalles"
+msgstr "查看详情"
 
 #: includes/class-quickscan-admin.php:203
 msgid "No Scan Results Yet"
-msgstr "Aún No Hay Resultados de Escaneo"
+msgstr "暂无扫描结果"
 
 #: includes/class-quickscan-admin.php:205
 msgid "Run your first accessibility scan to see results here."
-msgstr "Ejecuta tu primer escaneo de accesibilidad para ver resultados aquí."
+msgstr "运行您的第一次无障碍扫描以在此处查看结果。"
 
 #: includes/class-quickscan-admin.php:211
 msgid "Error"
-msgstr "Error"
+msgstr "错误"
 
 #: includes/class-quickscan-admin.php:218
 msgid "Lightweight summary only."
-msgstr "Solo resumen ligero."
+msgstr "仅轻量级摘要。"
 
 #: includes/class-quickscan-admin.php:218
 msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
-msgstr ""
-"Los informes completos página por página y las guías de reparación estarán "
-"disponibles en Pro v2."
+msgstr "完整的逐页报告和修复指南将在 Pro v2 中提供。"
 
 #: includes/class-quickscan-admin.php:222
 msgid "Read More / Join Airdrop"
-msgstr "Leer Más / Unirse al Airdrop"
+msgstr "阅读更多 / 加入空投"
 
 #: includes/class-quickscan-admin.php:237
 msgid "Unable to display accessibility scan widget."
-msgstr "No se pudo mostrar el widget de escaneo de accesibilidad."
+msgstr "无法显示无障碍扫描小部件。"
 
 #: includes/class-quickscan-admin.php:249
 #: includes/class-quickscan-scheduler.php:69
 #: includes/class-quickscan-scheduler.php:127
 msgid "You do not have permission to run scans."
-msgstr "No tienes permisos para ejecutar escaneos."
+msgstr "您没有运行扫描的权限。"
 
 #: includes/class-quickscan-admin.php:272
 msgid "Scan is running..."
-msgstr "El escaneo está ejecutándose..."
+msgstr "扫描正在运行..."
 
 #: includes/class-quickscan-admin.php:273
 msgid "Scan completed successfully!"
-msgstr "¡Escaneo completado exitosamente!"
+msgstr "扫描成功完成！"
 
 #. translators: %d is the number of images without alt text
 #: includes/class-quickscan-checks.php:64
 #, php-format
 msgid "%d images without alt text"
-msgstr "%d imágenes sin texto alternativo"
+msgstr "%d个没有替代文本的图像"
 
 #. translators: %d is the number of form elements without labels
 #: includes/class-quickscan-checks.php:71
 #, php-format
 msgid "%d form elements without labels"
-msgstr "%d elementos de formulario sin etiquetas"
+msgstr "%d个没有标签的表单元素"
 
 #. translators: %d is the number of missing language declarations
 #: includes/class-quickscan-checks.php:78
 #, php-format
 msgid "%d missing language declaration"
-msgstr "%d declaración de idioma faltante"
+msgstr "%d个缺失的语言声明"
 
 #. translators: %d is the number of buttons without accessible names
 #: includes/class-quickscan-checks.php:85
 #, php-format
 msgid "%d buttons without accessible names"
-msgstr "%d botones sin nombres accesibles"
+msgstr "%d个没有可访问名称的按钮"
 
 #. translators: %d is the number of tables without proper headers
 #: includes/class-quickscan-checks.php:92
 #, php-format
 msgid "%d tables without proper headers"
-msgstr "%d tablas sin encabezados apropiados"
+msgstr "%d个没有适当标题的表格"
 
 #. translators: %d is the number of empty or unclear links
 #: includes/class-quickscan-checks.php:100
 #, php-format
 msgid "%d empty or unclear links"
-msgstr "%d enlaces vacíos o poco claros"
+msgstr "%d个空或不清楚的链接"
 
 #. translators: %d is the number of heading structure issues
 #: includes/class-quickscan-checks.php:107
 #, php-format
 msgid "%d heading structure issues"
-msgstr "%d problemas de estructura de encabezados"
+msgstr "%d个标题结构问题"
 
 #. translators: %d is the number of missing skip links
 #: includes/class-quickscan-checks.php:114
 #, php-format
 msgid "%d missing skip links"
-msgstr "%d enlaces de salto faltantes"
+msgstr "%d个缺失的跳过链接"
 
 #. translators: %d is the number of missing focus indicators
 #: includes/class-quickscan-checks.php:121
 #, php-format
 msgid "%d missing focus indicators"
-msgstr "%d indicadores de foco faltantes"
+msgstr "%d个缺失的焦点指示器"
 
 #. translators: %d is the number of missing landmark roles
 #: includes/class-quickscan-checks.php:128
 #, php-format
 msgid "%d missing landmark roles"
-msgstr "%d roles de referencia faltantes"
+msgstr "%d个缺失的地标角色"
 
 #. translators: %d is the number of form validation issues
 #: includes/class-quickscan-checks.php:135
 #, php-format
 msgid "%d form validation issues"
-msgstr "%d problemas de validación de formularios"
+msgstr "%d个表单验证问题"
 
 #. translators: %d is the number of potential color contrast issues
 #: includes/class-quickscan-checks.php:143
 #, php-format
 msgid "%d potential color contrast issues"
-msgstr "%d problemas potenciales de contraste de color"
+msgstr "%d个潜在的颜色对比问题"
 
 #. translators: %d is the number of motion/animation issues
 #: includes/class-quickscan-checks.php:150
 #, php-format
 msgid "%d motion/animation issues"
-msgstr "%d problemas de movimiento/animación"
+msgstr "%d个运动/动画问题"
 
 #. translators: %d is the number of text spacing issues
 #: includes/class-quickscan-checks.php:157
 #, php-format
 msgid "%d text spacing issues"
-msgstr "%d problemas de espaciado de texto"
+msgstr "%d个文本间距问题"
 
 #: includes/class-quickscan-checks.php:551
 msgid "A-Level Issues"
-msgstr "Problemas de Nivel A"
+msgstr "A级问题"
 
 #: includes/class-quickscan-checks.php:552
 msgid "Basic accessibility: Images, forms, language, buttons, tables"
-msgstr "Accesibilidad básica: Imágenes, formularios, idioma, botones, tablas"
+msgstr "基本无障碍：图像、表单、语言、按钮、表格"
 
 #: includes/class-quickscan-checks.php:555
 msgid "AA-Level Issues"
-msgstr "Problemas de Nivel AA"
+msgstr "AA级问题"
 
 #: includes/class-quickscan-checks.php:556
 msgid "Enhanced accessibility: Links, headings, navigation, focus, landmarks"
-msgstr ""
-"Accesibilidad mejorada: Enlaces, encabezados, navegación, enfoque, puntos de "
-"referencia"
+msgstr "增强无障碍：链接、标题、导航、焦点、地标"
 
 #: includes/class-quickscan-checks.php:559
 msgid "AAA-Level Issues"
-msgstr "Problemas de Nivel AAA"
+msgstr "AAA级问题"
 
 #: includes/class-quickscan-checks.php:560
 msgid "Advanced accessibility: Contrast, motion, text spacing"
-msgstr "Accesibilidad avanzada: Contraste, movimiento, espaciado de texto"
+msgstr "高级无障碍：对比度、运动、文本间距"
 
 #: includes/class-quickscan-scheduler.php:65
 msgid "Invalid nonce."
-msgstr "Nonce inválido."
+msgstr "无效的nonce。"
 
 #: includes/class-quickscan-scheduler.php:73
 #: includes/class-quickscan-scheduler.php:132
 msgid "A scan is already running. Please wait for it to complete."
-msgstr "Un escaneo ya está ejecutándose. Por favor espera a que se complete."
+msgstr "扫描已在运行中。请等待其完成。"
 
 #: includes/class-quickscan-scheduler.php:156
 msgid "Scan failed to complete."
-msgstr "El escaneo falló al completarse."
+msgstr "扫描未能完成。"
 
 #: meacodes-accessibility-tools.php:82
 msgid "Mea Accessibility"
-msgstr "Accesibilidad Mea"
+msgstr "Mea 无障碍"
 
 #: meacodes-accessibility-tools.php:91 meacodes-accessibility-tools.php:92
 msgid "Settings"
-msgstr "Configuración"
+msgstr "设置"

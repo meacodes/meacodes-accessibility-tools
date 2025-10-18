@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
-"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
+"POT-Creation-Date: 2025-10-18T19:15:43+00:00\n"
 "PO-Revision-Date: 2025-10-18 22:46+0330\n"
 "Last-Translator: \n"
 "Language-Team: meacodes <info@meacodes.com>\n"
@@ -186,10 +186,6 @@ msgstr "Ahora mismo"
 msgid "Pages with Issues"
 msgstr "Páginas con Problemas"
 
-#: assets/admin/admin-theme.php:304
-msgid "Issues Found:"
-msgstr "Problemas Encontrados:"
-
 #: assets/admin/admin-theme.php:321 assets/admin/admin-theme.php:635
 msgid "Scan Results"
 msgstr "Resultados del Escaneo"
@@ -207,10 +203,6 @@ msgstr "Último Escaneo"
 #: includes/class-quickscan-admin.php:176
 msgid "Pages Scanned"
 msgstr "Páginas Escaneadas"
-
-#: assets/admin/admin-theme.php:331 includes/class-quickscan-admin.php:177
-msgid "pages"
-msgstr "páginas"
 
 #: assets/admin/admin-theme.php:335 assets/admin/admin-theme.php:652
 #: includes/class-quickscan-admin.php:183
@@ -638,6 +630,10 @@ msgid "Please wait while we scan your website for accessibility issues."
 msgstr ""
 "Por favor espera mientras escaneamos tu sitio web en busca de problemas de "
 "accesibilidad."
+
+#: includes/class-quickscan-admin.php:177
+msgid "pages"
+msgstr "páginas"
 
 #: includes/class-quickscan-admin.php:189
 msgid "View Details"

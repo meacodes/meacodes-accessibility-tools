@@ -4,11 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
-"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
-"PO-Revision-Date: 2025-10-18 22:46+0330\n"
+"POT-Creation-Date: 2025-10-18T19:15:43+00:00\n"
+"PO-Revision-Date: 2025-10-18 22:47+0330\n"
 "Last-Translator: \n"
 "Language-Team: meacodes <info@meacodes.com>\n"
-"Language: es\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,7 +18,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: meacodes-accessibility-tools.php meacodes-accessibility-tools.php:81
 msgid "Meacodes Accessibility Tools"
-msgstr "Herramientas de Accesibilidad Meacodes"
+msgstr "Meacodes 접근성 도구"
 
 #. Plugin URI of the plugin
 #: meacodes-accessibility-tools.php
@@ -30,14 +30,12 @@ msgstr "https://www.meacodes.com/accessibility"
 msgid ""
 "This is an accessibility tools for people with disabilities to use the web "
 "easily."
-msgstr ""
-"Estas son herramientas de accesibilidad para personas con discapacidades "
-"para usar la web fácilmente."
+msgstr "장애인이 웹을 쉽게 사용할 수 있도록 돕는 접근성 도구입니다."
 
 #. Author of the plugin
 #: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
 msgid "Meacodes Development Solutions"
-msgstr "Meacodes Development Solutions"
+msgstr "Meacodes 개발 솔루션"
 
 #. Author URI of the plugin
 #: meacodes-accessibility-tools.php
@@ -46,27 +44,27 @@ msgstr "https://www.meacodes.com"
 
 #: assets/admin/admin-theme.php:91
 msgid "jQuery is not loaded!"
-msgstr "¡jQuery no está cargado!"
+msgstr "jQuery가 로드되지 않았습니다!"
 
 #: assets/admin/admin-theme.php:97
 msgid "General"
-msgstr "General"
+msgstr "일반"
 
 #: assets/admin/admin-theme.php:98 assets/admin/admin-theme.php:365
 msgid "Features"
-msgstr "Características"
+msgstr "기능"
 
 #: assets/admin/admin-theme.php:99
 msgid "Style"
-msgstr "Estilo"
+msgstr "스타일"
 
 #: assets/admin/admin-theme.php:100
 msgid "Scan"
-msgstr "Escanear"
+msgstr "스캔"
 
 #: assets/admin/admin-theme.php:108
 msgid "Attention"
-msgstr "Atención"
+msgstr "주의"
 
 #: assets/admin/admin-theme.php:109
 msgid ""
@@ -74,57 +72,54 @@ msgid ""
 "updating it does not work on your site, this is likely a cache issue. Please "
 "clear your server and browser cache, then refresh the page."
 msgstr ""
-"Hemos actualizado la lógica del botón del plugin para permitir más "
-"personalización. Si después de actualizar no funciona en tu sitio, esto "
-"probablemente es un problema de caché. Por favor borra la caché de tu "
-"servidor y navegador, luego actualiza la página."
+"더 많은 사용자 정의를 가능하게 하기 위해 플러그인 버튼 로직을 업데이트했습니"
+"다. 업데이트 후 사이트에서 작동하지 않는다면 캐시 문제일 가능성이 높습니다. "
+"서버와 브라우저 캐시를 지우고 페이지를 새로고침해 주세요."
 
 #: assets/admin/admin-theme.php:111
 msgid "Close notice"
-msgstr "Cerrar aviso"
+msgstr "알림 닫기"
 
 #: assets/admin/admin-theme.php:120
 msgid "General Settings"
-msgstr "Configuración General"
+msgstr "일반 설정"
 
 #: assets/admin/admin-theme.php:127
 msgid "Enable or Disable Meacodes Accessibility Tools:"
-msgstr "Activar o Desactivar Herramientas de Accesibilidad Meacodes:"
+msgstr "Meacodes 접근성 도구 활성화 또는 비활성화:"
 
 #: assets/admin/admin-theme.php:136
 msgid "Plugin Name:"
-msgstr "Nombre del Plugin:"
+msgstr "플러그인 이름:"
 
 #: assets/admin/admin-theme.php:138 assets/Themes/Default_blue/theme.php:3
 #: assets/Themes/Default_blue/theme.php:18
 #: assets/Themes/Default_blue/theme.php:23
 msgid "Accessibility"
-msgstr "Accesibilidad"
+msgstr "접근성"
 
 #: assets/admin/admin-theme.php:140
 msgid ""
 "This means that the plugin name is a default and automatic translation of "
 "the word Accessibility."
 msgstr ""
-"Esto significa que el nombre del plugin es una traducción predeterminada y "
-"automática de la palabra Accesibilidad."
+"이는 플러그인 이름이 접근성이라는 단어의 기본 및 자동 번역임을 의미합니다."
 
 #: assets/admin/admin-theme.php:143
 msgid ""
 "This name will be displayed opposite the plugin icon in the header section "
 "when the accessibility plugin is opened by the user on your website."
 msgstr ""
-"Este nombre se mostrará opuesto al icono del plugin en la sección del "
-"encabezado cuando el plugin de accesibilidad sea abierto por el usuario en "
-"tu sitio web."
+"이 이름은 사용자가 웹사이트에서 접근성 플러그인을 열 때 헤더 섹션의 플러그인 "
+"아이콘 반대편에 표시됩니다."
 
 #: assets/admin/admin-theme.php:145
 msgid ""
 "If you do not want any text to be displayed in that section, Clear default "
 "name and save changes."
 msgstr ""
-"Si no quieres que se muestre texto en esa sección, Borra el nombre "
-"predeterminado y guarda los cambios."
+"해당 섹션에 텍스트가 표시되지 않기를 원한다면 기본 이름을 지우고 변경사항을 "
+"저장하세요."
 
 #: assets/admin/admin-theme.php:146
 msgid ""
@@ -135,92 +130,82 @@ msgid ""
 "chosen name to revert to the default name and be displayed translated in any "
 "language, reset settings once."
 msgstr ""
-"Si tu sitio es multilingüe (usando Polylang), ten en cuenta que si cambias "
-"este nombre, el nombre que elijas se mostrará sin traducción y fijo en todos "
-"los idiomas a menos que reconstruyas el archivo de idioma del plugin con "
-"Polylang e ingreses la traducción del nombre elegido. También, si quieres "
-"que el nombre elegido vuelva al nombre predeterminado y se muestre traducido "
-"en cualquier idioma, restablece la configuración una vez."
+"사이트가 다국어인 경우(Polylang 사용), 이 이름을 변경하면 선택한 이름이 번역 "
+"없이 표시되고 Polylang으로 플러그인 언어 파일을 재구성하고 선택한 이름의 번역"
+"을 입력하지 않는 한 모든 언어에서 고정됩니다. 또한 선택한 이름이 기본 이름으"
+"로 되돌아가고 모든 언어에서 번역되어 표시되기를 원한다면 설정을 한 번 재설정"
+"하세요."
 
 #: assets/admin/admin-theme.php:152
 msgid "Enable or Disable GDPR Notice:"
-msgstr "Activar o Desactivar Aviso GDPR:"
+msgstr "GDPR 알림 활성화 또는 비활성화:"
 
 #: assets/admin/admin-theme.php:161
 msgid "Developed by label:"
-msgstr "Etiqueta Desarrollado por:"
+msgstr "개발자 라벨:"
 
 #: assets/admin/admin-theme.php:164
 msgid "Enable \"Developed by\" label"
-msgstr "Activar etiqueta \"Desarrollado por\""
+msgstr "\"개발자\" 라벨 활성화"
 
 #: assets/admin/admin-theme.php:165
 msgid ""
 "Please turn the Developed by label on to support us and help the project "
 "move forward. "
 msgstr ""
-"Por favor activa la etiqueta Desarrollado por para apoyarnos y ayudar al "
-"proyecto a avanzar. "
+"저희를 지원하고 프로젝트가 발전하도록 도와주시려면 개발자 라벨을 켜주세요. "
 
 #: assets/admin/admin-theme.php:166
 msgid "You can also buy us a coffee on the"
-msgstr "También puedes comprarnos un café en la"
+msgstr "또한 다음에서 저희에게 커피를 사주실 수 있습니다"
 
 #: assets/admin/admin-theme.php:166
 msgid "Donation page."
-msgstr "Página de donaciones."
+msgstr "기부 페이지에서."
 
 #: assets/admin/admin-theme.php:167
 msgid "Thanks for your supports. "
-msgstr "Gracias por tu apoyo. "
+msgstr "지원해 주셔서 감사합니다. "
 
 #: assets/admin/admin-theme.php:229
 msgid "scanning please wait..."
-msgstr "escaneando, por favor espera…"
+msgstr "스캔 중입니다. 잠시만 기다려 주세요…"
 
 #: assets/admin/admin-theme.php:264
 msgid "Just now"
-msgstr "Ahora mismo"
+msgstr "방금 전"
 
 #: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
 msgid "Pages with Issues"
-msgstr "Páginas con Problemas"
-
-#: assets/admin/admin-theme.php:304
-msgid "Issues Found:"
-msgstr "Problemas Encontrados:"
+msgstr "문제가 있는 페이지"
 
 #: assets/admin/admin-theme.php:321 assets/admin/admin-theme.php:635
 msgid "Scan Results"
-msgstr "Resultados del Escaneo"
+msgstr "스캔 결과"
 
 #: assets/admin/admin-theme.php:322 includes/class-quickscan-admin.php:159
 msgid "Completed"
-msgstr "Completado"
+msgstr "완료됨"
 
 #: assets/admin/admin-theme.php:326 assets/admin/admin-theme.php:640
 #: includes/class-quickscan-admin.php:164
 msgid "Last Scan"
-msgstr "Último Escaneo"
+msgstr "마지막 스캔"
 
 #: assets/admin/admin-theme.php:330 assets/admin/admin-theme.php:646
 #: includes/class-quickscan-admin.php:176
 msgid "Pages Scanned"
-msgstr "Páginas Escaneadas"
-
-#: assets/admin/admin-theme.php:331 includes/class-quickscan-admin.php:177
-msgid "pages"
-msgstr "páginas"
+msgstr "스캔된 페이지"
 
 #: assets/admin/admin-theme.php:335 assets/admin/admin-theme.php:652
 #: includes/class-quickscan-admin.php:183
 msgid "Accessibility Issues Found"
-msgstr "Problemas de Accesibilidad Encontrados"
+msgstr "접근성 문제 발견됨"
 
 #: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
 #: includes/class-quickscan-admin.php:274
 msgid "Scan failed. Please try again."
-msgstr "El escaneo falló. Por favor intenta de nuevo."
+msgstr "스캔에 실패했습니다. 다시 시도해 주세요."
 
 #: assets/admin/admin-theme.php:366
 msgid ""
@@ -228,86 +213,85 @@ msgid ""
 "easier and more inclusive user experience for users with various needs. You "
 "can enable or disable each of these features individually."
 msgstr ""
-"El plugin de Accesibilidad proporciona un conjunto de herramientas y "
-"características para crear una experiencia de usuario más fácil e inclusiva "
-"para usuarios con diversas necesidades. Puedes activar o desactivar cada una "
-"de estas características individualmente."
+"접근성 플러그인은 다양한 요구사항을 가진 사용자를 위해 더 쉽고 포용적인 사용"
+"자 경험을 만들기 위한 도구와 기능 세트를 제공합니다. 이러한 기능들을 개별적으"
+"로 활성화하거나 비활성화할 수 있습니다."
 
 #: assets/admin/admin-theme.php:370
 msgid "Font Size Feature:"
-msgstr "Característica de Tamaño de Fuente:"
+msgstr "글꼴 크기 기능:"
 
 #: assets/admin/admin-theme.php:379
 msgid "Line Height Feature:"
-msgstr "Característica de Altura de Línea:"
+msgstr "줄 간격 기능:"
 
 #: assets/admin/admin-theme.php:388
 msgid "Letter Spacing Feature:"
-msgstr "Característica de Espaciado de Letras:"
+msgstr "글자 간격 기능:"
 
 #: assets/admin/admin-theme.php:397
 msgid "Dyslexia Mask Feature:"
-msgstr "Característica de Máscara de Dislexia:"
+msgstr "난독증 마스크 기능:"
 
 #: assets/admin/admin-theme.php:406
 msgid "Grayscale Page Feature:"
-msgstr "Característica de Página en Escala de Grises:"
+msgstr "회색조 페이지 기능:"
 
 #: assets/admin/admin-theme.php:415
 msgid "Contrast Feature:"
-msgstr "Característica de Contraste:"
+msgstr "대비 기능:"
 
 #: assets/admin/admin-theme.php:424
 msgid "Negative Feature:"
-msgstr "Característica de Negativo:"
+msgstr "네거티브 기능:"
 
 #: assets/admin/admin-theme.php:433
 msgid "Underlined Links Feature:"
-msgstr "Característica de Enlaces Subrayados:"
+msgstr "밑줄 링크 기능:"
 
 #: assets/admin/admin-theme.php:442
 msgid "Highlight Links Feature:"
-msgstr "Característica de Resaltar Enlaces:"
+msgstr "링크 강조 기능:"
 
 #: assets/admin/admin-theme.php:451
 msgid "Grayscale Images Feature:"
-msgstr "Característica de Imágenes en Escala de Grises:"
+msgstr "회색조 이미지 기능:"
 
 #: assets/admin/admin-theme.php:460
 msgid "Black and white Feature:"
-msgstr "Característica de Blanco y Negro:"
+msgstr "흑백 기능:"
 
 #: assets/admin/admin-theme.php:473
 msgid "Style Settings"
-msgstr "Configuración de Estilo"
+msgstr "스타일 설정"
 
 #: assets/admin/admin-theme.php:474
 msgid ""
 "Customize the plugins appearance to match your taste and needs using the "
 "style settings."
 msgstr ""
-"Personaliza la apariencia del plugin para que coincida con tu gusto y "
-"necesidades usando la configuración de estilo."
+"스타일 설정을 사용하여 플러그인의 외관을 취향과 요구사항에 맞게 사용자 정의하"
+"세요."
 
 #: assets/admin/admin-theme.php:478
 msgid "Plugin Button Size:"
-msgstr "Tamaño del Botón del Plugin:"
+msgstr "플러그인 버튼 크기:"
 
 #: assets/admin/admin-theme.php:485
 msgid "Plugin Button Border Radius:"
-msgstr "Radio del Borde del Botón del Plugin:"
+msgstr "플러그인 버튼 테두리 반지름:"
 
 #: assets/admin/admin-theme.php:492
 msgid "Plugin Button Margin:"
-msgstr "Margen del Botón del Plugin:"
+msgstr "플러그인 버튼 여백:"
 
 #: assets/admin/admin-theme.php:499
 msgid "Plugin Button Icon Size:"
-msgstr "Tamaño del Icono del Botón del Plugin:"
+msgstr "플러그인 버튼 아이콘 크기:"
 
 #: assets/admin/admin-theme.php:506
 msgid "Positionable by User:"
-msgstr "Posicionable por el Usuario:"
+msgstr "사용자가 위치 조정 가능:"
 
 #: assets/admin/admin-theme.php:514
 msgid ""
@@ -315,229 +299,224 @@ msgid ""
 "around the page on desktop devices. Please note that this feature is not "
 "available on mobile devices."
 msgstr ""
-"Activar esta opción permite a los usuarios mover libremente el plugin de "
-"accesibilidad por la página en dispositivos de escritorio. Ten en cuenta que "
-"esta característica no está disponible en dispositivos móviles."
+"이 옵션을 활성화하면 사용자가 데스크톱 장치에서 접근성 플러그인을 페이지 주변"
+"으로 자유롭게 이동할 수 있습니다. 이 기능은 모바일 장치에서는 사용할 수 없습"
+"니다."
 
 #: assets/admin/admin-theme.php:518
 msgid "Plugin Position:"
-msgstr "Posición del Plugin:"
+msgstr "플러그인 위치:"
 
 #: assets/admin/admin-theme.php:523
 msgid "Bottom Left Corner"
-msgstr "Esquina Inferior Izquierda"
+msgstr "왼쪽 하단 모서리"
 
 #: assets/admin/admin-theme.php:524
 msgid "Bottom Right Corner"
-msgstr "Esquina Inferior Derecha"
+msgstr "오른쪽 하단 모서리"
 
 #: assets/admin/admin-theme.php:525
 msgid "Top Left Corner"
-msgstr "Esquina Superior Izquierda"
+msgstr "왼쪽 상단 모서리"
 
 #: assets/admin/admin-theme.php:526
 msgid "Top Right Corner"
-msgstr "Esquina Superior Derecha"
+msgstr "오른쪽 상단 모서리"
 
 #: assets/admin/admin-theme.php:542
 msgid "Background Color: "
-msgstr "Color de Fondo: "
+msgstr "배경색: "
 
 #: assets/admin/admin-theme.php:545
 msgid "Background color of plugin and logo border."
-msgstr "Color de fondo del plugin y borde del logo."
+msgstr "플러그인 및 로고 테두리의 배경색."
 
 #: assets/admin/admin-theme.php:549
 msgid "Labels Color: "
-msgstr "Color de Etiquetas: "
+msgstr "라벨 색상: "
 
 #: assets/admin/admin-theme.php:552
 msgid "Color of the labels or name of each feature and Plugin name to."
-msgstr ""
-"Color de las etiquetas o nombre de cada característica y nombre del Plugin."
+msgstr "각 기능의 라벨 또는 이름과 플러그인 이름의 색상."
 
 #: assets/admin/admin-theme.php:556
 msgid "Divider Line Color: "
-msgstr "Color de Línea Divisoria: "
+msgstr "구분선 색상: "
 
 #: assets/admin/admin-theme.php:559
 msgid "Color of plugin header & features section divider."
-msgstr ""
-"Color del encabezado del plugin y divisor de la sección de características."
+msgstr "플러그인 헤더 및 기능 섹션 구분선의 색상."
 
 #: assets/admin/admin-theme.php:563
 msgid "Plugin button Color: "
-msgstr "Color del Botón del Plugin: "
+msgstr "플러그인 버튼 색상: "
 
 #: assets/admin/admin-theme.php:566
 msgid "Color Scheme for Plugin Logo."
-msgstr "Esquema de Color para el Logo del Plugin."
+msgstr "플러그인 로고용 색상 구성표."
 
 #: assets/admin/admin-theme.php:570
 msgid "Accent Color: "
-msgstr "Color de Acento: "
+msgstr "강조 색상: "
 
 #: assets/admin/admin-theme.php:574
 msgid "Color scheme for:"
-msgstr "Esquema de color para:"
+msgstr "색상 구성표:"
 
 #: assets/admin/admin-theme.php:576
 msgid "Active features and their toggle buttons on hover."
-msgstr ""
-"Características activas y sus botones de alternancia al pasar el cursor."
+msgstr "활성 기능과 마우스 오버 시 토글 버튼."
 
 #: assets/admin/admin-theme.php:577
 msgid "Dyslexia reading mask bars"
-msgstr "Barras de máscara de lectura para dislexia"
+msgstr "난독증 읽기 마스크 바"
 
 #: assets/admin/admin-theme.php:583
 msgid "‌Buttons Color (Reset/Close):"
-msgstr "Color de Botones (Restablecer/Cerrar):"
+msgstr "버튼 색상 (초기화/닫기):"
 
 #: assets/admin/admin-theme.php:587
 msgid "Buttons Hover Color (Reset/Close): "
-msgstr "Color de Botones al Pasar el Cursor (Restablecer/Cerrar): "
+msgstr "버튼 호버 색상 (초기화/닫기): "
 
 #: assets/admin/admin-theme.php:596 includes/class-quickscan-admin.php:56
 #: includes/class-quickscan-admin.php:57 includes/class-quickscan-admin.php:99
 #: includes/class-quickscan-admin.php:158
 msgid "Accessibility Quick Scan"
-msgstr "Escaneo Rápido de Accesibilidad"
+msgstr "접근성 빠른 스캔"
 
 #: assets/admin/admin-theme.php:597
 msgid "Scan your website for accessibility issues manually."
-msgstr "Escanea tu sitio web para problemas de accesibilidad manualmente."
+msgstr "웹사이트의 접근성 문제를 수동으로 스캔하세요."
 
 #: assets/admin/admin-theme.php:600
 msgid "Manual Accessibility Scan"
-msgstr "Escaneo Manual de Accesibilidad"
+msgstr "수동 접근성 스캔"
 
 #: assets/admin/admin-theme.php:602
 msgid ""
 "Click the button below to scan your website for accessibility issues. This "
 "will check your pages for common accessibility problems."
 msgstr ""
-"Haz clic en el botón de abajo para escanear tu sitio web en busca de "
-"problemas de accesibilidad. Esto verificará tus páginas en busca de "
-"problemas comunes de accesibilidad."
+"아래 버튼을 클릭하여 웹사이트의 접근성 문제를 스캔하세요. 이는 일반적인 접근"
+"성 문제에 대해 페이지를 확인합니다."
 
 #: assets/admin/admin-theme.php:607
 msgid "Maximum Pages to Scan:"
-msgstr "Páginas Máximas a Escanear:"
+msgstr "스캔할 최대 페이지:"
 
 #: assets/admin/admin-theme.php:611
 msgid "(1-35 pages)"
-msgstr "(1-35 páginas)"
+msgstr "(1-35 페이지)"
 
 #: assets/admin/admin-theme.php:616
 msgid "Run Accessibility Scan Now"
-msgstr "Ejecutar Escaneo de Accesibilidad Ahora"
+msgstr "지금 접근성 스캔 실행"
 
 #: assets/admin/admin-theme.php:624
 msgid "Last Scan Results"
-msgstr "Resultados del Último Escaneo"
+msgstr "마지막 스캔 결과"
 
 #: assets/admin/admin-theme.php:701
 msgid "Save Changes"
-msgstr "Guardar Cambios"
+msgstr "변경사항 저장"
 
 #: assets/admin/admin-theme.php:706
 msgid "Reset Settings"
-msgstr "Restablecer Configuración"
+msgstr "설정 재설정"
 
 #: assets/admin/admin-theme.php:710
 msgid ""
 "Save Changes will save all settings across all tabs. Reset Settings will "
 "restore all options to their default values."
 msgstr ""
-"Guardar Cambios guardará toda la configuración en todas las pestañas. "
-"Restablecer Configuración restaurará todas las opciones a sus valores "
-"predeterminados."
+"변경사항 저장은 모든 탭의 모든 설정을 저장합니다. 설정 재설정은 모든 옵션을 "
+"기본값으로 복원합니다."
 
 #: assets/admin/admin-theme.php:799
 msgid "Accessibility Tools Version: "
-msgstr "Versión de Herramientas de Accesibilidad: "
+msgstr "접근성 도구 버전: "
 
 #: assets/Themes/Default_blue/theme.php:17
 msgid "Open/Close Accessibility Options"
-msgstr "Abrir/Cerrar Opciones de Accesibilidad"
+msgstr "접근성 옵션 열기/닫기"
 
 #: assets/Themes/Default_blue/theme.php:22
 msgid "Drag and move the accessibility box"
-msgstr "Arrastrar y mover la caja de accesibilidad"
+msgstr "접근성 상자를 드래그하여 이동"
 
 #: assets/Themes/Default_blue/theme.php:26
 msgid "Click to read GDPR Notice"
-msgstr "Haz clic para leer el Aviso GDPR"
+msgstr "GDPR 알림을 읽으려면 클릭"
 
 #: assets/Themes/Default_blue/theme.php:37
 msgid "Font Size"
-msgstr "Tamaño de Fuente"
+msgstr "글꼴 크기"
 
 #: assets/Themes/Default_blue/theme.php:42
 msgid "‌Normal"
-msgstr "Normal"
+msgstr "‌일반"
 
 #: assets/Themes/Default_blue/theme.php:54
 msgid "Line Height"
-msgstr "Altura de Línea"
+msgstr "줄 간격"
 
 #: assets/Themes/Default_blue/theme.php:57
 #: assets/Themes/Default_blue/theme.php:70
 msgid "Normal"
-msgstr "Normal"
+msgstr "일반"
 
 #: assets/Themes/Default_blue/theme.php:67
 msgid "Letter Spacing"
-msgstr "Espaciado de Letras"
+msgstr "글자 간격"
 
 #: assets/Themes/Default_blue/theme.php:82
 msgid "Dyslexia Mask"
-msgstr "Máscara de Dislexia"
+msgstr "난독증 마스크"
 
 #: assets/Themes/Default_blue/theme.php:90
 msgid "Grayscale Page"
-msgstr "Página en Escala de Grises"
+msgstr "회색조 페이지"
 
 #: assets/Themes/Default_blue/theme.php:98
 msgid "Contrast"
-msgstr "Contraste"
+msgstr "대비"
 
 #: assets/Themes/Default_blue/theme.php:106
 msgid "Negative"
-msgstr "Negativo"
+msgstr "네거티브"
 
 #: assets/Themes/Default_blue/theme.php:114
 msgid "Underlined Links"
-msgstr "Enlaces Subrayados"
+msgstr "밑줄 링크"
 
 #: assets/Themes/Default_blue/theme.php:122
 msgid "Highlight Links"
-msgstr "Resaltar Enlaces"
+msgstr "링크 강조"
 
 #: assets/Themes/Default_blue/theme.php:130
 msgid "Grayscale Images"
-msgstr "Imágenes en Escala de Grises"
+msgstr "회색조 이미지"
 
 #: assets/Themes/Default_blue/theme.php:138
 msgid "Black and white"
-msgstr "Blanco y negro"
+msgstr "흑백"
 
 #: assets/Themes/Default_blue/theme.php:144
 msgid "Developed by "
-msgstr "Desarrollado por "
+msgstr "개발: "
 
 #: assets/Themes/Default_blue/theme.php:146
 msgid "Reset"
-msgstr "Restablecer"
+msgstr "초기화"
 
 #: assets/Themes/Default_blue/theme.php:147
 msgid "Close"
-msgstr "Cerrar"
+msgstr "닫기"
 
 #: assets/Themes/Default_blue/theme.php:152
 msgid "GDPR Notice:"
-msgstr "Aviso GDPR:"
+msgstr "GDPR 알림:"
 
 #: assets/Themes/Default_blue/theme.php:153
 msgid ""
@@ -549,28 +528,26 @@ msgid ""
 "settings at any time. Please note that doing so may affect your experience "
 "on the site."
 msgstr ""
-"Este plugin utiliza cookies para mejorar tu experiencia y proporcionar "
-"configuraciones de accesibilidad personalizadas. Estas cookies se almacenan "
-"en tu navegador y nos permiten recordar tus preferencias para el tamaño de "
-"fuente, esquemas de color y otras características de accesibilidad. Al usar "
-"este plugin, consientes el uso de cookies para estos propósitos. Puedes "
-"eliminar o bloquear cookies en la configuración de tu navegador en cualquier "
-"momento. Ten en cuenta que hacerlo puede afectar tu experiencia en el sitio."
+"이 플러그인은 사용자 경험을 향상시키고 개인화된 접근성 설정을 제공하기 위해 "
+"쿠키를 사용합니다. 이러한 쿠키는 브라우저에 저장되며 글꼴 크기, 색상 구성표 "
+"및 기타 접근성 기능에 대한 사용자 기본 설정을 기억할 수 있게 해줍니다. 이 플"
+"러그인을 사용함으로써 이러한 목적을 위한 쿠키 사용에 동의하게 됩니다. 언제든"
+"지 브라우저 설정에서 쿠키를 삭제하거나 차단할 수 있습니다. 이렇게 하면 사이트"
+"에서의 경험에 영향을 줄 수 있다는 점을 유의하시기 바랍니다."
 
 #: includes/class-admin-banner.php:129
 msgid "Close banner"
-msgstr "Cerrar banner"
+msgstr "배너 닫기"
 
 #: includes/class-admin-banner.php:134
 msgid "🎉 Congratulations!"
-msgstr "🎉 ¡Felicidades!"
+msgstr "🎉 축하합니다!"
 
 #. translators: %s: Plugin name
 #: includes/class-admin-banner.php:139
 #, php-format
 msgid "You've been recognized as an %s of Meacodes Accessibility Tools."
-msgstr ""
-"Has sido reconocido como un %s de Herramientas de Accesibilidad Meacodes."
+msgstr "Meacodes 접근성 도구의 %s로 인정받았습니다."
 
 #. translators: %1$s: Pro Version 2, %2$s: Early Supporter Badge
 #: includes/class-admin-banner.php:149
@@ -579,241 +556,237 @@ msgid ""
 "As part of the upcoming %1$s rollout, early supporters will receive an "
 "exclusive %2$s and extended Pro access privileges."
 msgstr ""
-"Como parte del próximo lanzamiento de %1$s, los primeros seguidores "
-"recibirán una %2$s exclusiva y privilegios de acceso Pro extendidos."
+"다가오는 %1$s 출시의 일환으로, 초기 지원자들은 독점적인 %2$s와 확장된 Pro 액"
+"세스 권한을 받게 됩니다."
 
 #: includes/class-admin-banner.php:157
 msgid "To learn how the badge system works and how sites are verified,"
-msgstr ""
-"Para aprender cómo funciona el sistema de insignias y cómo se verifican los "
-"sitios,"
+msgstr "배지 시스템이 어떻게 작동하고 사이트가 어떻게 검증되는지 알아보려면,"
 
 #: includes/class-admin-banner.php:158
 msgid "👉 visit meacodes.com"
-msgstr "👉 visita meacodes.com"
+msgstr "👉 meacodes.com을 방문하세요"
 
 #: includes/class-admin-banner.php:161
 msgid "This notice will hide for 24 hours once dismissed."
-msgstr "Este aviso se ocultará por 24 horas una vez descartado."
+msgstr "이 알림은 한 번 해제되면 24시간 동안 숨겨집니다."
 
 #: includes/class-admin-banner.php:165
 msgid "Meacodes Pro Badge"
-msgstr "Insignia Meacodes Pro"
+msgstr "Meacodes Pro 배지"
 
 #: includes/class-admin-banner.php:179
 msgid "Security check failed"
-msgstr "Verificación de seguridad falló"
+msgstr "보안 검사 실패"
 
 #: includes/class-admin-banner.php:184
 msgid "Insufficient permissions"
-msgstr "Permisos insuficientes"
+msgstr "권한 부족"
 
 #: includes/class-admin-banner.php:191
 msgid "Banner dismissed successfully"
-msgstr "Banner descartado exitosamente"
+msgstr "배너가 성공적으로 닫혔습니다"
 
 #: includes/class-quickscan-admin.php:130
 msgid "Unable to get scan status:"
-msgstr "No se pudo obtener el estado del escaneo:"
+msgstr "스캔 상태를 가져올 수 없습니다:"
 
 #: includes/class-quickscan-admin.php:133
 msgid "MeacodesQuickScan_Scheduler class not found"
-msgstr "Clase MeacodesQuickScan_Scheduler no encontrada"
+msgstr "MeacodesQuickScan_Scheduler 클래스를 찾을 수 없습니다"
 
 #: includes/class-quickscan-admin.php:138
 #: includes/class-quickscan-admin.php:237
 msgid "Error:"
-msgstr "Error:"
+msgstr "오류:"
 
 #: includes/class-quickscan-admin.php:138
 msgid "Unable to load accessibility scan data:"
-msgstr "No se pudieron cargar los datos del escaneo de accesibilidad:"
+msgstr "접근성 스캔 데이터를 로드할 수 없습니다:"
 
 #: includes/class-quickscan-admin.php:151
 msgid "Scan is currently running..."
-msgstr "El escaneo se está ejecutando actualmente..."
+msgstr "스캔이 현재 실행 중입니다..."
 
 #: includes/class-quickscan-admin.php:153
 msgid "Please wait while we scan your website for accessibility issues."
-msgstr ""
-"Por favor espera mientras escaneamos tu sitio web en busca de problemas de "
-"accesibilidad."
+msgstr "웹사이트의 접근성 문제를 스캔하는 동안 기다려 주세요."
+
+#: includes/class-quickscan-admin.php:177
+msgid "pages"
+msgstr "페이지"
 
 #: includes/class-quickscan-admin.php:189
 msgid "View Details"
-msgstr "Ver Detalles"
+msgstr "세부사항 보기"
 
 #: includes/class-quickscan-admin.php:203
 msgid "No Scan Results Yet"
-msgstr "Aún No Hay Resultados de Escaneo"
+msgstr "아직 스캔 결과가 없습니다"
 
 #: includes/class-quickscan-admin.php:205
 msgid "Run your first accessibility scan to see results here."
-msgstr "Ejecuta tu primer escaneo de accesibilidad para ver resultados aquí."
+msgstr "여기서 결과를 보려면 첫 번째 접근성 스캔을 실행하세요."
 
 #: includes/class-quickscan-admin.php:211
 msgid "Error"
-msgstr "Error"
+msgstr "오류"
 
 #: includes/class-quickscan-admin.php:218
 msgid "Lightweight summary only."
-msgstr "Solo resumen ligero."
+msgstr "경량 요약만 제공됩니다."
 
 #: includes/class-quickscan-admin.php:218
 msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
-msgstr ""
-"Los informes completos página por página y las guías de reparación estarán "
-"disponibles en Pro v2."
+msgstr "전체 페이지별 보고서 및 수정 가이드는 Pro v2에서 제공됩니다."
 
 #: includes/class-quickscan-admin.php:222
 msgid "Read More / Join Airdrop"
-msgstr "Leer Más / Unirse al Airdrop"
+msgstr "더 읽기 / 에어드롭 참여"
 
 #: includes/class-quickscan-admin.php:237
 msgid "Unable to display accessibility scan widget."
-msgstr "No se pudo mostrar el widget de escaneo de accesibilidad."
+msgstr "접근성 스캔 위젯을 표시할 수 없습니다."
 
 #: includes/class-quickscan-admin.php:249
 #: includes/class-quickscan-scheduler.php:69
 #: includes/class-quickscan-scheduler.php:127
 msgid "You do not have permission to run scans."
-msgstr "No tienes permisos para ejecutar escaneos."
+msgstr "스캔을 실행할 권한이 없습니다."
 
 #: includes/class-quickscan-admin.php:272
 msgid "Scan is running..."
-msgstr "El escaneo está ejecutándose..."
+msgstr "스캔 실행 중..."
 
 #: includes/class-quickscan-admin.php:273
 msgid "Scan completed successfully!"
-msgstr "¡Escaneo completado exitosamente!"
+msgstr "스캔이 성공적으로 완료되었습니다!"
 
 #. translators: %d is the number of images without alt text
 #: includes/class-quickscan-checks.php:64
 #, php-format
 msgid "%d images without alt text"
-msgstr "%d imágenes sin texto alternativo"
+msgstr "%d개의 대체 텍스트 없는 이미지"
 
 #. translators: %d is the number of form elements without labels
 #: includes/class-quickscan-checks.php:71
 #, php-format
 msgid "%d form elements without labels"
-msgstr "%d elementos de formulario sin etiquetas"
+msgstr "%d개의 라벨 없는 폼 요소"
 
 #. translators: %d is the number of missing language declarations
 #: includes/class-quickscan-checks.php:78
 #, php-format
 msgid "%d missing language declaration"
-msgstr "%d declaración de idioma faltante"
+msgstr "%d개의 누락된 언어 선언"
 
 #. translators: %d is the number of buttons without accessible names
 #: includes/class-quickscan-checks.php:85
 #, php-format
 msgid "%d buttons without accessible names"
-msgstr "%d botones sin nombres accesibles"
+msgstr "%d개의 접근 가능한 이름 없는 버튼"
 
 #. translators: %d is the number of tables without proper headers
 #: includes/class-quickscan-checks.php:92
 #, php-format
 msgid "%d tables without proper headers"
-msgstr "%d tablas sin encabezados apropiados"
+msgstr "%d개의 적절한 헤더 없는 테이블"
 
 #. translators: %d is the number of empty or unclear links
 #: includes/class-quickscan-checks.php:100
 #, php-format
 msgid "%d empty or unclear links"
-msgstr "%d enlaces vacíos o poco claros"
+msgstr "%d개의 비어있거나 불분명한 링크"
 
 #. translators: %d is the number of heading structure issues
 #: includes/class-quickscan-checks.php:107
 #, php-format
 msgid "%d heading structure issues"
-msgstr "%d problemas de estructura de encabezados"
+msgstr "%d개의 제목 구조 문제"
 
 #. translators: %d is the number of missing skip links
 #: includes/class-quickscan-checks.php:114
 #, php-format
 msgid "%d missing skip links"
-msgstr "%d enlaces de salto faltantes"
+msgstr "%d개의 누락된 건너뛰기 링크"
 
 #. translators: %d is the number of missing focus indicators
 #: includes/class-quickscan-checks.php:121
 #, php-format
 msgid "%d missing focus indicators"
-msgstr "%d indicadores de foco faltantes"
+msgstr "%d개의 누락된 포커스 표시기"
 
 #. translators: %d is the number of missing landmark roles
 #: includes/class-quickscan-checks.php:128
 #, php-format
 msgid "%d missing landmark roles"
-msgstr "%d roles de referencia faltantes"
+msgstr "%d개의 누락된 랜드마크 역할"
 
 #. translators: %d is the number of form validation issues
 #: includes/class-quickscan-checks.php:135
 #, php-format
 msgid "%d form validation issues"
-msgstr "%d problemas de validación de formularios"
+msgstr "%d개의 폼 유효성 검사 문제"
 
 #. translators: %d is the number of potential color contrast issues
 #: includes/class-quickscan-checks.php:143
 #, php-format
 msgid "%d potential color contrast issues"
-msgstr "%d problemas potenciales de contraste de color"
+msgstr "%d개의 잠재적 색상 대비 문제"
 
 #. translators: %d is the number of motion/animation issues
 #: includes/class-quickscan-checks.php:150
 #, php-format
 msgid "%d motion/animation issues"
-msgstr "%d problemas de movimiento/animación"
+msgstr "%d개의 모션/애니메이션 문제"
 
 #. translators: %d is the number of text spacing issues
 #: includes/class-quickscan-checks.php:157
 #, php-format
 msgid "%d text spacing issues"
-msgstr "%d problemas de espaciado de texto"
+msgstr "%d개의 텍스트 간격 문제"
 
 #: includes/class-quickscan-checks.php:551
 msgid "A-Level Issues"
-msgstr "Problemas de Nivel A"
+msgstr "A급 문제"
 
 #: includes/class-quickscan-checks.php:552
 msgid "Basic accessibility: Images, forms, language, buttons, tables"
-msgstr "Accesibilidad básica: Imágenes, formularios, idioma, botones, tablas"
+msgstr "기본 접근성: 이미지, 양식, 언어, 버튼, 테이블"
 
 #: includes/class-quickscan-checks.php:555
 msgid "AA-Level Issues"
-msgstr "Problemas de Nivel AA"
+msgstr "AA급 문제"
 
 #: includes/class-quickscan-checks.php:556
 msgid "Enhanced accessibility: Links, headings, navigation, focus, landmarks"
-msgstr ""
-"Accesibilidad mejorada: Enlaces, encabezados, navegación, enfoque, puntos de "
-"referencia"
+msgstr "향상된 접근성: 링크, 제목, 탐색, 포커스, 랜드마크"
 
 #: includes/class-quickscan-checks.php:559
 msgid "AAA-Level Issues"
-msgstr "Problemas de Nivel AAA"
+msgstr "AAA급 문제"
 
 #: includes/class-quickscan-checks.php:560
 msgid "Advanced accessibility: Contrast, motion, text spacing"
-msgstr "Accesibilidad avanzada: Contraste, movimiento, espaciado de texto"
+msgstr "고급 접근성: 대비, 모션, 텍스트 간격"
 
 #: includes/class-quickscan-scheduler.php:65
 msgid "Invalid nonce."
-msgstr "Nonce inválido."
+msgstr "잘못된 nonce."
 
 #: includes/class-quickscan-scheduler.php:73
 #: includes/class-quickscan-scheduler.php:132
 msgid "A scan is already running. Please wait for it to complete."
-msgstr "Un escaneo ya está ejecutándose. Por favor espera a que se complete."
+msgstr "스캔이 이미 실행 중입니다. 완료될 때까지 기다려주세요."
 
 #: includes/class-quickscan-scheduler.php:156
 msgid "Scan failed to complete."
-msgstr "El escaneo falló al completarse."
+msgstr "스캔 완료에 실패했습니다."
 
 #: meacodes-accessibility-tools.php:82
 msgid "Mea Accessibility"
-msgstr "Accesibilidad Mea"
+msgstr "Mea 접근성"
 
 #: meacodes-accessibility-tools.php:91 meacodes-accessibility-tools.php:92
 msgid "Settings"
-msgstr "Configuración"
+msgstr "설정"

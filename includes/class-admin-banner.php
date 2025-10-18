@@ -145,8 +145,8 @@ class Meacodes_Admin_Banner {
                     <p>
                         <?php 
                         printf(
-                            /* translators: %s: Pro Version 2, %s: Early Supporter Badge */
-                            esc_html__('As part of the upcoming %s rollout, early supporters will receive an exclusive %s and extended Pro access privileges.', 'meacodes-accessibility-tools'),
+                            /* translators: %1$s: Pro Version 2, %2$s: Early Supporter Badge */
+                            esc_html__('As part of the upcoming %1$s rollout, early supporters will receive an exclusive %2$s and extended Pro access privileges.', 'meacodes-accessibility-tools'),
                             '<strong>Pro Version 2</strong>',
                             '<strong>Early Supporter Badge</strong>'
                         );

@@ -1,113 +1,542 @@
+# Copyright (C) 2025 Meacodes Development Solutions
+# This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Meacodes Accessibility Plugin\n"
-"POT-Creation-Date: 2024-06-07 06:53-0700\n"
-"PO-Revision-Date: 2024-06-07 17:30+0330\n"
+"Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
+"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
+"PO-Revision-Date: 2025-10-18 22:46+0330\n"
 "Last-Translator: \n"
-"Language-Team: \n"
-"Language: de_DE\n"
+"Language-Team: meacodes <info@meacodes.com>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: meacodes-accessibility-plugin.php\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Generator: Poedit 3.8\n"
+"X-Domain: meacodes-accessibility-tools\n"
 
-#: assets/Themes/Default_blue/theme.php:3
-#: assets/Themes/Default_blue/theme.php:13 assets/admin/admin-theme.php:67
+#. Plugin Name of the plugin
+#: meacodes-accessibility-tools.php meacodes-accessibility-tools.php:81
+msgid "Meacodes Accessibility Tools"
+msgstr "Meacodes Barrierefreiheits-Tools"
+
+#. Plugin URI of the plugin
+#: meacodes-accessibility-tools.php
+msgid "https://www.meacodes.com/accessibility"
+msgstr "https://www.meacodes.com/accessibility"
+
+#. Description of the plugin
+#: meacodes-accessibility-tools.php
+msgid ""
+"This is an accessibility tools for people with disabilities to use the web "
+"easily."
+msgstr ""
+"Dies sind Barrierefreiheits-Tools für Menschen mit Behinderungen, um das Web "
+"einfach zu nutzen."
+
+#. Author of the plugin
+#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
+msgid "Meacodes Development Solutions"
+msgstr "Meacodes Development Solutions"
+
+#. Author URI of the plugin
+#: meacodes-accessibility-tools.php
+msgid "https://www.meacodes.com"
+msgstr "https://www.meacodes.com"
+
+#: assets/admin/admin-theme.php:91
+msgid "jQuery is not loaded!"
+msgstr "jQuery ist nicht geladen!"
+
+#: assets/admin/admin-theme.php:97
+msgid "General"
+msgstr "Allgemein"
+
+#: assets/admin/admin-theme.php:98 assets/admin/admin-theme.php:365
+msgid "Features"
+msgstr "Funktionen"
+
+#: assets/admin/admin-theme.php:99
+msgid "Style"
+msgstr "Stil"
+
+#: assets/admin/admin-theme.php:100
+msgid "Scan"
+msgstr "Scannen"
+
+#: assets/admin/admin-theme.php:108
+msgid "Attention"
+msgstr "Achtung"
+
+#: assets/admin/admin-theme.php:109
+msgid ""
+"We updated the plugin button logic to enable more customization. If after "
+"updating it does not work on your site, this is likely a cache issue. Please "
+"clear your server and browser cache, then refresh the page."
+msgstr ""
+"Wir haben die Plugin-Button-Logik aktualisiert, um mehr Anpassungen zu "
+"ermöglichen. Wenn es nach dem Update auf Ihrer Website nicht funktioniert, "
+"ist dies wahrscheinlich ein Cache-Problem. Bitte löschen Sie Ihren Server- "
+"und Browser-Cache und aktualisieren Sie dann die Seite."
+
+#: assets/admin/admin-theme.php:111
+msgid "Close notice"
+msgstr "Hinweis schließen"
+
+#: assets/admin/admin-theme.php:120
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: assets/admin/admin-theme.php:127
+msgid "Enable or Disable Meacodes Accessibility Tools:"
+msgstr "Meacodes Barrierefreiheits-Tools aktivieren oder deaktivieren:"
+
+#: assets/admin/admin-theme.php:136
+msgid "Plugin Name:"
+msgstr "Plugin-Name:"
+
+#: assets/admin/admin-theme.php:138 assets/Themes/Default_blue/theme.php:3
+#: assets/Themes/Default_blue/theme.php:18
+#: assets/Themes/Default_blue/theme.php:23
 msgid "Accessibility"
 msgstr "Barrierefreiheit"
 
-#: assets/Themes/Default_blue/theme.php:9
-msgid "Drag and move the accessibility box"
-msgstr "Ziehen Sie die Eingabehilfe Box und verschieben Sie sie"
+#: assets/admin/admin-theme.php:140
+msgid ""
+"This means that the plugin name is a default and automatic translation of "
+"the word Accessibility."
+msgstr ""
+"Das bedeutet, dass der Plugin-Name eine Standard- und automatische "
+"Übersetzung des Wortes Barrierefreiheit ist."
 
-#: assets/Themes/Default_blue/theme.php:11
+#: assets/admin/admin-theme.php:143
+msgid ""
+"This name will be displayed opposite the plugin icon in the header section "
+"when the accessibility plugin is opened by the user on your website."
+msgstr ""
+"Dieser Name wird gegenüber dem Plugin-Icon im Header-Bereich angezeigt, wenn "
+"das Barrierefreiheits-Plugin vom Benutzer auf Ihrer Website geöffnet wird."
+
+#: assets/admin/admin-theme.php:145
+msgid ""
+"If you do not want any text to be displayed in that section, Clear default "
+"name and save changes."
+msgstr ""
+"Wenn Sie keinen Text in diesem Bereich anzeigen möchten, löschen Sie den "
+"Standard-Namen und speichern Sie die Änderungen."
+
+#: assets/admin/admin-theme.php:146
+msgid ""
+"If your site is multilingual (using Polylang), keep in mind that if you "
+"change this name, the name you choose will be displayed without translation "
+"and fixed in all languages unless you rebuild the plugins language file with "
+"Polylang and enter the translation of the chosen name. Also, if you want the "
+"chosen name to revert to the default name and be displayed translated in any "
+"language, reset settings once."
+msgstr ""
+"Wenn Ihre Website mehrsprachig ist (mit Polylang), bedenken Sie, dass wenn "
+"Sie diesen Namen ändern, der gewählte Name ohne Übersetzung und fest in "
+"allen Sprachen angezeigt wird, es sei denn, Sie erstellen die Plugin-"
+"Sprachdatei mit Polylang neu und geben die Übersetzung des gewählten Namens "
+"ein. Auch, wenn Sie möchten, dass der gewählte Name zum Standard-Namen "
+"zurückkehrt und in jeder Sprache übersetzt angezeigt wird, setzen Sie die "
+"Einstellungen einmal zurück."
+
+#: assets/admin/admin-theme.php:152
+msgid "Enable or Disable GDPR Notice:"
+msgstr "DSGVO-Hinweis aktivieren oder deaktivieren:"
+
+#: assets/admin/admin-theme.php:161
+msgid "Developed by label:"
+msgstr "Entwickelt von Label:"
+
+#: assets/admin/admin-theme.php:164
+msgid "Enable \"Developed by\" label"
+msgstr "\"Entwickelt von\" Label aktivieren"
+
+#: assets/admin/admin-theme.php:165
+msgid ""
+"Please turn the Developed by label on to support us and help the project "
+"move forward. "
+msgstr ""
+"Bitte aktivieren Sie das \"Entwickelt von\" Label, um uns zu unterstützen "
+"und dem Projekt voranzuhelfen. "
+
+#: assets/admin/admin-theme.php:166
+msgid "You can also buy us a coffee on the"
+msgstr "Sie können uns auch einen Kaffee kaufen auf der"
+
+#: assets/admin/admin-theme.php:166
+msgid "Donation page."
+msgstr "Spendenseite."
+
+#: assets/admin/admin-theme.php:167
+msgid "Thanks for your supports. "
+msgstr "Danke für Ihre Unterstützung. "
+
+#: assets/admin/admin-theme.php:229
+msgid "scanning please wait..."
+msgstr "Scan läuft, bitte warten..."
+
+#: assets/admin/admin-theme.php:264
+msgid "Just now"
+msgstr "Gerade eben"
+
+#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
+msgid "Pages with Issues"
+msgstr "Seiten mit Problemen"
+
+#: assets/admin/admin-theme.php:304
+msgid "Issues Found:"
+msgstr "Gefundene Probleme:"
+
+#: assets/admin/admin-theme.php:321 assets/admin/admin-theme.php:635
+msgid "Scan Results"
+msgstr "Scan-Ergebnisse"
+
+#: assets/admin/admin-theme.php:322 includes/class-quickscan-admin.php:159
+msgid "Completed"
+msgstr "Abgeschlossen"
+
+#: assets/admin/admin-theme.php:326 assets/admin/admin-theme.php:640
+#: includes/class-quickscan-admin.php:164
+msgid "Last Scan"
+msgstr "Letzter Scan"
+
+#: assets/admin/admin-theme.php:330 assets/admin/admin-theme.php:646
+#: includes/class-quickscan-admin.php:176
+msgid "Pages Scanned"
+msgstr "Gescannte Seiten"
+
+#: assets/admin/admin-theme.php:331 includes/class-quickscan-admin.php:177
+msgid "pages"
+msgstr "Seiten"
+
+#: assets/admin/admin-theme.php:335 assets/admin/admin-theme.php:652
+#: includes/class-quickscan-admin.php:183
+msgid "Accessibility Issues Found"
+msgstr "Barrierefreiheitsprobleme gefunden"
+
+#: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
+#: includes/class-quickscan-admin.php:274
+msgid "Scan failed. Please try again."
+msgstr "Scan fehlgeschlagen. Bitte versuchen Sie es erneut."
+
+#: assets/admin/admin-theme.php:366
+msgid ""
+"The Accessibility plugin provides a set of tools and features to create an "
+"easier and more inclusive user experience for users with various needs. You "
+"can enable or disable each of these features individually."
+msgstr ""
+"Das Barrierefreiheits-Plugin bietet eine Reihe von Tools und Funktionen, um "
+"eine einfachere und inklusivere Benutzererfahrung für Benutzer mit "
+"verschiedenen Bedürfnissen zu schaffen. Sie können jede dieser Funktionen "
+"einzeln aktivieren oder deaktivieren."
+
+#: assets/admin/admin-theme.php:370
+msgid "Font Size Feature:"
+msgstr "Schriftgröße-Funktion:"
+
+#: assets/admin/admin-theme.php:379
+msgid "Line Height Feature:"
+msgstr "Zeilenhöhe-Funktion:"
+
+#: assets/admin/admin-theme.php:388
+msgid "Letter Spacing Feature:"
+msgstr "Buchstabenabstand-Funktion:"
+
+#: assets/admin/admin-theme.php:397
+msgid "Dyslexia Mask Feature:"
+msgstr "Legasthenie-Maske-Funktion:"
+
+#: assets/admin/admin-theme.php:406
+msgid "Grayscale Page Feature:"
+msgstr "Graustufen-Seite-Funktion:"
+
+#: assets/admin/admin-theme.php:415
+msgid "Contrast Feature:"
+msgstr "Kontrast-Funktion:"
+
+#: assets/admin/admin-theme.php:424
+msgid "Negative Feature:"
+msgstr "Negativ-Funktion:"
+
+#: assets/admin/admin-theme.php:433
+msgid "Underlined Links Feature:"
+msgstr "Unterstrichene Links-Funktion:"
+
+#: assets/admin/admin-theme.php:442
+msgid "Highlight Links Feature:"
+msgstr "Links hervorheben-Funktion:"
+
+#: assets/admin/admin-theme.php:451
+msgid "Grayscale Images Feature:"
+msgstr "Graustufen-Bilder-Funktion:"
+
+#: assets/admin/admin-theme.php:460
+msgid "Black and white Feature:"
+msgstr "Schwarz-Weiß-Funktion:"
+
+#: assets/admin/admin-theme.php:473
+msgid "Style Settings"
+msgstr "Stil-Einstellungen"
+
+#: assets/admin/admin-theme.php:474
+msgid ""
+"Customize the plugins appearance to match your taste and needs using the "
+"style settings."
+msgstr ""
+"Passen Sie das Erscheinungsbild des Plugins an Ihren Geschmack und Ihre "
+"Bedürfnisse an, indem Sie die Stil-Einstellungen verwenden."
+
+#: assets/admin/admin-theme.php:478
+msgid "Plugin Button Size:"
+msgstr "Plugin-Button-Größe:"
+
+#: assets/admin/admin-theme.php:485
+msgid "Plugin Button Border Radius:"
+msgstr "Plugin-Button-Rahmenradius:"
+
+#: assets/admin/admin-theme.php:492
+msgid "Plugin Button Margin:"
+msgstr "Plugin-Button-Rand:"
+
+#: assets/admin/admin-theme.php:499
+msgid "Plugin Button Icon Size:"
+msgstr "Plugin-Button-Icon-Größe:"
+
+#: assets/admin/admin-theme.php:506
+msgid "Positionable by User:"
+msgstr "Vom Benutzer positionierbar:"
+
+#: assets/admin/admin-theme.php:514
+msgid ""
+"Enabling this option allows users to freely move the accessibility plugin "
+"around the page on desktop devices. Please note that this feature is not "
+"available on mobile devices."
+msgstr ""
+"Durch Aktivierung dieser Option können Benutzer das Barrierefreiheits-Plugin "
+"frei auf der Seite auf Desktop-Geräten bewegen. Bitte beachten Sie, dass "
+"diese Funktion auf mobilen Geräten nicht verfügbar ist."
+
+#: assets/admin/admin-theme.php:518
+msgid "Plugin Position:"
+msgstr "Plugin-Position:"
+
+#: assets/admin/admin-theme.php:523
+msgid "Bottom Left Corner"
+msgstr "Untere linke Ecke"
+
+#: assets/admin/admin-theme.php:524
+msgid "Bottom Right Corner"
+msgstr "Untere rechte Ecke"
+
+#: assets/admin/admin-theme.php:525
+msgid "Top Left Corner"
+msgstr "Obere linke Ecke"
+
+#: assets/admin/admin-theme.php:526
+msgid "Top Right Corner"
+msgstr "Obere rechte Ecke"
+
+#: assets/admin/admin-theme.php:542
+msgid "Background Color: "
+msgstr "Hintergrundfarbe: "
+
+#: assets/admin/admin-theme.php:545
+msgid "Background color of plugin and logo border."
+msgstr "Hintergrundfarbe des Plugins und Logo-Rahmens."
+
+#: assets/admin/admin-theme.php:549
+msgid "Labels Color: "
+msgstr "Label-Farbe: "
+
+#: assets/admin/admin-theme.php:552
+msgid "Color of the labels or name of each feature and Plugin name to."
+msgstr "Farbe der Labels oder Name jeder Funktion und Plugin-Name."
+
+#: assets/admin/admin-theme.php:556
+msgid "Divider Line Color: "
+msgstr "Trennlinien-Farbe: "
+
+#: assets/admin/admin-theme.php:559
+msgid "Color of plugin header & features section divider."
+msgstr "Farbe des Plugin-Headers und Funktionsbereich-Trenners."
+
+#: assets/admin/admin-theme.php:563
+msgid "Plugin button Color: "
+msgstr "Plugin-Button-Farbe: "
+
+#: assets/admin/admin-theme.php:566
+msgid "Color Scheme for Plugin Logo."
+msgstr "Farbschema für Plugin-Logo."
+
+#: assets/admin/admin-theme.php:570
+msgid "Accent Color: "
+msgstr "Akzentfarbe: "
+
+#: assets/admin/admin-theme.php:574
+msgid "Color scheme for:"
+msgstr "Farbschema für:"
+
+#: assets/admin/admin-theme.php:576
+msgid "Active features and their toggle buttons on hover."
+msgstr "Aktive Funktionen und ihre Umschalt-Buttons beim Hover."
+
+#: assets/admin/admin-theme.php:577
+msgid "Dyslexia reading mask bars"
+msgstr "Legasthenie-Lesemaske-Balken"
+
+#: assets/admin/admin-theme.php:583
+msgid "‌Buttons Color (Reset/Close):"
+msgstr "Button-Farbe (Zurücksetzen/Schließen):"
+
+#: assets/admin/admin-theme.php:587
+msgid "Buttons Hover Color (Reset/Close): "
+msgstr "Button-Hover-Farbe (Zurücksetzen/Schließen): "
+
+#: assets/admin/admin-theme.php:596 includes/class-quickscan-admin.php:56
+#: includes/class-quickscan-admin.php:57 includes/class-quickscan-admin.php:99
+#: includes/class-quickscan-admin.php:158
+msgid "Accessibility Quick Scan"
+msgstr "Barrierefreiheits-Schnellscan"
+
+#: assets/admin/admin-theme.php:597
+msgid "Scan your website for accessibility issues manually."
+msgstr "Scannen Sie Ihre Website manuell auf Barrierefreiheitsprobleme."
+
+#: assets/admin/admin-theme.php:600
+msgid "Manual Accessibility Scan"
+msgstr "Manueller Barrierefreiheits-Scan"
+
+#: assets/admin/admin-theme.php:602
+msgid ""
+"Click the button below to scan your website for accessibility issues. This "
+"will check your pages for common accessibility problems."
+msgstr ""
+"Klicken Sie auf die Schaltfläche unten, um Ihre Website auf "
+"Barrierefreiheitsprobleme zu scannen. Dies überprüft Ihre Seiten auf häufige "
+"Barrierefreiheitsprobleme."
+
+#: assets/admin/admin-theme.php:607
+msgid "Maximum Pages to Scan:"
+msgstr "Maximale Seiten zum Scannen:"
+
+#: assets/admin/admin-theme.php:611
+msgid "(1-35 pages)"
+msgstr "(1-35 Seiten)"
+
+#: assets/admin/admin-theme.php:616
+msgid "Run Accessibility Scan Now"
+msgstr "Barrierefreiheits-Scan jetzt ausführen"
+
+#: assets/admin/admin-theme.php:624
+msgid "Last Scan Results"
+msgstr "Letzte Scan-Ergebnisse"
+
+#: assets/admin/admin-theme.php:701
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#: assets/admin/admin-theme.php:706
+msgid "Reset Settings"
+msgstr "Einstellungen zurücksetzen"
+
+#: assets/admin/admin-theme.php:710
+msgid ""
+"Save Changes will save all settings across all tabs. Reset Settings will "
+"restore all options to their default values."
+msgstr ""
+"Änderungen speichern speichert alle Einstellungen über alle Registerkarten. "
+"Einstellungen zurücksetzen stellt alle Optionen auf ihre Standardwerte "
+"wieder her."
+
+#: assets/admin/admin-theme.php:799
+msgid "Accessibility Tools Version: "
+msgstr "Barrierefreiheits-Tools Version: "
+
+#: assets/Themes/Default_blue/theme.php:17
 msgid "Open/Close Accessibility Options"
-msgstr "Öffne/Schließe Barrierefreiheit seinstellungen"
+msgstr "Barrierefreiheits-Optionen öffnen/schließen"
 
-#: assets/Themes/Default_blue/theme.php:16
+#: assets/Themes/Default_blue/theme.php:22
+msgid "Drag and move the accessibility box"
+msgstr "Barrierefreiheits-Box ziehen und bewegen"
+
+#: assets/Themes/Default_blue/theme.php:26
 msgid "Click to read GDPR Notice"
-msgstr "Klicken Sie hier, um den GDPR Hinweis zu lesen"
+msgstr "Klicken Sie, um den DSGVO-Hinweis zu lesen"
 
-#: assets/Themes/Default_blue/theme.php:23
+#: assets/Themes/Default_blue/theme.php:37
 msgid "Font Size"
 msgstr "Schriftgröße"
 
-#: assets/Themes/Default_blue/theme.php:28
+#: assets/Themes/Default_blue/theme.php:42
 msgid "‌Normal"
 msgstr "Normal"
 
-#: assets/Themes/Default_blue/theme.php:40
+#: assets/Themes/Default_blue/theme.php:54
 msgid "Line Height"
-msgstr "Zeilenabstand"
+msgstr "Zeilenhöhe"
 
-#: assets/Themes/Default_blue/theme.php:43
-#: assets/Themes/Default_blue/theme.php:56
+#: assets/Themes/Default_blue/theme.php:57
+#: assets/Themes/Default_blue/theme.php:70
 msgid "Normal"
 msgstr "Normal"
 
-#: assets/Themes/Default_blue/theme.php:53
+#: assets/Themes/Default_blue/theme.php:67
 msgid "Letter Spacing"
 msgstr "Buchstabenabstand"
 
-#: assets/Themes/Default_blue/theme.php:68
+#: assets/Themes/Default_blue/theme.php:82
 msgid "Dyslexia Mask"
-msgstr "Dyslexie Kompensation"
+msgstr "Legasthenie-Maske"
 
-#: assets/Themes/Default_blue/theme.php:76
+#: assets/Themes/Default_blue/theme.php:90
 msgid "Grayscale Page"
-msgstr "Graustufen Seite"
+msgstr "Graustufen-Seite"
 
-#: assets/Themes/Default_blue/theme.php:84
+#: assets/Themes/Default_blue/theme.php:98
 msgid "Contrast"
 msgstr "Kontrast"
 
-#: assets/Themes/Default_blue/theme.php:92
+#: assets/Themes/Default_blue/theme.php:106
 msgid "Negative"
 msgstr "Negativ"
 
-#: assets/Themes/Default_blue/theme.php:100
+#: assets/Themes/Default_blue/theme.php:114
 msgid "Underlined Links"
 msgstr "Unterstrichene Links"
 
-#: assets/Themes/Default_blue/theme.php:108
+#: assets/Themes/Default_blue/theme.php:122
 msgid "Highlight Links"
 msgstr "Links hervorheben"
 
-#: assets/Themes/Default_blue/theme.php:116
-msgid "Grayscale Images"
-msgstr "Graustufenbilder"
-
-#: assets/Themes/Default_blue/theme.php:124
-msgid "Black and white"
-msgstr "Schwarz Weiß"
-
 #: assets/Themes/Default_blue/theme.php:130
+msgid "Grayscale Images"
+msgstr "Graustufen-Bilder"
+
+#: assets/Themes/Default_blue/theme.php:138
+msgid "Black and white"
+msgstr "Schwarz und weiß"
+
+#: assets/Themes/Default_blue/theme.php:144
 msgid "Developed by "
 msgstr "Entwickelt von "
 
-#: assets/Themes/Default_blue/theme.php:132
+#: assets/Themes/Default_blue/theme.php:146
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: assets/Themes/Default_blue/theme.php:133
+#: assets/Themes/Default_blue/theme.php:147
 msgid "Close"
 msgstr "Schließen"
 
-#: assets/Themes/Default_blue/theme.php:138
+#: assets/Themes/Default_blue/theme.php:152
 msgid "GDPR Notice:"
 msgstr "DSGVO-Hinweis:"
 
-#: assets/Themes/Default_blue/theme.php:139
+#: assets/Themes/Default_blue/theme.php:153
 msgid ""
 "This plugin uses cookies to enhance your experience and provide personalized "
 "accessibility settings. These cookies are stored in your browser and allow "
@@ -117,814 +546,275 @@ msgid ""
 "settings at any time. Please note that doing so may affect your experience "
 "on the site."
 msgstr ""
-"Dieses Plugin verwendet Cookies, um Ihre Benutzererfahrung zu verbessern und "
-"personalisierte Zugänglichkeitseinstellungen bereitzustellen. Diese Cookies "
-"werden in Ihrem Browser gespeichert und ermöglichen es uns, uns an Ihre "
-"Einstellungen für Schriftgröße, Farbschema und andere "
-"Zugänglichkeitsfunktionen zu erinnern. Durch die Nutzung dieses Plugins "
-"stimmen Sie der Verwendung von Cookies für diese Zwecke zu. Sie können "
-"Cookies jederzeit in Ihren Browsereinstellungen löschen oder blockieren. "
-"Bitte beachten Sie, dass dies Ihre Erfahrung auf der Website beeinträchtigen "
-"kann."
-
-#: assets/admin/admin-theme.php:31
-msgid "jQuery is not loaded!"
-msgstr "jQuery ist nicht geladen!"
-
-#: assets/admin/admin-theme.php:37
-msgid "General"
-msgstr "Allgemein"
-
-#: assets/admin/admin-theme.php:38 assets/admin/admin-theme.php:122
-msgid "Features"
-msgstr "Funktionen"
-
-#: assets/admin/admin-theme.php:39
-msgid "Style"
-msgstr "Stil"
-
-#: assets/admin/admin-theme.php:40
-msgid "Documentation"
-msgstr "Dokumentation"
-
-#: assets/admin/admin-theme.php:41
-msgid "Support"
-msgstr "Unterstützung"
-
-#: assets/admin/admin-theme.php:42
-msgid "Donation"
-msgstr "Spende"
-
-#: assets/admin/admin-theme.php:43
-msgid "changelog"
-msgstr "changelog"
-
-#: assets/admin/admin-theme.php:49
-msgid "General Settings"
-msgstr "Allgemeine Einstellungen"
-
-#: assets/admin/admin-theme.php:56
-msgid "Enable or Disable Meacodes Accessibility Tools:"
-msgstr "Meacodes Barrierefreiheit Tools aktivieren oder deaktivieren:"
-
-#: assets/admin/admin-theme.php:65
-msgid "Plugin Name:"
-msgstr "Plugin Name:"
-
-#: assets/admin/admin-theme.php:69
-msgid ""
-"This means that the plugin name is a default and automatic translation of "
-"the word Accessibility."
-msgstr ""
-"Das bedeutet, dass der Plugin Name eine standardmäßige und automatische "
-"Übersetzung des Wortes \"Barrierefreiheit\" ist."
-
-#: assets/admin/admin-theme.php:72
-msgid ""
-"This name will be displayed opposite the plugin icon in the header section "
-"when the accessibility plugin is opened by the user on your website."
-msgstr ""
-"Dieser Name wird neben dem Plugin Symbol im Headerbereich angezeigt, wenn "
-"das Benutzerzugriffsplatz Plugin auf Ihrer Website geöffnet wird."
-
-#: assets/admin/admin-theme.php:74
-msgid ""
-"If you do not want any text to be displayed in that section, Clear default "
-"name and save changes."
-msgstr ""
-"Wenn in diesem Abschnitt kein Text angezeigt werden soll, löschen Sie den "
-"Standardnamen und speichern Sie die Änderungen."
-
-#: assets/admin/admin-theme.php:75
-msgid ""
-"If your site is multilingual (using Polylang), keep in mind that if you "
-"change this name, the name you choose will be displayed without translation "
-"and fixed in all languages unless you rebuild the plugins language file with "
-"Polylang and enter the translation of the chosen name. Also, if you want the "
-"chosen name to revert to the default name and be displayed translated in any "
-"language, reset settings once."
-msgstr ""
-"Falls Ihre Website mehrsprachig ist (mit Polylang), beachten Sie bitte: "
-"Ändern Sie diesen Namen, wird der neue Name ohne Übersetzung und in allen "
-"Sprachen gleich angezeigt. Sie müssten dann die Sprachdatei des Plugins mit "
-"Polylang neu erstellen und die Übersetzung des gewählten Namens hinzufügen. "
-"Um den Namen wieder auf den Standardwert zurückzusetzen und in allen "
-"Sprachen übersetzt anzuzeigen, können Sie einfach die Einstellungen einmal "
-"zurücksetzen."
-
-#: assets/admin/admin-theme.php:81
-msgid "Enable or Disable GDPR Notice:"
-msgstr "Aktivieren oder Deaktivieren des Datenschutzhinweises:"
-
-#: assets/admin/admin-theme.php:90
-msgid "Developed by label:"
-msgstr "Entwickelt von label:"
-
-#: assets/admin/admin-theme.php:93
-msgid "Enable \"Developed by\" label"
-msgstr "Aktivieren Sie \"Entwickelt von\" label"
-
-#: assets/admin/admin-theme.php:94
-msgid ""
-"Please turn the Developed by label on to support us and help the project "
-"move forward. "
-msgstr ""
-"Bitte aktivieren Sie die Entwickelt von Kennzeichnung, um uns zu "
-"unterstützen und das Projekt voranzubringen. "
-
-#: assets/admin/admin-theme.php:95
-msgid "You can also buy us a coffee on the"
-msgstr "Wir würden uns auch über einen Kaffee freuen"
-
-#: assets/admin/admin-theme.php:95
-msgid "Donation page."
-msgstr "Spenden Seite."
-
-#: assets/admin/admin-theme.php:96
-msgid "Thanks for your supports. "
-msgstr "Vielen Dank für Ihre Unterstützung. "
-
-#: assets/admin/admin-theme.php:123
-msgid ""
-"The Accessibility plugin provides a set of tools and features to create an "
-"easier and more inclusive user experience for users with various needs. You "
-"can enable or disable each of these features individually."
-msgstr ""
-"Das Barrierefreiheit Plugin bietet eine Reihe von Werkzeugen und Funktionen, "
-"um Benutzern mit unterschiedlichen Bedürfnissen eine einfachere und "
-"integrativere Benutzererfahrung zu bieten. Sie können jede dieser Funktionen "
-"einzeln aktivieren oder deaktivieren."
-
-#: assets/admin/admin-theme.php:124
-msgid ""
-"To find out which plugin features are used to solve which accessibility "
-"issues for your site, you can refer to the "
-msgstr ""
-"Um herauszufinden, welche Plugin-Funktionen verwendet werden, um welche "
-"Barrierefreiheitsprobleme für Ihre Website zu lösen, können Sie die "
-"Dokumentation der Plugins konsultieren "
-
-#: assets/admin/admin-theme.php:124 assets/admin/admin-theme.php:232
-msgid "Documentation."
-msgstr "Dokumentation."
-
-#: assets/admin/admin-theme.php:128
-msgid "Font Size Feature:"
-msgstr "Schriftgröße Funktion:"
-
-#: assets/admin/admin-theme.php:137
-msgid "Line Height Feature:"
-msgstr "Zeilenabstands Funktion:"
-
-#: assets/admin/admin-theme.php:146
-msgid "Letter Spacing Feature:"
-msgstr "Buchstabenabstand Funktion:"
-
-#: assets/admin/admin-theme.php:155
-msgid "Dyslexia Mask Feature:"
-msgstr "Dyslexie Kompensation Funktion:"
-
-#: assets/admin/admin-theme.php:164
-msgid "Grayscale Page Feature:"
-msgstr "Graustufen Seite Funktiont:"
-
-#: assets/admin/admin-theme.php:173
-msgid "Contrast Feature:"
-msgstr "Kontrast Funktion:"
-
-#: assets/admin/admin-theme.php:182
-msgid "Negative Feature:"
-msgstr "Negativ Funktion:"
-
-#: assets/admin/admin-theme.php:191
-msgid "Underlined Links Feature:"
-msgstr "Unterstrichene Links Funktion:"
-
-#: assets/admin/admin-theme.php:200
-msgid "Highlight Links Feature:"
-msgstr "Links hervorheben Funktion:"
-
-#: assets/admin/admin-theme.php:209
-msgid "Grayscale Images Feature:"
-msgstr "Graustufenbilder Funktion:"
-
-#: assets/admin/admin-theme.php:218
-msgid "Black and white Feature:"
-msgstr "Schwarz Weiß Funktion:"
-
-#: assets/admin/admin-theme.php:231
-msgid "Style Settings"
-msgstr "Formatierungs optionen"
-
-#: assets/admin/admin-theme.php:232
-msgid ""
-"Customize the plugins appearance to match your taste and needs using the "
-"style settings. For more information on each appearance variable, refer to "
-"the"
-msgstr ""
-"Passen Sie das Erscheinungsbild des Plugins Ihren Wünschen und Bedürfnissen "
-"mithilfe der Stileinstellungen an. Weitere Informationen zu den einzelnen "
-"Aussehen-Variablen finden Sie auf der"
-
-#: assets/admin/admin-theme.php:236
-msgid "Positionable by User:"
-msgstr "Vom Benutzer positionierbar:"
-
-#: assets/admin/admin-theme.php:244
-msgid ""
-"Enabling this option allows users to freely move the accessibility plugin "
-"around the page on desktop devices. Please note that this feature is not "
-"available on mobile devices."
-msgstr ""
-"Durch Aktivieren dieser Option können Benutzer das Barrierefreiheit Plugin "
-"auf Desktop Geräten frei auf der Seite verschieben. Bitte beachten Sie, dass "
-"diese Funktion auf Mobilgeräten nicht verfügbar ist."
-
-#: assets/admin/admin-theme.php:248
-msgid "Plugin Position:"
-msgstr "Platzierung des Plugin:"
-
-#: assets/admin/admin-theme.php:253
-msgid "Bottom Left Corner"
-msgstr "Untere linke Ecke"
-
-#: assets/admin/admin-theme.php:254
-msgid "Bottom Right Corner"
-msgstr "Untere rechte Ecke"
-
-#: assets/admin/admin-theme.php:255
-msgid "Top Left Corner"
-msgstr "Obere linke Ecke"
-
-#: assets/admin/admin-theme.php:256
-msgid "Top Right Corner"
-msgstr "Obere rechte Ecke"
-
-#: assets/admin/admin-theme.php:272
-msgid "Background Color: "
-msgstr "Hintergrund farbe: "
-
-#: assets/admin/admin-theme.php:275
-msgid "Background color of plugin and logo border."
-msgstr "Hintergrundfarbe des Plugin und Logorahmen."
-
-#: assets/admin/admin-theme.php:279
-msgid "Labels Color: "
-msgstr "Etiketten farbe: "
-
-#: assets/admin/admin-theme.php:282
-msgid "Color of the labels or name of each feature and Plugin name to."
-msgstr "Farbe der Beschriftungen oder Name jeder Funktion und Plugin Name zu."
-
-#: assets/admin/admin-theme.php:286
-msgid "Divider Line Color: "
-msgstr "Trennungslinien farbe: "
-
-#: assets/admin/admin-theme.php:289
-msgid "Color of plugin header & features section divider."
-msgstr "Farbe der Plugin Kopfzeile & Trennlinie des Funktionsbereichs."
-
-#: assets/admin/admin-theme.php:293
-msgid "Plugin Logo Color: "
-msgstr "Plugin Logo Farbe: "
-
-#: assets/admin/admin-theme.php:296
-msgid "Color Scheme for Plugin Logo."
-msgstr "Farbschema für Plugin Logo."
-
-#: assets/admin/admin-theme.php:300
-msgid "Accent Color: "
-msgstr "Akzentfarbe: "
-
-#: assets/admin/admin-theme.php:304
-msgid "Color scheme for:"
-msgstr "Farbschema für:"
-
-#: assets/admin/admin-theme.php:306
-msgid "Active features and their toggle buttons on hover."
-msgstr "Aktive Funktionen und ihre Umschalt Schaltflächen beim Hovern."
-
-#: assets/admin/admin-theme.php:307
-msgid "Dyslexia reading mask bars"
-msgstr "Lesehilfsmittel für Legastheniker mit farbigen Markierungsbalken"
-
-#: assets/admin/admin-theme.php:313
-msgid "‌Buttons Color (Reset/Close):"
-msgstr "Schaltflächen farbe (Zurücksetzen/Schließen):"
-
-#: assets/admin/admin-theme.php:317
-msgid "Buttons Hover Color (Reset/Close): "
-msgstr "Schaltflächen Hover Farbe (Zurücksetzen/Schließen): "
-
-#: assets/admin/admin-theme.php:325
-msgid "Reset settings"
-msgstr "Einstellungen zurücksetzen"
-
-#: assets/admin/admin-theme.php:345
-msgid "Accessibility Tools Version: "
-msgstr "Barrierefreiheit Tools Version: "
-
-#: assets/admin/admin-theme.php:347
-msgid "Developed by"
-msgstr "Entwickelt von"
-
-#. Plugin Name of the plugin/theme
-#: meacodes-accessibility-tools.php:76
-msgid "Meacodes Accessibility Tools"
-msgstr "Meacodes Barrierefreiheit Tools"
-
-#: meacodes-accessibility-tools.php:77
-msgid "Mea Accessibility"
-msgstr "Mea Accessibility"
-
-#: meacodes-accessibility-tools.php:86 meacodes-accessibility-tools.php:87
-msgid "Settings"
-msgstr "Einstellungs"
-
-#. Plugin URI of the plugin/theme
-msgid "https://www.meacodes.com/accessibility"
-msgstr "https://www.meacodes.com/accessibility"
-
-#. Description of the plugin/theme
-msgid ""
-"This is an accessibility tools for people with disabilities to use the web "
-"easily."
-msgstr ""
-"Dies ist ein Barrierefreiheit-Plugin, das Menschen mit Behinderungen die "
-"einfache Nutzung des Internets ermöglicht."
-
-#. Author of the plugin/theme
-msgid "Meacodes"
-msgstr "Meacodes"
-
-#. Author URI of the plugin/theme
-msgid "https://www.meacodes.com"
-msgstr "https://www.meacodes.com"
-
-#~ msgid "help section."
-#~ msgstr "Hilfeseite."
-
-#~ msgid "Meacodes Accessibility Tools Help"
-#~ msgstr "Meacodes Barrierefreiheit Tools Hilfe"
-
-#~ msgid "Introduction"
-#~ msgstr "Einleitung"
-
-#~ msgid ""
-#~ "Welcome to the Meacodes Accessibility Tools! Elevate the accessibility of "
-#~ "your WordPress site effortlessly with a range of features designed for an "
-#~ "inclusive online experience."
-#~ msgstr ""
-#~ "Willkommen beim Meacodes Accessibility Tools! Steigern Sie die "
-#~ "Barrierefreiheit Ihrer WordPress Website mühelos mit einer Reihe von "
-#~ "Funktionen, die für ein inklusives Online Erlebnis entwickelt wurden."
-
-#~ msgid ""
-#~ "Discover the powerful accessibility features that come with this plugin:"
-#~ msgstr ""
-#~ "Entdecken Sie die leistungsstarken Barrierefreiheits funktionen, die in "
-#~ "diesem Plugin enthalten sind:"
-
-#~ msgid "Font Customization"
-#~ msgstr "Schriftarten Anpassung"
-
-#~ msgid "Modify the size of text for improved readability."
-#~ msgstr "Passen Sie die Textgröße zur Verbesserung der Lesbarkeit an."
-
-#~ msgid "Set the spacing between lines for enhanced legibility."
-#~ msgstr "Stellen Sie den Zeilenabstand für eine bessere Lesbarkeit ein."
-
-#~ msgid "Customize letter spacing for optimal text clarity."
-#~ msgstr "Anpassen des Buchstabenabstands für optimale Textklarheit."
-
-#~ msgid "Dyslexia-Friendly Options"
-#~ msgstr "Legastheniker Freundliche Optionen"
-
-#~ msgid "Apply a mask to minimize visual distractions."
-#~ msgstr "Eine Maske anwenden, um visuelle Ablenkungen zu minimieren."
-
-#~ msgid "Visual Adjustments"
-#~ msgstr "Optische Korrekturen"
-
-#~ msgid "Convert the page to grayscale for a simplified look."
-#~ msgstr "Die Seite zur vereinfachten Darstellung in Graustufen umwandeln."
-
-#~ msgid "Increase the contrast for better visibility."
-#~ msgstr "Erhöhen Sie den Kontrast für bessere Sichtbarkeit."
-
-#~ msgid "Invert colors for a unique viewing experience."
-#~ msgstr "Invert colors for a unique viewing experience."
-
-#~ msgid "Link Styling"
-#~ msgstr "Link Gestaltung"
-
-#~ msgid "Add underlines to links for clarity."
-#~ msgstr ""
-#~ "Fügen Sie Links Unterstreichungen hinzu, um die Deutlichkeit zu "
-#~ "verbessern."
-
-#~ msgid "Emphasize links to draw attention."
-#~ msgstr "Hervorheben von Links, um Aufmerksamkeit zu erregen."
-
-#~ msgid "Image Presentation"
-#~ msgstr "Bildpräsentation"
-
-#~ msgid "Convert images to grayscale."
-#~ msgstr "Bilder in Graustufen konvertieren."
-
-#~ msgid "Black and White Page"
-#~ msgstr "Graustufen Seite"
-
-#~ msgid "Transform the entire page to black and white."
-#~ msgstr "Die gesamte Seite in Schwarzweiß umwandeln."
-
-#~ msgid "Enhance the reading experience for users with dyslexia:"
-#~ msgstr "Die Leseerfahrung für Benutzer mit Legasthenie verbessern:"
-
-#~ msgid "How to Use"
-#~ msgstr "Gebrauchs Anweisung"
-
-#~ msgid ""
-#~ "Unlock the full potential of the Accessibility Plugin in just a few "
-#~ "simple steps:"
-#~ msgstr ""
-#~ "Schalten Sie das volle Potenzial des Barrierefreiheit-Plugins in wenigen "
-#~ "einfachen Schritten frei:"
-
-#~ msgid "Navigate to the "
-#~ msgstr "Navigieren Sie zum "
-
-#~ msgid "menu in your WordPress dashboard."
-#~ msgstr "menü in Ihrem WordPress Dashboard."
-
-#~ msgid "Click on"
-#~ msgstr "Klicken Sie auf"
-
-#~ msgid "to access the settings page."
-#~ msgstr ", um auf die Einstellungsseite zuzugreifen."
-
-#~ msgid ""
-#~ "Explore each feature and customize settings according to your preferences."
-#~ msgstr ""
-#~ "Entdecken Sie alle Funktionen und passen Sie die Einstellungen Ihren "
-#~ "Wünschen an."
-
-#~ msgid "And click on "
-#~ msgstr "Und klicken Sie auf "
-
-#~ msgid "Save Changes."
-#~ msgstr "Änderungen speichern."
-
-#~ msgid "Need Further Assistance?"
-#~ msgstr "Können wir Ihnen noch weiterhelfen?"
-
-#~ msgid ""
-#~ "A blue question mark icon ( ? ) is placed next to the settings sections "
-#~ "that need further clarification. By hovering your mouse over it, more "
-#~ "detailed instructions will be displayed to help you understand the "
-#~ "settings better."
-#~ msgstr ""
-#~ "Neben den Einstellungselementen, die einer näheren Erläuterung bedürfen, "
-#~ "befindet sich ein blaues Fragezeichen-Symbol (?).  Beim Bewegen der Maus "
-#~ "über dieses Symbol werden detailliertere Anweisungen angezeigt, die Ihnen "
-#~ "helfen, die Einstellungen besser zu verstehen."
-
-#~ msgid "Translation Notice"
-#~ msgstr "Hinweis zum Übersetzungsprozess"
-
-#~ msgid ""
-#~ "We strive to provide accurate translations for our plugin in multiple "
-#~ "languages. However, due to the automated nature of the translation "
-#~ "process, there may be instances of inaccuracies or errors in certain "
-#~ "translations."
-#~ msgstr ""
-#~ "We strive to provide accurate translations for our plugin in multiple "
-#~ "languages. However, due to the automated nature of the translation "
-#~ "process, there may be instances of inaccuracies or errors in certain "
-#~ "translations."
-
-#~ msgid ""
-#~ "Your feedback and contributions play a crucial role in improving "
-#~ "translation quality and ensuring a better user experience for everyone. "
-#~ "If you encounter any incorrect translations or have suggestions for "
-#~ "improvement, we encourage you to get involved:"
-#~ msgstr ""
-#~ "Ihr Feedback und Ihre Beiträge spielen eine entscheidende Rolle bei der "
-#~ "Verbesserung der Übersetzungsqualität und sorgen für eine bessere "
-#~ "Benutzererfahrung für alle. Sollten Sie auf fehlerhafte Übersetzungen "
-#~ "stoßen oder Verbesserungsvorschläge haben, zögern Sie bitte nicht, sich "
-#~ "einzubringen:"
-
-#~ msgid "Report any translation issues or inaccuracies you encounter."
-#~ msgstr ""
-#~ "Melden Sie bitte jegliche Übersetzungsprobleme oder Ungenauigkeiten, die "
-#~ "Sie feststellen."
-
-#~ msgid ""
-#~ "Contribute your own translations or corrections to help enhance the "
-#~ "overall quality."
-#~ msgstr ""
-#~ "Tragen Sie mit Ihren eigenen Übersetzungen oder Korrekturen zur "
-#~ "Verbesserung der allgemeinen Qualität bei."
-
-#~ msgid ""
-#~ "Your participation not only benefits you but also the entire community of "
-#~ "users who speak the same language."
-#~ msgstr ""
-#~ "Ihre Teilnahme kommt nicht nur Ihnen zugute, sondern auch der gesamten "
-#~ "Gemeinschaft der Benutzer, die dieselbe Sprache sprechen."
-
-#~ msgid ""
-#~ "Thank you for helping us improve! You can send your .po files to us by "
-#~ "use this email:"
-#~ msgstr ""
-#~ "Vielen Dank, dass Sie uns helfen, uns zu verbessern! Sie können Ihre .po-"
-#~ "Dateien per E-Mail an uns senden:"
-
-#~ msgid ""
-#~ "With your support, we can make the online world more inclusive for "
-#~ "everyone."
-#~ msgstr ""
-#~ "Mit Ihrer Unterstützung können wir die Online Welt für alle inklusiver "
-#~ "gestalten."
-
-#~ msgid ""
-#~ "The Accessibility Plugin aims to create an easier and more inclusive "
-#~ "online experience for everyone, especially users with disabilities. This "
-#~ "plugin is available for free to everyone so that no one is deprived of "
-#~ "its benefits."
-#~ msgstr ""
-#~ "Das Barrierefreiheit Plugin ermöglicht ein einfacheres und "
-#~ "barrierefreieres Online-Erlebnis für alle, insbesondere für Benutzer mit "
-#~ "Behinderungen. Dieses Plugin ist für jeden kostenlos verfügbar, damit "
-#~ "niemand von seinen Vorteilen ausgeschlossen wird."
-
-#~ msgid "By donating, you can help us:"
-#~ msgstr "Mit Ihrer Spende helfen Sie uns:"
-
-#~ msgid "Improve and develop the plugin: "
-#~ msgstr "Verbessern und Entwickeln Sie das Plugin weiter: "
-
-#~ msgid ""
-#~ "With your donations, we can add new features to the plugin and improve "
-#~ "its performance"
-#~ msgstr ""
-#~ "Mit Ihren Spenden können wir dem Plugin neue Funktionen hinzufügen und "
-#~ "seine Leistung steigern"
-
-#~ msgid "Support and troubleshooting: "
-#~ msgstr "Unterstützung und Fehlerbehebung: "
-
-#~ msgid ""
-#~ "With your support, we can continuously help users solve their problems "
-#~ "and fix any bugs in the plugin"
-#~ msgstr ""
-#~ "Mit Ihrer Unterstützung können wir Benutzern kontinuierlich bei der "
-#~ "Lösung ihrer Probleme helfen und Fehler im Plugin beseitigen"
-
-#~ msgid "Awareness and education: "
-#~ msgstr "Bewusstseinsbildung und Schulung: "
-
-#~ msgid ""
-#~ "With your donations, we can raise awareness about web accessibility and "
-#~ "provide the necessary training"
-#~ msgstr ""
-#~ "Mit Ihren Spenden können wir das Bewusstsein für Barrierefreiheit im Web "
-#~ "schärfen und die erforderlichen Schulungen anbieten"
-
-#~ msgid "Any amount, no matter how small, can help us along the way."
-#~ msgstr "Jeder Betrag, egal wie klein, hilft uns weiter."
-
-#~ msgid "donate us via Trust Wallet"
-#~ msgstr "Spenden Sie jetzt mit Trust Wallet"
-
-#~ msgid "Your supports in Bitcoin is highly appreciated "
-#~ msgstr "Ihre Unterstützung in Bitcoin wird sehr geschätzt "
-
-#~ msgid "Contribute using USDT for a seamless donation process "
-#~ msgstr "Mit USDT spenden für einen reibungslosen Spendenablauf "
-
-#~ msgid ""
-#~ "Your generosity in USDC is valuable to us. Thank you for supporting web "
-#~ "accessibility! "
-#~ msgstr ""
-#~ "Ihre Großzügigkeit in USDC ist für uns wertvoll. Vielen Dank für die "
-#~ "Unterstützung der Barrierefreiheit im Web! "
-
-#~ msgid "donate us with Stripe"
-#~ msgstr "Spenden Sie jetzt mit Stripe"
-
-#~ msgid ""
-#~ "Support us securely through Stripe. Every contribution makes a positive "
-#~ "impact! "
-#~ msgstr ""
-#~ "Unterstützen Sie uns sicher mit Stripe. Jeder Beitrag wirkt sich positiv "
-#~ "aus! "
-
-#~ msgid "Help"
-#~ msgstr "Hilfe"
-
-#~ msgid ""
-#~ "If you encounter any issues or have questions, our support team is here "
-#~ "to help. Reach out at:"
-#~ msgstr ""
-#~ "Bei Problemen oder Fragen steht Ihnen unser Support-Team gerne zur "
-#~ "Verfügung. Kontaktieren Sie uns unter:"
-
-#~ msgid "Customer support service via live chat on meacodes website."
-#~ msgstr "Kundensupport per Live-Chat auf der Meacodes Website."
-
-#~ msgid "Movable Plugin:"
-#~ msgstr "Verschiebbares Plugin:"
-
-#~ msgid "Open/Close Plugin"
-#~ msgstr "Ein-/Ausblenden Plugin"
-
-#~ msgid "Powered by "
-#~ msgstr "Angetrieben von "
-
-#~ msgid "Powered by"
-#~ msgstr "Angetrieben von"
-
-#~ msgid "Enable Mea Accessibility Plugin"
-#~ msgstr "Aktivieren oder Deaktivieren des Meacodes Barrierefreiheit Plugins"
-
-#~ msgid "Enable GDPR Notice"
-#~ msgstr "Aktivieren des Datenschutzhinweises"
-
-#~ msgid "Enable Font Size Feature"
-#~ msgstr "Schriftgröße aktivieren"
-
-#~ msgid "Enable Line Height Feature"
-#~ msgstr "Zeilenabstand aktivieren"
-
-#~ msgid "Enable Letter Spacing Feature"
-#~ msgstr "Buchstabenabstand aktivieren"
-
-#~ msgid "Enable Dyslexia Mask Feature"
-#~ msgstr "Dyslexie Kompensation aktivieren"
-
-#~ msgid "Enable Grayscale Page Feature"
-#~ msgstr "Graustufen Seite aktivieren"
-
-#~ msgid "Enable Contrast Feature"
-#~ msgstr "Kontrast aktivieren"
-
-#~ msgid "Enable Negative Feature"
-#~ msgstr "Negativ aktivieren"
-
-#~ msgid "Enable Underlined Links Feature"
-#~ msgstr "Unterstrichene Links aktivieren"
-
-#~ msgid "Enable Highlight Links Feature"
-#~ msgstr "Links hervorheben aktivieren"
-
-#~ msgid "Enable Grayscale Images Feature"
-#~ msgstr "Graustufenbilder aktivieren"
-
-#~ msgid "Enable Black and white Feature"
-#~ msgstr "Schwarz Weiß aktivieren"
-
-msgid "Advanced Analytics & Accessibility Insights"
-msgstr "Erweiterte Analysen & Barrierefreiheits-Einblicke"
-
-
-msgid "Auto Translate – Seamless Multilingual Experience"
-msgstr "Auto-Übersetzung – Nahtlose mehrsprachige Erfahrung"
-
-msgid "Banner dismissed successfully"
-msgstr "Banner erfolgreich verworfen"
-
+"Dieses Plugin verwendet Cookies, um Ihre Erfahrung zu verbessern und "
+"personalisierte Barrierefreiheits-Einstellungen bereitzustellen. Diese "
+"Cookies werden in Ihrem Browser gespeichert und ermöglichen es uns, sich "
+"Ihre Präferenzen für Schriftgröße, Farbschemata und andere Barrierefreiheits-"
+"Funktionen zu merken. Durch die Verwendung dieses Plugins stimmen Sie der "
+"Verwendung von Cookies für diese Zwecke zu. Sie können Cookies in Ihren "
+"Browser-Einstellungen jederzeit löschen oder blockieren. Bitte beachten Sie, "
+"dass dies Ihre Erfahrung auf der Website beeinträchtigen kann."
+
+#: includes/class-admin-banner.php:129
 msgid "Close banner"
 msgstr "Banner schließen"
 
-msgid "Complete Accessibility Issue Summary for Your Website"
-msgstr "Vollständige Barrierefreiheits-Problem-Zusammenfassung für Ihre Website"
-
-msgid "Comprehensive WCAG 2.1 Issue Detection & Solutions"
-msgstr "Umfassende WCAG 2.1 Problem-Erkennung & Lösungen"
-
-msgid "Effortless Dark & Light Mode Customization"
-msgstr "Mühelose Dunkel- & Hell-Modus-Anpassung"
-
-msgid "Endless Customization"
-msgstr "Endlose Anpassung"
-
-msgid "Flexible Fonts — Google & Custom Options"
-msgstr "Flexible Schriftarten — Google & benutzerdefinierte Optionen"
-
-msgid "Fully Customizable Appearance & Theme Control"
-msgstr "Vollständig anpassbares Erscheinungsbild & Theme-Kontrolle"
-
-msgid "Insufficient permissions"
-msgstr "Unzureichende Berechtigungen"
-
-
-
-msgid "Meacodes Development Solutions"
-msgstr "Meacodes Entwicklungslösungen"
-
-msgid "Meacodes Pro Badge"
-msgstr "Meacodes Pro Abzeichen"
-
-msgid "Modern Mobile First Responsive Design"
-msgstr "Modernes Mobile-First Responsive Design"
-
-msgid "Page Structure Overview"
-msgstr "Seitenstruktur-Übersicht"
-
-msgid "Personalized Accessibility Profiles for Every User"
-msgstr "Personalisierte Barrierefreiheits-Profile für jeden Benutzer"
-
-msgid "Plugin Button Border Radius:"
-msgstr "Plugin-Button-Rahmenradius:"
-
-msgid "Plugin Button Icon Size:"
-msgstr "Plugin-Button-Symbol-Größe:"
-
-msgid "Plugin Button Margin:"
-msgstr "Plugin-Button-Rand:"
-
-msgid "Plugin Button Size:"
-msgstr "Plugin-Button-Größe:"
-
-msgid "Plugin button Color: "
-msgstr "Plugin-Button-Farbe: "
-
-msgid "Professional Keyboard Navigation"
-msgstr "Professionelle Tastaturnavigation"
-
-msgid "Real-Time Website Performance Analysis"
-msgstr "Echtzeit-Website-Performance-Analyse"
-
-msgid "Security check failed"
-msgstr "Sicherheitsprüfung fehlgeschlagen"
-
-msgid "Smart Screen Reader Integration"
-msgstr "Intelligente Screen-Reader-Integration"
-
-msgid "Smart Site Search Engine"
-msgstr "Intelligente Website-Suchmaschine"
-
-msgid "The upcoming version introduces advanced features like:"
-msgstr "Die kommende Version führt erweiterte Funktionen ein wie:"
-
-msgid "WordPress Performance & Security Score"
-msgstr "WordPress Performance & Sicherheits-Score"
-
+#: includes/class-admin-banner.php:134
 msgid "🎉 Congratulations!"
 msgstr "🎉 Herzlichen Glückwunsch!"
 
-msgid "👉 Join Campaign at Meacodes.com"
-msgstr "👉 Kampagne bei Meacodes.com beitreten"
-
-msgid "Attention"
-msgstr "Achtung"
-
-msgid "We updated the plugin button logic to enable more customization. If after updating it does not work on your site, this is likely a cache issue. Please clear your server and browser cache, then refresh the page."
-msgstr "Wir haben die Plugin-Button-Logik aktualisiert, um mehr Anpassungen zu ermöglichen. Falls es nach dem Update auf Ihrer Website nicht funktioniert, ist dies wahrscheinlich ein Cache-Problem. Bitte leeren Sie Ihren Server- und Browser-Cache und aktualisieren Sie dann die Seite."
-
-msgid "💎 Register your website now in our Airdrop Campaign to claim your exclusive rewards and upcoming discounts!"
-msgstr "💎 Registrieren Sie Ihre Website jetzt in unserer Airdrop-Kampagne, um Ihre exklusiven Belohnungen und kommenden Rabatte zu erhalten!"
-
-msgid "Because you're using the %s plugin, you've earned an exclusive badge for a 3-month Pro Version 2 subscription — launching soon!"
-msgstr "Weil Sie das Meacodes Barrierefreiheits-Tools Plugin verwenden, haben Sie eine exklusive Auszeichnung für ein 3-monatiges Pro Version 2 Abonnement verdient — startet bald!"
-
-msgid "You've been recognized as an Early Supporter of Meacodes Accessibility Tools — a special thank-you to everyone helping us build a more accessible web 🌍"
-msgstr "Sie wurden als Early Supporter der Meacodes Accessibility Tools anerkannt — ein besonderer Dank an alle, die uns beim Aufbau eines zugänglicheren Webs helfen 🌍"
-
-msgid "With the upcoming Pro Version 2, you'll unlock early-access privileges such as:"
-msgstr "Mit der kommenden Pro Version 2 entsperren Sie Early-Access-Privilegien wie:"
-
-msgid "Modern mobile-first responsive design"
-msgstr "Modernes mobile-first responsives Design"
-
-msgid "Smart accessibility enhancements"
-msgstr "Intelligente Barrierefreiheits-Verbesserungen"
-
-msgid "WCAG 2.1 issue detection & analytics"
-msgstr "WCAG 2.1 Problem-Erkennung & Analytics"
-
-msgid "Deep customization options"
-msgstr "Tiefgreifende Anpassungsoptionen"
-
-msgid "Your Early Supporter Badge will be verified automatically during the Pro 2 rollout. Stay tuned and learn more about the upcoming release at"
-msgstr "Ihr Early Supporter Badge wird automatisch während des Pro 2 Rollouts verifiziert. Bleiben Sie dran und erfahren Sie mehr über die kommende Veröffentlichung bei"
-
-msgid "👉 meacodes.com"
-msgstr "👉 meacodes.com"
-
-msgid "This notice will hide for 24 hours once dismissed."
-msgstr "Diese Benachrichtigung wird 24 Stunden lang ausgeblendet, sobald sie abgelehnt wird."
-
+#. translators: %s: Plugin name
+#: includes/class-admin-banner.php:139
+#, php-format
 msgid "You've been recognized as an %s of Meacodes Accessibility Tools."
 msgstr "Sie wurden als %s der Meacodes Accessibility Tools anerkannt."
 
-msgid "As part of the upcoming %s rollout, early supporters will receive an exclusive %s and extended Pro access privileges."
-msgstr "Als Teil des kommenden %s Rollouts erhalten Early Supporter ein exklusives %s und erweiterte Pro-Zugangsprivilegien."
+#. translators: %1$s: Pro Version 2, %2$s: Early Supporter Badge
+#: includes/class-admin-banner.php:149
+#, php-format
+msgid ""
+"As part of the upcoming %1$s rollout, early supporters will receive an "
+"exclusive %2$s and extended Pro access privileges."
+msgstr ""
+"Als Teil des bevorstehenden %1$s Rollouts erhalten frühe Unterstützer ein "
+"exklusives %2$s und erweiterte Pro-Zugriffsrechte."
 
+#: includes/class-admin-banner.php:157
 msgid "To learn how the badge system works and how sites are verified,"
-msgstr "Um zu erfahren, wie das Badge-System funktioniert und wie Websites verifiziert werden,"
+msgstr ""
+"Um zu erfahren, wie das Badge-System funktioniert und wie Websites "
+"verifiziert werden,"
 
-msgid "👉 visit meacodes.com/early-supporter"
-msgstr "👉 besuchen Sie meacodes.com/early-supporter"
+#: includes/class-admin-banner.php:158
+msgid "👉 visit meacodes.com"
+msgstr "👉 besuchen Sie meacodes.com"
+
+#: includes/class-admin-banner.php:161
+msgid "This notice will hide for 24 hours once dismissed."
+msgstr ""
+"Diese Benachrichtigung wird nach dem Verwerfen 24 Stunden lang ausgeblendet."
+
+#: includes/class-admin-banner.php:165
+msgid "Meacodes Pro Badge"
+msgstr "Meacodes Pro Badge"
+
+#: includes/class-admin-banner.php:179
+msgid "Security check failed"
+msgstr "Sicherheitsprüfung fehlgeschlagen"
+
+#: includes/class-admin-banner.php:184
+msgid "Insufficient permissions"
+msgstr "Unzureichende Berechtigungen"
+
+#: includes/class-admin-banner.php:191
+msgid "Banner dismissed successfully"
+msgstr "Banner erfolgreich verworfen"
+
+#: includes/class-quickscan-admin.php:130
+msgid "Unable to get scan status:"
+msgstr "Scan-Status konnte nicht abgerufen werden:"
+
+#: includes/class-quickscan-admin.php:133
+msgid "MeacodesQuickScan_Scheduler class not found"
+msgstr "MeacodesQuickScan_Scheduler-Klasse nicht gefunden"
+
+#: includes/class-quickscan-admin.php:138
+#: includes/class-quickscan-admin.php:237
+msgid "Error:"
+msgstr "Fehler:"
+
+#: includes/class-quickscan-admin.php:138
+msgid "Unable to load accessibility scan data:"
+msgstr "Barrierefreiheits-Scan-Daten konnten nicht geladen werden:"
+
+#: includes/class-quickscan-admin.php:151
+msgid "Scan is currently running..."
+msgstr "Scan läuft derzeit..."
+
+#: includes/class-quickscan-admin.php:153
+msgid "Please wait while we scan your website for accessibility issues."
+msgstr ""
+"Bitte warten Sie, während wir Ihre Website auf Barrierefreiheitsprobleme "
+"scannen."
+
+#: includes/class-quickscan-admin.php:189
+msgid "View Details"
+msgstr "Details anzeigen"
+
+#: includes/class-quickscan-admin.php:203
+msgid "No Scan Results Yet"
+msgstr "Noch keine Scan-Ergebnisse"
+
+#: includes/class-quickscan-admin.php:205
+msgid "Run your first accessibility scan to see results here."
+msgstr ""
+"Führen Sie Ihren ersten Barrierefreiheits-Scan durch, um hier Ergebnisse zu "
+"sehen."
+
+#: includes/class-quickscan-admin.php:211
+msgid "Error"
+msgstr "Fehler"
+
+#: includes/class-quickscan-admin.php:218
+msgid "Lightweight summary only."
+msgstr "Nur leichte Zusammenfassung."
+
+#: includes/class-quickscan-admin.php:218
+msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
+msgstr ""
+"Vollständige seitenweise Berichte und Reparaturanleitungen werden in Pro v2 "
+"verfügbar sein."
+
+#: includes/class-quickscan-admin.php:222
+msgid "Read More / Join Airdrop"
+msgstr "Mehr lesen / Airdrop beitreten"
+
+#: includes/class-quickscan-admin.php:237
+msgid "Unable to display accessibility scan widget."
+msgstr "Barrierefreiheits-Scan-Widget konnte nicht angezeigt werden."
+
+#: includes/class-quickscan-admin.php:249
+#: includes/class-quickscan-scheduler.php:69
+#: includes/class-quickscan-scheduler.php:127
+msgid "You do not have permission to run scans."
+msgstr "Sie haben keine Berechtigung, Scans auszuführen."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Scan is running..."
+msgstr "Scan läuft..."
+
+#: includes/class-quickscan-admin.php:273
+msgid "Scan completed successfully!"
+msgstr "Scan erfolgreich abgeschlossen!"
+
+#. translators: %d is the number of images without alt text
+#: includes/class-quickscan-checks.php:64
+#, php-format
+msgid "%d images without alt text"
+msgstr "%d Bilder ohne Alt-Text"
+
+#. translators: %d is the number of form elements without labels
+#: includes/class-quickscan-checks.php:71
+#, php-format
+msgid "%d form elements without labels"
+msgstr "%d Formularelemente ohne Beschriftungen"
+
+#. translators: %d is the number of missing language declarations
+#: includes/class-quickscan-checks.php:78
+#, php-format
+msgid "%d missing language declaration"
+msgstr "%d fehlende Sprachdeklaration"
+
+#. translators: %d is the number of buttons without accessible names
+#: includes/class-quickscan-checks.php:85
+#, php-format
+msgid "%d buttons without accessible names"
+msgstr "%d Schaltflächen ohne zugängliche Namen"
+
+#. translators: %d is the number of tables without proper headers
+#: includes/class-quickscan-checks.php:92
+#, php-format
+msgid "%d tables without proper headers"
+msgstr "%d Tabellen ohne ordnungsgemäße Kopfzeilen"
+
+#. translators: %d is the number of empty or unclear links
+#: includes/class-quickscan-checks.php:100
+#, php-format
+msgid "%d empty or unclear links"
+msgstr "%d leere oder unklare Links"
+
+#. translators: %d is the number of heading structure issues
+#: includes/class-quickscan-checks.php:107
+#, php-format
+msgid "%d heading structure issues"
+msgstr "%d Überschriftenstruktur-Probleme"
+
+#. translators: %d is the number of missing skip links
+#: includes/class-quickscan-checks.php:114
+#, php-format
+msgid "%d missing skip links"
+msgstr "%d fehlende Sprunglinks"
+
+#. translators: %d is the number of missing focus indicators
+#: includes/class-quickscan-checks.php:121
+#, php-format
+msgid "%d missing focus indicators"
+msgstr "%d fehlende Fokus-Indikatoren"
+
+#. translators: %d is the number of missing landmark roles
+#: includes/class-quickscan-checks.php:128
+#, php-format
+msgid "%d missing landmark roles"
+msgstr "%d fehlende Landmark-Rollen"
+
+#. translators: %d is the number of form validation issues
+#: includes/class-quickscan-checks.php:135
+#, php-format
+msgid "%d form validation issues"
+msgstr "%d Formularvalidierungs-Probleme"
+
+#. translators: %d is the number of potential color contrast issues
+#: includes/class-quickscan-checks.php:143
+#, php-format
+msgid "%d potential color contrast issues"
+msgstr "%d potenzielle Farbkontrast-Probleme"
+
+#. translators: %d is the number of motion/animation issues
+#: includes/class-quickscan-checks.php:150
+#, php-format
+msgid "%d motion/animation issues"
+msgstr "%d Bewegungs-/Animations-Probleme"
+
+#. translators: %d is the number of text spacing issues
+#: includes/class-quickscan-checks.php:157
+#, php-format
+msgid "%d text spacing issues"
+msgstr "%d Textabstands-Probleme"
+
+#: includes/class-quickscan-checks.php:551
+msgid "A-Level Issues"
+msgstr "A-Level Probleme"
+
+#: includes/class-quickscan-checks.php:552
+msgid "Basic accessibility: Images, forms, language, buttons, tables"
+msgstr ""
+"Grundlegende Barrierefreiheit: Bilder, Formulare, Sprache, Buttons, Tabellen"
+
+#: includes/class-quickscan-checks.php:555
+msgid "AA-Level Issues"
+msgstr "AA-Level Probleme"
+
+#: includes/class-quickscan-checks.php:556
+msgid "Enhanced accessibility: Links, headings, navigation, focus, landmarks"
+msgstr ""
+"Erweiterte Barrierefreiheit: Links, Überschriften, Navigation, Fokus, "
+"Landmarks"
+
+#: includes/class-quickscan-checks.php:559
+msgid "AAA-Level Issues"
+msgstr "AAA-Level Probleme"
+
+#: includes/class-quickscan-checks.php:560
+msgid "Advanced accessibility: Contrast, motion, text spacing"
+msgstr "Erweiterte Barrierefreiheit: Kontrast, Bewegung, Textabstand"
+
+#: includes/class-quickscan-scheduler.php:65
+msgid "Invalid nonce."
+msgstr "Ungültiger Nonce."
+
+#: includes/class-quickscan-scheduler.php:73
+#: includes/class-quickscan-scheduler.php:132
+msgid "A scan is already running. Please wait for it to complete."
+msgstr "Ein Scan läuft bereits. Bitte warten Sie, bis er abgeschlossen ist."
+
+#: includes/class-quickscan-scheduler.php:156
+msgid "Scan failed to complete."
+msgstr "Scan konnte nicht abgeschlossen werden."
+
+#: meacodes-accessibility-tools.php:82
+msgid "Mea Accessibility"
+msgstr "Mea Barrierefreiheit"
+
+#: meacodes-accessibility-tools.php:91 meacodes-accessibility-tools.php:92
+msgid "Settings"
+msgstr "Einstellungen"

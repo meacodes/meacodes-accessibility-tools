@@ -25,13 +25,25 @@
          */
         bindEvents: function() {
             // Close button click handler
-            $(document).on('click', '.meacodes-banner-close', this.handleCloseClick);
+            document.addEventListener('click', (e) => {
+                if (e.target.matches('.meacodes-banner-close')) {
+                    this.handleCloseClick(e);
+                }
+            });
             
             // Keyboard support for close button
-            $(document).on('keydown', '.meacodes-banner-close', this.handleCloseKeydown);
+            document.addEventListener('keydown', (e) => {
+                if (e.target.matches('.meacodes-banner-close')) {
+                    this.handleCloseKeydown(e);
+                }
+            });
             
             // Handle banner button clicks (tracking)
-            $(document).on('click', '.meacodes-banner-button', this.handleButtonClick);
+            document.addEventListener('click', (e) => {
+                if (e.target.matches('.meacodes-banner-button')) {
+                    this.handleButtonClick(e);
+                }
+            });
         },
 
         /**
@@ -43,10 +55,10 @@
             e.preventDefault();
             e.stopPropagation();
             
-            var $banner = $(this).closest('.meacodes-banner');
+            var banner = e.target.closest('.meacodes-banner');
             
             // Add dismissed class for immediate visual feedback
-            $banner.addClass('dismissed');
+            banner.classList.add('dismissed');
             
             // Dismiss banner via AJAX
             MeacodesBanner.dismissBanner();
@@ -61,7 +73,7 @@
             // Handle Enter and Space keys
             if (e.which === 13 || e.which === 32) {
                 e.preventDefault();
-                $(this).click();
+                e.target.click();
             }
         },
 
@@ -72,7 +84,7 @@
          */
         handleButtonClick: function(e) {
             // Track button click (you can add analytics here)
-            console.log('Meacodes banner button clicked');
+            // Debug code removed for production
             
             // Let the link work normally
             // No preventDefault() needed
@@ -93,17 +105,21 @@
                 data: data,
                 success: function(response) {
                     if (response.success) {
-                        console.log('Banner dismissed successfully');
+                        // Debug code removed for production
                     } else {
-                        console.error('Failed to dismiss banner:', response.data);
+                        // Debug code removed for production
                         // Revert visual state if AJAX failed
-                        $('.meacodes-banner').removeClass('dismissed');
+                        document.querySelectorAll('.meacodes-banner').forEach(banner => {
+                            banner.classList.remove('dismissed');
+                        });
                     }
                 },
                 error: function(xhr, status, error) {
                     console.error('AJAX error dismissing banner:', error);
                     // Revert visual state if AJAX failed
-                    $('.meacodes-banner').removeClass('dismissed');
+                    document.querySelectorAll('.meacodes-banner').forEach(banner => {
+                        banner.classList.remove('dismissed');
+                    });
                 }
             });
         },
@@ -112,21 +128,26 @@
          * Show banner (for testing purposes)
          */
         showBanner: function() {
-            $('.meacodes-banner').removeClass('dismissed').show();
+            document.querySelectorAll('.meacodes-banner').forEach(banner => {
+                banner.classList.remove('dismissed');
+                banner.style.display = 'block';
+            });
         },
 
         /**
          * Hide banner
          */
         hideBanner: function() {
-            $('.meacodes-banner').addClass('dismissed');
+            document.querySelectorAll('.meacodes-banner').forEach(banner => {
+                banner.classList.add('dismissed');
+            });
         }
     };
 
     /**
      * Initialize when document is ready
      */
-    $(document).ready(function() {
+    document.addEventListener('DOMContentLoaded', function() {
         MeacodesBanner.init();
     });
 
@@ -135,4 +156,4 @@
      */
     window.MeacodesBanner = MeacodesBanner;
 
-})(jQuery);
+})();

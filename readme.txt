@@ -4,7 +4,7 @@ Donate link: https://nowpayments.io/donation/meacodes
 Tags: accessibility, a11y, Section 508, wcag, toolbar
 Requires at least: 4.0
 Tested up to: 6.8
-Stable tag: 1.1.4
+Stable tag: 1.2.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -29,6 +29,12 @@ Accessibility Features:
 10. Image Grayscale: Convert images to grayscale.
 11. Black and White Mode: Transform the entire page to black and white.
 
+**NEW in v1.2.0 - Accessibility Quick Scan:**
+
+12. Quick Scanning: Lightweight accessibility scanning with dashboard summary
+13. Issue Detection: Identifies A, AA, and limited AAA-level accessibility issues
+14. Dashboard Widget: Quick overview of scan results in WordPress dashboard
+15. Privacy-Focused: All scanning happens locally on your server
 
 User-Friendly Options:
 
@@ -90,6 +96,10 @@ We truly appreciate any contribution you can make.
 10. [screenshot-10.png] A blue question mark icon ( ? ) is placed next to the settings sections that need further clarification. By hovering your mouse over it, more detailed instructions will be displayed to help you understand the settings better.
 11. [screenshot-11.png] You can enable or disable each features individually.
 12. [screenshot-12.png] Customize the plugins appearance to match your taste and needs using the style settings.
+13. [screenshot-13.png] New button logic for more customization.
+14. [screenshot-14.png] WCAG issues Detection.
+15. [screenshot-15.png] Manual website scan for detecting WCAG issues.
+16. [screenshot-16.png] more appearance customization.
 
 == Changelog ==
 
@@ -159,3 +169,29 @@ We truly appreciate any contribution you can make.
 
 = 1.1.4 =
 * fix banner overloading on all over admin dashboard issue
+
+= 1.2.0 =
+* Added quick accessibility scanning with dashboard summary
+* Added A, AA, and limited AAA-level accessibility checks
+* Created dashboard widget for scan results overview
+* Added privacy-focused local scanning (no external data)
+* Enhanced accessibility checks covering 15+ WCAG 2.1 criteria
+* Enhanced admin interface with Quick Scan settings page
+* Added comprehensive unit tests for accessibility checks
+* Improved plugin architecture with modular design
+* Improved plugin architecture with modular design
+* Added local .po .mo translations for this languages:
+  - Arabic (ar)
+  - German (de_DE)
+  - Spanish (es_ES)
+  - Persian (fa_IR)
+  - French (fr_FR)
+  - Italian (it_IT)
+  - Japanese (ja)
+  - Korean (ko_KR)
+  - Dutch (nl_NL)
+  - Polish (pl_PL)
+  - Portuguese (pt_BR)
+  - Russian (ru_RU)
+  - Turkish (tr_TR)
+  - Chinese Simplified (zh_CN)

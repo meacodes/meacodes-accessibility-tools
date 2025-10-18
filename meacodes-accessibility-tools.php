@@ -3,7 +3,7 @@
 Plugin Name: Meacodes Accessibility Tools
 Plugin URI: https://www.meacodes.com/accessibility
 Description:This is an accessibility tools for people with disabilities to use the web easily.
-Version: 1.1.4
+Version: 1.2.0
 Author: Meacodes Development Solutions
 Author URI: https://www.meacodes.com
 License: GPLv2 or later
@@ -12,7 +12,7 @@ Text Domain: meacodes-accessibility-tools
 Domain Path: /languages
 */
 defined('ABSPATH') || exit;
-define('meaAccessibility_PLUGIN_VERSION', '1.1.4');
+define('meaAccessibility_PLUGIN_VERSION', '1.2.0');
 
 // Cache busting function for asset versioning
 function meaAccessibility_get_asset_version() {
@@ -124,6 +124,15 @@ function meaAccessibility_reset_settings_callback() {
   update_option('meaAccessibility_button_border_radius', 30);
   update_option('meaAccessibility_button_margin', 20);
   update_option('meaAccessibility_button_icon_size', 35);
+  
+  // Reset Quick Scan settings to defaults
+  update_option('meacodes_quickscan_enabled', false);
+  update_option('meacodes_quickscan_interval', 'daily');
+  update_option('meacodes_quickscan_max_pages', 35);
+  update_option('meacodes_quickscan_use_real_cron', false);
+  update_option('meacodes_quickscan_delay_between_requests', 500);
+  update_option('meacodes_quickscan_scan_timeout', 10);
+  
   update_option('meaAccessibility_header_text', 'Accessibility');
   update_option('meaAccessibility_font_size_Fe', 'true');
   update_option('meaAccessibility_font_size_Fe', '1');
@@ -184,6 +193,53 @@ function meaAccessibility_admin_init() {
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_status_plugin', 'sanitize_boolean');
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_privacy_notice_Fe', 'sanitize_boolean');
   register_setting('meaAccessibility_settings_group', 'meaAccessibility_enable_movable_plugin', 'sanitize_boolean');
+  
+  // Register Quick Scan settings with main settings group
+  register_setting('meaAccessibility_settings_group', 'meacodes_quickscan_enabled', 'rest_sanitize_boolean');
+  register_setting('meaAccessibility_settings_group', 'meacodes_quickscan_interval', 'sanitize_text_field');
+  register_setting('meaAccessibility_settings_group', 'meacodes_quickscan_max_pages', 'absint');
+  register_setting('meaAccessibility_settings_group', 'meacodes_quickscan_use_real_cron', 'rest_sanitize_boolean');
+  register_setting('meaAccessibility_settings_group', 'meacodes_quickscan_delay_between_requests', 'absint');
+  register_setting('meaAccessibility_settings_group', 'meacodes_quickscan_scan_timeout', 'absint');
+}
+
+// Handle Quick Scan settings after they're saved
+function meaAccessibility_handle_quickscan_settings() {
+  if ((isset($_POST['meacodes_quickscan_enabled']) || isset($_POST['meacodes_quickscan_interval'])) && isset($_POST['_wpnonce']) && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['_wpnonce'])), 'meaAccessibility_settings_group')) {
+    $quickscan_enabled = get_option('meacodes_quickscan_enabled', true);
+    $quickscan_interval = get_option('meacodes_quickscan_interval', 'daily');
+    
+    // Reschedule Quick Scan if enabled
+    if ($quickscan_enabled && class_exists('MeacodesQuickScan_Scheduler')) {
+      MeacodesQuickScan_Scheduler::get_instance()->schedule_scan();
+    } else if (class_exists('MeacodesQuickScan_Scheduler')) {
+      MeacodesQuickScan_Scheduler::get_instance()->clear_scheduled_scans();
+    }
+  }
+}
+add_action('update_option_meacodes_quickscan_enabled', 'meaAccessibility_handle_quickscan_settings');
+add_action('update_option_meacodes_quickscan_interval', 'meaAccessibility_handle_quickscan_settings');
+
+// Also trigger when settings are saved through the form
+add_action('update_option_meaAccessibility_settings_group', 'meaAccessibility_handle_quickscan_settings');
+
+// Trigger after settings are processed
+add_action('admin_init', 'meaAccessibility_check_quickscan_settings', 20);
+
+// Check and reschedule Quick Scan settings
+function meaAccessibility_check_quickscan_settings() {
+        if (isset($_POST['submit']) && isset($_POST['option_page']) && $_POST['option_page'] === 'meaAccessibility_settings_group' && isset($_POST['_wpnonce']) && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['_wpnonce'])), 'meaAccessibility_settings_group')) {
+            if (class_exists('MeacodesQuickScan_Scheduler')) {
+                $quickscan_enabled = get_option('meacodes_quickscan_enabled', true);
+                $quickscan_interval = get_option('meacodes_quickscan_interval', 'daily');
+                
+                if ($quickscan_enabled) {
+                    MeacodesQuickScan_Scheduler::get_instance()->schedule_scan();
+                } else {
+                    MeacodesQuickScan_Scheduler::get_instance()->clear_scheduled_scans();
+                }
+            }
+        }
 }
 add_action('admin_init', 'meaAccessibility_admin_init');
 add_action('wp_ajax_update_selected_color', 'update_selected_color');
@@ -279,15 +335,114 @@ function meaAccessibility_plugin_html_to_footer() {
 </style>
 <?php
 // Call Plugin on website
-  meaAccessibility_main_thm(); ?>
-<?php
-  }
-  add_action('wp_ajax_update_selected_color', 'update_selected_color');
+  meaAccessibility_main_thm(); 
+}
+
+// Initialize Quick Scan feature
+add_action('init', 'meaAccessibility_init_quickscan');
+
+add_action('wp_ajax_update_selected_color', 'update_selected_color');
   add_action('wp_ajax_reset_settings_action', 'meaAccessibility_reset_settings_callback');
   add_action('wp_ajax_nopriv_reset_settings_action', 'meaAccessibility_reset_settings_callback');
   add_action('wp_ajax_nopriv_update_selected_color', 'update_selected_color');
   add_action('admin_menu', 'meaAccessibility_add_admin_menu');
-  add_action('wp_enqueue_scripts', 'meaAccessibility_enqueue_plugin_assets');
-  add_action('admin_init', 'meaAccessibility_admin_init');
-  add_action('wp_footer', 'meaAccessibility_plugin_html_to_footer');
+add_action('wp_enqueue_scripts', 'meaAccessibility_enqueue_plugin_assets');
+add_action('admin_init', 'meaAccessibility_admin_init');
+add_action('wp_footer', 'meaAccessibility_plugin_html_to_footer');
+
+/**
+ * Initialize Quick Scan feature
+ */
+function meaAccessibility_init_quickscan() {
+    // Only load quickscan for admin users
+    if (!is_admin() || !current_user_can('manage_options')) {
+        return;
+    }
+    
+    // Set default options for Quick Scan
+    $default_options = array(
+        'meacodes_quickscan_enabled' => true,
+        'meacodes_quickscan_interval' => 'daily',
+        'meacodes_quickscan_max_pages' => 35,
+        'meacodes_quickscan_use_real_cron' => false,
+        'meacodes_quickscan_delay_between_requests' => 500,
+        'meacodes_quickscan_scan_timeout' => 10
+    );
+    
+    foreach ($default_options as $key => $value) {
+        if (get_option($key) === false) {
+            update_option($key, $value);
+        }
+    }
+    
+    // Load quickscan classes
+    require_once plugin_dir_path(__FILE__) . 'includes/class-quickscan-scheduler.php';
+    require_once plugin_dir_path(__FILE__) . 'includes/class-quickscan-scanner.php';
+    require_once plugin_dir_path(__FILE__) . 'includes/class-quickscan-admin.php';
+    require_once plugin_dir_path(__FILE__) . 'includes/class-quickscan-checks.php';
+    
+    // Initialize quickscan components
+    try {
+        MeacodesQuickScan_Scheduler::get_instance();
+        MeacodesQuickScan_Scanner::get_instance();
+        MeacodesQuickScan_Admin::get_instance();
+        MeacodesQuickScan_Checks::get_instance();
+    } catch (Exception $e) {
+        // Failed to initialize quickscan components
+    }
+}
+
+// AJAX handler for reset settings
+add_action('wp_ajax_meaAccessibility_reset_settings', 'meaAccessibility_reset_settings_handler');
+function meaAccessibility_reset_settings_handler() {
+    // Verify nonce
+    if (!isset($_POST['nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'meaAccessibility_reset_nonce')) {
+        wp_die('Security check failed');
+    }
+    
+    // Check user capabilities
+    if (!current_user_can('manage_options')) {
+        wp_die('Insufficient permissions');
+    }
+    
+    // Reset all settings to defaults
+    update_option('meaAccessibility_selected_position', 'meaAccessibility_widgetBottomLeft');
+    update_option('meaAccessibility_background_color', '#F8F3EE');
+    update_option('meaAccessibility_divider_line_color', '#c4c4c4');
+    update_option('meaAccessibility_plugin_logo_color', '#3abddd');
+    update_option('meaAccessibility_accent_color', '#3abddd');
+    update_option('meaAccessibility_buttons_hover_color', '#207f97');
+    update_option('meaAccessibility_buttons_color', '#3ABDDD');
+    update_option('meaAccessibility_button_size', 50);
+    update_option('meaAccessibility_button_border_radius', 30);
+    update_option('meaAccessibility_button_margin', 20);
+    update_option('meaAccessibility_button_icon_size', 35);
+    update_option('meaAccessibility_status_plugin', 1);
+    update_option('meaAccessibility_header_text', 'Accessibility');
+    update_option('meaAccessibility_privacy_notice_Fe', 1);
+    update_option('meaAccessibility_copyright_text', 1);
+    update_option('meaAccessibility_labels_color', '#373737');
+    update_option('meaAccessibility_enable_movable_plugin', 1);
+    update_option('meaAccessibility_font_size_Fe', 1);
+    update_option('meaAccessibility_line_height_Fe', 1);
+    update_option('meaAccessibility_letter_spacing_Fe', 1);
+    update_option('meaAccessibility_dyslexia_mask_Fe', 1);
+    update_option('meaAccessibility_grayscale_page_Fe', 1);
+    update_option('meaAccessibility_contrast_Fe', 1);
+    update_option('meaAccessibility_negativ_Fe', 1);
+    update_option('meaAccessibility_underlined_links_Fe', 1);
+    update_option('meaAccessibility_highlight_links_Fe', 1);
+    update_option('meaAccessibility_grayscale_images_Fe', 1);
+    update_option('meaAccessibility_black_white_Fe', 1);
+    
+    // Reset Quick Scan settings to defaults
+    update_option('meacodes_quickscan_enabled', false);
+    update_option('meacodes_quickscan_interval', 'daily');
+    update_option('meacodes_quickscan_max_pages', 35);
+    update_option('meacodes_quickscan_use_real_cron', false);
+    update_option('meacodes_quickscan_delay_between_requests', 500);
+    update_option('meacodes_quickscan_scan_timeout', 10);
+    
+    wp_send_json_success('Settings reset successfully!');
+}
 ?>

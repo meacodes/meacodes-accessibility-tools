@@ -4,11 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
-"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
-"PO-Revision-Date: 2025-10-18 22:46+0330\n"
+"POT-Creation-Date: 2025-10-18T19:15:43+00:00\n"
+"PO-Revision-Date: 2025-10-18 22:47+0330\n"
 "Last-Translator: \n"
 "Language-Team: meacodes <info@meacodes.com>\n"
-"Language: es\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,7 +18,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: meacodes-accessibility-tools.php meacodes-accessibility-tools.php:81
 msgid "Meacodes Accessibility Tools"
-msgstr "Herramientas de Accesibilidad Meacodes"
+msgstr "ابزارهای دسترسی‌پذیری Meacodes"
 
 #. Plugin URI of the plugin
 #: meacodes-accessibility-tools.php
@@ -31,8 +31,8 @@ msgid ""
 "This is an accessibility tools for people with disabilities to use the web "
 "easily."
 msgstr ""
-"Estas son herramientas de accesibilidad para personas con discapacidades "
-"para usar la web fácilmente."
+"این ابزارهای دسترسی‌پذیری برای افراد دارای معلولیت هستند تا بتوانند به راحتی از "
+"وب استفاده کنند."
 
 #. Author of the plugin
 #: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
@@ -46,27 +46,27 @@ msgstr "https://www.meacodes.com"
 
 #: assets/admin/admin-theme.php:91
 msgid "jQuery is not loaded!"
-msgstr "¡jQuery no está cargado!"
+msgstr "jQuery بارگذاری نشده است!"
 
 #: assets/admin/admin-theme.php:97
 msgid "General"
-msgstr "General"
+msgstr "عمومی"
 
 #: assets/admin/admin-theme.php:98 assets/admin/admin-theme.php:365
 msgid "Features"
-msgstr "Características"
+msgstr "ویژگی‌ها"
 
 #: assets/admin/admin-theme.php:99
 msgid "Style"
-msgstr "Estilo"
+msgstr "ظاهر"
 
 #: assets/admin/admin-theme.php:100
 msgid "Scan"
-msgstr "Escanear"
+msgstr "اسکن"
 
 #: assets/admin/admin-theme.php:108
 msgid "Attention"
-msgstr "Atención"
+msgstr "توجه"
 
 #: assets/admin/admin-theme.php:109
 msgid ""
@@ -74,746 +74,719 @@ msgid ""
 "updating it does not work on your site, this is likely a cache issue. Please "
 "clear your server and browser cache, then refresh the page."
 msgstr ""
-"Hemos actualizado la lógica del botón del plugin para permitir más "
-"personalización. Si después de actualizar no funciona en tu sitio, esto "
-"probablemente es un problema de caché. Por favor borra la caché de tu "
-"servidor y navegador, luego actualiza la página."
+"ما منطق دکمه پلاگین را به‌روزرسانی کردیم تا شخصی‌سازی بیشتری را فعال کنیم. اگر پس "
+"از به‌روزرسانی در سایت شما کار نکند، احتمالاً مشکل کش است. لطفاً کش سرور و مرورگر "
+"خود را پاک کنید، سپس صفحه را تازه کنید."
 
 #: assets/admin/admin-theme.php:111
 msgid "Close notice"
-msgstr "Cerrar aviso"
+msgstr "بستن اعلان"
 
 #: assets/admin/admin-theme.php:120
 msgid "General Settings"
-msgstr "Configuración General"
+msgstr "تنظیمات عمومی"
 
 #: assets/admin/admin-theme.php:127
 msgid "Enable or Disable Meacodes Accessibility Tools:"
-msgstr "Activar o Desactivar Herramientas de Accesibilidad Meacodes:"
+msgstr "فعال یا غیرفعال کردن ابزارهای دسترسی‌پذیری Meacodes:"
 
 #: assets/admin/admin-theme.php:136
 msgid "Plugin Name:"
-msgstr "Nombre del Plugin:"
+msgstr "نام پلاگین:"
 
 #: assets/admin/admin-theme.php:138 assets/Themes/Default_blue/theme.php:3
-#: assets/Themes/Default_blue/theme.php:18
-#: assets/Themes/Default_blue/theme.php:23
+#: assets/Themes/Default_blue/theme.php:18 assets/Themes/Default_blue/theme.php:23
 msgid "Accessibility"
-msgstr "Accesibilidad"
+msgstr "دسترسی‌پذیری"
 
 #: assets/admin/admin-theme.php:140
 msgid ""
-"This means that the plugin name is a default and automatic translation of "
-"the word Accessibility."
+"This means that the plugin name is a default and automatic translation of the "
+"word Accessibility."
 msgstr ""
-"Esto significa que el nombre del plugin es una traducción predeterminada y "
-"automática de la palabra Accesibilidad."
+"این به معنای آن است که نام پلاگین ترجمه پیش‌فرض و خودکار کلمه دسترسی‌پذیری است."
 
 #: assets/admin/admin-theme.php:143
 msgid ""
-"This name will be displayed opposite the plugin icon in the header section "
-"when the accessibility plugin is opened by the user on your website."
+"This name will be displayed opposite the plugin icon in the header section when "
+"the accessibility plugin is opened by the user on your website."
 msgstr ""
-"Este nombre se mostrará opuesto al icono del plugin en la sección del "
-"encabezado cuando el plugin de accesibilidad sea abierto por el usuario en "
-"tu sitio web."
+"این نام در مقابل آیکون پلاگین در بخش هدر نمایش داده می‌شود وقتی کاربر پلاگین "
+"دسترسی‌پذیری را در وب‌سایت شما باز می‌کند."
 
 #: assets/admin/admin-theme.php:145
 msgid ""
-"If you do not want any text to be displayed in that section, Clear default "
-"name and save changes."
+"If you do not want any text to be displayed in that section, Clear default name "
+"and save changes."
 msgstr ""
-"Si no quieres que se muestre texto en esa sección, Borra el nombre "
-"predeterminado y guarda los cambios."
+"اگر نمی‌خواهید هیچ متنی در آن بخش نمایش داده شود، نام پیش‌فرض را پاک کنید و "
+"تغییرات را ذخیره کنید."
 
 #: assets/admin/admin-theme.php:146
 msgid ""
-"If your site is multilingual (using Polylang), keep in mind that if you "
-"change this name, the name you choose will be displayed without translation "
-"and fixed in all languages unless you rebuild the plugins language file with "
-"Polylang and enter the translation of the chosen name. Also, if you want the "
-"chosen name to revert to the default name and be displayed translated in any "
-"language, reset settings once."
+"If your site is multilingual (using Polylang), keep in mind that if you change "
+"this name, the name you choose will be displayed without translation and fixed "
+"in all languages unless you rebuild the plugins language file with Polylang and "
+"enter the translation of the chosen name. Also, if you want the chosen name to "
+"revert to the default name and be displayed translated in any language, reset "
+"settings once."
 msgstr ""
-"Si tu sitio es multilingüe (usando Polylang), ten en cuenta que si cambias "
-"este nombre, el nombre que elijas se mostrará sin traducción y fijo en todos "
-"los idiomas a menos que reconstruyas el archivo de idioma del plugin con "
-"Polylang e ingreses la traducción del nombre elegido. También, si quieres "
-"que el nombre elegido vuelva al nombre predeterminado y se muestre traducido "
-"en cualquier idioma, restablece la configuración una vez."
+"اگر سایت شما چندزبانه است (با استفاده از Polylang)، در نظر داشته باشید که اگر "
+"این نام را تغییر دهید، نام انتخابی شما بدون ترجمه و ثابت در تمام زبان‌ها نمایش "
+"داده می‌شود مگر اینکه فایل زبان پلاگین‌ها را با Polylang بازسازی کنید و ترجمه نام "
+"انتخابی را وارد کنید. همچنین، اگر می‌خواهید نام انتخابی به نام پیش‌فرض برگردد و در "
+"هر زبانی ترجمه شده نمایش داده شود، تنظیمات را یک بار بازنشانی کنید."
 
 #: assets/admin/admin-theme.php:152
 msgid "Enable or Disable GDPR Notice:"
-msgstr "Activar o Desactivar Aviso GDPR:"
+msgstr "فعال یا غیرفعال کردن اعلان GDPR:"
 
 #: assets/admin/admin-theme.php:161
 msgid "Developed by label:"
-msgstr "Etiqueta Desarrollado por:"
+msgstr "برچسب توسعه‌یافته توسط:"
 
 #: assets/admin/admin-theme.php:164
 msgid "Enable \"Developed by\" label"
-msgstr "Activar etiqueta \"Desarrollado por\""
+msgstr "فعال کردن برچسب \"توسعه‌یافته توسط\""
 
 #: assets/admin/admin-theme.php:165
 msgid ""
-"Please turn the Developed by label on to support us and help the project "
-"move forward. "
+"Please turn the Developed by label on to support us and help the project move "
+"forward. "
 msgstr ""
-"Por favor activa la etiqueta Desarrollado por para apoyarnos y ayudar al "
-"proyecto a avanzar. "
+"لطفاً برچسب \"توسعه‌یافته توسط\" را روشن کنید تا از ما حمایت کنید و به پروژه کمک "
+"کنید تا پیش برود. "
 
 #: assets/admin/admin-theme.php:166
 msgid "You can also buy us a coffee on the"
-msgstr "También puedes comprarnos un café en la"
+msgstr "همچنین می‌توانید برای ما قهوه در"
 
 #: assets/admin/admin-theme.php:166
 msgid "Donation page."
-msgstr "Página de donaciones."
+msgstr "صفحه اهدا خریداری کنید."
 
 #: assets/admin/admin-theme.php:167
 msgid "Thanks for your supports. "
-msgstr "Gracias por tu apoyo. "
+msgstr "از حمایت شما متشکریم. "
 
 #: assets/admin/admin-theme.php:229
 msgid "scanning please wait..."
-msgstr "escaneando, por favor espera…"
+msgstr "در حال اسکن، لطفاً صبر کنید…"
 
 #: assets/admin/admin-theme.php:264
 msgid "Just now"
-msgstr "Ahora mismo"
+msgstr "همین الان"
 
 #: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
 msgid "Pages with Issues"
-msgstr "Páginas con Problemas"
-
-#: assets/admin/admin-theme.php:304
-msgid "Issues Found:"
-msgstr "Problemas Encontrados:"
+msgstr "صفحات دارای مشکل"
 
 #: assets/admin/admin-theme.php:321 assets/admin/admin-theme.php:635
 msgid "Scan Results"
-msgstr "Resultados del Escaneo"
+msgstr "نتایج اسکن"
 
 #: assets/admin/admin-theme.php:322 includes/class-quickscan-admin.php:159
 msgid "Completed"
-msgstr "Completado"
+msgstr "تکمیل شد"
 
 #: assets/admin/admin-theme.php:326 assets/admin/admin-theme.php:640
 #: includes/class-quickscan-admin.php:164
 msgid "Last Scan"
-msgstr "Último Escaneo"
+msgstr "آخرین اسکن"
 
 #: assets/admin/admin-theme.php:330 assets/admin/admin-theme.php:646
 #: includes/class-quickscan-admin.php:176
 msgid "Pages Scanned"
-msgstr "Páginas Escaneadas"
-
-#: assets/admin/admin-theme.php:331 includes/class-quickscan-admin.php:177
-msgid "pages"
-msgstr "páginas"
+msgstr "صفحات اسکن شده"
 
 #: assets/admin/admin-theme.php:335 assets/admin/admin-theme.php:652
 #: includes/class-quickscan-admin.php:183
 msgid "Accessibility Issues Found"
-msgstr "Problemas de Accesibilidad Encontrados"
+msgstr "مشکلات دسترسی‌پذیری یافت شد"
 
 #: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
 #: includes/class-quickscan-admin.php:274
 msgid "Scan failed. Please try again."
-msgstr "El escaneo falló. Por favor intenta de nuevo."
+msgstr "اسکن ناموفق بود. لطفاً دوباره تلاش کنید."
 
 #: assets/admin/admin-theme.php:366
 msgid ""
 "The Accessibility plugin provides a set of tools and features to create an "
-"easier and more inclusive user experience for users with various needs. You "
-"can enable or disable each of these features individually."
+"easier and more inclusive user experience for users with various needs. You can "
+"enable or disable each of these features individually."
 msgstr ""
-"El plugin de Accesibilidad proporciona un conjunto de herramientas y "
-"características para crear una experiencia de usuario más fácil e inclusiva "
-"para usuarios con diversas necesidades. Puedes activar o desactivar cada una "
-"de estas características individualmente."
+"پلاگین دسترسی‌پذیری مجموعه‌ای از ابزارها و ویژگی‌ها را برای ایجاد تجربه کاربری "
+"آسان‌تر و فراگیرتر برای کاربران با نیازهای مختلف فراهم می‌کند. شما می‌توانید هر یک "
+"از این ویژگی‌ها را به صورت جداگانه فعال یا غیرفعال کنید."
 
 #: assets/admin/admin-theme.php:370
 msgid "Font Size Feature:"
-msgstr "Característica de Tamaño de Fuente:"
+msgstr "ویژگی اندازه فونت:"
 
 #: assets/admin/admin-theme.php:379
 msgid "Line Height Feature:"
-msgstr "Característica de Altura de Línea:"
+msgstr "ویژگی ارتفاع خط:"
 
 #: assets/admin/admin-theme.php:388
 msgid "Letter Spacing Feature:"
-msgstr "Característica de Espaciado de Letras:"
+msgstr "ویژگی فاصله حروف:"
 
 #: assets/admin/admin-theme.php:397
 msgid "Dyslexia Mask Feature:"
-msgstr "Característica de Máscara de Dislexia:"
+msgstr "ویژگی ماسک دیسلکسی:"
 
 #: assets/admin/admin-theme.php:406
 msgid "Grayscale Page Feature:"
-msgstr "Característica de Página en Escala de Grises:"
+msgstr "ویژگی صفحه خاکستری:"
 
 #: assets/admin/admin-theme.php:415
 msgid "Contrast Feature:"
-msgstr "Característica de Contraste:"
+msgstr "ویژگی کنتراست:"
 
 #: assets/admin/admin-theme.php:424
 msgid "Negative Feature:"
-msgstr "Característica de Negativo:"
+msgstr "ویژگی نگاتیو:"
 
 #: assets/admin/admin-theme.php:433
 msgid "Underlined Links Feature:"
-msgstr "Característica de Enlaces Subrayados:"
+msgstr "ویژگی لینک‌های زیرخط‌دار:"
 
 #: assets/admin/admin-theme.php:442
 msgid "Highlight Links Feature:"
-msgstr "Característica de Resaltar Enlaces:"
+msgstr "ویژگی برجسته کردن لینک‌ها:"
 
 #: assets/admin/admin-theme.php:451
 msgid "Grayscale Images Feature:"
-msgstr "Característica de Imágenes en Escala de Grises:"
+msgstr "ویژگی تصاویر خاکستری:"
 
 #: assets/admin/admin-theme.php:460
 msgid "Black and white Feature:"
-msgstr "Característica de Blanco y Negro:"
+msgstr "ویژگی سیاه و سفید:"
 
 #: assets/admin/admin-theme.php:473
 msgid "Style Settings"
-msgstr "Configuración de Estilo"
+msgstr "تنظیمات ظاهر"
 
 #: assets/admin/admin-theme.php:474
 msgid ""
-"Customize the plugins appearance to match your taste and needs using the "
-"style settings."
+"Customize the plugins appearance to match your taste and needs using the style "
+"settings."
 msgstr ""
-"Personaliza la apariencia del plugin para que coincida con tu gusto y "
-"necesidades usando la configuración de estilo."
+"ظاهر پلاگین‌ها را با استفاده از تنظیمات ظاهر مطابق با سلیقه و نیازهای خود سفارشی "
+"کنید."
 
 #: assets/admin/admin-theme.php:478
 msgid "Plugin Button Size:"
-msgstr "Tamaño del Botón del Plugin:"
+msgstr "اندازه دکمه پلاگین:"
 
 #: assets/admin/admin-theme.php:485
 msgid "Plugin Button Border Radius:"
-msgstr "Radio del Borde del Botón del Plugin:"
+msgstr "شعاع حاشیه دکمه پلاگین:"
 
 #: assets/admin/admin-theme.php:492
 msgid "Plugin Button Margin:"
-msgstr "Margen del Botón del Plugin:"
+msgstr "حاشیه دکمه پلاگین:"
 
 #: assets/admin/admin-theme.php:499
 msgid "Plugin Button Icon Size:"
-msgstr "Tamaño del Icono del Botón del Plugin:"
+msgstr "اندازه آیکون دکمه پلاگین:"
 
 #: assets/admin/admin-theme.php:506
 msgid "Positionable by User:"
-msgstr "Posicionable por el Usuario:"
+msgstr "قابل موقعیت‌یابی توسط کاربر:"
 
 #: assets/admin/admin-theme.php:514
 msgid ""
-"Enabling this option allows users to freely move the accessibility plugin "
-"around the page on desktop devices. Please note that this feature is not "
-"available on mobile devices."
+"Enabling this option allows users to freely move the accessibility plugin around "
+"the page on desktop devices. Please note that this feature is not available on "
+"mobile devices."
 msgstr ""
-"Activar esta opción permite a los usuarios mover libremente el plugin de "
-"accesibilidad por la página en dispositivos de escritorio. Ten en cuenta que "
-"esta característica no está disponible en dispositivos móviles."
+"فعال کردن این گزینه به کاربران اجازه می‌دهد تا پلاگین دسترسی‌پذیری را آزادانه در "
+"صفحه در دستگاه‌های دسکتاپ حرکت دهند. لطفاً توجه داشته باشید که این ویژگی در "
+"دستگاه‌های موبایل در دسترس نیست."
 
 #: assets/admin/admin-theme.php:518
 msgid "Plugin Position:"
-msgstr "Posición del Plugin:"
+msgstr "موقعیت پلاگین:"
 
 #: assets/admin/admin-theme.php:523
 msgid "Bottom Left Corner"
-msgstr "Esquina Inferior Izquierda"
+msgstr "گوشه پایین چپ"
 
 #: assets/admin/admin-theme.php:524
 msgid "Bottom Right Corner"
-msgstr "Esquina Inferior Derecha"
+msgstr "گوشه پایین راست"
 
 #: assets/admin/admin-theme.php:525
 msgid "Top Left Corner"
-msgstr "Esquina Superior Izquierda"
+msgstr "گوشه بالا چپ"
 
 #: assets/admin/admin-theme.php:526
 msgid "Top Right Corner"
-msgstr "Esquina Superior Derecha"
+msgstr "گوشه بالا راست"
 
 #: assets/admin/admin-theme.php:542
 msgid "Background Color: "
-msgstr "Color de Fondo: "
+msgstr "رنگ پس‌زمینه: "
 
 #: assets/admin/admin-theme.php:545
 msgid "Background color of plugin and logo border."
-msgstr "Color de fondo del plugin y borde del logo."
+msgstr "رنگ پس‌زمینه پلاگین و حاشیه لوگو."
 
 #: assets/admin/admin-theme.php:549
 msgid "Labels Color: "
-msgstr "Color de Etiquetas: "
+msgstr "رنگ برچسب‌ها: "
 
 #: assets/admin/admin-theme.php:552
 msgid "Color of the labels or name of each feature and Plugin name to."
-msgstr ""
-"Color de las etiquetas o nombre de cada característica y nombre del Plugin."
+msgstr "رنگ برچسب‌ها یا نام هر ویژگی و نام پلاگین."
 
 #: assets/admin/admin-theme.php:556
 msgid "Divider Line Color: "
-msgstr "Color de Línea Divisoria: "
+msgstr "رنگ خط جداکننده: "
 
 #: assets/admin/admin-theme.php:559
 msgid "Color of plugin header & features section divider."
-msgstr ""
-"Color del encabezado del plugin y divisor de la sección de características."
+msgstr "رنگ جداکننده هدر پلاگین و بخش ویژگی‌ها."
 
 #: assets/admin/admin-theme.php:563
 msgid "Plugin button Color: "
-msgstr "Color del Botón del Plugin: "
+msgstr "رنگ دکمه پلاگین: "
 
 #: assets/admin/admin-theme.php:566
 msgid "Color Scheme for Plugin Logo."
-msgstr "Esquema de Color para el Logo del Plugin."
+msgstr "طرح رنگی برای لوگوی پلاگین."
 
 #: assets/admin/admin-theme.php:570
 msgid "Accent Color: "
-msgstr "Color de Acento: "
+msgstr "رنگ تاکیدی: "
 
 #: assets/admin/admin-theme.php:574
 msgid "Color scheme for:"
-msgstr "Esquema de color para:"
+msgstr "طرح رنگی برای:"
 
 #: assets/admin/admin-theme.php:576
 msgid "Active features and their toggle buttons on hover."
-msgstr ""
-"Características activas y sus botones de alternancia al pasar el cursor."
+msgstr "ویژگی‌های فعال و دکمه‌های تعویض آنها هنگام نگه داشتن ماوس."
 
 #: assets/admin/admin-theme.php:577
 msgid "Dyslexia reading mask bars"
-msgstr "Barras de máscara de lectura para dislexia"
+msgstr "نوارهای ماسک خواندن دیسلکسی"
 
 #: assets/admin/admin-theme.php:583
 msgid "‌Buttons Color (Reset/Close):"
-msgstr "Color de Botones (Restablecer/Cerrar):"
+msgstr "رنگ دکمه‌ها (بازنشانی/بستن):"
 
 #: assets/admin/admin-theme.php:587
 msgid "Buttons Hover Color (Reset/Close): "
-msgstr "Color de Botones al Pasar el Cursor (Restablecer/Cerrar): "
+msgstr "رنگ دکمه‌ها هنگام نگه داشتن ماوس (بازنشانی/بستن): "
 
 #: assets/admin/admin-theme.php:596 includes/class-quickscan-admin.php:56
 #: includes/class-quickscan-admin.php:57 includes/class-quickscan-admin.php:99
 #: includes/class-quickscan-admin.php:158
 msgid "Accessibility Quick Scan"
-msgstr "Escaneo Rápido de Accesibilidad"
+msgstr "اسکن سریع دسترسی‌پذیری"
 
 #: assets/admin/admin-theme.php:597
 msgid "Scan your website for accessibility issues manually."
-msgstr "Escanea tu sitio web para problemas de accesibilidad manualmente."
+msgstr "وب‌سایت خود را برای مشکلات دسترسی‌پذیری به صورت دستی اسکن کنید."
 
 #: assets/admin/admin-theme.php:600
 msgid "Manual Accessibility Scan"
-msgstr "Escaneo Manual de Accesibilidad"
+msgstr "اسکن دستی دسترسی‌پذیری"
 
 #: assets/admin/admin-theme.php:602
 msgid ""
-"Click the button below to scan your website for accessibility issues. This "
-"will check your pages for common accessibility problems."
+"Click the button below to scan your website for accessibility issues. This will "
+"check your pages for common accessibility problems."
 msgstr ""
-"Haz clic en el botón de abajo para escanear tu sitio web en busca de "
-"problemas de accesibilidad. Esto verificará tus páginas en busca de "
-"problemas comunes de accesibilidad."
+"روی دکمه زیر کلیک کنید تا وب‌سایت خود را برای مشکلات دسترسی‌پذیری اسکن کنید. این "
+"صفحات شما را برای مشکلات رایج دسترسی‌پذیری بررسی می‌کند."
 
 #: assets/admin/admin-theme.php:607
 msgid "Maximum Pages to Scan:"
-msgstr "Páginas Máximas a Escanear:"
+msgstr "حداکثر صفحات برای اسکن:"
 
 #: assets/admin/admin-theme.php:611
 msgid "(1-35 pages)"
-msgstr "(1-35 páginas)"
+msgstr "(1-35 صفحه)"
 
 #: assets/admin/admin-theme.php:616
 msgid "Run Accessibility Scan Now"
-msgstr "Ejecutar Escaneo de Accesibilidad Ahora"
+msgstr "اجرای اسکن دسترسی‌پذیری اکنون"
 
 #: assets/admin/admin-theme.php:624
 msgid "Last Scan Results"
-msgstr "Resultados del Último Escaneo"
+msgstr "نتایج آخرین اسکن"
 
 #: assets/admin/admin-theme.php:701
 msgid "Save Changes"
-msgstr "Guardar Cambios"
+msgstr "ذخیره تغییرات"
 
 #: assets/admin/admin-theme.php:706
 msgid "Reset Settings"
-msgstr "Restablecer Configuración"
+msgstr "بازنشانی تنظیمات"
 
 #: assets/admin/admin-theme.php:710
 msgid ""
-"Save Changes will save all settings across all tabs. Reset Settings will "
-"restore all options to their default values."
+"Save Changes will save all settings across all tabs. Reset Settings will restore "
+"all options to their default values."
 msgstr ""
-"Guardar Cambios guardará toda la configuración en todas las pestañas. "
-"Restablecer Configuración restaurará todas las opciones a sus valores "
-"predeterminados."
+"ذخیره تغییرات تمام تنظیمات را در تمام تب‌ها ذخیره می‌کند. بازنشانی تنظیمات تمام "
+"گزینه‌ها را به مقادیر پیش‌فرض خود بازمی‌گرداند."
 
 #: assets/admin/admin-theme.php:799
 msgid "Accessibility Tools Version: "
-msgstr "Versión de Herramientas de Accesibilidad: "
+msgstr "نسخه ابزارهای دسترسی‌پذیری: "
 
 #: assets/Themes/Default_blue/theme.php:17
 msgid "Open/Close Accessibility Options"
-msgstr "Abrir/Cerrar Opciones de Accesibilidad"
+msgstr "باز کردن/بستن گزینه‌های دسترسی‌پذیری"
 
 #: assets/Themes/Default_blue/theme.php:22
 msgid "Drag and move the accessibility box"
-msgstr "Arrastrar y mover la caja de accesibilidad"
+msgstr "جعبه دسترسی‌پذیری را بکشید و حرکت دهید"
 
 #: assets/Themes/Default_blue/theme.php:26
 msgid "Click to read GDPR Notice"
-msgstr "Haz clic para leer el Aviso GDPR"
+msgstr "برای خواندن اعلان GDPR کلیک کنید"
 
 #: assets/Themes/Default_blue/theme.php:37
 msgid "Font Size"
-msgstr "Tamaño de Fuente"
+msgstr "اندازه فونت"
 
 #: assets/Themes/Default_blue/theme.php:42
 msgid "‌Normal"
-msgstr "Normal"
+msgstr "عادی"
 
 #: assets/Themes/Default_blue/theme.php:54
 msgid "Line Height"
-msgstr "Altura de Línea"
+msgstr "ارتفاع خط"
 
-#: assets/Themes/Default_blue/theme.php:57
-#: assets/Themes/Default_blue/theme.php:70
+#: assets/Themes/Default_blue/theme.php:57 assets/Themes/Default_blue/theme.php:70
 msgid "Normal"
-msgstr "Normal"
+msgstr "عادی"
 
 #: assets/Themes/Default_blue/theme.php:67
 msgid "Letter Spacing"
-msgstr "Espaciado de Letras"
+msgstr "فاصله حروف"
 
 #: assets/Themes/Default_blue/theme.php:82
 msgid "Dyslexia Mask"
-msgstr "Máscara de Dislexia"
+msgstr "ماسک دیسلکسی"
 
 #: assets/Themes/Default_blue/theme.php:90
 msgid "Grayscale Page"
-msgstr "Página en Escala de Grises"
+msgstr "صفحه خاکستری"
 
 #: assets/Themes/Default_blue/theme.php:98
 msgid "Contrast"
-msgstr "Contraste"
+msgstr "کنتراست"
 
 #: assets/Themes/Default_blue/theme.php:106
 msgid "Negative"
-msgstr "Negativo"
+msgstr "نگاتیو"
 
 #: assets/Themes/Default_blue/theme.php:114
 msgid "Underlined Links"
-msgstr "Enlaces Subrayados"
+msgstr "لینک‌های زیرخط‌دار"
 
 #: assets/Themes/Default_blue/theme.php:122
 msgid "Highlight Links"
-msgstr "Resaltar Enlaces"
+msgstr "برجسته کردن لینک‌ها"
 
 #: assets/Themes/Default_blue/theme.php:130
 msgid "Grayscale Images"
-msgstr "Imágenes en Escala de Grises"
+msgstr "تصاویر خاکستری"
 
 #: assets/Themes/Default_blue/theme.php:138
 msgid "Black and white"
-msgstr "Blanco y negro"
+msgstr "سیاه و سفید"
 
 #: assets/Themes/Default_blue/theme.php:144
 msgid "Developed by "
-msgstr "Desarrollado por "
+msgstr "توسعه‌یافته توسط "
 
 #: assets/Themes/Default_blue/theme.php:146
 msgid "Reset"
-msgstr "Restablecer"
+msgstr "بازنشانی"
 
 #: assets/Themes/Default_blue/theme.php:147
 msgid "Close"
-msgstr "Cerrar"
+msgstr "بستن"
 
 #: assets/Themes/Default_blue/theme.php:152
 msgid "GDPR Notice:"
-msgstr "Aviso GDPR:"
+msgstr "اعلان GDPR:"
 
 #: assets/Themes/Default_blue/theme.php:153
 msgid ""
 "This plugin uses cookies to enhance your experience and provide personalized "
-"accessibility settings. These cookies are stored in your browser and allow "
-"us to remember your preferences for font size, color schemes, and other "
-"accessibility features. By using this plugin, you consent to the use of "
-"cookies for these purposes. You can delete or block cookies in your browser "
-"settings at any time. Please note that doing so may affect your experience "
-"on the site."
+"accessibility settings. These cookies are stored in your browser and allow us to "
+"remember your preferences for font size, color schemes, and other accessibility "
+"features. By using this plugin, you consent to the use of cookies for these "
+"purposes. You can delete or block cookies in your browser settings at any time. "
+"Please note that doing so may affect your experience on the site."
 msgstr ""
-"Este plugin utiliza cookies para mejorar tu experiencia y proporcionar "
-"configuraciones de accesibilidad personalizadas. Estas cookies se almacenan "
-"en tu navegador y nos permiten recordar tus preferencias para el tamaño de "
-"fuente, esquemas de color y otras características de accesibilidad. Al usar "
-"este plugin, consientes el uso de cookies para estos propósitos. Puedes "
-"eliminar o bloquear cookies en la configuración de tu navegador en cualquier "
-"momento. Ten en cuenta que hacerlo puede afectar tu experiencia en el sitio."
+"این پلاگین از کوکی‌ها برای بهبود تجربه شما و ارائه تنظیمات شخصی‌سازی شده "
+"دسترسی‌پذیری استفاده می‌کند. این کوکی‌ها در مرورگر شما ذخیره می‌شوند و به ما اجازه "
+"می‌دهند تا ترجیحات شما را برای اندازه فونت، طرح‌های رنگی و سایر ویژگی‌های "
+"دسترسی‌پذیری به خاطر بسپاریم. با استفاده از این پلاگین، شما به استفاده از کوکی‌ها "
+"برای این اهداف رضایت می‌دهید. شما می‌توانید کوکی‌ها را در تنظیمات مرورگر خود در هر "
+"زمان حذف یا مسدود کنید. لطفاً توجه داشته باشید که این کار ممکن است تجربه شما در "
+"سایت را تحت تأثیر قرار دهد."
 
 #: includes/class-admin-banner.php:129
 msgid "Close banner"
-msgstr "Cerrar banner"
+msgstr "بستن بنر"
 
 #: includes/class-admin-banner.php:134
 msgid "🎉 Congratulations!"
-msgstr "🎉 ¡Felicidades!"
+msgstr "🎉 تبریک!"
 
 #. translators: %s: Plugin name
 #: includes/class-admin-banner.php:139
 #, php-format
 msgid "You've been recognized as an %s of Meacodes Accessibility Tools."
-msgstr ""
-"Has sido reconocido como un %s de Herramientas de Accesibilidad Meacodes."
+msgstr "شما به عنوان %s ابزارهای دسترسی Meacodes شناخته شده‌اید."
 
 #. translators: %1$s: Pro Version 2, %2$s: Early Supporter Badge
 #: includes/class-admin-banner.php:149
 #, php-format
 msgid ""
-"As part of the upcoming %1$s rollout, early supporters will receive an "
-"exclusive %2$s and extended Pro access privileges."
+"As part of the upcoming %1$s rollout, early supporters will receive an exclusive "
+"%2$s and extended Pro access privileges."
 msgstr ""
-"Como parte del próximo lanzamiento de %1$s, los primeros seguidores "
-"recibirán una %2$s exclusiva y privilegios de acceso Pro extendidos."
+"به عنوان بخشی از راه‌اندازی آینده %1$s، حامیان اولیه یک %2$s انحصاری و امتیازات "
+"دسترسی Pro گسترده دریافت خواهند کرد."
 
 #: includes/class-admin-banner.php:157
 msgid "To learn how the badge system works and how sites are verified,"
-msgstr ""
-"Para aprender cómo funciona el sistema de insignias y cómo se verifican los "
-"sitios,"
+msgstr "برای یادگیری نحوه عملکرد سیستم نشان و تأیید سایت‌ها،"
 
 #: includes/class-admin-banner.php:158
 msgid "👉 visit meacodes.com"
-msgstr "👉 visita meacodes.com"
+msgstr "👉 از meacodes.com بازدید کنید"
 
 #: includes/class-admin-banner.php:161
 msgid "This notice will hide for 24 hours once dismissed."
-msgstr "Este aviso se ocultará por 24 horas una vez descartado."
+msgstr "این اعلان پس از رد شدن به مدت 24 ساعت مخفی خواهد شد."
 
 #: includes/class-admin-banner.php:165
 msgid "Meacodes Pro Badge"
-msgstr "Insignia Meacodes Pro"
+msgstr "نشان Pro Meacodes"
 
 #: includes/class-admin-banner.php:179
 msgid "Security check failed"
-msgstr "Verificación de seguridad falló"
+msgstr "بررسی امنیت ناموفق بود"
 
 #: includes/class-admin-banner.php:184
 msgid "Insufficient permissions"
-msgstr "Permisos insuficientes"
+msgstr "مجوزهای ناکافی"
 
 #: includes/class-admin-banner.php:191
 msgid "Banner dismissed successfully"
-msgstr "Banner descartado exitosamente"
+msgstr "بنر با موفقیت رد شد"
 
 #: includes/class-quickscan-admin.php:130
 msgid "Unable to get scan status:"
-msgstr "No se pudo obtener el estado del escaneo:"
+msgstr "نمی‌توان وضعیت اسکن را دریافت کرد:"
 
 #: includes/class-quickscan-admin.php:133
 msgid "MeacodesQuickScan_Scheduler class not found"
-msgstr "Clase MeacodesQuickScan_Scheduler no encontrada"
+msgstr "کلاس MeacodesQuickScan_Scheduler یافت نشد"
 
-#: includes/class-quickscan-admin.php:138
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:138 includes/class-quickscan-admin.php:237
 msgid "Error:"
-msgstr "Error:"
+msgstr "خطا:"
 
 #: includes/class-quickscan-admin.php:138
 msgid "Unable to load accessibility scan data:"
-msgstr "No se pudieron cargar los datos del escaneo de accesibilidad:"
+msgstr "نمی‌توان داده‌های اسکن دسترسی‌پذیری را بارگذاری کرد:"
 
 #: includes/class-quickscan-admin.php:151
 msgid "Scan is currently running..."
-msgstr "El escaneo se está ejecutando actualmente..."
+msgstr "اسکن در حال حاضر در حال اجرا است..."
 
 #: includes/class-quickscan-admin.php:153
 msgid "Please wait while we scan your website for accessibility issues."
-msgstr ""
-"Por favor espera mientras escaneamos tu sitio web en busca de problemas de "
-"accesibilidad."
+msgstr "لطفاً منتظر بمانید تا وب‌سایت شما را برای مشکلات دسترسی‌پذیری اسکن کنیم."
+
+#: includes/class-quickscan-admin.php:177
+msgid "pages"
+msgstr "صفحات"
 
 #: includes/class-quickscan-admin.php:189
 msgid "View Details"
-msgstr "Ver Detalles"
+msgstr "مشاهده جزئیات"
 
 #: includes/class-quickscan-admin.php:203
 msgid "No Scan Results Yet"
-msgstr "Aún No Hay Resultados de Escaneo"
+msgstr "هنوز نتیجه اسکنی وجود ندارد"
 
 #: includes/class-quickscan-admin.php:205
 msgid "Run your first accessibility scan to see results here."
-msgstr "Ejecuta tu primer escaneo de accesibilidad para ver resultados aquí."
+msgstr "اولین اسکن دسترسی‌پذیری خود را اجرا کنید تا نتایج را اینجا ببینید."
 
 #: includes/class-quickscan-admin.php:211
 msgid "Error"
-msgstr "Error"
+msgstr "خطا"
 
 #: includes/class-quickscan-admin.php:218
 msgid "Lightweight summary only."
-msgstr "Solo resumen ligero."
+msgstr "فقط خلاصه سبک."
 
 #: includes/class-quickscan-admin.php:218
 msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
 msgstr ""
-"Los informes completos página por página y las guías de reparación estarán "
-"disponibles en Pro v2."
+"گزارش‌های کامل صفحه به صفحه و راهنمای‌های تعمیر در Pro v2 در دسترس خواهد بود."
 
 #: includes/class-quickscan-admin.php:222
 msgid "Read More / Join Airdrop"
-msgstr "Leer Más / Unirse al Airdrop"
+msgstr "بیشتر بخوانید / به Airdrop بپیوندید"
 
 #: includes/class-quickscan-admin.php:237
 msgid "Unable to display accessibility scan widget."
-msgstr "No se pudo mostrar el widget de escaneo de accesibilidad."
+msgstr "نمی‌توان ویجت اسکن دسترسی‌پذیری را نمایش داد."
 
-#: includes/class-quickscan-admin.php:249
-#: includes/class-quickscan-scheduler.php:69
+#: includes/class-quickscan-admin.php:249 includes/class-quickscan-scheduler.php:69
 #: includes/class-quickscan-scheduler.php:127
 msgid "You do not have permission to run scans."
-msgstr "No tienes permisos para ejecutar escaneos."
+msgstr "شما مجوز اجرای اسکن‌ها را ندارید."
 
 #: includes/class-quickscan-admin.php:272
 msgid "Scan is running..."
-msgstr "El escaneo está ejecutándose..."
+msgstr "اسکن در حال اجرا..."
 
 #: includes/class-quickscan-admin.php:273
 msgid "Scan completed successfully!"
-msgstr "¡Escaneo completado exitosamente!"
+msgstr "اسکن با موفقیت تکمیل شد!"
 
 #. translators: %d is the number of images without alt text
 #: includes/class-quickscan-checks.php:64
 #, php-format
 msgid "%d images without alt text"
-msgstr "%d imágenes sin texto alternativo"
+msgstr "%d تصویر بدون متن جایگزین"
 
 #. translators: %d is the number of form elements without labels
 #: includes/class-quickscan-checks.php:71
 #, php-format
 msgid "%d form elements without labels"
-msgstr "%d elementos de formulario sin etiquetas"
+msgstr "%d عنصر فرم بدون برچسب"
 
 #. translators: %d is the number of missing language declarations
 #: includes/class-quickscan-checks.php:78
 #, php-format
 msgid "%d missing language declaration"
-msgstr "%d declaración de idioma faltante"
+msgstr "%d اعلان زبان گمشده"
 
 #. translators: %d is the number of buttons without accessible names
 #: includes/class-quickscan-checks.php:85
 #, php-format
 msgid "%d buttons without accessible names"
-msgstr "%d botones sin nombres accesibles"
+msgstr "%d دکمه بدون نام‌های قابل دسترسی"
 
 #. translators: %d is the number of tables without proper headers
 #: includes/class-quickscan-checks.php:92
 #, php-format
 msgid "%d tables without proper headers"
-msgstr "%d tablas sin encabezados apropiados"
+msgstr "%d جدول بدون سربرگ‌های مناسب"
 
 #. translators: %d is the number of empty or unclear links
 #: includes/class-quickscan-checks.php:100
 #, php-format
 msgid "%d empty or unclear links"
-msgstr "%d enlaces vacíos o poco claros"
+msgstr "%d لینک خالی یا نامشخص"
 
 #. translators: %d is the number of heading structure issues
 #: includes/class-quickscan-checks.php:107
 #, php-format
 msgid "%d heading structure issues"
-msgstr "%d problemas de estructura de encabezados"
+msgstr "%d مشکل ساختار سربرگ"
 
 #. translators: %d is the number of missing skip links
 #: includes/class-quickscan-checks.php:114
 #, php-format
 msgid "%d missing skip links"
-msgstr "%d enlaces de salto faltantes"
+msgstr "%d لینک پرش گمشده"
 
 #. translators: %d is the number of missing focus indicators
 #: includes/class-quickscan-checks.php:121
 #, php-format
 msgid "%d missing focus indicators"
-msgstr "%d indicadores de foco faltantes"
+msgstr "%d نشانگر فوکوس گمشده"
 
 #. translators: %d is the number of missing landmark roles
 #: includes/class-quickscan-checks.php:128
 #, php-format
 msgid "%d missing landmark roles"
-msgstr "%d roles de referencia faltantes"
+msgstr "%d نقش نشانگر گمشده"
 
 #. translators: %d is the number of form validation issues
 #: includes/class-quickscan-checks.php:135
 #, php-format
 msgid "%d form validation issues"
-msgstr "%d problemas de validación de formularios"
+msgstr "%d مشکل اعتبارسنجی فرم"
 
 #. translators: %d is the number of potential color contrast issues
 #: includes/class-quickscan-checks.php:143
 #, php-format
 msgid "%d potential color contrast issues"
-msgstr "%d problemas potenciales de contraste de color"
+msgstr "%d مشکل احتمالی کنتراست رنگ"
 
 #. translators: %d is the number of motion/animation issues
 #: includes/class-quickscan-checks.php:150
 #, php-format
 msgid "%d motion/animation issues"
-msgstr "%d problemas de movimiento/animación"
+msgstr "%d مشکل حرکت/انیمیشن"
 
 #. translators: %d is the number of text spacing issues
 #: includes/class-quickscan-checks.php:157
 #, php-format
 msgid "%d text spacing issues"
-msgstr "%d problemas de espaciado de texto"
+msgstr "%d مشکل فاصله‌گذاری متن"
 
 #: includes/class-quickscan-checks.php:551
 msgid "A-Level Issues"
-msgstr "Problemas de Nivel A"
+msgstr "مسائل سطح A"
 
 #: includes/class-quickscan-checks.php:552
 msgid "Basic accessibility: Images, forms, language, buttons, tables"
-msgstr "Accesibilidad básica: Imágenes, formularios, idioma, botones, tablas"
+msgstr "دسترسی پایه: تصاویر، فرم‌ها، زبان، دکمه‌ها، جداول"
 
 #: includes/class-quickscan-checks.php:555
 msgid "AA-Level Issues"
-msgstr "Problemas de Nivel AA"
+msgstr "مسائل سطح AA"
 
 #: includes/class-quickscan-checks.php:556
 msgid "Enhanced accessibility: Links, headings, navigation, focus, landmarks"
-msgstr ""
-"Accesibilidad mejorada: Enlaces, encabezados, navegación, enfoque, puntos de "
-"referencia"
+msgstr "دسترسی پیشرفته: پیوندها، سرتیترها، ناوبری، فوکوس، نشانگرها"
 
 #: includes/class-quickscan-checks.php:559
 msgid "AAA-Level Issues"
-msgstr "Problemas de Nivel AAA"
+msgstr "مسائل سطح AAA"
 
 #: includes/class-quickscan-checks.php:560
 msgid "Advanced accessibility: Contrast, motion, text spacing"
-msgstr "Accesibilidad avanzada: Contraste, movimiento, espaciado de texto"
+msgstr "دسترسی پیشرفته: کنتراست، حرکت، فاصله متن"
 
 #: includes/class-quickscan-scheduler.php:65
 msgid "Invalid nonce."
-msgstr "Nonce inválido."
+msgstr "Nonce نامعتبر."
 
 #: includes/class-quickscan-scheduler.php:73
 #: includes/class-quickscan-scheduler.php:132
 msgid "A scan is already running. Please wait for it to complete."
-msgstr "Un escaneo ya está ejecutándose. Por favor espera a que se complete."
+msgstr "یک اسکن در حال اجرا است. لطفاً منتظر تکمیل آن باشید."
 
 #: includes/class-quickscan-scheduler.php:156
 msgid "Scan failed to complete."
-msgstr "El escaneo falló al completarse."
+msgstr "اسکن تکمیل نشد."
 
 #: meacodes-accessibility-tools.php:82
 msgid "Mea Accessibility"
-msgstr "Accesibilidad Mea"
+msgstr "دسترسی Mea"
 
 #: meacodes-accessibility-tools.php:91 meacodes-accessibility-tools.php:92
 msgid "Settings"
-msgstr "Configuración"
+msgstr "تنظیمات"
