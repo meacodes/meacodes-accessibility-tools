@@ -148,20 +148,20 @@ class MeacodesQuickScan_Admin {
                 <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 8px; padding: 20px; border: 1px solid #90caf9;">
                     <div style="display: flex; align-items: center; margin-bottom: 10px;">
                         <div style="width: 20px; height: 20px; border: 2px solid #1976d2; border-top: 2px solid transparent; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 10px;"></div>
-                        <strong style="color: #1976d2; font-size: 16px;"><?php _e('Scan is currently running...', 'meacodes-accessibility-tools'); ?></strong>
+                        <strong style="color: #1976d2; font-size: 16px;"><?php esc_html_e('Scan is currently running...', 'meacodes-accessibility-tools'); ?></strong>
                     </div>
-                    <p style="margin: 0; color: #424242; font-size: 14px;"><?php _e('Please wait while we scan your website for accessibility issues.', 'meacodes-accessibility-tools'); ?></p>
+                    <p style="margin: 0; color: #424242; font-size: 14px;"><?php esc_html_e('Please wait while we scan your website for accessibility issues.', 'meacodes-accessibility-tools'); ?></p>
                 </div>
             <?php elseif ($summary && is_array($summary) && isset($summary['last_run'])): ?>
                 <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; padding: 20px; border: 1px solid #dee2e6; margin-bottom: 15px;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                        <h3 style="margin: 0; color: #495057; font-size: 18px; font-weight: 600;"><?php _e('Accessibility Quick Scan', 'meacodes-accessibility-tools'); ?></h3>
-                        <span style="background: #28a745; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold;"><?php _e('Completed', 'meacodes-accessibility-tools'); ?></span>
+                        <h3 style="margin: 0; color: #495057; font-size: 18px; font-weight: 600;"><?php esc_html_e('Accessibility Quick Scan', 'meacodes-accessibility-tools'); ?></h3>
+                        <span style="background: #28a745; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold;"><?php esc_html_e('Completed', 'meacodes-accessibility-tools'); ?></span>
                     </div>
                     
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
                         <div style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #007cba;">
-                            <strong style="color: #007cba; display: block; margin-bottom: 5px; font-size: 14px;"><?php _e('Last Scan', 'meacodes-accessibility-tools'); ?></strong>
+                            <strong style="color: #007cba; display: block; margin-bottom: 5px; font-size: 14px;"><?php esc_html_e('Last Scan', 'meacodes-accessibility-tools'); ?></strong>
                             <span style="color: #6c757d; font-size: 13px;"><?php 
                                 try {
                                     $last_scan_time = new DateTime($summary['last_run']);
@@ -173,20 +173,20 @@ class MeacodesQuickScan_Admin {
                             ?></span>
                         </div>
                         <div style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #6f42c1;">
-                            <strong style="color: #6f42c1; display: block; margin-bottom: 5px; font-size: 14px;"><?php _e('Pages Scanned', 'meacodes-accessibility-tools'); ?></strong>
-                            <span style="color: #6c757d; font-size: 13px;"><?php echo esc_html(isset($summary['pages_scanned']) ? $summary['pages_scanned'] : 0); ?> <?php _e('pages', 'meacodes-accessibility-tools'); ?> (<?php echo esc_html(isset($summary['duration_seconds']) ? $summary['duration_seconds'] : 0); ?>s)</span>
+                            <strong style="color: #6f42c1; display: block; margin-bottom: 5px; font-size: 14px;"><?php esc_html_e('Pages Scanned', 'meacodes-accessibility-tools'); ?></strong>
+                            <span style="color: #6c757d; font-size: 13px;"><?php echo esc_html(isset($summary['pages_scanned']) ? $summary['pages_scanned'] : 0); ?> <?php esc_html_e('pages', 'meacodes-accessibility-tools'); ?> (<?php echo esc_html(isset($summary['duration_seconds']) ? $summary['duration_seconds'] : 0); ?>s)</span>
                         </div>
                     </div>
                     
                     <div style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #dc3545;">
                         <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                            <strong style="color: #dc3545; font-size: 14px;"><?php _e('Accessibility Issues Found', 'meacodes-accessibility-tools'); ?></strong>
+                            <strong style="color: #dc3545; font-size: 14px;"><?php esc_html_e('Accessibility Issues Found', 'meacodes-accessibility-tools'); ?></strong>
                             <a href="<?php echo esc_url(admin_url('admin.php?page=meaAccessibility_settings_page&tab=scan#scan-results-display')); ?>" 
                                style="background: linear-gradient(135deg, #dc3545 0%, #c82333 100%); color: white; text-decoration: none; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: 600; transition: all 0.3s ease; display: inline-flex; align-items: center; box-shadow: 0 2px 4px rgba(220, 53, 69, 0.3);"
                                onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 4px 8px rgba(220, 53, 69, 0.4)'"
                                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(220, 53, 69, 0.3)'">
                                 <span style="margin-right: 4px;">📊</span>
-                                <?php _e('View Details', 'meacodes-accessibility-tools'); ?>
+                                <?php esc_html_e('View Details', 'meacodes-accessibility-tools'); ?>
                             </a>
                         </div>
                         <div style="display: flex; gap: 15px; flex-wrap: wrap;">
@@ -200,26 +200,26 @@ class MeacodesQuickScan_Admin {
                 <div style="background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%); border-radius: 8px; padding: 20px; border: 1px solid #ffc107; margin-bottom: 15px;">
                     <div style="display: flex; align-items: center; margin-bottom: 10px;">
                         <span style="font-size: 20px; margin-right: 10px;">⚠️</span>
-                        <strong style="color: #856404; font-size: 16px;"><?php _e('No Scan Results Yet', 'meacodes-accessibility-tools'); ?></strong>
+                        <strong style="color: #856404; font-size: 16px;"><?php esc_html_e('No Scan Results Yet', 'meacodes-accessibility-tools'); ?></strong>
                     </div>
-                    <p style="margin: 0; color: #856404; font-size: 14px;"><?php _e('Run your first accessibility scan to see results here.', 'meacodes-accessibility-tools'); ?></p>
+                    <p style="margin: 0; color: #856404; font-size: 14px;"><?php esc_html_e('Run your first accessibility scan to see results here.', 'meacodes-accessibility-tools'); ?></p>
                 </div>
             <?php endif; ?>
             
             <?php if ($status['error']): ?>
                 <div style="background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%); border-radius: 8px; padding: 15px; border: 1px solid #f5c6cb; margin-bottom: 15px;">
-                    <strong style="color: #721c24; display: block; margin-bottom: 5px;">⚠️ <?php _e('Error', 'meacodes-accessibility-tools'); ?></strong>
+                    <strong style="color: #721c24; display: block; margin-bottom: 5px;">⚠️ <?php esc_html_e('Error', 'meacodes-accessibility-tools'); ?></strong>
                     <span style="color: #721c24; font-size: 14px;"><?php echo esc_html($status['error']); ?></span>
                 </div>
             <?php endif; ?>
             
             <div style="background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%); border-radius: 8px; padding: 15px; border: 1px solid #c3e6cb; margin-bottom: 15px;">
                 <p style="margin: 0 0 10px 0; color: #155724; font-size: 14px; font-weight: 500;">
-                    <strong><?php _e('Lightweight summary only.', 'meacodes-accessibility-tools'); ?></strong> <?php _e('Full page-by-page reports & fixes guides will be available in Pro v2.', 'meacodes-accessibility-tools'); ?>
+                    <strong><?php esc_html_e('Lightweight summary only.', 'meacodes-accessibility-tools'); ?></strong> <?php esc_html_e('Full page-by-page reports & fixes guides will be available in Pro v2.', 'meacodes-accessibility-tools'); ?>
                 </p>
                 <a href="https://meacodes.com" target="_blank" style="display: inline-flex; align-items: center; background: linear-gradient(135deg, #007cba 0%, #005a87 100%); color: white; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 600; transition: all 0.3s ease;">
                     <span style="margin-right: 6px;">🚀</span>
-                    <?php _e('Read More / Join Airdrop', 'meacodes-accessibility-tools'); ?>
+                    <?php esc_html_e('Read More / Join Airdrop', 'meacodes-accessibility-tools'); ?>
                 </a>
             </div>
         </div>
