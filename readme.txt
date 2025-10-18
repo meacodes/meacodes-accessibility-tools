@@ -179,7 +179,6 @@ We truly appreciate any contribution you can make.
 * Enhanced admin interface with Quick Scan settings page
 * Added comprehensive unit tests for accessibility checks
 * Improved plugin architecture with modular design
-* Improved plugin architecture with modular design
 * Added local .po .mo translations for this languages:
   - Arabic (ar)
   - German (de_DE)
