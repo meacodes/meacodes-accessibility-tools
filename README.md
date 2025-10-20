@@ -1,7 +1,7 @@
 === Meacodes Accessibility Tools ===
 * Contributors: meacodes
 * Donate link: https://nowpayments.io/donation/meacodes
-* Tags: accessibility, a11y, Section 508, wcag, toolbar
+* Tags: #accessibility, #a11y, #Section_508, #wcag, #toolbar
 * Requires at least: 4.0
 * Tested up to: 6.8
 * Stable tag: 1.2.0
