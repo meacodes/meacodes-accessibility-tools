@@ -81,26 +81,6 @@ Absolutely! We believe website accessibility should be available to everyone. Th
 We appreciate your interest in making the web a more accessible place! While the plugin is free, your donations allow us to keep developing and improving it.  If you find our plugin valuable, consider donating to support our ongoing efforts.
 We truly appreciate any contribution you can make.
 
-
-== Screenshots ==
-
-1. [screenshot-1.png] Font Customization: Font Size, Line Height, Letter Spacing.
-2. [screenshot-2.png] Dyslexia Mask: Apply a mask to minimize visual distractions.
-3. [screenshot-3.png] Negative: Invert colors for a unique viewing experience.
-4. [screenshot-4.png] Black and White Page: Transform the entire page to black and white.
-5. [screenshot-5.png] GDPR Ready.
-6. [screenshot-6.png] Positionable by User: Enabling this option allows users to freely move the accessibility plugin around the page on desktop devices.
-7. [screenshot-7.png] You can custom all colors and styles.
-8. [screenshot-8.png] You can custom all colors and styles.
-9. [screenshot-9.png] Admin menu.
-10. [screenshot-10.png] A blue question mark icon ( ? ) is placed next to the settings sections that need further clarification. By hovering your mouse over it, more detailed instructions will be displayed to help you understand the settings better.
-11. [screenshot-11.png] You can enable or disable each features individually.
-12. [screenshot-12.png] Customize the plugins appearance to match your taste and needs using the style settings.
-13. [screenshot-13.png] New button logic for more customization.
-14. [screenshot-14.png] WCAG issues Detection.
-15. [screenshot-15.png] Manual website scan for detecting WCAG issues.
-16. [screenshot-16.png] more appearance customization.
-
 == Changelog ==
 
 = 1.0.0 =
