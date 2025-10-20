@@ -1,13 +1,13 @@
 === Meacodes Accessibility Tools ===
-Contributors: meacodes
-Donate link: https://nowpayments.io/donation/meacodes
-Tags: accessibility, a11y, Section 508, wcag, toolbar
-Requires at least: 4.0
-Tested up to: 6.8
-Stable tag: 1.2.0
-Requires PHP: 5.4
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+* Contributors: meacodes
+* Donate link: https://nowpayments.io/donation/meacodes
+* Tags: accessibility, a11y, Section 508, wcag, toolbar
+* Requires at least: 4.0
+* Tested up to: 6.8
+* Stable tag: 1.2.0
+* Requires PHP: 5.4
+* License: GPLv2 or later
+* License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 This is an accessibility Plugin for people with disabilities to use the web easily.
 
