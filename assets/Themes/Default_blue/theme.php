@@ -156,18 +156,21 @@
           </div>
       </div>
       <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-          if (typeof jQuery !== 'undefined') {
-            jQuery('html').addClass('');
-            jQuery('.meaCodesAccessibilityModule').prependTo('body');
-            jQuery(document).ready(function () {
-                jQuery('.meaCodesAccessibilityModule').hide(); // Start hidden
-                jQuery('.meaCodesAccessibilityModule').meaCodesAccessibilityModule('cookie', '0', '477', '4103');
-            });
-          }else {
-            console.error(meaParams.errorMessage);
-          }
-        });
+        // Only run initialization if not called from airdrop pages
+        if (!window.meaAccessibilityAirdropMode) {
+          document.addEventListener('DOMContentLoaded', function () {
+            if (typeof jQuery !== 'undefined') {
+              jQuery('html').addClass('');
+              jQuery('.meaCodesAccessibilityModule').prependTo('body');
+              jQuery(document).ready(function () {
+                  jQuery('.meaCodesAccessibilityModule').hide(); // Start hidden
+                  jQuery('.meaCodesAccessibilityModule').meaCodesAccessibilityModule('cookie', '0', '477', '4103');
+              });
+            }else {
+              console.error(meaParams.errorMessage);
+            }
+          });
+        }
       </script>    
     </div>
   <?php endif; ?>

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
-"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
-"PO-Revision-Date: 2025-10-18 22:48+0330\n"
+"POT-Creation-Date: 2025-10-23T14:20:40+00:00\n"
+"PO-Revision-Date: 2025-10-23 18:26+0330\n"
 "Last-Translator: \n"
 "Language-Team: meacodes <info@meacodes.com>\n"
 "Language: tr\n"
@@ -35,7 +35,7 @@ msgstr ""
 "araçlarıdır."
 
 #. Author of the plugin
-#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
+#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:858
 msgid "Meacodes Development Solutions"
 msgstr "Meacodes Development Solutions"
 
@@ -181,12 +181,11 @@ msgstr "taranıyor, lütfen bekleyin..."
 msgid "Just now"
 msgstr "Şimdi"
 
-#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
+#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:672
 msgid "Pages with Issues"
 msgstr "Sorunlu Sayfalar"
 
-#: assets/admin/admin-theme.php:304
-
+#: assets/admin/admin-theme.php:304 assets/admin/admin-theme.php:692
 msgid "Issues Found:"
 msgstr "Bulunan Sorunlar:"
 
@@ -218,7 +217,7 @@ msgid "Accessibility Issues Found"
 msgstr "Erişilebilirlik Sorunları Bulundu"
 
 #: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
-#: includes/class-quickscan-admin.php:274
+#: includes/class-quickscan-admin.php:363
 msgid "Scan failed. Please try again."
 msgstr "Tarama başarısız. Lütfen tekrar deneyin."
 
@@ -434,21 +433,21 @@ msgstr "Erişilebilirlik Taramasını Şimdi Çalıştır"
 msgid "Last Scan Results"
 msgstr "Son Tarama Sonuçları"
 
-#: assets/admin/admin-theme.php:701
+#: assets/admin/admin-theme.php:721
 msgid "Save Changes"
 msgstr "Değişiklikleri Kaydet"
 
-#: assets/admin/admin-theme.php:706
+#: assets/admin/admin-theme.php:726
 msgid "Reset Settings"
 msgstr "Ayarları Sıfırla"
 
-#: assets/admin/admin-theme.php:710
+#: assets/admin/admin-theme.php:730
 msgid ""
 "Save Changes will save all settings across all tabs. Reset Settings will "
 "restore all options to their default values."
 msgstr "Tüm seçenekleri varsayılan değerlerine geri yükler."
 
-#: assets/admin/admin-theme.php:799
+#: assets/admin/admin-theme.php:860
 msgid "Accessibility Tools Version: "
 msgstr "Erişilebilirlik Araçları Sürümü: "
 
@@ -614,7 +613,7 @@ msgid "MeacodesQuickScan_Scheduler class not found"
 msgstr "MeacodesQuickScan_Scheduler sınıfı bulunamadı"
 
 #: includes/class-quickscan-admin.php:138
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:326
 msgid "Error:"
 msgstr "Hata:"
 
@@ -647,36 +646,74 @@ msgstr ""
 msgid "Error"
 msgstr "Hata"
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:219
+msgid "Quick Actions"
+msgstr "Hızlı İşlemler"
+
+#: includes/class-quickscan-admin.php:227
+msgid "Perform New Scan"
+msgstr "Yeni Tarama Yap"
+
+#: includes/class-quickscan-admin.php:238
 msgid "Lightweight summary only."
 msgstr "Sadece hafif özet."
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:238
 msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
 msgstr ""
 "Tam sayfa sayfa raporlar ve düzeltme kılavuzları Pro v2'de mevcut olacak."
 
-#: includes/class-quickscan-admin.php:222
+#: includes/class-quickscan-admin.php:242
 msgid "Read More / Join Airdrop"
 msgstr "Daha Fazla Oku / Airdrop'a Katıl"
 
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:266
+msgid "Scanning..."
+msgstr "Taranıyor..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Scan in progress..."
+msgstr "Tarama devam ediyor..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Please wait while we scan your website."
+msgstr "Web sitenizi tararken lütfen bekleyin."
+
+#: includes/class-quickscan-admin.php:288
+#: includes/class-quickscan-admin.php:362
+msgid "Scan completed successfully!"
+msgstr "Tarama başarıyla tamamlandı!"
+
+#: includes/class-quickscan-admin.php:288
+msgid "Redirecting to results..."
+msgstr "Sonuçlara yönlendiriliyor..."
+
+#: includes/class-quickscan-admin.php:299
+#: includes/class-quickscan-admin.php:310
+msgid "Scan failed:"
+msgstr "Tarama başarısız:"
+
+#: includes/class-quickscan-admin.php:299
+msgid "Unknown error occurred"
+msgstr "Bilinmeyen hata oluştu"
+
+#: includes/class-quickscan-admin.php:310
+msgid "Network error occurred"
+msgstr "Ağ hatası oluştu"
+
+#: includes/class-quickscan-admin.php:326
 msgid "Unable to display accessibility scan widget."
 msgstr "Erişilebilirlik tarama widget'ı görüntülenemedi."
 
-#: includes/class-quickscan-admin.php:249
+#: includes/class-quickscan-admin.php:338
 #: includes/class-quickscan-scheduler.php:69
 #: includes/class-quickscan-scheduler.php:127
 msgid "You do not have permission to run scans."
 msgstr "Tarama çalıştırma izniniz yok."
 
-#: includes/class-quickscan-admin.php:272
+#: includes/class-quickscan-admin.php:361
 msgid "Scan is running..."
 msgstr "Tarama çalışıyor..."
-
-#: includes/class-quickscan-admin.php:273
-msgid "Scan completed successfully!"
-msgstr "Tarama başarıyla tamamlandı!"
 
 #. translators: %d is the number of images without alt text
 #: includes/class-quickscan-checks.php:64

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
-"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
-"PO-Revision-Date: 2025-10-18 22:47+0330\n"
+"POT-Creation-Date: 2025-10-23T14:20:40+00:00\n"
+"PO-Revision-Date: 2025-10-23 18:25+0330\n"
 "Last-Translator: \n"
 "Language-Team: meacodes <info@meacodes.com>\n"
 "Language: ja\n"
@@ -35,7 +35,7 @@ msgstr ""
 "ルです。"
 
 #. Author of the plugin
-#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
+#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:858
 msgid "Meacodes Development Solutions"
 msgstr "Meacodes Development Solutions"
 
@@ -180,12 +180,11 @@ msgstr "スキャン中、しばらくお待ちください…"
 msgid "Just now"
 msgstr "たった今"
 
-#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
+#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:672
 msgid "Pages with Issues"
 msgstr "問題のあるページ"
 
-#: assets/admin/admin-theme.php:304
-
+#: assets/admin/admin-theme.php:304 assets/admin/admin-theme.php:692
 msgid "Issues Found:"
 msgstr "見つかった問題:"
 
@@ -217,7 +216,7 @@ msgid "Accessibility Issues Found"
 msgstr "アクセシビリティ問題が見つかりました"
 
 #: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
-#: includes/class-quickscan-admin.php:274
+#: includes/class-quickscan-admin.php:363
 msgid "Scan failed. Please try again."
 msgstr "スキャンに失敗しました。再試行してください。"
 
@@ -431,15 +430,15 @@ msgstr "アクセシビリティスキャンを今すぐ実行"
 msgid "Last Scan Results"
 msgstr "最後のスキャン結果"
 
-#: assets/admin/admin-theme.php:701
+#: assets/admin/admin-theme.php:721
 msgid "Save Changes"
 msgstr "変更を保存"
 
-#: assets/admin/admin-theme.php:706
+#: assets/admin/admin-theme.php:726
 msgid "Reset Settings"
 msgstr "設定をリセット"
 
-#: assets/admin/admin-theme.php:710
+#: assets/admin/admin-theme.php:730
 msgid ""
 "Save Changes will save all settings across all tabs. Reset Settings will "
 "restore all options to their default values."
@@ -447,7 +446,7 @@ msgstr ""
 "変更を保存はすべてのタブの設定を保存します。設定をリセットは すべてのオプショ"
 "ンをデフォルト値に復元します。"
 
-#: assets/admin/admin-theme.php:799
+#: assets/admin/admin-theme.php:860
 msgid "Accessibility Tools Version: "
 msgstr "アクセシビリティツールバージョン: "
 
@@ -611,7 +610,7 @@ msgid "MeacodesQuickScan_Scheduler class not found"
 msgstr "MeacodesQuickScan_Schedulerクラスが見つかりません"
 
 #: includes/class-quickscan-admin.php:138
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:326
 msgid "Error:"
 msgstr "エラー："
 
@@ -646,35 +645,73 @@ msgstr ""
 msgid "Error"
 msgstr "エラー"
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:219
+msgid "Quick Actions"
+msgstr "クイックアクション"
+
+#: includes/class-quickscan-admin.php:227
+msgid "Perform New Scan"
+msgstr "新しいスキャンを実行"
+
+#: includes/class-quickscan-admin.php:238
 msgid "Lightweight summary only."
 msgstr "軽量な要約のみ。"
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:238
 msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
 msgstr "完全なページ別レポートと修正ガイドはPro v2で利用可能になります。"
 
-#: includes/class-quickscan-admin.php:222
+#: includes/class-quickscan-admin.php:242
 msgid "Read More / Join Airdrop"
 msgstr "詳細を読む / エアドロップに参加"
 
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:266
+msgid "Scanning..."
+msgstr "スキャン中..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Scan in progress..."
+msgstr "スキャン進行中..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Please wait while we scan your website."
+msgstr "ウェブサイトをスキャンしている間、お待ちください。"
+
+#: includes/class-quickscan-admin.php:288
+#: includes/class-quickscan-admin.php:362
+msgid "Scan completed successfully!"
+msgstr "スキャンが正常に完了しました！"
+
+#: includes/class-quickscan-admin.php:288
+msgid "Redirecting to results..."
+msgstr "結果にリダイレクト中..."
+
+#: includes/class-quickscan-admin.php:299
+#: includes/class-quickscan-admin.php:310
+msgid "Scan failed:"
+msgstr "スキャン失敗："
+
+#: includes/class-quickscan-admin.php:299
+msgid "Unknown error occurred"
+msgstr "不明なエラーが発生しました"
+
+#: includes/class-quickscan-admin.php:310
+msgid "Network error occurred"
+msgstr "ネットワークエラーが発生しました"
+
+#: includes/class-quickscan-admin.php:326
 msgid "Unable to display accessibility scan widget."
 msgstr "アクセシビリティスキャンウィジェットを表示できません。"
 
-#: includes/class-quickscan-admin.php:249
+#: includes/class-quickscan-admin.php:338
 #: includes/class-quickscan-scheduler.php:69
 #: includes/class-quickscan-scheduler.php:127
 msgid "You do not have permission to run scans."
 msgstr "スキャンを実行する権限がありません。"
 
-#: includes/class-quickscan-admin.php:272
+#: includes/class-quickscan-admin.php:361
 msgid "Scan is running..."
 msgstr "スキャン実行中..."
-
-#: includes/class-quickscan-admin.php:273
-msgid "Scan completed successfully!"
-msgstr "スキャンが正常に完了しました！"
 
 #. translators: %d is the number of images without alt text
 #: includes/class-quickscan-checks.php:64

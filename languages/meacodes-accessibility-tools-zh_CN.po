@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
-"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
-"PO-Revision-Date: 2025-10-18 22:49+0330\n"
+"POT-Creation-Date: 2025-10-23T14:20:40+00:00\n"
+"PO-Revision-Date: 2025-10-23 18:26+0330\n"
 "Last-Translator: \n"
 "Language-Team: meacodes <info@meacodes.com>\n"
 "Language: zh\n"
@@ -33,7 +33,7 @@ msgid ""
 msgstr "这是为残障人士轻松使用网络而设计的 无障碍工具。"
 
 #. Author of the plugin
-#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
+#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:858
 msgid "Meacodes Development Solutions"
 msgstr "https://www.meacodes.com/accessibility"
 
@@ -168,12 +168,11 @@ msgstr "扫描中，请稍候……"
 msgid "Just now"
 msgstr "刚刚"
 
-#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
+#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:672
 msgid "Pages with Issues"
 msgstr "有问题的页面"
 
-#: assets/admin/admin-theme.php:304
-
+#: assets/admin/admin-theme.php:304 assets/admin/admin-theme.php:692
 msgid "Issues Found:"
 msgstr "发现的问题:"
 
@@ -205,7 +204,7 @@ msgid "Accessibility Issues Found"
 msgstr "发现无障碍问题"
 
 #: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
-#: includes/class-quickscan-admin.php:274
+#: includes/class-quickscan-admin.php:363
 msgid "Scan failed. Please try again."
 msgstr "扫描失败。请重试。"
 
@@ -415,22 +414,22 @@ msgstr "立即运行无障碍扫描"
 msgid "Last Scan Results"
 msgstr "上次扫描结果"
 
-#: assets/admin/admin-theme.php:701
+#: assets/admin/admin-theme.php:721
 msgid "Save Changes"
 msgstr "保存更改"
 
-#: assets/admin/admin-theme.php:706
+#: assets/admin/admin-theme.php:726
 msgid "Reset Settings"
 msgstr "重置设置"
 
-#: assets/admin/admin-theme.php:710
+#: assets/admin/admin-theme.php:730
 msgid ""
 "Save Changes will save all settings across all tabs. Reset Settings will "
 "restore all options to their default values."
 msgstr ""
 "保存更改将保存所有标签页的所有设置。重置设置将 将所有选项恢复为默认值。"
 
-#: assets/admin/admin-theme.php:799
+#: assets/admin/admin-theme.php:860
 msgid "Accessibility Tools Version: "
 msgstr "无障碍工具版本： "
 
@@ -590,7 +589,7 @@ msgid "MeacodesQuickScan_Scheduler class not found"
 msgstr "未找到 MeacodesQuickScan_Scheduler 类"
 
 #: includes/class-quickscan-admin.php:138
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:326
 msgid "Error:"
 msgstr "错误："
 
@@ -622,35 +621,73 @@ msgstr "运行您的第一次无障碍扫描以在此处查看结果。"
 msgid "Error"
 msgstr "错误"
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:219
+msgid "Quick Actions"
+msgstr "快速操作"
+
+#: includes/class-quickscan-admin.php:227
+msgid "Perform New Scan"
+msgstr "执行新扫描"
+
+#: includes/class-quickscan-admin.php:238
 msgid "Lightweight summary only."
 msgstr "仅轻量级摘要。"
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:238
 msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
 msgstr "完整的逐页报告和修复指南将在 Pro v2 中提供。"
 
-#: includes/class-quickscan-admin.php:222
+#: includes/class-quickscan-admin.php:242
 msgid "Read More / Join Airdrop"
 msgstr "阅读更多 / 加入空投"
 
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:266
+msgid "Scanning..."
+msgstr "扫描中..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Scan in progress..."
+msgstr "扫描进行中..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Please wait while we scan your website."
+msgstr "请等待我们扫描您的网站。"
+
+#: includes/class-quickscan-admin.php:288
+#: includes/class-quickscan-admin.php:362
+msgid "Scan completed successfully!"
+msgstr "扫描成功完成！"
+
+#: includes/class-quickscan-admin.php:288
+msgid "Redirecting to results..."
+msgstr "正在重定向到结果..."
+
+#: includes/class-quickscan-admin.php:299
+#: includes/class-quickscan-admin.php:310
+msgid "Scan failed:"
+msgstr "扫描失败："
+
+#: includes/class-quickscan-admin.php:299
+msgid "Unknown error occurred"
+msgstr "发生未知错误"
+
+#: includes/class-quickscan-admin.php:310
+msgid "Network error occurred"
+msgstr "发生网络错误"
+
+#: includes/class-quickscan-admin.php:326
 msgid "Unable to display accessibility scan widget."
 msgstr "无法显示无障碍扫描小部件。"
 
-#: includes/class-quickscan-admin.php:249
+#: includes/class-quickscan-admin.php:338
 #: includes/class-quickscan-scheduler.php:69
 #: includes/class-quickscan-scheduler.php:127
 msgid "You do not have permission to run scans."
 msgstr "您没有运行扫描的权限。"
 
-#: includes/class-quickscan-admin.php:272
+#: includes/class-quickscan-admin.php:361
 msgid "Scan is running..."
 msgstr "扫描正在运行..."
-
-#: includes/class-quickscan-admin.php:273
-msgid "Scan completed successfully!"
-msgstr "扫描成功完成！"
 
 #. translators: %d is the number of images without alt text
 #: includes/class-quickscan-checks.php:64

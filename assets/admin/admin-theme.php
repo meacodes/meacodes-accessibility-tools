@@ -658,29 +658,49 @@ function meaAccessibility_admin_thm() {
               echo '</div>';
               echo '</div>';
               
-              // Pages with Issues
+              // Pages with Issues - Enhanced version matching AJAX display
               if (!empty($summary['page_details'])) {
-                echo '<div style="margin-top: 15px;">';
-                echo '<h4 style="margin: 0 0 10px 0; color: #495057; font-size: 14px;">' . esc_html__('Pages with Issues', 'meacodes-accessibility-tools') . ' (' . count($summary['page_details']) . ')</h4>';
-                echo '<div style="max-height: 300px; overflow-y: auto; border: 1px solid #dee2e6; border-radius: 6px;">';
+                $pages_with_issues = array_filter($summary['page_details'], function($page) {
+                  return ($page['a'] + $page['aa'] + $page['aaa']) > 0;
+                });
                 
-                foreach ($summary['page_details'] as $page) {
-                  $page_issues = $page['a'] + $page['aa'] + $page['aaa'];
-                  if ($page_issues > 0) {
-                    echo '<div style="padding: 10px; border-bottom: 1px solid #dee2e6; background: white;">';
-                    echo '<div style="font-weight: 600; color: #495057; margin-bottom: 5px;">' . esc_html($page['title']) . '</div>';
-                    echo '<div style="font-size: 12px; color: #6c757d; margin-bottom: 5px;">' . esc_html($page['url']) . '</div>';
-                    echo '<div style="display: flex; gap: 5px; align-items: center;">';
-                    if ($page['a'] > 0) echo '<span style="background: #dc3545; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;">A: ' . esc_html($page['a']) . '</span>';
-                    if ($page['aa'] > 0) echo '<span style="background: #fd7e14; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;">AA: ' . esc_html($page['aa']) . '</span>';
-                    if ($page['aaa'] > 0) echo '<span style="background: #28a745; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px;">AAA: ' . esc_html($page['aaa']) . '</span>';
+                if (!empty($pages_with_issues)) {
+                  echo '<div style="margin-top: 20px;">';
+                  echo '<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; padding: 20px; border: 1px solid #dee2e6;">';
+                  echo '<h4 style="margin: 0 0 15px 0; color: #495057; font-size: 16px; display: flex; align-items: center;">';
+                  echo '<span style="background: #dc3545; color: white; padding: 4px 8px; border-radius: 4px; margin-right: 10px; font-size: 12px;">' . count($pages_with_issues) . '</span>';
+                  echo esc_html__('Pages with Issues', 'meacodes-accessibility-tools') . '</h4>';
+                  echo '<div style="max-height: 400px; overflow-y: auto;">';
+                  
+                  foreach ($pages_with_issues as $page) {
+                    $total_issues = $page['a'] + $page['aa'] + $page['aaa'];
+                    echo '<div style="margin-bottom: 15px; padding: 15px; border-radius: 6px; background: white; border-left: 4px solid #dc3545; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">';
+                    echo '<div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">';
+                    echo '<div style="flex: 1;">';
+                    echo '<h5 style="margin: 0 0 5px 0; color: #212529; font-size: 14px; font-weight: bold;">' . esc_html($page['title'] ?: 'Untitled') . '</h5>';
+                    echo '<a href="' . esc_url($page['url']) . '" target="_blank" style="color: #007cba; text-decoration: none; font-size: 12px;">' . esc_html($page['url']) . '</a>';
                     echo '</div>';
+                    echo '<div style="display: flex; gap: 8px; margin-left: 15px;">';
+                    if ($page['a'] > 0) echo '<span style="background: #ffc107; color: #212529; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">A: ' . esc_html($page['a']) . '</span>';
+                    if ($page['aa'] > 0) echo '<span style="background: #fd7e14; color: white; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">AA: ' . esc_html($page['aa']) . '</span>';
+                    if ($page['aaa'] > 0) echo '<span style="background: #dc3545; color: white; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: bold;">AAA: ' . esc_html($page['aaa']) . '</span>';
+                    echo '</div></div>';
+                    
+                    // Show detailed issues if available
+                    if (!empty($page['issues']) && is_array($page['issues'])) {
+                      echo '<div style="background: #f8f9fa; padding: 10px; border-radius: 4px; margin-top: 10px;">';
+                      echo '<strong style="color: #495057; font-size: 12px; display: block; margin-bottom: 8px;">' . esc_html__('Issues Found:', 'meacodes-accessibility-tools') . '</strong>';
+                      echo '<ul style="margin: 0; padding-left: 20px; font-size: 12px; color: #6c757d;">';
+                      foreach ($page['issues'] as $issue) {
+                        echo '<li style="margin-bottom: 4px;">' . esc_html($issue) . '</li>';
+                      }
+                      echo '</ul></div>';
+                    }
                     echo '</div>';
                   }
+                  
+                  echo '</div></div></div>';
                 }
-                
-                echo '</div>';
-                echo '</div>';
               }
               
               echo '</div>';
@@ -732,12 +752,14 @@ function meaAccessibility_admin_thm() {
             // Add active class to scan tab (4th tab)
             tabs[3].classList.add('meaAccessibility_nav-tab-active');
             
-            // Hide all tab panes
+            // Hide all tab panes using consistent method
             tabContents.forEach(pane => {
+              pane.classList.remove('meaAccessibility_active');
               pane.style.display = 'none';
             });
-            // Show scan tab pane (4th pane)
+            // Show scan tab pane (4th pane) using consistent method
             if (tabContents[3]) {
+              tabContents[3].classList.add('meaAccessibility_active');
               tabContents[3].style.display = 'block';
             }
             
@@ -748,6 +770,41 @@ function meaAccessibility_admin_thm() {
                 resultsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
               }
             }, 100);
+          }
+        }
+        
+        // Additional check for scan tab if coming from dashboard
+        if (window.location.search.includes('tab=scan') || window.location.hash === '#scan-results-display') {
+          // Force switch to scan tab
+          const tabs = document.querySelectorAll('.meaAccessibility_nav-tab');
+          const tabContents = document.querySelectorAll('.meaAccessibility_tab-pane');
+          
+          if (tabs.length >= 4) {
+            // Remove active class from all tabs
+            tabs.forEach(tab => {
+              tab.classList.remove('meaAccessibility_nav-tab-active');
+            });
+            // Add active class to scan tab (4th tab)
+            tabs[3].classList.add('meaAccessibility_nav-tab-active');
+            
+            // Hide all tab panes using consistent method
+            tabContents.forEach(pane => {
+              pane.classList.remove('meaAccessibility_active');
+              pane.style.display = 'none';
+            });
+            // Show scan tab pane (4th pane) using consistent method
+            if (tabContents[3]) {
+              tabContents[3].classList.add('meaAccessibility_active');
+              tabContents[3].style.display = 'block';
+            }
+            
+            // Scroll to results after tab switch
+            setTimeout(function() {
+              const resultsElement = document.getElementById('scan-results-display');
+              if (resultsElement) {
+                resultsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }, 200);
           }
         }
         
@@ -765,12 +822,16 @@ function meaAccessibility_admin_thm() {
             tabs.forEach((t) => t.classList.remove('meaAccessibility_nav-tab-active'));
             tab.classList.add('meaAccessibility_nav-tab-active');      
             
-            // Hide all tab contents
-            tabContents.forEach((content) => content.classList.remove('meaAccessibility_active'));
+            // Hide all tab contents using consistent method
+            tabContents.forEach((content) => {
+              content.classList.remove('meaAccessibility_active');
+              content.style.display = 'none';
+            });
             
-            // Show the selected tab content
+            // Show the selected tab content using consistent method
             if (tabContents[index]) {
-            tabContents[index].classList.add('meaAccessibility_active');
+              tabContents[index].classList.add('meaAccessibility_active');
+              tabContents[index].style.display = 'block';
               // Debug code removed for production
             } else {
               // Debug code removed for production

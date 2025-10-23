@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
-"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
-"PO-Revision-Date: 2025-10-18 22:48+0330\n"
+"POT-Creation-Date: 2025-10-23T14:20:40+00:00\n"
+"PO-Revision-Date: 2025-10-23 18:26+0330\n"
 "Last-Translator: \n"
 "Language-Team: meacodes <info@meacodes.com>\n"
 "Language: nl\n"
@@ -35,7 +35,7 @@ msgstr ""
 "gemakkelijk te gebruiken."
 
 #. Author of the plugin
-#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
+#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:858
 msgid "Meacodes Development Solutions"
 msgstr "Meacodes Development Solutions"
 
@@ -182,12 +182,11 @@ msgstr "scannen, even geduld…"
 msgid "Just now"
 msgstr "Zojuist"
 
-#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
+#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:672
 msgid "Pages with Issues"
 msgstr "Pagina's met Problemen"
 
-#: assets/admin/admin-theme.php:304
-
+#: assets/admin/admin-theme.php:304 assets/admin/admin-theme.php:692
 msgid "Issues Found:"
 msgstr "Gevonden Problemen:"
 
@@ -219,7 +218,7 @@ msgid "Accessibility Issues Found"
 msgstr "Toegankelijkheidsproblemen Gevonden"
 
 #: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
-#: includes/class-quickscan-admin.php:274
+#: includes/class-quickscan-admin.php:363
 msgid "Scan failed. Please try again."
 msgstr "Scan mislukt. Probeer opnieuw."
 
@@ -435,15 +434,15 @@ msgstr "Voer Toegankelijkheid Scan Nu Uit"
 msgid "Last Scan Results"
 msgstr "Laatste Scan Resultaten"
 
-#: assets/admin/admin-theme.php:701
+#: assets/admin/admin-theme.php:721
 msgid "Save Changes"
 msgstr "Wijzigingen Opslaan"
 
-#: assets/admin/admin-theme.php:706
+#: assets/admin/admin-theme.php:726
 msgid "Reset Settings"
 msgstr "Instellingen Resetten"
 
-#: assets/admin/admin-theme.php:710
+#: assets/admin/admin-theme.php:730
 msgid ""
 "Save Changes will save all settings across all tabs. Reset Settings will "
 "restore all options to their default values."
@@ -451,7 +450,7 @@ msgstr ""
 "Wijzigingen Opslaan zal alle instellingen opslaan over alle tabbladen. "
 "Instellingen Resetten zal alle opties herstellen naar hun standaardwaarden."
 
-#: assets/admin/admin-theme.php:799
+#: assets/admin/admin-theme.php:860
 msgid "Accessibility Tools Version: "
 msgstr "Toegankelijkheidstools Versie: "
 
@@ -617,7 +616,7 @@ msgid "MeacodesQuickScan_Scheduler class not found"
 msgstr "MeacodesQuickScan_Scheduler klasse niet gevonden"
 
 #: includes/class-quickscan-admin.php:138
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:326
 msgid "Error:"
 msgstr "Fout:"
 
@@ -649,37 +648,75 @@ msgstr "Voer uw eerste toegankelijkheidsscan uit om hier resultaten te zien."
 msgid "Error"
 msgstr "Fout"
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:219
+msgid "Quick Actions"
+msgstr "Snelle Acties"
+
+#: includes/class-quickscan-admin.php:227
+msgid "Perform New Scan"
+msgstr "Nieuwe Scan Uitvoeren"
+
+#: includes/class-quickscan-admin.php:238
 msgid "Lightweight summary only."
 msgstr "Alleen lichte samenvatting."
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:238
 msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
 msgstr ""
 "Volledige pagina-voor-pagina rapporten & reparatiegidsen zullen beschikbaar "
 "zijn in Pro v2."
 
-#: includes/class-quickscan-admin.php:222
+#: includes/class-quickscan-admin.php:242
 msgid "Read More / Join Airdrop"
 msgstr "Lees Meer / Doe Mee aan Airdrop"
 
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:266
+msgid "Scanning..."
+msgstr "Scannen..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Scan in progress..."
+msgstr "Scan in uitvoering..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Please wait while we scan your website."
+msgstr "Wacht terwijl we uw website scannen."
+
+#: includes/class-quickscan-admin.php:288
+#: includes/class-quickscan-admin.php:362
+msgid "Scan completed successfully!"
+msgstr "Scan succesvol voltooid!"
+
+#: includes/class-quickscan-admin.php:288
+msgid "Redirecting to results..."
+msgstr "Doorverwijzen naar resultaten..."
+
+#: includes/class-quickscan-admin.php:299
+#: includes/class-quickscan-admin.php:310
+msgid "Scan failed:"
+msgstr "Scan mislukt:"
+
+#: includes/class-quickscan-admin.php:299
+msgid "Unknown error occurred"
+msgstr "Onbekende fout opgetreden"
+
+#: includes/class-quickscan-admin.php:310
+msgid "Network error occurred"
+msgstr "Netwerkfout opgetreden"
+
+#: includes/class-quickscan-admin.php:326
 msgid "Unable to display accessibility scan widget."
 msgstr "Kan toegankelijkheidsscan widget niet weergeven."
 
-#: includes/class-quickscan-admin.php:249
+#: includes/class-quickscan-admin.php:338
 #: includes/class-quickscan-scheduler.php:69
 #: includes/class-quickscan-scheduler.php:127
 msgid "You do not have permission to run scans."
 msgstr "Je hebt geen toestemming om scans uit te voeren."
 
-#: includes/class-quickscan-admin.php:272
+#: includes/class-quickscan-admin.php:361
 msgid "Scan is running..."
 msgstr "Scan wordt uitgevoerd..."
-
-#: includes/class-quickscan-admin.php:273
-msgid "Scan completed successfully!"
-msgstr "Scan succesvol voltooid!"
 
 #. translators: %d is the number of images without alt text
 #: includes/class-quickscan-checks.php:64

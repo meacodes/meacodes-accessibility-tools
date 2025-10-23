@@ -1256,44 +1256,131 @@ body.meaAccessibility_blackAndWhite .meaAccessibility_widget .meaAccessibility_t
     color: #fff !important;
 }
 
-html.meaAccessibility_grayscale body>* {
-    -webkit-filter: grayscale(1) !important;
-    filter: grayscale(1) !important;
+/* Filter overlay approach - no direct body filtering */
+.meaAccessibility-filter-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-html.meaAccessibility_grayscale.meaAccessibility_contrast body>* {
-    -webkit-filter: grayscale(1) contrast(1.3) !important;
-    filter: grayscale(1) contrast(1.3) !important;
+html.meaAccessibility_grayscale .meaAccessibility-filter-overlay {
+    opacity: 1;
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
 }
 
-html.meaAccessibility_grayscale.meaAccessibility_contrast.meaAccessibility_negativ body>* {
-    -webkit-filter: grayscale(1) contrast(1.3) invert(1) !important;
-    filter: grayscale(1) contrast(1.3) invert(1) !important;
+html.meaAccessibility_contrast .meaAccessibility-filter-overlay {
+    opacity: 1;
+    backdrop-filter: contrast(150%);
+    -webkit-backdrop-filter: contrast(150%);
+    background: rgba(0, 0, 0, 0.1);
 }
 
-html.meaAccessibility_contrast body>* {
-    -webkit-filter: contrast(1.3) !important;
-    filter: contrast(1.3) !important;
+html.meaAccessibility_negativ .meaAccessibility-filter-overlay {
+    opacity: 1;
+    backdrop-filter: invert(100%);
+    -webkit-backdrop-filter: invert(100%);
 }
 
-html.meaAccessibility_contrast.meaAccessibility_negativ body>* {
-    -webkit-filter: contrast(1.3) invert(1) !important;
-    filter: contrast(1.3) invert(1) !important;
+/* Base filter overlay - exact same as modern-theme.php */
+.meacodes-filter-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-html.meaAccessibility_negativ body>* {
-    -webkit-filter: invert(1) !important;
-    filter: invert(1) !important;
+/* Invert colors effect - using body class like modern-theme.php */
+body.meacodes-invert-colors .meacodes-filter-overlay {
+    opacity: 1;
+    backdrop-filter: invert(100%);
+    -webkit-backdrop-filter: invert(100%);
 }
+
+/* Simple approach - only use filter overlay like modern-theme.php */
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not (backdrop-filter: invert(100%)) {
+    body.meacodes-invert-colors .meacodes-filter-overlay {
+        background: rgba(255, 255, 255, 0.8);
+        mix-blend-mode: difference;
+    }
+}
+
+/* Plugin elements excluded from negative effect only */
+body.meacodes-invert-colors .meaAccessibility_externalToggle,
+body.meacodes-invert-colors #meaAccessibility_externalToggle,
+body.meacodes-invert-colors .meaAccessibility_widget,
+body.meacodes-invert-colors .meaAccessibility_widget *,
+body.meacodes-invert-colors [class*="meaAccessibility"],
+body.meacodes-invert-colors [id*="meaAccessibility"] {
+    filter: none !important;
+    -webkit-filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+/* Exclude plugin button from black and white feature */
+body.meaAccessibility_blackAndWhite .meaAccessibility_externalToggle,
+body.meaAccessibility_blackAndWhite #meaAccessibility_externalToggle {
+    filter: none !important;
+    -webkit-filter: none !important;
+    background-color: #000 !important;
+    background: #000 !important;
+}
+
+/* Make image inside plugin button have black background */
+body.meaAccessibility_blackAndWhite #meaAccessibility_externalToggle img {
+    background-color: #000 !important;
+    background: #000 !important;
+}
+
+/* Negative effect handled by filter overlay only - no direct body filtering */
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not (backdrop-filter: invert(100%)) {
+    html.meaAccessibility_grayscale .meaAccessibility-filter-overlay {
+        background: linear-gradient(45deg, #000, #fff);
+        mix-blend-mode: color;
+    }
+    
+    html.meaAccessibility_contrast .meaAccessibility-filter-overlay {
+        background: rgba(0, 0, 0, 0.2);
+        mix-blend-mode: multiply;
+    }
+    
+    html.meaAccessibility_negativ .meaAccessibility-filter-overlay {
+        background: rgba(255, 255, 255, 0.8);
+        mix-blend-mode: difference;
+    }
+}
+
+/* Removed old body filtering approach - now using filter overlay */
+
+/* Removed old body filtering approach - now using filter overlay */
+
+/* Removed old body filtering approach - now using filter overlay */
+
+/* Removed old body filtering approach - now using filter overlay */
+
+/* Removed old body filtering approach - now using filter overlay */
 
 html.meaAccessibility_negativ body {
     background: #000 !important;
 }
 
-html.meaAccessibility_negativ.meaAccessibility_grayscale body>* {
-    -webkit-filter: grayscale(1) invert(1) !important;
-    filter: grayscale(1) invert(1) !important;
-}
+/* Removed old body filtering approach - now using filter overlay */
 
 @media screen and (max-width: 992px) and (max-height: 600px) {
     .meaAccessibility_widget.meaAccessibility_widgetOpen {

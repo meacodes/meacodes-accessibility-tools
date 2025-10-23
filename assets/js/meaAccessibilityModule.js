@@ -114,6 +114,22 @@ jQuery(document).ready(function(e) {
                             (function(e) {
                                 localStorage.setItem("meaAcM__grayscale", e.toString());
                             })(n);
+                        
+                        // Create or remove filter overlay for grayscale effect
+                        if (n) {
+                            var filterOverlay = document.getElementById('meaAccessibility-filter-overlay');
+                            if (!filterOverlay) {
+                                filterOverlay = document.createElement('div');
+                                filterOverlay.id = 'meaAccessibility-filter-overlay';
+                                filterOverlay.className = 'meaAccessibility-filter-overlay';
+                                document.body.appendChild(filterOverlay);
+                            }
+                        } else {
+                            var filterOverlay = document.getElementById('meaAccessibility-filter-overlay');
+                            if (filterOverlay) {
+                                filterOverlay.remove();
+                            }
+                        }
                     }),
                     e(document).ready(function() {
                         "true" === localStorage.getItem("meaAcM__contrast") && (e(".meaAcM__contrast").prop("checked", !0), e("html").addClass("meaAccessibility_contrast"));
@@ -127,6 +143,22 @@ jQuery(document).ready(function(e) {
                             (function(e) {
                                 localStorage.setItem("meaAcM__contrast", e.toString());
                             })(n);
+                        
+                        // Create or remove filter overlay for contrast effect
+                        if (n) {
+                            var filterOverlay = document.getElementById('meaAccessibility-filter-overlay');
+                            if (!filterOverlay) {
+                                filterOverlay = document.createElement('div');
+                                filterOverlay.id = 'meaAccessibility-filter-overlay';
+                                filterOverlay.className = 'meaAccessibility-filter-overlay';
+                                document.body.appendChild(filterOverlay);
+                            }
+                        } else {
+                            var filterOverlay = document.getElementById('meaAccessibility-filter-overlay');
+                            if (filterOverlay) {
+                                filterOverlay.remove();
+                            }
+                        }
                     }),
                     e(document).ready(function() {
                         "true" === localStorage.getItem("meaAcM__negativ") && (e(".meaAcM__negativ").prop("checked", !0), e("html").addClass("meaAccessibility_negativ"));
@@ -140,6 +172,26 @@ jQuery(document).ready(function(e) {
                             (function(e) {
                                 localStorage.setItem("meaAcM__negativ", e.toString());
                             })(n);
+                        
+                        // Create or remove filter overlay for negative effect - same as modern-theme.php
+                        if (n) {
+                            var filterOverlay = document.getElementById('meacodes-filter-overlay');
+                            if (!filterOverlay) {
+                                filterOverlay = document.createElement('div');
+                                filterOverlay.id = 'meacodes-filter-overlay';
+                                filterOverlay.className = 'meacodes-filter-overlay';
+                                document.body.appendChild(filterOverlay);
+                            }
+                            // Add the class to body like modern-theme.php
+                            document.body.classList.add('meacodes-invert-colors');
+                        } else {
+                            var filterOverlay = document.getElementById('meacodes-filter-overlay');
+                            if (filterOverlay) {
+                                filterOverlay.remove();
+                            }
+                            // Remove the class from body like modern-theme.php
+                            document.body.classList.remove('meacodes-invert-colors');
+                        }
                     }),
                     e(document).ready(function() {
                         "true" === localStorage.getItem("meaAcM__underlinedLinks") && (e(".meaAcM__underlinedLinks").prop("checked", !0), e("body").addClass("meaAccessibility_aUnderlined"));

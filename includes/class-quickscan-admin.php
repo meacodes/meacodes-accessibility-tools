@@ -213,6 +213,26 @@ class MeacodesQuickScan_Admin {
                 </div>
             <?php endif; ?>
             
+            <!-- New Scan Button Section -->
+            <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; padding: 20px; border: 1px solid #dee2e6; margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <h4 style="margin: 0; color: #495057; font-size: 16px; font-weight: 600;"><?php esc_html_e('Quick Actions', 'meacodes-accessibility-tools'); ?></h4>
+                </div>
+                
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button id="dashboard-run-scan" type="button" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);" 
+                            onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 4px 8px rgba(40, 167, 69, 0.4)'"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(40, 167, 69, 0.3)'">
+                        <span style="margin-right: 6px;">🔍</span>
+                        <?php esc_html_e('Perform New Scan', 'meacodes-accessibility-tools'); ?>
+                    </button>
+                </div>
+                
+                <div id="dashboard-scan-status" style="margin-top: 15px; display: none;">
+                    <!-- Scan status will be shown here -->
+                </div>
+            </div>
+            
             <div style="background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%); border-radius: 8px; padding: 15px; border: 1px solid #c3e6cb; margin-bottom: 15px;">
                 <p style="margin: 0 0 10px 0; color: #155724; font-size: 14px; font-weight: 500;">
                     <strong><?php esc_html_e('Lightweight summary only.', 'meacodes-accessibility-tools'); ?></strong> <?php esc_html_e('Full page-by-page reports & fixes guides will be available in Pro v2.', 'meacodes-accessibility-tools'); ?>
@@ -230,6 +250,75 @@ class MeacodesQuickScan_Admin {
                 100% { transform: rotate(360deg); }
             }
         </style>
+        
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scanButton = document.getElementById('dashboard-run-scan');
+            const statusDiv = document.getElementById('dashboard-scan-status');
+            
+            if (scanButton && statusDiv) {
+                scanButton.addEventListener('click', function() {
+                    const button = this;
+                    const originalText = button.innerHTML;
+                    
+                    // Disable button and show loading state
+                    button.disabled = true;
+                    button.innerHTML = '<span style="margin-right: 6px;">⏳</span><?php echo esc_js(__('Scanning...', 'meacodes-accessibility-tools')); ?>';
+                    button.style.backgroundColor = '#6c757d';
+                    button.style.cursor = 'not-allowed';
+                    
+                    // Show status
+                    statusDiv.style.display = 'block';
+                    statusDiv.innerHTML = '<div style="background: #e3f2fd; border: 1px solid #90caf9; border-radius: 6px; padding: 15px; color: #1976d2; font-size: 14px;"><strong><?php echo esc_js(__('Scan in progress...', 'meacodes-accessibility-tools')); ?></strong> <?php echo esc_js(__('Please wait while we scan your website.', 'meacodes-accessibility-tools')); ?></div>';
+                    
+                    // Create AJAX request
+                    const formData = new FormData();
+                    formData.append('action', 'meacodes_run_manual_scan');
+                    formData.append('nonce', '<?php echo esc_js(wp_create_nonce('meacodes_quickscan_nonce')); ?>');
+                    formData.append('max_pages', '35'); // Default page limit
+                    
+                    fetch('<?php echo esc_url(admin_url('admin-ajax.php')); ?>', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Success - show success message and redirect to scan results
+                            statusDiv.innerHTML = '<div style="background: #d4edda; border: 1px solid #c3e6cb; border-radius: 6px; padding: 15px; color: #155724; font-size: 14px;"><strong><?php echo esc_js(__('Scan completed successfully!', 'meacodes-accessibility-tools')); ?></strong> <?php echo esc_js(__('Redirecting to results...', 'meacodes-accessibility-tools')); ?></div>';
+                            
+                            // Redirect to scan results section after 2 seconds
+                            setTimeout(function() {
+                                // Build URL manually to avoid encoding issues
+                                const baseUrl = '<?php echo esc_url(admin_url('admin.php')); ?>';
+                                const redirectUrl = baseUrl + '?page=meaAccessibility_settings_page&tab=scan#scan-results-display';
+                                window.location.replace(redirectUrl);
+                            }, 2000);
+                        } else {
+                            // Error
+                            statusDiv.innerHTML = '<div style="background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 6px; padding: 15px; color: #721c24; font-size: 14px;"><strong><?php echo esc_js(__('Scan failed:', 'meacodes-accessibility-tools')); ?></strong> ' + (data.data || '<?php echo esc_js(__('Unknown error occurred', 'meacodes-accessibility-tools')); ?>') + '</div>';
+                            
+                            // Re-enable button
+                            button.disabled = false;
+                            button.innerHTML = originalText;
+                            button.style.backgroundColor = '';
+                            button.style.cursor = '';
+                        }
+                    })
+                    .catch(error => {
+                        // Network or other error
+                        statusDiv.innerHTML = '<div style="background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 6px; padding: 15px; color: #721c24; font-size: 14px;"><strong><?php echo esc_js(__('Scan failed:', 'meacodes-accessibility-tools')); ?></strong> <?php echo esc_js(__('Network error occurred', 'meacodes-accessibility-tools')); ?></div>';
+                        
+                        // Re-enable button
+                        button.disabled = false;
+                        button.innerHTML = originalText;
+                        button.style.backgroundColor = '';
+                        button.style.cursor = '';
+                    });
+                });
+            }
+        });
+        </script>
         <?php
         } catch (Exception $e) {
             // If anything fails in the widget display, show a safe error message

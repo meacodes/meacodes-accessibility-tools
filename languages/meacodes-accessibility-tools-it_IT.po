@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
-"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
-"PO-Revision-Date: 2025-10-18 22:47+0330\n"
+"POT-Creation-Date: 2025-10-23T14:20:40+00:00\n"
+"PO-Revision-Date: 2025-10-23 18:25+0330\n"
 "Last-Translator: \n"
 "Language-Team: meacodes <info@meacodes.com>\n"
 "Language: it\n"
@@ -35,7 +35,7 @@ msgstr ""
 "utilizzare il web facilmente."
 
 #. Author of the plugin
-#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
+#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:858
 msgid "Meacodes Development Solutions"
 msgstr "Meacodes Development Solutions"
 
@@ -182,12 +182,11 @@ msgstr "scansione in corso, attendere prego..."
 msgid "Just now"
 msgstr "Proprio ora"
 
-#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
+#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:672
 msgid "Pages with Issues"
 msgstr "Pagine con Problemi"
 
-#: assets/admin/admin-theme.php:304
-
+#: assets/admin/admin-theme.php:304 assets/admin/admin-theme.php:692
 msgid "Issues Found:"
 msgstr "Problemi Trovati:"
 
@@ -219,7 +218,7 @@ msgid "Accessibility Issues Found"
 msgstr "Problemi di Accessibilità Trovati"
 
 #: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
-#: includes/class-quickscan-admin.php:274
+#: includes/class-quickscan-admin.php:363
 msgid "Scan failed. Please try again."
 msgstr "Scansione fallita. Riprova."
 
@@ -436,15 +435,15 @@ msgstr "Esegui Scansione Accessibilità Ora"
 msgid "Last Scan Results"
 msgstr "Risultati Ultima Scansione"
 
-#: assets/admin/admin-theme.php:701
+#: assets/admin/admin-theme.php:721
 msgid "Save Changes"
 msgstr "Salva Modifiche"
 
-#: assets/admin/admin-theme.php:706
+#: assets/admin/admin-theme.php:726
 msgid "Reset Settings"
 msgstr "Ripristina Impostazioni"
 
-#: assets/admin/admin-theme.php:710
+#: assets/admin/admin-theme.php:730
 msgid ""
 "Save Changes will save all settings across all tabs. Reset Settings will "
 "restore all options to their default values."
@@ -452,7 +451,7 @@ msgstr ""
 "Salva Modifiche salverà tutte le impostazioni in tutte le schede. Ripristina "
 "Impostazioni ripristinerà tutte le opzioni ai loro valori predefiniti."
 
-#: assets/admin/admin-theme.php:799
+#: assets/admin/admin-theme.php:860
 msgid "Accessibility Tools Version: "
 msgstr "Versione Strumenti Accessibilità: "
 
@@ -620,7 +619,7 @@ msgid "MeacodesQuickScan_Scheduler class not found"
 msgstr "Classe MeacodesQuickScan_Scheduler non trovata"
 
 #: includes/class-quickscan-admin.php:138
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:326
 msgid "Error:"
 msgstr "Errore:"
 
@@ -654,37 +653,75 @@ msgstr ""
 msgid "Error"
 msgstr "Errore"
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:219
+msgid "Quick Actions"
+msgstr "Azioni Rapide"
+
+#: includes/class-quickscan-admin.php:227
+msgid "Perform New Scan"
+msgstr "Esegui Nuova Scansione"
+
+#: includes/class-quickscan-admin.php:238
 msgid "Lightweight summary only."
 msgstr "Solo riassunto leggero."
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:238
 msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
 msgstr ""
 "I rapporti completi pagina per pagina e le guide di riparazione saranno "
 "disponibili in Pro v2."
 
-#: includes/class-quickscan-admin.php:222
+#: includes/class-quickscan-admin.php:242
 msgid "Read More / Join Airdrop"
 msgstr "Leggi di Più / Unisciti all'Airdrop"
 
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:266
+msgid "Scanning..."
+msgstr "Scansionando..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Scan in progress..."
+msgstr "Scansione in corso..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Please wait while we scan your website."
+msgstr "Attendere mentre scansioniamo il tuo sito web."
+
+#: includes/class-quickscan-admin.php:288
+#: includes/class-quickscan-admin.php:362
+msgid "Scan completed successfully!"
+msgstr "Scansione completata con successo!"
+
+#: includes/class-quickscan-admin.php:288
+msgid "Redirecting to results..."
+msgstr "Reindirizzamento ai risultati..."
+
+#: includes/class-quickscan-admin.php:299
+#: includes/class-quickscan-admin.php:310
+msgid "Scan failed:"
+msgstr "Scansione fallita:"
+
+#: includes/class-quickscan-admin.php:299
+msgid "Unknown error occurred"
+msgstr "Si è verificato un errore sconosciuto"
+
+#: includes/class-quickscan-admin.php:310
+msgid "Network error occurred"
+msgstr "Si è verificato un errore di rete"
+
+#: includes/class-quickscan-admin.php:326
 msgid "Unable to display accessibility scan widget."
 msgstr "Impossibile visualizzare il widget di scansione di accessibilità."
 
-#: includes/class-quickscan-admin.php:249
+#: includes/class-quickscan-admin.php:338
 #: includes/class-quickscan-scheduler.php:69
 #: includes/class-quickscan-scheduler.php:127
 msgid "You do not have permission to run scans."
 msgstr "Non hai il permesso di eseguire scansioni."
 
-#: includes/class-quickscan-admin.php:272
+#: includes/class-quickscan-admin.php:361
 msgid "Scan is running..."
 msgstr "Scansione in corso..."
-
-#: includes/class-quickscan-admin.php:273
-msgid "Scan completed successfully!"
-msgstr "Scansione completata con successo!"
 
 #. translators: %d is the number of images without alt text
 #: includes/class-quickscan-checks.php:64

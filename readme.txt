@@ -4,7 +4,7 @@ Donate link: https://nowpayments.io/donation/meacodes
 Tags: accessibility, a11y, Section 508, wcag, toolbar
 Requires at least: 4.0
 Tested up to: 6.8
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -194,3 +194,14 @@ We truly appreciate any contribution you can make.
   - Russian (ru_RU)
   - Turkish (tr_TR)
   - Chinese Simplified (zh_CN)
+
+= 1.2.1 =
+* Fixed tab navigation issue when accessing scan results from dashboard widget
+* Added "Perform New Scan" button to dashboard widget for quick access
+* Improved tab switching consistency across admin interface
+* Enhanced dashboard widget with Quick Actions section
+* Fixed JavaScript tab handling for better user experience
+* Fixed plugin button positioning issues with accessibility features (grayscale, contrast, negative)
+* Fixed negative feature to properly invert all colors and backgrounds
+* Fixed black and white feature plugin button background visibility
+* Enhanced CSS and JavaScript loading with proper WordPress enqueuing

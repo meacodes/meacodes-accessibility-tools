@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meacodes Accessibility Tools 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
-"POT-Creation-Date: 2025-10-18T19:27:39+00:00\n"
-"PO-Revision-Date: 2025-10-18 23:03+0330\n"
+"POT-Creation-Date: 2025-10-23T14:20:40+00:00\n"
+"PO-Revision-Date: 2025-10-23 18:25+0330\n"
 "Last-Translator: \n"
 "Language-Team: meacodes <info@meacodes.com>\n"
 "Language: fa\n"
@@ -28,14 +28,13 @@ msgstr "https://www.meacodes.com/accessibility"
 #. Description of the plugin
 #: meacodes-accessibility-tools.php
 msgid ""
-"This is an accessibility tools for people with disabilities to use the web "
-"easily."
+"This is an accessibility tools for people with disabilities to use the web easily."
 msgstr ""
-"این ابزارهای دسترسی‌پذیری برای افراد دارای معلولیت هستند تا بتوانند به راحتی از "
-"وب استفاده کنند."
+"این ابزارهای دسترسی‌پذیری برای افراد دارای معلولیت هستند تا بتوانند به راحتی از وب "
+"استفاده کنند."
 
 #. Author of the plugin
-#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:797
+#: meacodes-accessibility-tools.php assets/admin/admin-theme.php:858
 msgid "Meacodes Development Solutions"
 msgstr "Meacodes Development Solutions"
 
@@ -70,13 +69,13 @@ msgstr "توجه"
 
 #: assets/admin/admin-theme.php:109
 msgid ""
-"We updated the plugin button logic to enable more customization. If after "
-"updating it does not work on your site, this is likely a cache issue. Please "
-"clear your server and browser cache, then refresh the page."
+"We updated the plugin button logic to enable more customization. If after updating "
+"it does not work on your site, this is likely a cache issue. Please clear your "
+"server and browser cache, then refresh the page."
 msgstr ""
-"ما منطق دکمه پلاگین را به‌روزرسانی کردیم تا شخصی‌سازی بیشتری را فعال کنیم. اگر پس "
-"از به‌روزرسانی در سایت شما کار نکند، احتمالاً مشکل کش است. لطفاً کش سرور و مرورگر "
-"خود را پاک کنید، سپس صفحه را تازه کنید."
+"ما منطق دکمه پلاگین را به‌روزرسانی کردیم تا شخصی‌سازی بیشتری را فعال کنیم. اگر پس از "
+"به‌روزرسانی در سایت شما کار نکند، احتمالاً مشکل کش است. لطفاً کش سرور و مرورگر خود را "
+"پاک کنید، سپس صفحه را تازه کنید."
 
 #: assets/admin/admin-theme.php:111
 msgid "Close notice"
@@ -101,8 +100,8 @@ msgstr "دسترسی‌پذیری"
 
 #: assets/admin/admin-theme.php:140
 msgid ""
-"This means that the plugin name is a default and automatic translation of the "
-"word Accessibility."
+"This means that the plugin name is a default and automatic translation of the word "
+"Accessibility."
 msgstr ""
 "این به معنای آن است که نام پلاگین ترجمه پیش‌فرض و خودکار کلمه دسترسی‌پذیری است."
 
@@ -119,23 +118,22 @@ msgid ""
 "If you do not want any text to be displayed in that section, Clear default name "
 "and save changes."
 msgstr ""
-"اگر نمی‌خواهید هیچ متنی در آن بخش نمایش داده شود، نام پیش‌فرض را پاک کنید و "
-"تغییرات را ذخیره کنید."
+"اگر نمی‌خواهید هیچ متنی در آن بخش نمایش داده شود، نام پیش‌فرض را پاک کنید و تغییرات "
+"را ذخیره کنید."
 
 #: assets/admin/admin-theme.php:146
 msgid ""
 "If your site is multilingual (using Polylang), keep in mind that if you change "
-"this name, the name you choose will be displayed without translation and fixed "
-"in all languages unless you rebuild the plugins language file with Polylang and "
-"enter the translation of the chosen name. Also, if you want the chosen name to "
-"revert to the default name and be displayed translated in any language, reset "
-"settings once."
+"this name, the name you choose will be displayed without translation and fixed in "
+"all languages unless you rebuild the plugins language file with Polylang and enter "
+"the translation of the chosen name. Also, if you want the chosen name to revert to "
+"the default name and be displayed translated in any language, reset settings once."
 msgstr ""
-"اگر سایت شما چندزبانه است (با استفاده از Polylang)، در نظر داشته باشید که اگر "
-"این نام را تغییر دهید، نام انتخابی شما بدون ترجمه و ثابت در تمام زبان‌ها نمایش "
-"داده می‌شود مگر اینکه فایل زبان پلاگین‌ها را با Polylang بازسازی کنید و ترجمه نام "
-"انتخابی را وارد کنید. همچنین، اگر می‌خواهید نام انتخابی به نام پیش‌فرض برگردد و در "
-"هر زبانی ترجمه شده نمایش داده شود، تنظیمات را یک بار بازنشانی کنید."
+"اگر سایت شما چندزبانه است (با استفاده از Polylang)، در نظر داشته باشید که اگر این "
+"نام را تغییر دهید، نام انتخابی شما بدون ترجمه و ثابت در تمام زبان‌ها نمایش داده "
+"می‌شود مگر اینکه فایل زبان پلاگین‌ها را با Polylang بازسازی کنید و ترجمه نام انتخابی "
+"را وارد کنید. همچنین، اگر می‌خواهید نام انتخابی به نام پیش‌فرض برگردد و در هر زبانی "
+"ترجمه شده نمایش داده شود، تنظیمات را یک بار بازنشانی کنید."
 
 #: assets/admin/admin-theme.php:152
 msgid "Enable or Disable GDPR Notice:"
@@ -177,11 +175,11 @@ msgstr "در حال اسکن، لطفاً صبر کنید…"
 msgid "Just now"
 msgstr "همین الان"
 
-#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:664
+#: assets/admin/admin-theme.php:285 assets/admin/admin-theme.php:672
 msgid "Pages with Issues"
 msgstr "صفحات دارای مشکل"
 
-#: assets/admin/admin-theme.php:304
+#: assets/admin/admin-theme.php:304 assets/admin/admin-theme.php:692
 msgid "Issues Found:"
 msgstr "مشکلات یافت شده:"
 
@@ -213,19 +211,19 @@ msgid "Accessibility Issues Found"
 msgstr "مشکلات دسترسی‌پذیری یافت شد"
 
 #: assets/admin/admin-theme.php:345 assets/admin/admin-theme.php:349
-#: includes/class-quickscan-admin.php:274
+#: includes/class-quickscan-admin.php:363
 msgid "Scan failed. Please try again."
 msgstr "اسکن ناموفق بود. لطفاً دوباره تلاش کنید."
 
 #: assets/admin/admin-theme.php:366
 msgid ""
-"The Accessibility plugin provides a set of tools and features to create an "
-"easier and more inclusive user experience for users with various needs. You can "
-"enable or disable each of these features individually."
+"The Accessibility plugin provides a set of tools and features to create an easier "
+"and more inclusive user experience for users with various needs. You can enable or "
+"disable each of these features individually."
 msgstr ""
-"پلاگین دسترسی‌پذیری مجموعه‌ای از ابزارها و ویژگی‌ها را برای ایجاد تجربه کاربری "
-"آسان‌تر و فراگیرتر برای کاربران با نیازهای مختلف فراهم می‌کند. شما می‌توانید هر یک "
-"از این ویژگی‌ها را به صورت جداگانه فعال یا غیرفعال کنید."
+"پلاگین دسترسی‌پذیری مجموعه‌ای از ابزارها و ویژگی‌ها را برای ایجاد تجربه کاربری آسان‌تر "
+"و فراگیرتر برای کاربران با نیازهای مختلف فراهم می‌کند. شما می‌توانید هر یک از این "
+"ویژگی‌ها را به صورت جداگانه فعال یا غیرفعال کنید."
 
 #: assets/admin/admin-theme.php:370
 msgid "Font Size Feature:"
@@ -427,15 +425,15 @@ msgstr "اجرای اسکن دسترسی‌پذیری اکنون"
 msgid "Last Scan Results"
 msgstr "نتایج آخرین اسکن"
 
-#: assets/admin/admin-theme.php:701
+#: assets/admin/admin-theme.php:721
 msgid "Save Changes"
 msgstr "ذخیره تغییرات"
 
-#: assets/admin/admin-theme.php:706
+#: assets/admin/admin-theme.php:726
 msgid "Reset Settings"
 msgstr "بازنشانی تنظیمات"
 
-#: assets/admin/admin-theme.php:710
+#: assets/admin/admin-theme.php:730
 msgid ""
 "Save Changes will save all settings across all tabs. Reset Settings will restore "
 "all options to their default values."
@@ -443,7 +441,7 @@ msgstr ""
 "ذخیره تغییرات تمام تنظیمات را در تمام تب‌ها ذخیره می‌کند. بازنشانی تنظیمات تمام "
 "گزینه‌ها را به مقادیر پیش‌فرض خود بازمی‌گرداند."
 
-#: assets/admin/admin-theme.php:799
+#: assets/admin/admin-theme.php:860
 msgid "Accessibility Tools Version: "
 msgstr "نسخه ابزارهای دسترسی‌پذیری: "
 
@@ -536,13 +534,12 @@ msgid ""
 "purposes. You can delete or block cookies in your browser settings at any time. "
 "Please note that doing so may affect your experience on the site."
 msgstr ""
-"این پلاگین از کوکی‌ها برای بهبود تجربه شما و ارائه تنظیمات شخصی‌سازی شده "
-"دسترسی‌پذیری استفاده می‌کند. این کوکی‌ها در مرورگر شما ذخیره می‌شوند و به ما اجازه "
-"می‌دهند تا ترجیحات شما را برای اندازه فونت، طرح‌های رنگی و سایر ویژگی‌های "
-"دسترسی‌پذیری به خاطر بسپاریم. با استفاده از این پلاگین، شما به استفاده از کوکی‌ها "
-"برای این اهداف رضایت می‌دهید. شما می‌توانید کوکی‌ها را در تنظیمات مرورگر خود در هر "
-"زمان حذف یا مسدود کنید. لطفاً توجه داشته باشید که این کار ممکن است تجربه شما در "
-"سایت را تحت تأثیر قرار دهد."
+"این پلاگین از کوکی‌ها برای بهبود تجربه شما و ارائه تنظیمات شخصی‌سازی شده دسترسی‌پذیری "
+"استفاده می‌کند. این کوکی‌ها در مرورگر شما ذخیره می‌شوند و به ما اجازه می‌دهند تا "
+"ترجیحات شما را برای اندازه فونت، طرح‌های رنگی و سایر ویژگی‌های دسترسی‌پذیری به خاطر "
+"بسپاریم. با استفاده از این پلاگین، شما به استفاده از کوکی‌ها برای این اهداف رضایت "
+"می‌دهید. شما می‌توانید کوکی‌ها را در تنظیمات مرورگر خود در هر زمان حذف یا مسدود کنید. "
+"لطفاً توجه داشته باشید که این کار ممکن است تجربه شما در سایت را تحت تأثیر قرار دهد."
 
 #: includes/class-admin-banner.php:129
 msgid "Close banner"
@@ -604,7 +601,7 @@ msgstr "نمی‌توان وضعیت اسکن را دریافت کرد:"
 msgid "MeacodesQuickScan_Scheduler class not found"
 msgstr "کلاس MeacodesQuickScan_Scheduler یافت نشد"
 
-#: includes/class-quickscan-admin.php:138 includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:138 includes/class-quickscan-admin.php:326
 msgid "Error:"
 msgstr "خطا:"
 
@@ -636,35 +633,70 @@ msgstr "اولین اسکن دسترسی‌پذیری خود را اجرا کن�
 msgid "Error"
 msgstr "خطا"
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:219
+msgid "Quick Actions"
+msgstr "اقدامات سریع"
+
+#: includes/class-quickscan-admin.php:227
+msgid "Perform New Scan"
+msgstr "انجام اسکن جدید"
+
+#: includes/class-quickscan-admin.php:238
 msgid "Lightweight summary only."
 msgstr "فقط خلاصه سبک."
 
-#: includes/class-quickscan-admin.php:218
+#: includes/class-quickscan-admin.php:238
 msgid "Full page-by-page reports & fixes guides will be available in Pro v2."
-msgstr ""
-"گزارش‌های کامل صفحه به صفحه و راهنمای‌های تعمیر در Pro v2 در دسترس خواهد بود."
+msgstr "گزارش‌های کامل صفحه به صفحه و راهنمای‌های تعمیر در Pro v2 در دسترس خواهد بود."
 
-#: includes/class-quickscan-admin.php:222
+#: includes/class-quickscan-admin.php:242
 msgid "Read More / Join Airdrop"
 msgstr "بیشتر بخوانید / به Airdrop بپیوندید"
 
-#: includes/class-quickscan-admin.php:237
+#: includes/class-quickscan-admin.php:266
+msgid "Scanning..."
+msgstr "در حال اسکن..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Scan in progress..."
+msgstr "اسکن در حال پیشرفت..."
+
+#: includes/class-quickscan-admin.php:272
+msgid "Please wait while we scan your website."
+msgstr "لطفاً منتظر بمانید تا وب‌سایت شما را اسکن کنیم."
+
+#: includes/class-quickscan-admin.php:288 includes/class-quickscan-admin.php:362
+msgid "Scan completed successfully!"
+msgstr "اسکن با موفقیت تکمیل شد!"
+
+#: includes/class-quickscan-admin.php:288
+msgid "Redirecting to results..."
+msgstr "در حال هدایت به نتایج..."
+
+#: includes/class-quickscan-admin.php:299 includes/class-quickscan-admin.php:310
+msgid "Scan failed:"
+msgstr "اسکن ناموفق:"
+
+#: includes/class-quickscan-admin.php:299
+msgid "Unknown error occurred"
+msgstr "خطای نامشخص رخ داد"
+
+#: includes/class-quickscan-admin.php:310
+msgid "Network error occurred"
+msgstr "خطای شبکه رخ داد"
+
+#: includes/class-quickscan-admin.php:326
 msgid "Unable to display accessibility scan widget."
 msgstr "نمی‌توان ویجت اسکن دسترسی‌پذیری را نمایش داد."
 
-#: includes/class-quickscan-admin.php:249 includes/class-quickscan-scheduler.php:69
+#: includes/class-quickscan-admin.php:338 includes/class-quickscan-scheduler.php:69
 #: includes/class-quickscan-scheduler.php:127
 msgid "You do not have permission to run scans."
 msgstr "شما مجوز اجرای اسکن‌ها را ندارید."
 
-#: includes/class-quickscan-admin.php:272
+#: includes/class-quickscan-admin.php:361
 msgid "Scan is running..."
 msgstr "اسکن در حال اجرا..."
-
-#: includes/class-quickscan-admin.php:273
-msgid "Scan completed successfully!"
-msgstr "اسکن با موفقیت تکمیل شد!"
 
 #. translators: %d is the number of images without alt text
 #: includes/class-quickscan-checks.php:64

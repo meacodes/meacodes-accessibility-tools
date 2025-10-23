@@ -3,7 +3,7 @@
 Plugin Name: Meacodes Accessibility Tools
 Plugin URI: https://www.meacodes.com/accessibility
 Description:This is an accessibility tools for people with disabilities to use the web easily.
-Version: 1.2.0
+Version: 1.2.1
 Author: Meacodes Development Solutions
 Author URI: https://www.meacodes.com
 License: GPLv2 or later
@@ -12,7 +12,7 @@ Text Domain: meacodes-accessibility-tools
 Domain Path: /languages
 */
 defined('ABSPATH') || exit;
-define('meaAccessibility_PLUGIN_VERSION', '1.2.0');
+define('meaAccessibility_PLUGIN_VERSION', '1.2.1');
 
 // Cache busting function for asset versioning
 function meaAccessibility_get_asset_version() {
@@ -349,6 +349,168 @@ add_action('wp_ajax_update_selected_color', 'update_selected_color');
 add_action('wp_enqueue_scripts', 'meaAccessibility_enqueue_plugin_assets');
 add_action('admin_init', 'meaAccessibility_admin_init');
 add_action('wp_footer', 'meaAccessibility_plugin_html_to_footer');
+
+// Add hook listener for airdrop pages
+add_action('meacodes_airdrop_page_loading', 'meaAccessibility_load_for_airdrop_pages');
+
+/**
+ * Load accessibility tools for airdrop pages
+ */
+function meaAccessibility_load_for_airdrop_pages($page_type) {
+    // Only load if plugin is enabled
+    if (!get_option('meaAccessibility_status_plugin', true)) {
+        return;
+    }
+    
+    // Load required CSS using wp_enqueue_style
+    $plugin_url = plugin_dir_url(__FILE__) . 'assets/Themes/Default_blue/';
+    $version = meaAccessibility_get_asset_version();
+    
+    wp_enqueue_style('mea-accessibility-theme', $plugin_url . 'theme.css', array(), $version);
+    wp_enqueue_style('mea-accessibility-general', $plugin_url . 'general.css', array(), $version);
+    
+    // Load RTL styles if needed
+    if (is_rtl()) {
+        wp_enqueue_style('mea-accessibility-general-rtl', $plugin_url . 'general-rtl.css', array(), $version);
+        wp_enqueue_style('mea-accessibility-theme-rtl', $plugin_url . 'theme-rtl.css', array(), $version);
+    }
+    
+    // Generate dynamic CSS with admin colors
+    $background_color = get_option('meaAccessibility_background_color', '#F8F3EE');
+    $labels_color = get_option('meaAccessibility_labels_color', '#373737');
+    $divider_line_color = get_option('meaAccessibility_divider_line_color', '#c4c4c4');
+    $plugin_logo_color = get_option('meaAccessibility_plugin_logo_color', '#3ABDDD');
+    $accent_color = get_option('meaAccessibility_accent_color', '#3ABDDD');
+    $buttons_hover_color = get_option('meaAccessibility_buttons_hover_color', '#207f97');
+    $buttons_color = get_option('meaAccessibility_buttons_color', '#3ABDDD');
+    ?>
+    <style>
+    /* Dynamic CSS for airdrop pages with admin colors */
+    .meaAccessibility_mainbg-admin {
+        background-color: <?php echo esc_attr($background_color); ?> !important;
+    }
+    .meaAccessibility_label {
+        color: <?php echo esc_attr($labels_color); ?> !important;
+    }
+    .meaAccessibility_fieldsetSeparator {
+        border-top-color: <?php echo esc_attr($divider_line_color); ?> !important;
+    }
+    .meaAccessibility_externalToggle {
+        background-color: <?php echo esc_attr($plugin_logo_color); ?> !important;
+    }
+    .meaAccessibility_accessibility-text {
+        color: <?php echo esc_attr($accent_color); ?> !important;
+    }
+    .meaAccessibility_btn:hover {
+        background-color: <?php echo esc_attr($buttons_hover_color); ?> !important;
+    }
+    .meaAccessibility_btn {
+        background-color: <?php echo esc_attr($buttons_color); ?> !important;
+    }
+    </style>
+    <?php
+    
+    // Set global parameters first
+    $selected_position = get_option('meaAccessibility_selected_position', 'meaAccessibility_widgetBottomLeft');
+    $ajax_nonce = wp_create_nonce('meaAccessibility_ajax_nonce');
+    ?>
+    <script>
+    // Set airdrop mode flag to prevent duplicate initialization
+    window.meaAccessibilityAirdropMode = true;
+    
+    // Set global parameters
+    window.meaParams = {
+        selectedPosition: '<?php echo esc_js($selected_position); ?>',
+        errorMessage: 'jQuery is not loaded!',
+        ajaxNonce: '<?php echo esc_js($ajax_nonce); ?>'
+    };
+    </script>
+    <?php
+    
+    // Load the accessibility tools HTML (without inline initialization)
+    meaAccessibility_main_thm();
+    
+    // Load required JavaScript with proper sequencing
+    $js_url = plugin_dir_url(__FILE__) . 'assets/js/';
+    ?>
+    <script>
+    // Load scripts sequentially and wait for each to complete
+    function loadAccessibilityScripts() {
+        // Step 1: Load jQuery
+        if (typeof jQuery === 'undefined') {
+            var jqueryScript = document.createElement('script');
+            jqueryScript.src = '<?php echo esc_url(includes_url('js/jquery/jquery.min.js')); ?>';
+            jqueryScript.onload = function() {
+                loadSetCookieScript();
+            };
+            document.head.appendChild(jqueryScript);
+        } else {
+            loadSetCookieScript();
+        }
+    }
+    
+    function loadSetCookieScript() {
+        // Step 2: Load setCookie script
+        var setCookieScript = document.createElement('script');
+        setCookieScript.src = '<?php echo esc_url($js_url . 'meaAccessibility_setCookie_script.js'); ?>?v=<?php echo esc_attr(meaAccessibility_get_asset_version()); ?>';
+        setCookieScript.onload = function() {
+            loadMainModuleScript();
+        };
+        document.head.appendChild(setCookieScript);
+    }
+    
+    function loadMainModuleScript() {
+        // Step 3: Load main module script
+        var moduleScript = document.createElement('script');
+        moduleScript.src = '<?php echo esc_url($js_url . 'meaAccessibilityModule.js'); ?>?v=<?php echo esc_attr(meaAccessibility_get_asset_version()); ?>';
+        moduleScript.onload = function() {
+            loadDragScript();
+        };
+        document.head.appendChild(moduleScript);
+    }
+    
+    function loadDragScript() {
+        // Step 4: Load drag script if enabled
+        <?php $movable_enabled = get_option('meaAccessibility_enable_movable_plugin', true); ?>
+        <?php if ($movable_enabled): ?>
+        var dragScript = document.createElement('script');
+        dragScript.src = '<?php echo esc_url($js_url . 'drag_meaAc_plugin.js'); ?>?v=<?php echo esc_attr(meaAccessibility_get_asset_version()); ?>';
+        dragScript.onload = function() {
+            initializeAccessibilityTools();
+        };
+        document.head.appendChild(dragScript);
+        <?php else: ?>
+        initializeAccessibilityTools();
+        <?php endif; ?>
+    }
+    
+    function initializeAccessibilityTools() {
+        // Step 5: Initialize after all scripts are loaded
+        jQuery(document).ready(function($) {
+            // Wait a bit more to ensure everything is ready
+            setTimeout(function() {
+                if (typeof $.fn.meaCodesAccessibilityModule !== 'undefined') {
+                    $('html').addClass('');
+                    $('.meaCodesAccessibilityModule').prependTo('body');
+                    $('.meaCodesAccessibilityModule').hide();
+                    $('.meaCodesAccessibilityModule').meaCodesAccessibilityModule('cookie', '0', '477', '4103');
+                    console.log('Accessibility tools initialized successfully');
+                } else {
+                    console.error('meaCodesAccessibilityModule plugin not loaded after timeout');
+                }
+            }, 200);
+        });
+    }
+    
+    // Start loading when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadAccessibilityScripts);
+    } else {
+        loadAccessibilityScripts();
+    }
+    </script>
+    <?php
+}
 
 /**
  * Initialize Quick Scan feature
