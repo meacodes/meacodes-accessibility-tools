@@ -88,15 +88,22 @@ jQuery(document).ready(function(e) {
                     e(document).ready(function() {
                         "true" === localStorage.getItem("meaAcM__dyslexieFont") &&
                             (e(".meaAcM__dyslexieFont").prop("checked", !0),
+                                e(".top-adhd-box").remove(),
+                                e(".bottom-adhd-box").remove(),
                                 e("body").append("<div class='top-adhd-box'><div class='top-inner-adhd-box'></div></div><div class='bottom-adhd-box'><div class='bottom-inner-adhd-box'></div></div>"));
                     }),
                     e(".meaAcM__dyslexieFont").change(function() {
                         const n = e(this).prop("checked");
-                        n
-                            ?
-                            e("body").append("<div class='top-adhd-box'><div class='top-inner-adhd-box'></div></div><div class='bottom-adhd-box'><div class='bottom-inner-adhd-box'></div></div>") :
-                            (e(".top-adhd-box").remove(), e(".bottom-adhd-box").remove()),
-                            "session" === a ?
+                        // Remove existing elements first to prevent duplicates
+                        e(".top-adhd-box").remove();
+                        e(".bottom-adhd-box").remove();
+                        if (n) {
+                            // Create new elements
+                            var topBox = e("<div class='top-adhd-box'><div class='top-inner-adhd-box'></div></div>");
+                            var bottomBox = e("<div class='bottom-adhd-box'><div class='bottom-inner-adhd-box'></div></div>");
+                            e("body").append(topBox).append(bottomBox);
+                        }
+                        "session" === a ?
                             sendSessionAjax(t, c, i, "DyslexieFont", n.toString()) :
                             (function(e) {
                                 localStorage.setItem("meaAcM__dyslexieFont", e);

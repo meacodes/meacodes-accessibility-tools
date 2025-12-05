@@ -41,49 +41,12 @@ class MeacodesQuickScan_Admin {
      * Initialize hooks
      */
     private function init_hooks() {
-        add_action('admin_menu', array($this, 'add_admin_menu'));
-        add_action('admin_init', array($this, 'register_settings'));
+        // Removed add_admin_menu hook - settings are managed in main plugin settings page
+        // Removed register_settings hook - settings are registered in main plugin file
         add_action('wp_dashboard_setup', array($this, 'add_dashboard_widget'));
         add_action('wp_ajax_meacodes_run_manual_scan', array($this, 'ajax_run_manual_scan'));
         add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_scripts'));
     }
-    
-    /**
-     * Add admin menu
-     */
-    public function add_admin_menu() {
-        add_options_page(
-            __('Accessibility Quick Scan', 'meacodes-accessibility-tools'),
-            __('Accessibility Quick Scan', 'meacodes-accessibility-tools'),
-            'manage_options',
-            'meacodes-accessibility-tools',
-            array($this, 'settings_page')
-        );
-    }
-    
-    /**
-     * Register settings
-     */
-    public function register_settings() {
-        register_setting('meacodes_quickscan_settings', 'meacodes_quickscan_enabled', array(
-            'type' => 'boolean',
-            'default' => true,
-            'sanitize_callback' => 'rest_sanitize_boolean'
-        ));
-        
-        register_setting('meacodes_quickscan_settings', 'meacodes_quickscan_interval', array(
-            'type' => 'string',
-            'default' => 'daily',
-            'sanitize_callback' => 'sanitize_text_field'
-        ));
-        
-        register_setting('meacodes_quickscan_settings', 'meacodes_quickscan_max_pages', array(
-            'type' => 'integer',
-            'default' => 35,
-            'sanitize_callback' => 'absint'
-        ));
-    }
-    
     
     /**
      * Add dashboard widget

@@ -3,8 +3,8 @@ Contributors: meacodes
 Donate link: https://nowpayments.io/donation/meacodes
 Tags: accessibility, a11y, Section 508, wcag, toolbar
 Requires at least: 4.0
-Tested up to: 6.8
-Stable tag: 1.2.1
+Tested up to: 6.9
+Stable tag: 1.2.2
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -205,3 +205,10 @@ We truly appreciate any contribution you can make.
 * Fixed negative feature to properly invert all colors and backgrounds
 * Fixed black and white feature plugin button background visibility
 * Enhanced CSS and JavaScript loading with proper WordPress enqueuing
+
+= 1.2.2 =
+* Removed broken "Accessibility Quick Scan" settings menu page that was causing critical errors
+* Fixed dyslexia mask visibility issue - increased z-index to ensure it displays correctly above all theme elements
+* Enhanced dyslexia mask CSS with proper positioning and visibility properties for better theme compatibility
+* Improved dyslexia mask JavaScript to prevent duplicate elements and ensure proper initialization
+* Fixed dyslexia mask to work correctly across all WordPress themes by using maximum z-index value
